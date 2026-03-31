@@ -1,130 +1,130 @@
 ---
-description: Create a full go-to-market strategy — beachhead segment, ICP, messaging, channels, and launch plan
-argument-hint: "<product or feature to launch>"
+description: 创建完整的上市（GTM）策略——滩头细分市场、理想客户画像、信息传递、渠道和发布计划
+argument-hint: "<要发布的产品或功能>"
 ---
 
-# /plan-launch -- Go-to-Market Strategy
+# /plan-launch -- 上市策略（Go-to-Market Strategy）
 
-Build a complete GTM plan from first principles: identify your beachhead market, define the ideal customer, craft messaging, choose channels, and create a launch timeline.
+从第一性原理构建完整的 GTM 计划：确定您的滩头市场、定义理想客户、制定信息传递策略、选择渠道并创建发布时间表。
 
-## Invocation
-
-```
-/plan-launch AI-powered proposal writer for consulting firms
-/plan-launch New enterprise tier for our project management tool
-/plan-launch [upload a PRD, strategy doc, or pitch deck]
-```
-
-## Workflow
-
-### Step 1: Understand the Launch
-
-Ask:
-- What are you launching? (new product, new feature, new tier, market expansion)
-- What stage? (pre-launch planning, imminent launch, post-launch optimization)
-- Do you have existing customers? Or starting from zero?
-- What's the timeline? Any hard deadlines?
-- Budget constraints? Team size?
-
-### Step 2: Define Beachhead Segment
-
-Apply the **beachhead-segment** skill:
-
-- Evaluate potential market segments against:
-  - Burning pain (how urgently they need this)
-  - Willingness to pay (budget and purchase authority)
-  - Winnable market share (can you reach and win them)
-  - Referral potential (will they tell others)
-- Recommend the single best starting segment with rationale
-- Map adjacent segments for expansion after beachhead is secured
-
-### Step 3: Define Ideal Customer Profile
-
-Apply the **ideal-customer-profile** skill:
-
-- Demographics: company size, industry, geography, tech stack
-- Behaviors: how they discover solutions, buying process, decision makers
-- JTBD: specific jobs they're hiring your product for
-- Current alternatives: what they use today and why it falls short
-- Qualification criteria: how to identify them quickly
-
-### Step 4: Build GTM Strategy
-
-Apply the **gtm-strategy** skill:
-
-- **Positioning**: How you describe yourself to this segment
-- **Messaging**: Key messages for different stakeholders (buyer, user, influencer)
-- **Channels**: Where and how to reach your ICP (ranked by expected ROI)
-- **Launch tactics**: Specific actions for pre-launch, launch day, and post-launch
-- **Pricing alignment**: How pricing supports the GTM motion
-- **Success metrics**: How you'll know the launch worked
-
-### Step 5: Generate GTM Plan
+## 调用方式
 
 ```
-## Go-to-Market Plan: [Product/Feature]
+/plan-launch 面向咨询公司的 AI 驱动提案写作工具
+/plan-launch 我们项目管理工具的新企业级版本
+/plan-launch [上传 PRD、策略文档或演示文稿]
+```
 
-**Launch date**: [target]
-**Type**: [new product / feature / tier / market expansion]
+## 工作流程
 
-### Beachhead Segment
-**Who**: [specific segment definition]
-**Why them first**: [rationale against criteria]
-**Size**: [TAM/SAM/SOM estimate]
+### 步骤 1：了解发布内容
 
-### Ideal Customer Profile
-| Attribute | Definition |
+询问：
+- 您要发布什么？（新产品、新功能、新版本、市场扩张）
+- 处于什么阶段？（发布前规划、即将发布、发布后优化）
+- 是否有现有客户？还是从零开始？
+- 时间表如何？是否有硬性截止日期？
+- 预算限制？团队规模？
+
+### 步骤 2：定义滩头细分市场
+
+应用 **beachhead-segment**（滩头细分市场）技能：
+
+- 根据以下标准评估潜在市场细分：
+  - 紧迫痛点（他们对此需求的迫切程度）
+  - 付费意愿（预算和采购权限）
+  - 可赢得的市场份额（能否触达并赢得他们）
+  - 推荐潜力（他们会向他人推荐吗）
+- 推荐单一的最佳初始细分市场并说明理由
+- 规划滩头市场确立后的相邻细分市场扩张路径
+
+### 步骤 3：定义理想客户画像（ICP）
+
+应用 **ideal-customer-profile**（理想客户画像）技能：
+
+- 人口统计特征：公司规模、行业、地理位置、技术栈
+- 行为特征：他们如何发现解决方案、购买流程、决策者
+- JTBD（待办任务）：他们雇佣您的产品要完成的具体任务
+- 当前替代方案：他们现在使用什么以及为什么不够好
+- 筛选标准：如何快速识别他们
+
+### 步骤 4：构建 GTM 策略
+
+应用 **gtm-strategy**（GTM 策略）技能：
+
+- **定位（Positioning）**：如何向该细分市场描述自己
+- **信息传递（Messaging）**：针对不同利益相关者的关键信息（购买者、用户、影响者）
+- **渠道**：在何处以及如何触达您的 ICP（按预期 ROI 排序）
+- **发布策略**：发布前、发布日和发布后的具体行动
+- **定价对齐**：定价如何支持 GTM 推进
+- **成功指标**：如何判断发布是否成功
+
+### 步骤 5：生成 GTM 计划
+
+```
+## 上市计划（Go-to-Market Plan）：[产品/功能]
+
+**发布日期**：[目标日期]
+**类型**：[新产品 / 新功能 / 新版本 / 市场扩张]
+
+### 滩头细分市场
+**目标群体**：[具体的细分市场定义]
+**为何优先选择他们**：[基于标准的理由]
+**市场规模**：[TAM/SAM/SOM 估算]
+
+### 理想客户画像（ICP）
+| 属性 | 定义 |
 |-----------|-----------|
-| Company size | [range] |
-| Industry | [specific] |
-| Decision maker | [title/role] |
-| Key JTBD | [job they need done] |
-| Current solution | [what they use today] |
-| Qualification signal | [how to identify them] |
+| 公司规模 | [范围] |
+| 行业 | [具体行业] |
+| 决策者 | [职位/角色] |
+| 核心待办任务（JTBD） | [他们需要完成的任务] |
+| 当前解决方案 | [他们现在使用什么] |
+| 筛选信号 | [如何识别他们] |
 
-### Positioning & Messaging
-**Positioning statement**: For [who] who [need], [product] is [category] that [benefit]. Unlike [alternative], we [differentiator].
+### 定位与信息传递
+**定位陈述**：对于[谁]而言，他们需要[需求]，[产品]是[类别]，能够[核心价值]。与[替代方案]不同，我们[差异化优势]。
 
-**Key messages by stakeholder**:
-| Audience | Message | Proof Point |
+**按利益相关者的关键信息**：
+| 受众 | 信息 | 证明点 |
 |----------|---------|------------|
 
-### Channel Strategy
-| Channel | Tactic | Reach | Cost | Priority |
+### 渠道策略
+| 渠道 | 策略 | 触达范围 | 成本 | 优先级 |
 |---------|--------|-------|------|----------|
 
-### Launch Timeline
-| Phase | Timing | Actions | Owner |
+### 发布时间表
+| 阶段 | 时间安排 | 行动 | 负责人 |
 |-------|--------|---------|-------|
-| Pre-launch | [dates] | [list] | [who] |
-| Launch week | [dates] | [list] | [who] |
-| Post-launch | [dates] | [list] | [who] |
+| 发布前 | [日期] | [列表] | [谁] |
+| 发布周 | [日期] | [列表] | [谁] |
+| 发布后 | [日期] | [列表] | [谁] |
 
-### Success Metrics
-| Metric | 30-day target | 90-day target |
+### 成功指标
+| 指标 | 30天目标 | 90天目标 |
 |--------|-------------|-------------|
 
-### Risks & Mitigations
-| Risk | Likelihood | Impact | Mitigation |
+### 风险与缓解措施
+| 风险 | 可能性 | 影响 | 缓解措施 |
 |------|-----------|--------|-----------|
 
-### Expansion Plan
-[After beachhead: which adjacent segments, in what order, with what adaptations]
+### 扩张计划
+[滩头市场之后：哪些相邻细分市场、按什么顺序、需要什么调整]
 ```
 
-Save as markdown.
+保存为 markdown 格式。
 
-### Step 6: Offer Next Steps
+### 步骤 6：提供后续步骤
 
-- "Want me to **design growth loops** for post-launch traction?"
-- "Should I **create competitive battlecards** for sales?"
-- "Want me to **draft marketing copy** for the launch?"
-- "Should I **build a metrics dashboard** for launch tracking?"
+- "需要我**设计增长循环**以实现发布后的增长吗？"
+- "需要我为销售团队**创建竞争对战卡片**吗？"
+- "需要我**起草营销文案**用于发布吗？"
+- "需要我**构建指标仪表板**以跟踪发布效果吗？"
 
-## Notes
+## 注意事项
 
-- "Everyone" is not a segment — the tighter the beachhead, the faster you learn
-- The ICP should be specific enough that sales/marketing can identify prospects in 30 seconds
-- Messaging should use the customer's language, not your internal terminology
-- Pre-launch activities (waitlist, beta, early access) are as important as launch day
-- Plan for post-launch: the first 90 days after launch determine long-term trajectory
+- "所有人"不是一个细分市场——滩头市场越聚焦，学习速度越快
+- ICP 应该足够具体，使销售/营销团队能在 30 秒内识别潜在客户
+- 信息传递应使用客户的语言，而非内部术语
+- 发布前活动（候补名单、测试版、抢先体验）与发布日同样重要
+- 规划发布后的阶段：发布后的前 90 天决定长期发展轨迹
