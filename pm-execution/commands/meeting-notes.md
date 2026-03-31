@@ -1,89 +1,89 @@
 ---
-description: Summarize a meeting transcript into structured notes with decisions, action items, and follow-ups
-argument-hint: "<transcript or meeting notes>"
+description: 将会议转录内容总结为结构化笔记，包含决策、行动项和后续跟进
+argument-hint: "<转录内容或会议笔记>"
 ---
 
-# /meeting-notes -- Meeting Summary
+# /meeting-notes -- 会议纪要
 
-Transform a raw meeting transcript or rough notes into clear, structured meeting minutes with decisions captured and action items assigned.
+将原始会议转录或粗略笔记转化为清晰、结构化的会议纪要，明确记录决策并分配行动项。
 
-## Invocation
-
-```
-/meeting-notes [paste transcript]
-/meeting-notes [upload transcript file, audio summary, or notes]
-```
-
-## Workflow
-
-### Step 1: Accept the Transcript
-
-Accept in any format:
-- Full transcript (from Otter, Fireflies, Google Meet, Zoom, etc.)
-- Rough notes taken during the meeting
-- Audio summary or meeting recap from a transcription tool
-- Multiple inputs (e.g., transcript + the user's own notes)
-
-If the input is sparse, work with what's available and flag gaps.
-
-### Step 2: Extract and Structure
-
-Apply the **summarize-meeting** skill:
-
-Parse the content to identify:
-- **Participants**: Who was present (from introductions, speaker labels, or mentions)
-- **Topics discussed**: Major agenda items or conversation threads
-- **Decisions made**: Explicit agreements or conclusions reached
-- **Action items**: Tasks assigned, with owner and deadline if mentioned
-- **Open questions**: Unresolved items that need follow-up
-- **Key quotes**: Important statements worth preserving verbatim
-- **Context**: Meeting type, project, and background
-
-### Step 3: Generate Meeting Summary
+## 调用方式
 
 ```
-## Meeting Summary
+/meeting-notes [粘贴转录内容]
+/meeting-notes [上传转录文件、音频摘要或笔记]
+```
 
-**Date**: [date if known]
-**Participants**: [names/roles]
-**Meeting type**: [standup, planning, review, 1:1, stakeholder, etc.]
-**Topic**: [primary subject]
+## 工作流程
 
-### Summary
-[3-5 sentence overview of what was discussed and concluded]
+### 步骤 1：接受转录内容
 
-### Key Decisions
-1. **[Decision]** — [context and rationale]
+接受任何格式：
+- 完整转录（来自 Otter、Fireflies、Google Meet、Zoom 等）
+- 会议期间记录的粗略笔记
+- 来自转录工具的音频摘要或会议回顾
+- 多个输入（例如：转录内容 + 用户自己的笔记）
+
+如果输入内容稀少，尽量利用可用信息并标注缺失部分。
+
+### 步骤 2：提取与结构化
+
+应用 **summarize-meeting** 技能：
+
+解析内容以识别：
+- **参会人员**：谁在场（来自介绍、发言者标签或提及）
+- **讨论议题**：主要议程项目或对话线索
+- **做出的决策**：明确的协议或达成的结论
+- **行动项**：分配的任务，如果提到了负责人和截止日期
+- **待决问题**：需要后续跟进的未解决问题
+- **关键引述**：值得逐字保留的重要陈述
+- **背景信息**：会议类型、项目和背景
+
+### 步骤 3：生成会议纪要
+
+```
+## 会议纪要
+
+**日期**：[如果已知]
+**参会人员**：[姓名/角色]
+**会议类型**：[站会、规划会、评审会、一对一会、利益相关者会议等]
+**主题**：[主要议题]
+
+### 概述
+[关于讨论内容和结论的 3-5 句话概述]
+
+### 关键决策
+1. **[决策内容]** — [背景和理由]
 2. ...
 
-### Action Items
-| # | Action | Owner | Deadline | Status |
+### 行动项
+| # | 行动 | 负责人 | 截止日期 | 状态 |
 |---|--------|-------|----------|--------|
 
-### Discussion Highlights
-**[Topic 1]**: [key points, different perspectives, conclusion]
-**[Topic 2]**: [key points, different perspectives, conclusion]
+### 讨论要点
+**[议题 1]**：[关键点、不同观点、结论]
+**[议题 2]**：[关键点、不同观点、结论]
 
-### Open Questions
-- [Question] — needs input from [person/team]
+### 待决问题
+- [问题] — 需要来自 [人员/团队] 的输入
 
-### Next Steps
-- [What happens next]
-- Next meeting: [if mentioned]
+### 后续步骤
+- [接下来要做什么]
+- 下次会议：[如果提到的话]
 ```
 
-Save as markdown.
+保存为 markdown 格式。
 
-### Step 4: Offer Follow-ups
+### 步骤 4：提供后续服务
 
-- "Want me to **email these notes** to participants?"
-- "Should I **create tickets** from the action items?"
-- "Want me to **draft a stakeholder update** based on the decisions made?"
+- "您希望我**通过电子邮件将这些笔记发送给参会人员**吗？"
+- "我应该**根据行动项创建工单**吗？"
+- "您希望我**根据做出的决策起草一份利益相关者更新**吗？"
 
-## Notes
+## 注意事项
 
-- Decisions are the most valuable output — make sure every decision is captured clearly
-- Action items without owners are useless — if no owner was mentioned, flag it
-- Keep the summary concise — people who weren't in the meeting should get the gist in 30 seconds
-- If the transcript is very long (60+ min meeting), offer a TL;DR before the full summary
-- Distinguish between "discussed" and "decided" — many topics are explored without reaching a conclusion
+- 决策是最有价值的输出 — 确保每个决策都被清晰记录
+- 没有负责人的行动项毫无意义 — 如果没有提到负责人，请标注出来
+- 保持概述简洁 — 未参加会议的人应在 30 秒内了解要点
+- 如果转录内容很长（60 分钟以上的会议），在完整摘要前提供 TL;DR（太长不看）摘要
+- 区分"已讨论"和"已决策" — 许多议题只是被探讨而未达成结论

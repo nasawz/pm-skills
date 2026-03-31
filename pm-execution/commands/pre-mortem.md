@@ -1,104 +1,104 @@
 ---
-description: Run a pre-mortem risk analysis on a PRD, launch plan, or feature — identify what could go wrong before it does
-argument-hint: "<PRD, plan, or feature description>"
+description: 对 PRD、发布计划或功能进行事前验尸风险分析——在问题发生前识别潜在问题
+argument-hint: "<PRD、计划或功能描述>"
 ---
 
-# /pre-mortem -- Pre-Launch Risk Analysis
+# /pre-mortem -- 发布前风险分析
 
-Imagine your launch has failed. Now work backward to figure out why. This command applies the Tigers/Paper Tigers/Elephants framework to surface real risks and create mitigation plans.
+假设你的发布已经失败。现在倒推分析原因。此命令运用老虎/纸老虎/大象框架，揭示真实风险并制定缓解计划。
 
-## Invocation
-
-```
-/pre-mortem [paste or upload a PRD, launch plan, or feature spec]
-/pre-mortem We're launching a self-serve billing portal next month
-```
-
-## Workflow
-
-### Step 1: Accept the Plan
-
-Accept in any format: PRD, feature spec, launch plan, project brief, or verbal description. The more detail provided, the sharper the risk analysis.
-
-### Step 2: Risk Identification
-
-Apply the **pre-mortem** skill:
-
-Imagine the product has launched and failed. Generate risks across categories:
-- **Technical**: Performance, scalability, integration failures, data issues
-- **User**: Adoption barriers, usability problems, unmet expectations
-- **Business**: Revenue impact, competitive response, market timing
-- **Operational**: Support load, documentation gaps, training needs
-- **Dependencies**: Third-party services, cross-team handoffs, regulatory
-
-### Step 3: Classify Risks
-
-Categorize each risk:
-
-**Tigers** — Real, substantive risks that could cause failure
-- Assess severity: Launch-blocking / Fast-follow / Track
-- For launch-blocking Tigers: immediate mitigation required
-- For fast-follow Tigers: plan to address within first sprint post-launch
-- For track Tigers: monitor but don't delay launch
-
-**Paper Tigers** — Risks that feel scary but are overblown
-- Explain why the concern is manageable
-- Note what would need to change for this to become a real Tiger
-
-**Elephants** — Unspoken risks the team knows about but avoids discussing
-- Surface political, organizational, or uncomfortable risks
-- Frame constructively with suggested conversation starters
-
-### Step 4: Generate Pre-Mortem Report
+## 调用方式
 
 ```
-## Pre-Mortem: [Feature/Launch]
+/pre-mortem [粘贴或上传 PRD、发布计划或功能规格说明书]
+/pre-mortem 我们下个月要上线自助计费门户
+```
 
-**Date**: [today]
-**Status**: [Draft / Reviewed]
+## 工作流程
 
-### Risk Summary
-- **Tigers**: [count] ([launch-blocking], [fast-follow], [track])
-- **Paper Tigers**: [count]
-- **Elephants**: [count]
+### 步骤 1：接受计划
 
-### Launch-Blocking Tigers
-| # | Risk | Likelihood | Impact | Mitigation | Owner | Deadline |
+接受任何格式的输入：PRD、功能规格说明书、发布计划、项目简报或口头描述。提供的细节越详细，风险分析越精准。
+
+### 步骤 2：风险识别
+
+运用**事前验尸**技能：
+
+假设产品已发布并失败。从以下类别生成风险：
+- **技术类**：性能、可扩展性、集成失败、数据问题
+- **用户类**：采用障碍、可用性问题、未满足的期望
+- **业务类**：收入影响、竞争反应、市场时机
+- **运营类**：支持负载、文档缺失、培训需求
+- **依赖类**：第三方服务、跨团队交接、合规要求
+
+### 步骤 3：风险分类
+
+将每个风险归类：
+
+**老虎**——可能导致失败的实质性真实风险
+- 评估严重程度：阻碍发布 / 快速跟进 / 跟踪
+- 对于阻碍发布的老虎：需要立即制定缓解措施
+- 对于快速跟进的老虎：计划在发布后第一个迭代内解决
+- 对于跟踪的老虎：监控但不延迟发布
+
+**纸老虎**——感觉可怕但被夸大的风险
+- 解释为何该担忧是可控的
+- 注明什么情况下会变成真正的老虎
+
+**大象**——团队知道但不愿讨论的隐性风险
+- 揭示政治、组织或令人不适的风险
+- 建设性地提出建议对话开场白
+
+### 步骤 4：生成事前验尸报告
+
+```
+## 事前验尸：[功能/发布]
+
+**日期**：[今天]
+**状态**：[草稿 / 已审核]
+
+### 风险摘要
+- **老虎**：[数量]（[阻碍发布]、[快速跟进]、[跟踪]）
+- **纸老虎**：[数量]
+- **大象**：[数量]
+
+### 阻碍发布的老虎
+| # | 风险 | 可能性 | 影响 | 缓解措施 | 负责人 | 截止日期 |
 |---|------|-----------|--------|-----------|-------|----------|
 
-### Fast-Follow Tigers
-| # | Risk | Likelihood | Impact | Planned Response | Owner |
+### 快速跟进的老虎
+| # | 风险 | 可能性 | 影响 | 计划应对方案 | 负责人 |
 |---|------|-----------|--------|-----------------|-------|
 
-### Track Tigers
-[Risks to monitor post-launch with trigger conditions]
+### 跟踪的老虎
+[发布后需监控的风险及触发条件]
 
-### Paper Tigers
-[Concerns that seem big but are manageable — with reasoning]
+### 纸老虎
+[看似重大但可控的担忧——附带分析说明]
 
-### Elephants in the Room
-[Uncomfortable truths the team should discuss]
+### 房间里的大象
+[团队应该讨论的令人不适的真相]
 
-### Go/No-Go Checklist
-- [ ] All launch-blocking Tigers mitigated
-- [ ] Fast-follow plan documented and assigned
-- [ ] Monitoring in place for Track Tigers
-- [ ] Rollback plan defined
-- [ ] Support team briefed
+### 放行/不放行检查清单
+- [ ] 所有阻碍发布的老虎已制定缓解措施
+- [ ] 快速跟进计划已记录并分配负责人
+- [ ] 跟踪的老虎已设置监控
+- [ ] 回滚计划已定义
+- [ ] 支持团队已获得简报
 ```
 
-Save as markdown.
+保存为 markdown 格式。
 
-### Step 5: Offer Next Steps
+### 步骤 5：提供后续步骤
 
-- "Want me to **update the PRD** with risk mitigations?"
-- "Should I **create test scenarios** for the riskiest areas?"
-- "Want me to **draft a launch checklist** from these findings?"
+- "需要我**更新 PRD**以纳入风险缓解措施吗？"
+- "是否需要我为风险最高的领域**创建测试场景**？"
+- "需要我基于这些发现**起草发布检查清单**吗？"
 
-## Notes
+## 备注
 
-- The best pre-mortems happen when the plan is 80% done — early enough to change course, late enough to have substance
-- Push past the obvious risks — the most dangerous risks are the ones nobody mentions
-- Elephants are the highest-value output — surfacing what the team avoids discussing
-- For each Tiger, the mitigation should be specific and assignable, not "be careful"
-- If the pre-mortem reveals too many launch-blocking Tigers, recommend delaying or phasing the launch
+- 最佳的事前验尸分析在计划完成 80% 时进行——既能及时调整方向，又有足够实质内容
+- 深挖显而易见的风险之外——最危险的风险是没人提及的那些
+- 大象是最有价值的产出——揭示团队回避讨论的内容
+- 对于每只老虎，缓解措施应具体且可分配，而非"小心行事"
+- 如果事前验尸揭示太多阻碍发布的老虎，建议推迟或分阶段发布

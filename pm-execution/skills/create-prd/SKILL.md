@@ -1,86 +1,86 @@
 ---
 name: create-prd
-description: "Create a Product Requirements Document using a comprehensive 8-section template covering problem, objectives, segments, value propositions, solution, and release planning. Use when writing a PRD, documenting product requirements, preparing a feature spec, or reviewing an existing PRD."
+description: "使用全面的8部分模板创建产品需求文档，涵盖问题、目标、细分市场、价值主张、解决方案和发布计划。适用于编写PRD、记录产品需求、准备功能规格说明或审查现有PRD时使用。"
 ---
 
-# Create a Product Requirements Document
+# 创建产品需求文档
 
-## Purpose
+## 目的
 
-You are an experienced product manager responsible for creating a comprehensive Product Requirements Document (PRD) for $ARGUMENTS. This document will serve as the authoritative specification for your product or feature, aligning stakeholders and guiding development.
+您是一位经验丰富的产品经理，负责为 $ARGUMENTS 创建一份全面的产品需求文档（PRD）。该文档将作为产品或功能的权威规格说明，用于对齐利益相关者并指导开发工作。
 
-## Context
+## 背景
 
-A well-structured PRD clearly communicates the what, why, and how of your product initiative. This skill uses an 8-section template proven to communicate product vision effectively to engineers, designers, leadership, and stakeholders.
+一份结构良好的PRD能够清晰地传达产品计划的"是什么"、"为什么"和"怎么做"。本技能使用经过验证的8部分模板，能够有效地向工程师、设计师、领导层和利益相关者传达产品愿景。
 
-## Instructions
+## 指导说明
 
-1. **Gather Information**: If the user provides files, read them carefully. If they mention research, URLs, or customer data, use web search to gather additional context and market insights.
+1. **收集信息**：如果用户提供了文件，请仔细阅读。如果他们提到了研究、URL或客户数据，请使用网络搜索来收集更多背景信息和市场洞察。
 
-2. **Think Step by Step**: Before writing, analyze:
-   - What problem are we solving?
-   - Who are we solving it for?
-   - How will we measure success?
-   - What are our constraints and assumptions?
+2. **逐步思考**：在编写之前，分析：
+   - 我们要解决什么问题？
+   - 我们为谁解决这个问题？
+   - 我们如何衡量成功？
+   - 我们的限制条件和假设是什么？
 
-3. **Apply the PRD Template**: Create a document with these 8 sections:
+3. **应用PRD模板**：创建包含以下8个部分的文档：
 
-   **1. Summary** (2-3 sentences)
-   - What is this document about?
+   **1. 概述**（2-3句话）
+   - 本文档关于什么？
 
-   **2. Contacts**
-   - Name, role, and comment for key stakeholders
+   **2. 联系人**
+   - 关键利益相关者的姓名、角色和备注
 
-   **3. Background**
-   - Context: What is this initiative about?
-   - Why now? Has something changed?
-   - Is this something that just recently became possible?
+   **3. 背景**
+   - 语境：这项计划是关于什么的？
+   - 为什么是现在？有什么变化吗？
+   - 这是最近才变得可能的事情吗？
 
-   **4. Objective**
-   - What's the objective? Why does it matter?
-   - How will it benefit the company and customers?
-   - How does it align with vision and strategy?
-   - Key Results: How will you measure success? (Use SMART OKR format)
+   **4. 目标**
+   - 目标是什么？为什么它很重要？
+   - 它将如何为公司和客户带来收益？
+   - 它如何与愿景和战略保持一致？
+   - 关键结果：您将如何衡量成功？（使用SMART OKR格式）
 
-   **5. Market Segment(s)**
-   - For whom are we building this?
-   - What constraints exist?
-   - Note: Markets are defined by people's problems/jobs, not demographics
+   **5. 细分市场**
+   - 我们为谁构建这个？
+   - 存在哪些限制条件？
+   - 注意：市场是由人们的问题/任务定义的，而非人口统计学特征
 
-   **6. Value Proposition(s)**
-   - What customer jobs/needs are we addressing?
-   - What will customers gain?
-   - Which pains will they avoid?
-   - Which problems do we solve better than competitors?
-   - Consider the Value Curve framework
+   **6. 价值主张**
+   - 我们在解决哪些客户任务/需求？
+   - 客户将获得什么？
+   - 他们将避免哪些痛苦？
+   - 我们在哪些问题上比竞争对手解决得更好？
+   - 考虑价值曲线框架
 
-   **7. Solution**
-   - 7.1 UX/Prototypes (wireframes, user flows)
-   - 7.2 Key Features (detailed feature descriptions)
-   - 7.3 Technology (optional, only if relevant)
-   - 7.4 Assumptions (what we believe but haven't proven)
+   **7. 解决方案**
+   - 7.1 UX/原型（线框图、用户流程）
+   - 7.2 关键功能（详细的功能描述）
+   - 7.3 技术（可选，仅在相关时使用）
+   - 7.4 假设（我们相信但尚未验证的内容）
 
-   **8. Release**
-   - How long could it take?
-   - What goes in the first version vs. future versions?
-   - Avoid exact dates; use relative timeframes
+   **8. 发布**
+   - 可能需要多长时间？
+   - 第一版本包含什么内容，未来版本包含什么内容？
+   - 避免使用确切日期；使用相对时间框架
 
-4. **Use Accessible Language**: Write for a primary school graduate. Avoid jargon. Use clear, short sentences.
+4. **使用通俗易懂的语言**：以小学毕业生为写作对象。避免使用行话。使用清晰、简短的句子。
 
-5. **Structure Output**: Present the PRD as a well-formatted markdown document with clear headings and sections.
+5. **结构化输出**：将PRD呈现为格式良好的markdown文档，具有清晰的标题和章节。
 
-6. **Save the Output**: If the PRD is substantial (which it will be), save it as a markdown document in the format: `PRD-[product-name].md`
+6. **保存输出**：如果PRD内容较多（通常会是这样），请将其保存为markdown文档，格式为：`PRD-[产品名称].md`
 
-## Notes
+## 注意事项
 
-- Be specific and data-driven where possible
-- Link each section back to the overall strategy
-- Flag assumptions clearly so the team can validate them
-- Keep the document concise but complete
+- 尽可能具体化和数据驱动
+- 将每个部分与整体战略联系起来
+- 清楚地标记假设，以便团队可以验证它们
+- 保持文档简洁但完整
 
 ---
 
-### Further Reading
+### 延伸阅读
 
 - [How to Write a Product Requirements Document? The Best PRD Template.](https://www.productcompass.pm/p/prd-template)
 - [A Proven AI PRD Template by Miqdad Jaffer (Product Lead @ OpenAI)](https://www.productcompass.pm/p/ai-prd-template)

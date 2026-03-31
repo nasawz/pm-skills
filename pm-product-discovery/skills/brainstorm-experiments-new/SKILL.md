@@ -1,45 +1,45 @@
 ---
 name: brainstorm-experiments-new
-description: "Design lean startup experiments (pretotypes) for a new product. Creates XYZ hypotheses and suggests low-effort validation methods like landing pages, explainer videos, and pre-orders. Use when validating a new product idea, creating pretotypes, or testing market demand."
+description: "为新产品设计精益创业实验（原型原型）。创建 XYZ 假设并建议低成本的验证方法，如着陆页、说明视频和预订。适用于验证新产品构思、创建原型原型或测试市场需求时使用。"
 ---
 
-## Design Lean Startup Experiments (New Product)
+## 设计精益创业实验（新产品）
 
-Create XYZ hypotheses and design pretotype experiments to validate a new product concept with minimal effort.
+创建 XYZ 假设并设计原型原型实验，以最小工作量验证新产品概念。
 
-### Context
+### 背景
 
-You are helping validate a new product concept: **$ARGUMENTS** using lean startup methodology.
+你正在帮助使用精益创业方法论验证新产品概念：**$ARGUMENTS**
 
-If the user provides files (market research, landing page mockups), read them first.
+如果用户提供了文件（市场调研、着陆页原型图），请先阅读这些文件。
 
-### Instructions
+### 指导说明
 
-1. **Create an XYZ Hypothesis** in the form: "At least X% of Y will do Z"
-   - **X%**: The percentage of the target market expected to engage
-   - **Y**: The specific target market (e.g., "mid-size luxury sedan buyers")
-   - **Z**: How they will engage with the product
+1. **创建一个 XYZ 假设**，格式为："至少 X% 的 Y 会做 Z"
+   - **X%**：预期会参与的目标市场百分比
+   - **Y**：具体的目标市场（例如："中大型豪华轿车购买者"）
+   - **Z**：他们将如何与产品互动
 
-2. **Suggest 2-3 pretotype experiments** to test the hypothesis with minimal effort. Consider:
-   - **Landing Page**: Test interest by measuring sign-ups or clicks
-   - **Explainer Video**: Test understanding and appeal through engagement metrics
-   - **Email Campaign**: Test demand through response and click-through rates
-   - **Pre-Order / Waitlist**: Test willingness to pay through skin-in-the-game commitment
-   - **Concierge / Manual MVP**: Deliver the service manually to test value
+2. **建议 2-3 个原型原型实验**，以最小工作量测试假设。可考虑：
+   - **着陆页**：通过测量注册或点击来测试兴趣
+   - **说明视频**：通过参与度指标来测试理解和吸引力
+   - **邮件营销活动**：通过响应率和点击率来测试需求
+   - **预订/候补名单**：通过实质投入的承诺来测试支付意愿
+   - **门房式/人工 MVP**：手动提供服务以测试价值
 
-3. **Key principles** (Alberto Savoia, *The Right It*):
-   - **Skin-in-the-Game**: Test willingness to pay — not just interest. Real commitment (time, money, reputation) is the only reliable signal.
-   - **Your Own Data (YODA)**: Collect your own data through experiments rather than relying on Others' Data (ODP) like market reports or analogies. "The market for your idea does not care about the market for someone else's idea."
-   - Measure actual behavior, not users' opinions
+3. **核心原则**（Alberto Savoia，《The Right It》）：
+   - **实质投入**：测试支付意愿——而不仅仅是兴趣。真正的承诺（时间、金钱、声誉）是唯一可靠的信号。
+   - **自己的数据（YODA）**：通过实验收集自己的数据，而不是依赖市场报告或类比等他人的数据（ODP）。"你的想法所面对的市场，并不关心其他人的想法所面对的市场。"
+   - 测量实际行为，而非用户观点
 
-4. **For each experiment**, specify the hypothesis being tested, the method, the metric, and the success threshold.
+4. **对于每个实验**，明确要测试的假设、方法、指标和成功阈值。
 
-Think step by step. Save as markdown if substantial.
+逐步思考。如果内容充实，保存为 markdown 格式。
 
 ---
 
-### Further Reading
+### 延伸阅读
 
-- [How to Build the Right Product with Alberto Savoia (ex-Innovator at Google)](https://www.productcompass.pm/p/how-to-build-the-right-product-with)
-- [Testing Product Ideas: The Ultimate Validation Experiments Library](https://www.productcompass.pm/p/the-ultimate-experiments-library)
-- [Continuous Product Discovery Masterclass (CPDM)](https://www.productcompass.pm/p/cpdm) (video course)
+- [如何构建正确的产品——与 Alberto Savoia（前谷歌创新者）的对话](https://www.productcompass.pm/p/how-to-build-the-right-product-with)
+- [测试产品构思：终极验证实验库](https://www.productcompass.pm/p/the-ultimate-experiments-library)
+- [持续产品发现大师课（CPDM）](https://www.productcompass.pm/p/cpdm)（视频课程）

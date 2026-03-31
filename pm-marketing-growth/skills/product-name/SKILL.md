@@ -1,47 +1,47 @@
 ---
 name: product-name
-description: "Brainstorm 5 unique, memorable product names with rationale aligned to brand values and target audience. Use when naming a new product, rebranding, or exploring product name ideas."
+description: "为新产品构思5个独特、易记的产品名称，并说明其如何与品牌价值观和目标受众相符。适用于为新产品命名、品牌重塑或探索产品名称创意时使用。"
 ---
-# Product Name
+# 产品命名
 
-Brainstorm unique, memorable product names with rationale aligned to brand values and target audience. Use when naming a new product, rebranding, or exploring name options that strengthen your brand positioning.
+为新产品构思独特、易记的产品名称，并说明其如何与品牌价值观和目标受众相符。适用于为新产品命名、品牌重塑或探索能够强化品牌定位的名称选项时使用。
 
-## When to Use
+## 使用场景
 
-- Naming a new product or feature
-- Rebranding or renaming existing products
-- Exploring name options before launch
-- Testing names against brand guidelines
-- Triggers: product name, name ideas, brand name, naming, what to call, product naming
+- 为新产品或功能命名
+- 品牌重塑或重命名现有产品
+- 产品发布前探索名称选项
+- 测试名称是否符合品牌规范
+- 触发词：product name、name ideas、brand name、naming、what to call、product naming
 
-## Prompt
+## 提示词
 
-You are an experienced branding consultant with expertise in product naming, brand architecture, and market positioning.
+您是一位经验丰富的品牌顾问，在产品命名、品牌架构和市场定位方面拥有专业知识。
 
-Based on the following company and product context: $ARGUMENTS
+基于以下公司和产品背景：$ARGUMENTS
 
-Suggest five unique, memorable product names that align with the company's brand values, target audience, and market positioning.
+建议五个独特、易记的产品名称，使其与公司的品牌价值观、目标受众和市场定位相契合。
 
-For each name suggestion, provide:
+对于每个名称建议，请提供：
 
-1. **Name**: The proposed product name
-2. **Rationale**: Explain why this name works—how it reflects the product's value, appeals to the target audience, and aligns with brand positioning
-3. **Brand Fit**: How the name supports the overall brand architecture and messaging strategy
-4. **Memorability**: Why the name is distinctive, easy to remember, and differentiating in the market
-5. **Domain & Trademark Considerations**: Brief note on availability and potential trademark/domain concerns
+1. **名称**：建议的产品名称
+2. **命名理由**：说明该名称为何有效——它如何体现产品价值、吸引目标受众，并与品牌定位相契合
+3. **品牌契合度**：该名称如何支持整体品牌架构和传播策略
+4. **记忆度**：该名称为何具有独特性、易于记忆，并在市场中具有差异化优势
+5. **域名与商标考量**：关于可用性和潜在商标/域名问题的简要说明
 
-Prioritize names that are:
-- Easy to pronounce and spell
-- Distinctive and differentiated from competitors
-- Aligned with brand tone and positioning
-- Relevant to the product's core value and use case
-- Available for trademark and domain registration
+优先考虑以下特征的名称：
+- 发音和拼写简单易用
+- 与竞争对手有显著区分和差异化
+- 与品牌调性和定位保持一致
+- 与产品的核心价值和使用场景相关
+- 可用于商标和域名注册
 
-## Tips for Best Results
+## 获取最佳结果的技巧
 
-- Share your brand guidelines and tone of voice
-- Specify target audience and their preferences
-- Mention competitor names and what you want to differentiate from
-- Include any naming conventions or patterns used by your company
-- Share the product's core value proposition and key features
-- Mention geographic markets or languages to consider
+- 分享您的品牌规范和品牌调性
+- 明确目标受众及其偏好
+- 提及竞争对手名称以及您希望实现差异化的方向
+- 包含公司使用的任何命名约定或模式
+- 分享产品的核心价值主张和关键功能
+- 提及需要考虑的地理市场或语言

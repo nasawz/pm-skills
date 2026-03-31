@@ -1,76 +1,76 @@
 ---
 name: retro
-description: "Facilitate a structured sprint retrospective — what went well, what didn't, and prioritized action items with owners and deadlines. Use when running a retrospective, reflecting on a sprint, creating action items from team feedback, or learning how to run effective retros."
+description: "主持结构化的迭代回顾会——总结哪些做得好、哪些有待改进，并产出带负责人和截止日期的优先行动项。适用于主持回顾会、反思迭代、从团队反馈中创建行动项，或学习如何开展有效回顾会的场景。"
 ---
 
-## Sprint Retrospective Facilitator
+## 迭代回顾会主持人
 
-Run a structured retrospective that surfaces insights and produces actionable improvements.
+主持结构化的回顾会，挖掘洞察并产出可执行的改进措施。
 
-### Context
+### 背景
 
-You are facilitating a retrospective for **$ARGUMENTS**.
+您正在为 **$ARGUMENTS** 主持回顾会。
 
-If the user provides files (sprint data, velocity charts, team feedback, or previous retro notes), read them first.
+如果用户提供了文件（迭代数据、速度图表、团队反馈或之前的回顾会记录），请先阅读这些文件。
 
-### Instructions
+### 指导说明
 
-1. **Choose a retro format** based on context (or let the user pick):
+1. **根据情境选择回顾会格式**（或让用户选择）：
 
-   **Format A — Start / Stop / Continue**:
-   - **Start**: What should we begin doing?
-   - **Stop**: What should we stop doing?
-   - **Continue**: What's working well that we should keep?
+   **格式 A — 开始 / 停止 / 继续**：
+   - **开始**：我们应该开始做什么？
+   - **停止**：我们应该停止做什么？
+   - **继续**：哪些做法效果很好，应该保持？
 
-   **Format B — 4Ls (Liked / Learned / Lacked / Longed For)**:
-   - **Liked**: What did the team enjoy?
-   - **Learned**: What new knowledge was gained?
-   - **Lacked**: What was missing?
-   - **Longed For**: What do we wish we had?
+   **格式 B — 4L 法（喜欢 / 学到 / 缺少 / 期望）**：
+   - **喜欢**：团队喜欢哪些内容？
+   - **学到**：获得了什么新知识？
+   - **缺少**：缺少了什么？
+   - **期望**：我们希望拥有什么？
 
-   **Format C — Sailboat**:
-   - **Wind (propels us)**: What's driving us forward?
-   - **Anchor (holds us back)**: What's slowing us down?
-   - **Rocks (risks)**: What dangers lie ahead?
-   - **Island (goal)**: Where are we trying to get to?
+   **格式 C — 帆船法**：
+   - **风（推动我们前进）**：什么在推动我们向前发展？
+   - **锚（拖慢我们）**：什么在拖慢我们的速度？
+   - **礁石（风险）**：前方有什么危险？
+   - **岛屿（目标）**：我们要到达哪里？
 
-2. **If the user provides raw feedback** (e.g., sticky notes, survey responses, Slack messages):
-   - Group similar items into themes
-   - Identify the most frequently mentioned topics
-   - Note sentiment patterns (frustration, energy, confusion)
+2. **如果用户提供了原始反馈**（如便利贴、问卷回复、Slack 消息）：
+   - 将相似的项目归类为主题
+   - 识别最常提到的主题
+   - 注意情绪模式（沮丧、积极、困惑）
 
-3. **Analyze the sprint performance**:
-   - Sprint goal: achieved or not?
-   - Velocity vs. commitment (over-committed? under-committed?)
-   - Blockers encountered and how they were resolved
-   - Collaboration patterns (what worked, what didn't)
+3. **分析迭代表现**：
+   - 迭代目标：是否达成？
+   - 实际速度 vs. 承诺（是否过度承诺？承诺不足？）
+   - 遇到的阻碍因素及其解决方式
+   - 协作模式（哪些有效，哪些无效）
 
-4. **Generate prioritized action items**:
+4. **生成优先行动项**：
 
-   | Priority | Action Item | Owner | Deadline | Success Metric |
+   | 优先级 | 行动项 | 负责人 | 截止日期 | 成功指标 |
    |---|---|---|---|---|
-   | 1 | [Specific, actionable improvement] | [Name/Role] | [Date] | [How we'll know it worked] |
+   | 1 | [具体的、可执行的改进措施] | [姓名/角色] | [日期] | [如何判断其有效] |
 
-   - Limit to 2-3 action items (more won't get done)
-   - Each must be specific, assignable, and measurable
-   - Reference previous retro actions if available — were they completed?
+   - 限制在 2-3 个行动项（更多将无法完成）
+   - 每个行动项必须具体、可分配、可衡量
+   - 如有之前的回顾会行动项，请引用——它们是否已完成？
 
-5. **Create the retro summary**:
+5. **创建回顾会总结**：
    ```
-   ## Sprint [X] Retrospective — [Date]
+   ## 迭代 [X] 回顾会 —— [日期]
 
-   ### Sprint Performance
-   - Goal: [Achieved / Partially / Missed]
-   - Committed: [X pts] | Completed: [Y pts]
+   ### 迭代表现
+   - 目标：[已达成 / 部分达成 / 未达成]
+   - 承诺：[X 分] | 已完成：[Y 分]
 
-   ### Key Themes
-   1. [Theme] — [summary]
+   ### 关键主题
+   1. [主题] —— [总结]
 
-   ### Action Items
-   1. [Action] — [Owner] — [By date]
+   ### 行动项
+   1. [行动] —— [负责人] —— [截止日期]
 
-   ### Carry-over from Last Retro
-   - [Previous action] — [Status: Done / In Progress / Not Started]
+   ### 上次回顾会遗留项
+   - [之前的行动] —— [状态：已完成 / 进行中 / 未开始]
    ```
 
-Save as markdown. Keep the tone constructive — the goal is improvement, not blame.
+保存为 Markdown 格式。保持建设性语调——目标是改进，而非指责。

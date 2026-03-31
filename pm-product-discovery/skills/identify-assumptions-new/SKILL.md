@@ -1,52 +1,52 @@
 ---
 name: identify-assumptions-new
-description: "Identify risky assumptions for a new product idea across 8 risk categories including Go-to-Market, Strategy, and Team. Use when evaluating startup risks, assessing a new product concept, or mapping assumptions for a new venture."
+description: "识别新产品构想的高风险假设，涵盖8个风险类别，包括市场进入（Go-to-Market）、战略和团队。适用于评估创业风险、评估新产品概念或为新事业绘制假设图。"
 ---
 
-## Identify Assumptions (New Product)
+## 识别假设（新产品）
 
-Comprehensive risk identification across 8 categories — extending the 4 core product risks (Teresa Torres, *Continuous Discovery Habits*) with Ethics, Go-to-Market, Strategy & Objectives, and Team risks that are critical for new products.
+跨越8个类别的全面风险识别——在Teresa Torres《持续发现习惯》提出的4个核心产品风险基础上，增加了对新产品至关重要的伦理、市场进入（Go-to-Market）、战略与目标以及团队风险。
 
-### Context
+### 背景
 
-You are evaluating assumptions for a new product: **$ARGUMENTS**.
+您正在评估一个新产品的假设：**$ARGUMENTS**。
 
-If the user provides files (business plans, research), read them first.
+如果用户提供了文件（商业计划、研究报告），请先阅读它们。
 
-### Domain Context
+### 领域背景
 
-**The 4 core product risks** (Teresa Torres, *Continuous Discovery Habits*): Value, Usability, Viability, Feasibility.
+**4个核心产品风险**（Teresa Torres，《持续发现习惯》）：价值、可用性、可行性、可实施性。
 
-**For new products, extend to 8 risk categories.** Good teams assume at least three-quarters of their ideas won't perform as they hope.
+**对于新产品，扩展到8个风险类别。** 优秀的团队假设至少四分之三的想法无法达到预期效果。
 
-### Instructions
+### 指导步骤
 
-The user will describe the product concept, target segment, and feature idea. Work through these steps:
+用户将描述产品概念、目标细分市场和功能构想。请按照以下步骤进行：
 
-1. **Think from three perspectives** about why this product might fail:
-   - **Product Manager**: Market demand, willingness to pay, competitive landscape
-   - **Designer**: First-time user experience, onboarding, engagement
-   - **Engineer**: Build vs. buy decisions, scalability, technical debt
+1. **从三个角度思考**该产品可能失败的原因：
+   - **产品经理**：市场需求、支付意愿、竞争格局
+   - **设计师**：首次使用体验、上手引导、用户参与度
+   - **工程师**：自建还是购买的决策、可扩展性、技术债务
 
-2. **Identify assumptions across 8 risk categories**:
+2. **在8个风险类别中识别假设**：
 
-   - **Value**: Will it create value for customers? Will they keep using it?
-   - **Usability**: Will people figure out how to use it? Can we onboard them fast enough? Will it increase cognitive load?
-   - **Viability**: Can we sell/monetize/finance it? Is it worth the cost? Can we support customers and help them succeed? Can we scale? Will it be compliant?
-   - **Feasibility**: Can we do it with the current technology? Is this integration possible? Can it be efficient? Can we scale it?
-   - **Ethics**: Should we do it at all? Are there any ethical considerations? Will it pose a risk for our customers?
-   - **Go-to-Market** (especially critical for new products): Can we market it? Do we have the required channels? Can we convince customers to try it? Is this the right messaging for this channel? Is this the right time? Is this the right way to launch it?
-   - **Strategy & Objectives**: What are our assumptions? Can others copy our strategy? Have we considered political, economic, legal, technological, and environmental factors? Are those the best problems to solve?
-   - **Team**: How well will the team work together? Do we have the right people? Do we have the right tools? Will the entire team stay with us long enough?
+   - **价值（Value）**：它能为客户创造价值吗？客户会持续使用吗？
+   - **可用性（Usability）**：用户能弄明白如何使用吗？我们能快速完成用户引导吗？会增加认知负荷吗？
+   - **可行性（Viability）**：我们能销售/变现/融资吗？值得投入成本吗？我们能为客户提供支持并帮助他们成功吗？能够规模化吗？能够合规吗？
+   - **可实施性（Feasibility）**：我们能用现有技术实现吗？这种集成可能吗？能高效实现吗？能扩展吗？
+   - **伦理（Ethics）**：我们真的应该做这个吗？有什么伦理考虑吗？会给客户带来风险吗？
+   - **市场进入（Go-to-Market）**（对新产品尤其关键）：我们能推广它吗？我们有必要的渠道吗？我们能说服客户试用吗？这是该渠道的合适信息吗？这是合适的时机吗？这是合适的发布方式吗？
+   - **战略与目标（Strategy & Objectives）**：我们的假设是什么？其他人能复制我们的战略吗？我们考虑了政治、经济、法律、技术和环境因素吗？那些是最值得解决的问题吗？
+   - **团队（Team）**：团队能很好地协作吗？我们有合适的人员吗？我们有合适的工具吗？整个团队能够长期留在我们身边吗？
 
-3. **For each assumption**, rate confidence and suggest a test.
+3. **对于每个假设**，评估信心等级并建议测试方法。
 
-Think step by step. Save as markdown.
+逐步思考。保存为markdown格式。
 
 ---
 
-### Further Reading
+### 延伸阅读
 
-- [Assumption Prioritization Canvas: How to Identify And Test The Right Assumptions](https://www.productcompass.pm/p/assumption-prioritization-canvas)
-- [What Is Product Discovery? The Ultimate Guide Step-by-Step](https://www.productcompass.pm/p/what-exactly-is-product-discovery)
-- [Continuous Product Discovery Masterclass (CPDM)](https://www.productcompass.pm/p/cpdm) (video course)
+- [假设优先级画布：如何识别和测试正确的假设](https://www.productcompass.pm/p/assumption-prioritization-canvas)
+- [什么是产品发现？终极分步指南](https://www.productcompass.pm/p/what-exactly-is-product-discovery)
+- [持续产品发现大师班（CPDM）](https://www.productcompass.pm/p/cpdm)（视频课程）

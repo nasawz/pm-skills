@@ -1,93 +1,93 @@
 ---
 name: pre-mortem
-description: "Run a pre-mortem risk analysis on a PRD or launch plan. Categorizes risks as Tigers (real problems), Paper Tigers (overblown concerns), and Elephants (unspoken worries), then classifies as launch-blocking, fast-follow, or track. Use when preparing for launch, stress-testing a product plan, or identifying what could go wrong."
+description: "对 PRD 或上线计划进行事后预判风险分析。将风险归类为真老虎（真实问题）、纸老虎（夸大的担忧）和大象（未说出口的担忧），然后分类为上线阻碍、快速跟进或跟踪。在准备上线、对产品计划进行压力测试或识别可能出问题时使用。"
 ---
 
-# Pre-Mortem: Risk Analysis for Product Launch
+# 事后预判：产品上线风险分析
 
-## Purpose
+## 目的
 
-You are a veteran product manager conducting a pre-mortem analysis on $ARGUMENTS. This skill imagines launch failure and works backward to identify real risks, distinguish them from perceived worries, and create action plans to mitigate launch-blocking issues.
+你是一位资深产品经理，正在对 $ARGUMENTS 进行事后预判分析。此技能通过假设上线失败，反向识别真实风险，将其与感知的担忧区分开来，并制定行动计划以缓解上线阻碍问题。
 
-## Context
+## 背景
 
-A pre-mortem is a structured risk-identification exercise that forces teams to think critically about what could go wrong before launch, when there's still time to act. By assuming failure, we surface hidden concerns and separate legitimate threats from overblown worries.
+事后预判是一种结构化的风险识别练习，迫使团队在上线前还有时间行动时，批判性地思考可能出什么问题。通过假设失败，我们可以揭示隐藏的担忧，将真实威胁与夸大的担忧区分开来。
 
-## Instructions
+## 指导步骤
 
-1. **Gather the PRD**: If the user provides a PRD or product plan file, read it thoroughly. Understand the product, target market, key assumptions, and timeline. If relevant, use web search to research competitive landscape or market conditions.
+1. **收集 PRD**：如果用户提供了 PRD 或产品计划文件，请仔细阅读。理解产品、目标市场、关键假设和时间表。如相关，使用网络搜索研究竞争格局或市场状况。
 
-2. **Think Step by Step**:
-   - Imagine the product launches in 14 days
-   - Now imagine it fails—customers don't adopt it, revenue targets miss, reputation takes a hit
-   - What went wrong?
-   - What did we miss or not execute well?
-   - What were we overconfident about?
+2. **逐步思考**：
+   - 想象产品在 14 天后上线
+   - 现在想象它失败了——客户不采用，收入目标未达成，声誉受损
+   - 哪里出了问题？
+   - 我们遗漏了什么或执行得不好？
+   - 我们在哪些方面过于自信？
 
-3. **Categorize Risks**: Classify each potential failure as one of three types:
+3. **对风险进行分类**：将每个潜在失败归类为以下三种类型之一：
 
-   **Tigers**: Real problems you personally see that could derail the project
-   - Based on evidence, past experience, or clear logic
-   - Should keep you awake at night
-   - Require action
+   **真老虎**：你个人看到的可能导致项目偏离轨道的真实问题
+   - 基于证据、过往经验或清晰的逻辑
+   - 应该让你夜不能寐
+   - 需要采取行动
 
-   **Paper Tigers**: Problems others might worry about, but you don't believe in them
-   - Valid concerns on the surface, but unlikely or overblown
-   - Not worth significant resource investment
-   - Worth documenting to align stakeholders
+   **纸老虎**：其他人可能担心，但你不相信的问题
+   - 表面上是合理的担忧，但不太可能或被夸大
+   - 不值得投入大量资源
+   - 值得记录以对齐干系人
 
-   **Elephants**: Something you're not sure is a problem, but the team isn't discussing it enough
-   - Unspoken concerns or assumptions nobody is validating
-   - Could be real; you're unsure
-   - Deserve investigation before launch
+   **大象**：你不确定是否是问题，但团队讨论不足的事情
+   - 无人验证的未言明担忧或假设
+   - 可能是真实的；你不确定
+   - 值得在上线前进行调查
 
-4. **Classify Tigers by Urgency**:
+4. **按紧迫程度对真老虎进行分类**：
 
-   **Launch-Blocking**: Must be solved before launch
-   - Example: Core feature broken, regulatory blocker, key customer dependency unmet
+   **上线阻碍**：必须在上线前解决
+   - 示例：核心功能损坏、监管阻碍、关键客户依赖未满足
 
-   **Fast-Follow**: Must be solved within 30 days post-launch
-   - Example: Performance issues, secondary features incomplete
+   **快速跟进**：必须在上线后 30 天内解决
+   - 示例：性能问题、次要功能不完整
 
-   **Track**: Monitor post-launch; solve if it becomes an issue
-   - Example: Nice-to-have features, edge cases
+   **跟踪**：上线后监控；如果成为问题则解决
+   - 示例：锦上添花的功能、边缘情况
 
-5. **Create Action Plans**: For every Launch-Blocking Tiger:
-   - Describe the risk clearly
-   - Suggest a concrete mitigation action
-   - Identify the best owner (function/person)
-   - Set a decision/completion date
+5. **制定行动计划**：对于每个上线阻碍的真老虎：
+   - 清晰描述风险
+   - 建议具体的缓解行动
+   - 确定最佳负责人（职能/个人）
+   - 设定决策/完成日期
 
-6. **Structure Output**: Present the analysis as:
+6. **构建输出**：将分析呈现为：
 
    ```
-   ## Pre-Mortem Analysis: [Product Name]
+   ## 事后预判分析：[产品名称]
 
-   ### Tigers (Real Risks)
-   [List each real risk with category and mitigation plan]
+   ### 真老虎（真实风险）
+   [列出每个真实风险及其类别和缓解计划]
 
-   ### Paper Tigers (Overblown Concerns)
-   [List each, explain why it's not a true risk]
+   ### 纸老虎（夸大的担忧）
+   [列出每个，解释为什么不是真正的风险]
 
-   ### Elephants (Unspoken Worries)
-   [List each, recommend investigation approach]
+   ### 大象（未说出口的担忧）
+   [列出每个，推荐调查方法]
 
-   ### Action Plans for Launch-Blocking Tigers
-   [For each, include: Risk, Mitigation, Owner, Due Date]
+   ### 上线阻碍真老虎的行动计划
+   [对于每个，包括：风险、缓解措施、负责人、截止日期]
    ```
 
-7. **Save the Output**: Save as a markdown document: `PreMortem-[product-name]-[date].md`
+7. **保存输出**：保存为 markdown 文档：`PreMortem-[产品名称]-[日期].md`
 
-## Notes
+## 注意事项
 
-- Be honest and constructive—the goal is to improve launch readiness, not assign blame
-- Default to "Tiger" if unsure; it's better to address risks early
-- Involve cross-functional perspectives (engineering, design, go-to-market) in your analysis
-- Revisit the pre-mortem 2-3 weeks before launch to verify mitigations are on track
+- 诚实且建设性——目标是提高上线准备度，而不是指责
+- 如果不确定，默认归类为"真老虎"；尽早解决风险更好
+- 在分析中纳入跨职能视角（工程、设计、上市策略）
+- 在上线前 2-3 周重新审视事后预判，验证缓解措施是否按计划进行
 
 ---
 
-### Further Reading
+### 延伸阅读
 
-- [How Meta and Instagram Use Pre-Mortems to Avoid Post-Mortems](https://www.productcompass.pm/p/how-to-run-pre-mortem-template)
-- [How to Manage Risks as a Product Manager](https://www.productcompass.pm/p/how-to-manage-risks-as-a-product-manager)
+- [Meta 和 Instagram 如何使用事后预判避免事后复盘](https://www.productcompass.pm/p/how-to-run-pre-mortem-template)
+- [产品经理如何管理风险](https://www.productcompass.pm/p/how-to-manage-risks-as-a-product-manager)

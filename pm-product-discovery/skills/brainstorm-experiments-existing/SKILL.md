@@ -1,51 +1,51 @@
 ---
 name: brainstorm-experiments-existing
-description: "Design experiments to test assumptions for an existing product — prototypes, A/B tests, spikes, and other low-effort validation methods. Use when validating assumptions, testing feature ideas cheaply, or planning product experiments."
+description: "为现有产品设计实验以验证假设——包括原型测试、A/B 测试、技术探索以及其他低成本验证方法。适用于验证假设、低成本测试功能想法或规划产品实验时使用。"
 ---
 
-## Design Experiments (Existing Product)
+## 设计实验（现有产品）
 
-Design low-effort experiments to test product assumptions before committing to full implementation.
+在全面实施之前，设计低成本实验来测试产品假设。
 
-### Context
+### 背景
 
-You are helping a product team design experiments for **$ARGUMENTS**. The team has a feature idea and assumptions that need validation.
+您正在帮助产品团队为 **$ARGUMENTS** 设计实验。团队有一个功能想法和需要验证的假设。
 
-If the user provides files (PRDs, assumption lists, designs), read them first.
+如果用户提供了文件（产品需求文档、假设列表、设计方案），请先阅读这些文件。
 
-### Instructions
+### 指导原则
 
-The user will describe their idea and assumptions. Work through these steps:
+用户将描述他们的想法和假设。请按以下步骤进行：
 
-1. **Clarify the idea and assumptions**: Confirm what the team wants to build and what they need to validate.
+1. **明确想法和假设**：确认团队想要构建的内容以及需要验证的内容。
 
-2. **Suggest experiments** for each assumption. Consider methods like:
-   - First-click testing or task completion with a prototype
-   - Feature stubs or fake door tests
-   - Technical spikes
-   - A/B tests on production (with risk mitigation)
-   - Wizard of Oz approaches
-   - Survey-based validation (behavioral, not opinion-based)
+2. **为每个假设建议实验**。考虑以下方法：
+   - 使用原型进行首次点击测试或任务完成测试
+   - 功能桩或假门测试
+   - 技术探索
+   - 生产环境 A/B 测试（需采取风险缓解措施）
+   - "绿野仙踪"（Wizard of Oz）方法
+   - 基于调查的验证（基于行为而非观点）
 
-3. **Key principles to follow**:
-   - Measure actual behavior, not users' opinions
-   - Test responsibly — don't put users or the business at risk
-   - For production tests (e.g., A/B tests), explain risk mitigation strategies
-   - Aim for maximum validated learning with minimal effort
+3. **需遵循的关键原则**：
+   - 测量实际行为，而非用户观点
+   - 负责任地测试——不要将用户或业务置于风险之中
+   - 对于生产环境测试（如 A/B 测试），说明风险缓解策略
+   - 以最小努力实现最大程度的验证性学习
 
-4. **For each experiment**, specify:
-   - **Assumption**: What do we believe?
-   - **Experiment**: What exactly will we do to validate it?
-   - **Metric**: What will be measured?
-   - **Success threshold**: The expected value if we are right
+4. **对于每个实验**，请明确：
+   - **假设**：我们相信什么？
+   - **实验**：我们将具体做什么来验证它？
+   - **指标**：将测量什么？
+   - **成功阈值**：如果我们是正确的，期望的数值是多少
 
-Think step by step. Present experiments in a clear table or structured format. Save as markdown if substantial.
+请逐步思考。以清晰的表格或结构化格式呈现实验。如果内容较多，保存为 markdown 格式。
 
 ---
 
-### Further Reading
+### 延伸阅读
 
 - [Testing Product Ideas: The Ultimate Validation Experiments Library](https://www.productcompass.pm/p/the-ultimate-experiments-library)
 - [Assumption Prioritization Canvas: How to Identify And Test The Right Assumptions](https://www.productcompass.pm/p/assumption-prioritization-canvas)
 - [What Is Product Discovery? The Ultimate Guide Step-by-Step](https://www.productcompass.pm/p/what-exactly-is-product-discovery)
-- [Continuous Product Discovery Masterclass (CPDM)](https://www.productcompass.pm/p/cpdm) (video course)
+- [Continuous Product Discovery Masterclass (CPDM)](https://www.productcompass.pm/p/cpdm)（视频课程）

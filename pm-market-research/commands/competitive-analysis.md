@@ -1,97 +1,97 @@
 ---
-description: Analyze the competitive landscape — identify competitors, compare strengths and weaknesses, find differentiation opportunities
-argument-hint: "<your product or market>"
+description: 分析竞争格局——识别竞争对手，比较优势与劣势，发现差异化机会
+argument-hint: "<你的产品或市场>"
 ---
 
-# /competitive-analysis -- Competitive Landscape Analysis
+# /competitive-analysis -- 竞争格局分析
 
-Research and analyze your competitive landscape. Identifies direct and indirect competitors, maps positioning, and surfaces differentiation opportunities.
+研究并分析你的竞争格局。识别直接和间接竞争对手，绘制市场定位图，发现差异化机会。
 
-## Invocation
-
-```
-/competitive-analysis AI-powered project management tools
-/competitive-analysis Our product vs Notion, Asana, and Monday.com
-/competitive-analysis [upload a competitor list or market brief]
-```
-
-## Workflow
-
-### Step 1: Understand the Competitive Context
-
-Ask:
-- What is your product? What category does it compete in?
-- Any specific competitors you want analyzed? Or should I identify them?
-- What's the lens? (feature comparison, positioning, pricing, go-to-market)
-- What will you use this analysis for? (strategy, sales enablement, investor pitch, product roadmap)
-
-### Step 2: Identify Competitors
-
-Apply the **competitor-analysis** skill:
-
-- Identify 5 direct competitors (same category, same buyer)
-- Identify 2-3 indirect competitors (different approach, same job-to-be-done)
-- Note emerging/disruptive players if relevant
-- Use web research to gather current information
-
-### Step 3: Analyze Each Competitor
-
-For each competitor:
-- **Positioning**: How they describe themselves, target audience, key messaging
-- **Strengths**: What they do well, where they win
-- **Weaknesses**: Where they fall short, common complaints
-- **Pricing**: Model and price points (if public)
-- **Market traction**: Funding, team size, customer base signals
-- **Recent moves**: New features, partnerships, pivots
-
-### Step 4: Generate Competitive Analysis
+## 调用方式
 
 ```
-## Competitive Analysis: [Your Product/Market]
+/competitive-analysis AI驱动的项目管理工具
+/competitive-analysis 我们的产品 vs Notion、Asana 和 Monday.com
+/competitive-analysis [上传竞争对手名单或市场简报]
+```
 
-**Date**: [today]
-**Analyzed**: [count] competitors
+## 工作流程
 
-### Market Overview
-[2-3 sentences on market dynamics, trends, and where it's heading]
+### 第一步：理解竞争背景
 
-### Competitive Landscape
-| Competitor | Category | Target | Positioning | Strength | Weakness |
+询问：
+- 你的产品是什么？它在哪个品类中竞争？
+- 有特定的竞争对手需要分析吗？还是由我来识别？
+- 分析视角是什么？（功能对比、市场定位、定价策略、市场进入策略）
+- 这份分析的用途是什么？（战略规划、销售赋能、投资者路演、产品路线图）
+
+### 第二步：识别竞争对手
+
+运用**竞争对手分析**技能：
+
+- 识别5个直接竞争对手（同品类、同目标客户）
+- 识别2-3个间接竞争对手（不同方式、相同待办任务）
+- 如相关，注明新兴/颠覆性玩家
+- 使用网络搜索收集最新信息
+
+### 第三步：分析每个竞争对手
+
+针对每个竞争对手：
+- **市场定位**：他们如何描述自己、目标受众、核心信息
+- **优势**：他们做得好的地方、获胜领域
+- **劣势**：不足之处、常见投诉
+- **定价**：定价模式和价格点（如公开）
+- **市场影响力**：融资情况、团队规模、客户群信号
+- **近期动态**：新功能、合作伙伴关系、战略转型
+
+### 第四步：生成竞争分析报告
+
+```
+## 竞争分析：[你的产品/市场]
+
+**日期**：[今天]
+**分析对象**：[数量]个竞争对手
+
+### 市场概况
+[2-3句话描述市场动态、趋势及发展方向]
+
+### 竞争格局
+| 竞争对手 | 类别 | 目标客户 | 市场定位 | 优势 | 劣势 |
 |-----------|----------|--------|------------|----------|----------|
 
-### Feature Comparison Matrix
-| Capability | Your Product | Competitor A | Competitor B | Competitor C |
+### 功能对比矩阵
+| 能力 | 你的产品 | 竞争对手A | 竞争对手B | 竞争对手C |
 |-----------|-------------|-------------|-------------|-------------|
 
-### Positioning Map
-[2x2 matrix showing competitive positioning on key dimensions]
+### 定位图
+[2x2矩阵，展示关键维度上的竞争定位]
 
-### Differentiation Opportunities
-1. **[Opportunity]** — [why it's defensible and valuable]
+### 差异化机会
+1. **[机会]** — [为什么具有防御性和价值]
 2. ...
 
-### Competitive Threats
-1. **[Threat]** — [what to watch for, recommended response]
+### 竞争威胁
+1. **[威胁]** — [需要关注的点，建议应对措施]
 2. ...
 
-### Recommendations
-- **Double down on**: [your unique advantages]
-- **Close the gap on**: [table-stakes features you're missing]
-- **Ignore**: [competitor moves that aren't worth responding to]
+### 建议
+- **重点投入**：[你的独特优势]
+- **缩小差距**：[你缺失的必备功能]
+- **无需理会**：[不值得回应的竞争对手动作]
 ```
 
-Save as markdown.
+保存为markdown格式。
 
-### Step 5: Offer Next Steps
+### 第五步：提供后续建议
 
-- "Want me to **create a battlecard** for sales against a specific competitor?"
-- "Should I **develop positioning** that differentiates from the top competitors?"
-- "Want me to **identify feature gaps** to close and add to the roadmap?"
+- "需要我为销售团队**制作针对特定竞争对手的作战卡**吗？"
+- "要我**制定差异化定位**来与头部竞争对手区分开来吗？"
+- "需要我**识别需要补齐的功能差距**并添加到路线图吗？"
 
-## Notes
+## 注意事项
 
-- Web research is used for current competitor data — results are as fresh as available sources
-- Distinguish between "table stakes" (must-have to compete) and "differentiators" (must-have to win)
-- Don't just list features — analyze *why* competitors make the choices they make
-- Pricing intelligence should note whether pricing is public, usage-based, or requires sales contact
-- Update this analysis quarterly — competitive landscapes shift fast
+- 使用网络搜索获取当前竞争对手数据——结果的时效性取决于信息源
+- 区分"必备功能"（参与竞争的门槛）和"差异化功能"（获胜的关键）
+- 不要仅仅罗列功能——要分析竞争对手*为什么*做出这些选择
+- 定价信息应注明定价是否公开、是否基于使用量、或是否需要联系销售
+- 每季度更新此分析——竞争格局变化迅速

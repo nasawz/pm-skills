@@ -1,33 +1,33 @@
 ---
 name: dummy-dataset
-description: "Generate realistic dummy datasets for testing with customizable columns, constraints, and output formats (CSV, JSON, SQL, Python script). Use when creating test data, building mock datasets, or generating sample data for development and demos."
+description: "生成用于测试的真实虚拟数据集，支持可自定义列、约束和输出格式（CSV、JSON、SQL、Python 脚本）。适用于创建测试数据、构建模拟数据集或为开发和演示生成示例数据。"
 ---
-# Dummy Dataset Generation
+# 虚拟数据集生成
 
-Generate realistic dummy datasets for testing with customizable columns, constraints, and output formats (CSV, JSON, SQL, Python script). Creates executable scripts or direct data files for immediate use.
+生成用于测试的真实虚拟数据集，支持可自定义列、约束和输出格式（CSV、JSON、SQL、Python 脚本）。创建可执行脚本或直接生成数据文件，供立即使用。
 
-**Use when:** Creating test data, generating sample datasets, building realistic mock data for development, or populating test environments.
+**使用场景：** 创建测试数据、生成示例数据集、为开发构建真实的模拟数据，或填充测试环境。
 
-**Arguments:**
-- `$PRODUCT`: The product or system name
-- `$DATASET_TYPE`: Type of data (e.g., customer feedback, transactions, user profiles)
-- `$ROWS`: Number of rows to generate (default: 100)
-- `$COLUMNS`: Specific columns or fields to include
-- `$FORMAT`: Output format (CSV, JSON, SQL, Python script)
-- `$CONSTRAINTS`: Additional constraints or business rules
+**参数：**
+- `$PRODUCT`: 产品或系统名称
+- `$DATASET_TYPE`: 数据类型（例如：客户反馈、交易记录、用户档案）
+- `$ROWS`: 要生成的行数（默认：100）
+- `$COLUMNS`: 要包含的特定列或字段
+- `$FORMAT`: 输出格式（CSV、JSON、SQL、Python 脚本）
+- `$CONSTRAINTS`: 额外的约束或业务规则
 
-## Step-by-Step Process
+## 分步流程
 
-1. **Identify dataset type** - Understand the data domain
-2. **Define column specifications** - Names, data types, and value ranges
-3. **Determine row count** - How many sample records needed
-4. **Select output format** - CSV, JSON, SQL INSERT, or Python script
-5. **Apply realistic patterns** - Ensure data looks authentic and valid
-6. **Add business constraints** - Respect business logic and relationships
-7. **Generate or script data** - Create executable output
-8. **Validate output** - Ensure data quality and completeness
+1. **识别数据集类型** - 了解数据领域
+2. **定义列规范** - 列名、数据类型和取值范围
+3. **确定行数** - 需要多少样本记录
+4. **选择输出格式** - CSV、JSON、SQL INSERT 或 Python 脚本
+5. **应用真实模式** - 确保数据看起来真实有效
+6. **添加业务约束** - 遵守业务逻辑和关系
+7. **生成或编写数据脚本** - 创建可执行输出
+8. **验证输出** - 确保数据质量和完整性
 
-## Template: Python Script Output
+## 模板：Python 脚本输出
 
 ```python
 import csv
@@ -72,43 +72,43 @@ if __name__ == "__main__":
     print(f"Generated {len(dataset)} records in {FILENAME}")
 ```
 
-## Example Dataset Specification
+## 示例数据集规范
 
-**Dataset Type:** Customer Feedback
+**数据集类型：** 客户反馈
 
-**Columns:**
-- feedback_id (auto-increment, U001, U002...)
-- customer_name (realistic names)
-- email (valid email format)
-- feedback_date (dates last 90 days)
-- rating (1-5 stars)
-- category (Bug, Feature Request, Complaint, Praise)
-- text (realistic feedback)
-- product (electronics, clothing, home)
+**列：**
+- feedback_id（自增，U001, U002...）
+- customer_name（真实姓名）
+- email（有效邮箱格式）
+- feedback_date（过去 90 天内的日期）
+- rating（1-5 星）
+- category（Bug、功能请求、投诉、表扬）
+- text（真实反馈内容）
+- product（电子产品、服装、家居）
 
-**Constraints:**
-- Ratings skewed: 40% 5-star, 30% 4-star, 20% 3-star, 10% 1-2 star
-- Bug category only with ratings 1-3
-- Feature requests only with ratings 3-5
-- Email domains realistic (gmail, yahoo, company.com)
+**约束：**
+- 评分分布：40% 为 5 星，30% 为 4 星，20% 为 3 星，10% 为 1-2 星
+- Bug 类别仅与 1-3 星评分关联
+- 功能请求仅与 3-5 星评分关联
+- 邮箱域名真实（gmail、yahoo、company.com）
 
-## Output Deliverables
+## 交付成果
 
-- Ready-to-execute Python script OR direct data file
-- CSV file with proper headers and formatting
-- JSON file with valid structure and types
-- SQL INSERT statements for database population
-- Data validation and constraint compliance
-- Realistic, business-appropriate values
-- Documentation of data generation logic
-- Quick-start instructions for using the dataset
+- 可执行的 Python 脚本或直接数据文件
+- 带有正确标题和格式的 CSV 文件
+- 结构和类型有效的 JSON 文件
+- 用于数据库填充的 SQL INSERT 语句
+- 数据验证和约束合规性
+- 真实、符合业务场景的值
+- 数据生成逻辑的文档说明
+- 使用数据集的快速入门指南
 
-## Output Formats
+## 输出格式
 
-**CSV:** Flat tabular format, easy to import into spreadsheets and databases
+**CSV：** 平面表格格式，易于导入电子表格和数据库
 
-**JSON:** Nested structure, ideal for APIs and NoSQL databases
+**JSON：** 嵌套结构，适用于 API 和 NoSQL 数据库
 
-**SQL:** INSERT statements, directly executable on relational databases
+**SQL：** INSERT 语句，可直接在关系型数据库上执行
 
-**Python Script:** Executable generator for custom or large datasets
+**Python 脚本：** 可执行生成器，适用于自定义或大型数据集

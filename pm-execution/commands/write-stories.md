@@ -1,112 +1,112 @@
 ---
-description: Break a feature into backlog items — user stories, job stories, or WWA format with acceptance criteria
-argument-hint: "[user|job|wwa] <feature description or PRD>"
+description: 将功能分解为待办事项——用户故事、任务故事或 WWA 格式，并包含验收标准
+argument-hint: "[user|job|wwa] <功能描述或产品需求文档>"
 ---
 
-# /write-stories -- Backlog Item Generator
+# /write-stories -- 待办事项生成器
 
-Break a feature into well-structured backlog items. Choose from three formats based on your team's preference, each with full acceptance criteria.
+将功能分解为结构清晰的待办事项。根据团队偏好选择三种格式之一，每种格式都包含完整的验收标准。
 
-## Invocation
-
-```
-/write-stories user Allow users to export reports as PDF and CSV
-/write-stories job Notification system for task deadlines
-/write-stories wwa Dark mode for the mobile app
-/write-stories [upload a PRD or feature spec]      # asks format preference
-/write-stories                                      # asks for feature and format
-```
-
-## Formats
-
-### User Stories
-**Format**: "As a [user type], I want [capability], so that [benefit]"
-Apply the **user-stories** skill:
-- Follow the 3 C's: Card (brief), Conversation (context), Confirmation (acceptance criteria)
-- Validate against INVEST: Independent, Negotiable, Valuable, Estimable, Small, Testable
-- Include design links or mockup references where relevant
-
-### Job Stories
-**Format**: "When [situation], I want to [motivation], so I can [outcome]"
-Apply the **job-stories** skill:
-- Focus on the situation and context, not the user role
-- Ground in real user scenarios observed in research
-- Ideal for JTBD-oriented teams
-
-### WWA (Why-What-Acceptance)
-**Format**: Why [strategic context] → What [deliverable] → Acceptance [criteria]
-Apply the **wwas** skill:
-- Includes strategic reasoning (why we're building this)
-- Produces independent, valuable, testable items
-- Good for cross-functional teams that need business context
-
-## Workflow
-
-### Step 1: Accept the Feature
-
-Accept in any form: PRD, feature description, user research finding, or verbal idea. If a PRD is provided, extract the requirements to decompose.
-
-### Step 2: Determine Format
-
-If not specified in the invocation, ask:
-- "Which format does your team use? **User stories**, **Job stories**, or **WWA**?"
-- If unsure, recommend user stories as the default
-
-### Step 3: Decompose the Feature
-
-- Break the feature into 5-15 independent stories (small enough to complete in one sprint)
-- Ensure each story is independently valuable (delivers user value on its own)
-- Order by dependency and priority
-- Write 3-5 acceptance criteria per story
-- Flag stories that need design input or technical spikes
-
-### Step 4: Generate Stories
+## 调用方式
 
 ```
-## Backlog: [Feature Name]
+/write-stories user 允许用户将报表导出为 PDF 和 CSV 格式
+/write-stories job 任务截止日期通知系统
+/write-stories wwa 移动应用的深色模式
+/write-stories [上传 PRD 或功能规格文档]      # 询问格式偏好
+/write-stories                                      # 询问功能和格式
+```
 
-**Format**: [User Stories / Job Stories / WWA]
-**Total stories**: [count]
-**Estimated total effort**: [if possible]
+## 格式
 
-### Stories
+### 用户故事
+**格式**："作为一个[用户类型]，我希望[能力]，以便[收益]"
+应用 **user-stories** 技能：
+- 遵循 3C 原则：Card（简明）、Conversation（上下文）、Confirmation（验收标准）
+- 对照 INVEST 原则验证：独立、可协商、有价值、可估算、小规模、可测试
+- 在相关位置包含设计链接或原型参考
 
-#### Story 1: [Short title]
-**[The story in chosen format]**
+### 任务故事
+**格式**："当[情境]时，我希望[动机]，以便我能够[结果]"
+应用 **job-stories** 技能：
+- 专注于情境和上下文，而非用户角色
+- 基于研究中观察到的真实用户场景
+- 适合采用 JTBD（待完成任务）方法的团队
 
-Acceptance Criteria:
-- [ ] [Criterion 1]
-- [ ] [Criterion 2]
-- [ ] [Criterion 3]
+### WWA（Why-What-Acceptance）
+**格式**：Why [战略背景] → What [交付物] → Acceptance [验收标准]
+应用 **wwas** 技能：
+- 包含战略思考（为什么要构建这个功能）
+- 产生独立、有价值、可测试的待办事项
+- 适合需要业务背景的跨职能团队
 
-Priority: [P0/P1/P2] | Effort: [S/M/L] | Dependencies: [none or list]
+## 工作流程
+
+### 步骤 1：接受功能需求
+
+接受任何形式的输入：PRD、功能描述、用户研究结果或口头想法。如果提供了 PRD，则提取需求进行分解。
+
+### 步骤 2：确定格式
+
+如果在调用时未指定格式，则询问：
+- "您的团队使用哪种格式？**用户故事**、**任务故事**还是 **WWA**？"
+- 如果不确定，建议默认使用用户故事
+
+### 步骤 3：分解功能
+
+- 将功能分解为 5-15 个独立的故事（足够小，可在一个冲刺内完成）
+- 确保每个故事都独立有价值（单独交付用户价值）
+- 按依赖关系和优先级排序
+- 为每个故事编写 3-5 个验收标准
+- 标记需要设计输入或技术探索的故事
+
+### 步骤 4：生成故事
+
+```
+## 待办事项：[功能名称]
+
+**格式**：[用户故事 / 任务故事 / WWA]
+**故事总数**：[数量]
+**预估总工作量**：[如果可能]
+
+### 故事
+
+#### 故事 1：[简短标题]
+**[选定格式的故事内容]**
+
+验收标准：
+- [ ] [标准 1]
+- [ ] [标准 2]
+- [ ] [标准 3]
+
+优先级：[P0/P1/P2] | 工作量：[S/M/L] | 依赖项：[无或列表]
 
 ---
-[Repeat for each story]
+[为每个故事重复]
 
-### Story Map
-[Visual ordering: must-have → should-have → nice-to-have]
+### 故事地图
+[可视化排序：必须有 → 应该有 → 最好有]
 
-### Technical Notes
-[Cross-cutting concerns: API changes, data migration, infrastructure]
+### 技术说明
+[跨领域关注点：API 变更、数据迁移、基础设施]
 
-### Open Questions
-[Things that need answers before implementation can start]
+### 开放问题
+[开始实施前需要解答的事项]
 ```
 
-Save as markdown.
+保存为 markdown 格式。
 
-### Step 5: Offer Next Steps
+### 步骤 5：提供后续步骤
 
-- "Want me to **generate test scenarios** for these stories?"
-- "Should I **create dummy data** for development and testing?"
-- "Want me to **estimate sprint capacity** for these stories?"
-- "Should I **convert to a different format** (user stories ↔ job stories ↔ WWA)?"
+- "需要我为这些故事**生成测试场景**吗？"
+- "我应该为开发和测试**创建测试数据**吗？"
+- "需要我**估算冲刺容量**来安排这些故事吗？"
+- "我应该**转换为其他格式**吗（用户故事 ↔ 任务故事 ↔ WWA）？"
 
-## Notes
+## 注意事项
 
-- One story = one deployable unit of value — if it needs another story to be useful, they should be combined
-- Acceptance criteria should be testable by QA without additional interpretation
-- Error handling and edge cases deserve their own stories, not bullet points within a happy-path story
-- If the feature is large (15+ stories), suggest grouping into epics or phases
-- Flag any story that requires a spike (technical investigation before estimation is possible)
+- 一个故事 = 一个可部署的价值单元——如果需要另一个故事才有用，应该合并它们
+- 验收标准应该能够被 QA 直接测试，无需额外解释
+- 错误处理和边界情况应该有独立的故事，而不是作为主流程故事中的要点
+- 如果功能较大（15 个以上故事），建议分组为史诗或阶段
+- 标记任何需要技术探索的故事（在能够估算之前需要进行技术调研）

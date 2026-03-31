@@ -1,83 +1,83 @@
 ---
-description: Generate comprehensive test scenarios from user stories or feature specs — happy paths, edge cases, and error handling
-argument-hint: "<user stories, feature spec, or description>"
+description: 根据用户故事或功能规格生成全面的测试场景——包括正向路径、边界情况和错误处理
+argument-hint: "<用户故事、功能规格或描述>"
 ---
 
-# /test-scenarios -- Test Scenario Generator
+# /test-scenarios -- 测试场景生成器
 
-Turn user stories or feature descriptions into comprehensive test scenarios that QA can execute immediately. Covers happy paths, edge cases, error handling, and cross-browser/device considerations.
+将用户故事或功能描述转化为测试团队可立即执行的全面测试场景。涵盖正向路径、边界情况、错误处理以及跨浏览器/设备考虑。
 
-## Invocation
-
-```
-/test-scenarios [paste user stories or acceptance criteria]
-/test-scenarios [upload a PRD or feature spec]
-/test-scenarios User can reset their password via email link
-```
-
-## Workflow
-
-### Step 1: Accept Input
-
-Accept: user stories, acceptance criteria, PRD sections, feature descriptions, or any specification of expected behavior.
-
-### Step 2: Generate Test Scenarios
-
-Apply the **test-scenarios** skill:
-
-For each user story or requirement, generate:
-
-**Happy Path Scenarios**: The expected user flow works correctly
-**Edge Cases**: Boundary conditions, unusual inputs, concurrent operations
-**Error Scenarios**: What happens when things go wrong
-**Security Scenarios**: If applicable (auth, permissions, data access)
-**Performance Scenarios**: If applicable (load, timeout, large data)
-
-### Step 3: Structure Output
+## 调用方式
 
 ```
-## Test Scenarios: [Feature]
+/test-scenarios [粘贴用户故事或验收标准]
+/test-scenarios [上传PRD或功能规格文档]
+/test-scenarios 用户可以通过邮件链接重置密码
+```
 
-**Source**: [user stories / PRD / description]
-**Total scenarios**: [count]
-**Coverage**: [happy path / edge cases / errors / security / performance]
+## 工作流程
 
-### Scenario 1: [Title]
-**Tests**: [which story or requirement]
-**Preconditions**: [setup needed]
-**User role**: [who is performing this]
+### 步骤 1：接收输入
 
-| Step | Action | Expected Result |
-|------|--------|----------------|
-| 1 | [user action] | [expected system response] |
-| 2 | [user action] | [expected system response] |
+接收：用户故事、验收标准、PRD章节、功能描述或任何预期行为的规格说明。
 
-**Postconditions**: [state after completion]
-**Priority**: [Critical / High / Medium / Low]
+### 步骤 2：生成测试场景
+
+应用 **test-scenarios** 技能：
+
+针对每个用户故事或需求，生成：
+
+**正向路径场景**：预期的用户流程正确工作
+**边界情况**：边界条件、异常输入、并发操作
+**错误场景**：当出现问题时会发生什么
+**安全场景**：如适用（认证、权限、数据访问）
+**性能场景**：如适用（负载、超时、大数据）
+
+### 步骤 3：结构化输出
+
+```
+## 测试场景：[功能名称]
+
+**来源**：[用户故事 / PRD / 描述]
+**场景总数**：[数量]
+**覆盖范围**：[正向路径 / 边界情况 / 错误处理 / 安全 / 性能]
+
+### 场景 1：[标题]
+**测试**：[哪个故事或需求]
+**前置条件**：[需要的设置]
+**用户角色**：[执行者是谁]
+
+| 步骤 | 操作 | 预期结果 |
+|------|------|----------|
+| 1 | [用户操作] | [预期系统响应] |
+| 2 | [用户操作] | [预期系统响应] |
+
+**后置条件**：[完成后的状态]
+**优先级**：[关键 / 高 / 中 / 低]
 
 ---
-[Repeat for each scenario]
+[为每个场景重复]
 
-### Coverage Matrix
-| Requirement | Happy Path | Edge Cases | Error Handling | Notes |
-|------------|-----------|-----------|---------------|-------|
+### 覆盖矩阵
+| 需求 | 正向路径 | 边界情况 | 错误处理 | 备注 |
+|------|----------|----------|----------|------|
 
-### Test Data Requirements
-[What test data is needed to execute these scenarios]
+### 测试数据需求
+[执行这些场景需要什么测试数据]
 ```
 
-Save as markdown.
+保存为 Markdown 格式。
 
-### Step 4: Offer Next Steps
+### 步骤 4：提供后续步骤
 
-- "Want me to **generate the test data** for these scenarios?"
-- "Should I **add more edge cases** for any specific scenario?"
-- "Want me to **create the user stories** that these scenarios test?"
+- "需要我**为这些场景生成测试数据**吗？"
+- "需要我**为特定场景添加更多边界情况**吗？"
+- "需要我**创建这些场景所测试的用户故事**吗？"
 
-## Notes
+## 注意事项
 
-- Happy paths first, then layer in edge cases — ensure basic flows work before testing boundaries
-- Every acceptance criterion from the original story should map to at least one test scenario
-- Include both positive tests (it works) and negative tests (it fails gracefully)
-- For APIs, include scenarios for rate limiting, timeout, malformed requests, and auth failures
-- Flag scenarios that require specific test environments or third-party service mocking
+- 先进行正向路径测试，再叠加边界情况——确保基本流程正常工作后再测试边界
+- 原始故事中的每个验收标准都应至少对应一个测试场景
+- 包含正向测试（正常工作）和负向测试（优雅失败）
+- 对于 API，包括速率限制、超时、格式错误请求和认证失败的场景
+- 标注需要特定测试环境或第三方服务模拟的场景

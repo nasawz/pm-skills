@@ -1,87 +1,86 @@
 ---
 name: sql-queries
-description: "Generate SQL queries from natural language descriptions. Supports BigQuery, PostgreSQL, MySQL, and other dialects. Reads database schemas from uploaded diagrams or documentation. Use when writing SQL, building data reports, exploring databases, or translating business questions into queries."
+description: "从自然语言描述生成 SQL 查询。支持 BigQuery、PostgreSQL、MySQL 及其他方言。可从上传的图表或文档中读取数据库架构。适用于编写 SQL、构建数据报告、探索数据库或将业务问题转换为查询时使用。"
 ---
 
-# SQL Query Generator
+# SQL 查询生成器
 
-## Purpose
-Transform natural language requirements into optimized SQL queries across multiple database platforms. This skill helps product managers, analysts, and engineers generate accurate queries without manual syntax work.
+## 目的
+将自然语言需求转换为跨多种数据库平台的优化 SQL 查询。此技能帮助产品经理、分析师和工程师生成准确的查询，无需手动编写语法。
 
-## How It Works
+## 工作原理
 
-### Step 1: Understand Your Database Schema
-- If you provide a schema file (SQL, documentation, or diagram description), I will read and analyze it
-- Extract table names, column definitions, data types, and relationships
-- Identify primary keys, foreign keys, and indexing strategies
+### 步骤 1：理解数据库架构
+- 如果您提供架构文件（SQL、文档或图表描述），我将读取并分析它
+- 提取表名、列定义、数据类型和关系
+- 识别主键、外键和索引策略
 
-### Step 2: Process Your Request
-- Clarify the exact data you need to retrieve or analyze
-- Confirm the SQL dialect (BigQuery, PostgreSQL, MySQL, Snowflake, etc.)
-- Ask for any additional requirements (filters, aggregations, sorting)
+### 步骤 2：处理您的请求
+- 明确您需要检索或分析的确切数据
+- 确认 SQL 方言（BigQuery、PostgreSQL、MySQL、Snowflake 等）
+- 询问任何额外要求（过滤条件、聚合、排序）
 
-### Step 3: Generate Optimized Query
-- Write efficient SQL that leverages your database structure
-- Include comments explaining complex logic
-- Add performance considerations for large datasets
-- Provide alternative approaches if applicable
+### 步骤 3：生成优化查询
+- 编写充分利用数据库结构的高效 SQL
+- 包含解释复杂逻辑的注释
+- 为大数据集添加性能考虑因素
+- 如适用，提供替代方案
 
-### Step 4: Explain and Test
-- Explain the query logic in plain English
-- Suggest how to test or validate results
-- Offer tips for performance optimization
-- If you want, generate a test script or sample data
+### 步骤 4：解释和测试
+- 用通俗易懂的语言解释查询逻辑
+- 建议如何测试或验证结果
+- 提供性能优化技巧
+- 如果需要，生成测试脚本或示例数据
 
-## Usage Examples
+## 使用示例
 
-**Example 1: Query from Schema File**
+**示例 1：从架构文件查询**
 ```
-Upload your database_schema.sql file and say:
-"Generate a query to find users who signed up in the last 30 days
-and had at least 5 active sessions"
-```
-
-**Example 2: Query from Diagram Description**
-```
-"Here's my database: Users table (id, email, created_at), Sessions table
-(id, user_id, timestamp, duration). Generate a query for average session
-duration per user in January 2026."
+上传您的 database_schema.sql 文件并说：
+"生成一个查询，查找过去 30 天内注册且至少有 5 次活跃会话的用户"
 ```
 
-**Example 3: Complex Analysis Query**
+**示例 2：从图表描述查询**
 ```
-"Create a BigQuery query to analyze our revenue by region and customer tier,
-including year-over-year growth rates."
+"这是我的数据库：Users 表（id, email, created_at），Sessions 表
+（id, user_id, timestamp, duration）。生成一个查询，计算 2026 年 1 月
+每个用户的平均会话时长。"
 ```
 
-## Key Capabilities
+**示例 3：复杂分析查询**
+```
+"创建一个 BigQuery 查询，按地区和客户层级分析我们的收入，
+包括同比增长率。"
+```
 
-- **Multi-Dialect Support**: Works with BigQuery, PostgreSQL, MySQL, Snowflake, SQL Server
-- **File Reading**: Reads schema files, SQL dumps, and data documentation
-- **Query Optimization**: Suggests indexes, partitioning, and performance improvements
-- **Explanation**: Breaks down queries for learning and documentation
-- **Testing**: Can generate test queries and sample data scripts
-- **Script Execution**: Create executable SQL scripts for your database
+## 核心能力
 
-## Tips for Best Results
+- **多方言支持**：支持 BigQuery、PostgreSQL、MySQL、Snowflake、SQL Server
+- **文件读取**：可读取架构文件、SQL 转储和数据文档
+- **查询优化**：建议索引、分区和性能改进方案
+- **解释说明**：分解查询以便学习和文档化
+- **测试功能**：可生成测试查询和示例数据脚本
+- **脚本执行**：为您的数据库创建可执行的 SQL 脚本
 
-1. **Provide context**: Share your database schema or structure
-2. **Be specific**: Clearly describe what data you need and any filters
-3. **Mention database**: Specify which SQL dialect you're using
-4. **Include constraints**: Mention data volume, time ranges, and performance needs
-5. **Request format**: Ask for the query result format if you need specific output
+## 获取最佳效果的技巧
 
-## Output Format
+1. **提供上下文**：分享您的数据库架构或结构
+2. **具体明确**：清晰描述您需要的数据和任何过滤条件
+3. **说明数据库**：指定您使用的 SQL 方言
+4. **包含约束条件**：提及数据量、时间范围和性能需求
+5. **请求格式**：如果需要特定输出，请说明查询结果的格式
 
-You'll receive:
-- **SQL Query**: Production-ready SQL code with comments
-- **Explanation**: What the query does and how it works
-- **Performance Notes**: Optimization tips and considerations
-- **Test Script** (if requested): Sample data and validation queries
+## 输出格式
+
+您将收到：
+- **SQL 查询**：带有注释的生产就绪 SQL 代码
+- **解释说明**：查询的作用和工作原理
+- **性能说明**：优化技巧和注意事项
+- **测试脚本**（如请求）：示例数据和验证查询
 
 ---
 
-### Further Reading
+### 延伸阅读
 
 - [The Product Analytics Playbook: AARRR, HEART, Cohorts & Funnels for PMs](https://www.productcompass.pm/p/the-product-analytics-playbook-aarrr)
 - [How to Become a Technology-Literate PM](https://www.productcompass.pm/p/how-to-become-a-technology-literate)

@@ -1,51 +1,51 @@
 ---
 name: stakeholder-map
-description: "Build a stakeholder map using a power/interest grid, identify communication strategies per quadrant, and generate a communication plan. Use when managing stakeholders, preparing for a launch, aligning cross-functional teams, or planning stakeholder engagement."
+description: "使用权力/利益矩阵构建利益相关者地图,针对每个象限制定沟通策略,并生成沟通计划。适用于管理利益相关者、准备产品发布、协调跨职能团队或规划利益相关者参与时使用。"
 ---
 
-## Stakeholder Mapping & Communication Plan
+## 利益相关者地图与沟通计划
 
-Map stakeholders on a Power × Interest grid and create a tailored communication plan for each group.
+在权力×利益矩阵上绘制利益相关者,并为每个群体制定定制化的沟通计划。
 
-### Context
+### 背景
 
-You are helping build a stakeholder map for **$ARGUMENTS**.
+您正在为 **$ARGUMENTS** 构建利益相关者地图。
 
-If the user provides files (org charts, project briefs, team rosters), read them first. If they describe the product or initiative, use that context to infer likely stakeholders.
+如果用户提供了文件(组织架构图、项目简报、团队名册),请先阅读这些文件。如果他们描述了产品或计划,请利用该背景信息推断可能的利益相关者。
 
-### Instructions
+### 操作指引
 
-1. **Identify stakeholders**: List all relevant individuals and groups — executives, engineering leads, designers, marketing, sales, support, legal, finance, external partners, and end users.
+1. **识别利益相关者**: 列出所有相关的个人和群体 — 高管、工程负责人、设计师、市场、销售、客服、法务、财务、外部合作伙伴和最终用户。
 
-2. **Classify each stakeholder** on two dimensions:
-   - **Power** (High/Low): Their ability to influence decisions, resources, or outcomes
-   - **Interest** (High/Low): How much the project directly affects them or how engaged they are
+2. **从两个维度对每个利益相关者进行分类**:
+   - **权力** (高/低): 他们影响决策、资源或结果的能力
+   - **利益** (高/低): 项目对他们直接影响的程度或他们的参与度
 
-3. **Place stakeholders in the Power × Interest grid**:
+3. **将利益相关者放入权力×利益矩阵中**:
 
-   | | High Interest | Low Interest |
+   | | 高利益 | 低利益 |
    |---|---|---|
-   | **High Power** | **Manage Closely** — Regular 1:1s, involve in decisions, seek their input early | **Keep Satisfied** — Periodic updates, escalate only critical issues |
-   | **Low Power** | **Keep Informed** — Regular status updates, invite to demos, gather feedback | **Monitor** — Light-touch updates, available on request |
+   | **高权力** | **重点管理** — 定期一对一沟通,让他们参与决策,尽早征求他们的意见 | **令其满意** — 定期更新,仅在关键问题上升级汇报 |
+   | **低权力** | **告知情况** — 定期状态更新,邀请参加演示,收集反馈 | **保持关注** — 轻度更新,按需提供信息 |
 
-4. **For each quadrant**, recommend:
-   - Communication frequency (daily, weekly, bi-weekly, monthly)
-   - Communication format (1:1, email, Slack, meeting, dashboard)
-   - Key messages and framing
-   - Potential risks if this stakeholder is neglected
+4. **针对每个象限**,建议:
+   - 沟通频率(每日、每周、每两周、每月)
+   - 沟通形式(一对一、邮件、Slack、会议、仪表板)
+   - 关键信息和沟通框架
+   - 忽视该利益相关者的潜在风险
 
-5. **Create a communication plan table**:
+5. **创建沟通计划表**:
 
-   | Stakeholder | Role | Power | Interest | Strategy | Frequency | Channel | Key Message |
+   | 利益相关者 | 角色 | 权力 | 利益 | 策略 | 频率 | 渠道 | 关键信息 |
    |---|---|---|---|---|---|---|---|
 
-6. **Flag potential conflicts**: Identify stakeholders with competing interests and suggest alignment strategies.
+6. **标记潜在冲突**: 识别利益存在冲突的利益相关者,并建议对齐策略。
 
-Think step by step. Save the stakeholder map as a markdown document.
+请逐步思考。将利益相关者地图保存为 Markdown 文档。
 
 ---
 
-### Further Reading
+### 延伸阅读
 
 - [The Product Management Frameworks Compendium + Templates](https://www.productcompass.pm/p/the-product-frameworks-compendium)
 - [Team Topologies: A Handbook to Set and Scale Product Teams](https://www.productcompass.pm/p/team-topologies-a-handbook-to-set)

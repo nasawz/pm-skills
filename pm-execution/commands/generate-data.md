@@ -1,82 +1,82 @@
 ---
-description: Generate realistic dummy datasets for testing — CSV, JSON, SQL inserts, or Python scripts
-argument-hint: "<description of the data you need>"
+description: 生成用于测试的逼真模拟数据集 — CSV、JSON、SQL 插入语句或 Python 脚本
+argument-hint: "<您需要的数据描述>"
 ---
 
-# /generate-data -- Test Data Generator
+# /generate-data -- 测试数据生成器
 
-Create realistic dummy datasets for development, testing, demos, or prototyping. Outputs as ready-to-use files in your preferred format.
+为开发、测试、演示或原型设计创建逼真的模拟数据集。以您首选的格式输出可直接使用的文件。
 
-## Invocation
-
-```
-/generate-data 1000 users with names, emails, plan tier, signup date, and activity score
-/generate-data E-commerce orders dataset: products, customers, timestamps, amounts
-/generate-data Sample data matching this schema: [paste table definition]
-```
-
-## Workflow
-
-### Step 1: Define the Dataset
-
-Understand:
-- What entities? (users, orders, events, products, etc.)
-- What columns? (with data types and constraints)
-- How many rows?
-- Any relationships between tables?
-- Any specific distributions? (e.g., "80% should be on the free plan")
-- Any realistic constraints? (emails should be unique, dates should be chronological)
-
-### Step 2: Generate the Data
-
-Apply the **dummy-dataset** skill:
-
-- Create a Python script that generates the dataset
-- Use realistic-looking data (not random strings): proper names, valid email formats, real-seeming dates
-- Respect constraints: unique IDs, foreign key relationships, chronological ordering
-- Apply specified distributions
-- Execute the script and produce the output file
-
-### Step 3: Deliver
-
-Output in the requested format (or ask):
-- **CSV**: Most common, works everywhere
-- **JSON**: For API testing or frontend development
-- **SQL INSERT**: For populating test databases
-- **Python script**: For reproducible generation (user can tweak and re-run)
+## 调用方式
 
 ```
-## Generated Dataset: [Description]
+/generate-data 1000个用户，包含姓名、邮箱、套餐级别、注册日期和活跃度评分
+/generate-data 电商订单数据集：产品、客户、时间戳、金额
+/generate-data 匹配此架构的示例数据：[粘贴表定义]
+```
 
-**Rows**: [count]
-**Columns**: [list]
-**Format**: [CSV / JSON / SQL / Python]
+## 工作流程
 
-### Schema
-| Column | Type | Constraints | Distribution |
+### 步骤 1：定义数据集
+
+明确需求：
+- 涉及哪些实体？（用户、订单、事件、产品等）
+- 包含哪些列？（包括数据类型和约束条件）
+- 需要多少行数据？
+- 表之间是否存在关联关系？
+- 是否有特定的分布要求？（例如："80% 应为免费套餐"）
+- 是否有现实约束条件？（邮箱应唯一、日期应按时间顺序）
+
+### 步骤 2：生成数据
+
+应用 **dummy-dataset** 技能：
+
+- 创建生成数据集的 Python 脚本
+- 使用逼真的数据（而非随机字符串）：真实姓名、有效的邮箱格式、合理的日期
+- 遵守约束条件：唯一 ID、外键关系、时间顺序
+- 应用指定的分布规则
+- 执行脚本并生成输出文件
+
+### 步骤 3：交付输出
+
+按要求的格式输出（或询问用户偏好）：
+- **CSV**：最常用，兼容性最强
+- **JSON**：用于 API 测试或前端开发
+- **SQL INSERT**：用于填充测试数据库
+- **Python 脚本**：用于可重复生成（用户可调整参数并重新运行）
+
+```
+## 生成的数据集：[描述]
+
+**行数**：[数量]
+**列数**：[列表]
+**格式**：[CSV / JSON / SQL / Python]
+
+### 架构
+| 列名 | 类型 | 约束条件 | 分布规则 |
 |--------|------|-----------|-------------|
 
-### Sample (first 5 rows)
-[Preview of the data]
+### 示例（前5行）
+[数据预览]
 
-### Files
-- [data file]
-- [generator script, if applicable]
+### 文件
+- [数据文件]
+- [生成器脚本，如适用]
 ```
 
-Save data file and generator script to the user's workspace.
+将数据文件和生成器脚本保存到用户的工作区。
 
-### Step 4: Offer Follow-ups
+### 步骤 4：提供后续支持
 
-- "Want me to **add more columns** or **increase the dataset size**?"
-- "Should I **create related tables** (e.g., orders for these users)?"
-- "Want me to **write test scenarios** that use this data?"
-- "Should I **create SQL queries** to analyze this dataset?"
+- "是否需要我**添加更多列**或**增加数据集规模**？"
+- "是否需要我**创建关联表**（例如：这些用户的订单）？"
+- "是否需要我**编写使用此数据的测试场景**？"
+- "是否需要我**创建 SQL 查询**来分析此数据集？"
 
-## Notes
+## 注意事项
 
-- Always provide the generator script so the user can regenerate with different parameters
-- For demo datasets, make the data tell a story (e.g., seasonal trends, a retention problem, a power user segment)
-- Respect realistic cardinality: 1000 users don't have 1000 unique cities
-- For financial data, use realistic price distributions — not uniform random
-- Never include real personal data — all names, emails, and identifiers must be fake
+- 始终提供生成器脚本，以便用户可以使用不同参数重新生成数据
+- 对于演示数据集，让数据讲述故事（例如：季节性趋势、留存问题、高价值用户群体）
+- 遵守现实的基数：1000 个用户不会有 1000 个不同的城市
+- 对于财务数据，使用真实的价格分布 — 而非均匀随机
+- 绝不包含真实的个人数据 — 所有姓名、邮箱和标识符必须是虚拟的

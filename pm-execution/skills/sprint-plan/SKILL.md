@@ -1,67 +1,67 @@
 ---
 name: sprint-plan
-description: "Plan a sprint with capacity estimation, story selection, dependency mapping, and risk identification. Use when preparing for sprint planning, estimating team capacity, selecting stories, or balancing sprint scope against velocity."
+description: "通过产能估算、需求选择、依赖关系映射和风险识别来规划迭代。适用于准备迭代规划、估算团队产能、选择需求或平衡迭代范围与速度时使用。"
 ---
 
-## Sprint Planning
+## 迭代规划
 
-Plan a sprint by estimating team capacity, selecting and sequencing stories, and identifying risks.
+通过估算团队产能、选择和排序需求，以及识别风险来规划迭代。
 
-### Context
+### 背景
 
-You are helping plan a sprint for **$ARGUMENTS**.
+您正在帮助为 **$ARGUMENTS** 规划迭代。
 
-If the user provides files (backlogs, velocity data, team rosters, or previous sprint reports), read them first.
+如果用户提供了文件（需求池、速度数据、团队名单或之前的迭代报告），请先阅读这些文件。
 
-### Instructions
+### 指导步骤
 
-1. **Estimate team capacity**:
-   - Number of team members and their availability (PTO, meetings, on-call)
-   - Historical velocity (average story points per sprint from last 3 sprints)
-   - Capacity buffer: reserve 15-20% for unexpected work, bugs, and tech debt
-   - Calculate available capacity in story points or ideal hours
+1. **估算团队产能**：
+   - 团队成员数量及其可用性（带薪休假、会议、值班）
+   - 历史速度（过去3个迭代的平均故事点数）
+   - 产能缓冲：预留15-20%用于意外工作、缺陷和技术债务
+   - 以故事点数或理想小时数计算可用产能
 
-2. **Review and select stories**:
-   - Pull from the prioritized backlog (highest priority first)
-   - Verify each story meets the Definition of Ready (clear AC, estimated, no blockers)
-   - Flag stories that need refinement before committing
-   - Stop adding stories when capacity is reached
+2. **审查和选择需求**：
+   - 从优先级排序的需求池中提取（最高优先级优先）
+   - 验证每个需求是否符合就绪定义（明确的验收标准、已估算、无阻塞因素）
+   - 标记在承诺前需要细化完善的需求
+   - 当达到产能时停止添加需求
 
-3. **Map dependencies**:
-   - Identify stories that depend on other stories or external teams
-   - Sequence dependent stories appropriately
-   - Flag external dependencies and owners
-   - Identify the critical path
+3. **映射依赖关系**：
+   - 识别依赖于其他需求或外部团队的需求
+   - 适当安排相关依赖需求的顺序
+   - 标记外部依赖及其负责人
+   - 识别关键路径
 
-4. **Identify risks and mitigations**:
-   - Stories with high uncertainty or complexity
-   - External dependencies that could slip
-   - Knowledge concentration (only one person can do it)
-   - Suggest mitigations for each risk
+4. **识别风险和缓解措施**：
+   - 高不确定性或复杂性的需求
+   - 可能延期的外部依赖
+   - 知识集中风险（只有一人能够完成）
+   - 为每个风险建议缓解措施
 
-5. **Create the sprint plan summary**:
+5. **创建迭代规划摘要**：
 
    ```
-   Sprint Goal: [One sentence describing what success looks like]
-   Duration: [2 weeks / 1 week / etc.]
-   Team Capacity: [X story points]
-   Committed Stories: [Y story points across Z stories]
-   Buffer: [remaining capacity]
+   迭代目标：[一句话描述成功的样子]
+   持续时间：[2周 / 1周 / 等]
+   团队产能：[X 故事点]
+   承诺需求：[Y 故事点，共 Z 个需求]
+   缓冲：[剩余产能]
 
-   Stories:
-   1. [Story title] — [points] — [owner] — [dependencies]
+   需求列表：
+   1. [需求标题] — [点数] — [负责人] — [依赖关系]
    ...
 
-   Risks:
-   - [Risk] → [Mitigation]
+   风险：
+   - [风险] → [缓解措施]
    ```
 
-6. **Define the sprint goal**: A single, clear sentence that captures the sprint's primary value delivery.
+6. **定义迭代目标**：用单一、清晰的句子概括迭代的主要价值交付。
 
-Think step by step. Save as markdown.
+逐步思考。保存为 Markdown 格式。
 
 ---
 
-### Further Reading
+### 延伸阅读
 
-- [Product Owner vs Product Manager: What's the difference?](https://www.productcompass.pm/p/product-manager-vs-product-owner)
+- [产品负责人 vs 产品经理：有什么区别？](https://www.productcompass.pm/p/product-manager-vs-product-owner)

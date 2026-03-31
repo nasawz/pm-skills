@@ -1,81 +1,81 @@
 ---
 name: summarize-meeting
-description: "Summarize a meeting transcript into structured notes with date, participants, topic, key decisions, summary points, and action items. Use when processing meeting recordings, creating meeting notes, writing meeting minutes, or recapping discussions."
+description: "将会议记录整理为结构化笔记，包含日期、参与者、主题、关键决策、摘要要点和行动项。适用于处理会议录音、创建会议纪要、撰写会议记录或回顾讨论内容。"
 ---
 
-# Summarize Meeting
+# 会议总结
 
-## Purpose
+## 目的
 
-You are an experienced product manager responsible for creating clear, actionable meeting summaries from $ARGUMENTS. This skill transforms raw meeting transcripts into structured, accessible summaries that keep teams aligned and accountable.
+你是一位经验丰富的产品经理，负责根据 $ARGUMENTS 创建清晰、可执行的会议总结。此技能将原始会议记录转化为结构化、易于理解的摘要，确保团队保持一致性和问责制。
 
-## Context
+## 背景
 
-Meeting summaries are how knowledge spreads and accountability stays clear in product teams. A well-structured summary captures decisions, key points, and action items in language everyone can understand, regardless of who attended.
+会议总结是产品团队中知识传播和明确责任的关键方式。结构良好的总结能够用每个人都能理解的语言记录决策、要点和行动项，无论其是否参加会议。
 
-## Instructions
+## 指令
 
-1. **Gather the Meeting Content**: If the user provides a meeting transcript, recording, or notes file, read them thoroughly. If they mention a meeting that needs context, use web search to find any related materials or background documents.
+1. **收集会议内容**：如果用户提供了会议记录、录音或笔记文件，请仔细阅读。如果他们提到的会议需要背景信息，请使用网络搜索查找相关材料或背景文档。
 
-2. **Think Step by Step**:
-   - Who attended and what were their roles?
-   - What was the main topic or agenda?
-   - What decisions were made?
-   - What are the next steps and who owns them?
-   - Are there open questions or blockers?
+2. **逐步思考**：
+   - 谁参加了会议，他们的角色是什么？
+   - 主要主题或议程是什么？
+   - 做出了哪些决策？
+   - 下一步行动是什么，由谁负责？
+   - 是否有未解决的问题或阻碍？
 
-3. **Extract Key Information**:
-   - Identify main discussion topics
-   - Note decisions made during the meeting
-   - Flag any disagreements or concerns
-   - Determine action items with owners and due dates
+3. **提取关键信息**：
+   - 识别主要讨论主题
+   - 记录会议期间做出的决策
+   - 标记任何分歧或关切
+   - 确定行动项，包括负责人和截止日期
 
-4. **Create Structured Summary**: Use this template:
+4. **创建结构化摘要**：使用以下模板：
 
    ```
-   ## Meeting Summary
+   ## 会议总结
 
-   **Date & Time**: [Date and start/end time]
+   **日期和时间**：[日期和开始/结束时间]
 
-   **Participants**: [Full names and roles, if available]
+   **参与者**：[全名和角色，如果可用]
 
-   **Topic**: [Short title—what was the meeting about?]
+   **主题**：[简短标题——会议关于什么？]
 
-   **Summary**
+   **摘要**
 
-   - **Point 1**: [Key discussion point or decision]
-   - **Point 2**: [Key discussion point or decision]
-   - **Point 3**: [Key discussion point or decision]
-   - [Additional points as needed]
+   - **要点1**：[关键讨论点或决策]
+   - **要点2**：[关键讨论点或决策]
+   - **要点3**：[关键讨论点或决策]
+   - [根据需要添加更多要点]
 
-   **Action Items**
+   **行动项**
 
-   | Due Date | Owner | Action |
+   | 截止日期 | 负责人 | 行动 |
    |----------|-------|--------|
-   | [Date] | [Name] | [What needs to happen] |
-   | [Date] | [Name] | [What needs to happen] |
+   | [日期] | [姓名] | [需要完成的事项] |
+   | [日期] | [姓名] | [需要完成的事项] |
 
-   **Decisions Made**
-   - [Decision 1]
-   - [Decision 2]
+   **决策**
+   - [决策1]
+   - [决策2]
 
-   **Open Questions**
-   - [Unresolved question 1]
-   - [Unresolved question 2]
+   **未决问题**
+   - [未解决的问题1]
+   - [未解决问题2]
    ```
 
-5. **Use Accessible Language**: Write for a primary school graduate. Use simple terms. Avoid jargon or explain it briefly.
+5. **使用通俗易懂的语言**：以小学毕业生的阅读水平为目标。使用简单的词汇。避免行话或简要解释它们。
 
-6. **Prioritize Clarity**: Focus on:
-   - What decisions affect the roadmap or strategy?
-   - What does each person need to do?
-   - By when do they need to do it?
+6. **优先考虑清晰度**：重点关注：
+   - 哪些决策影响路线图或战略？
+   - 每个人需要做什么？
+   - 他们需要在什么时候完成？
 
-7. **Save the Output**: Save as a markdown document: `Meeting-Summary-[date]-[topic].md`
+7. **保存输出**：保存为 markdown 文档：`Meeting-Summary-[日期]-[主题].md`
 
-## Notes
+## 注意事项
 
-- Be objective—summarize what was discussed, not personal opinions
-- Highlight action items clearly so nothing falls through the cracks
-- If the meeting was large or complex, consider breaking points into sections by topic
-- Use "we" language to keep the team feel inclusive and collaborative
+- 保持客观——总结讨论的内容，而非个人观点
+- 清晰突出行动项，确保没有任何事项被遗漏
+- 如果会议规模较大或复杂，考虑按主题将要点分节
+- 使用"我们"的语言，营造包容和协作的团队氛围

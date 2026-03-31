@@ -1,98 +1,98 @@
 ---
-description: Brainstorm marketing ideas, positioning, value prop statements, and product names — creative marketing toolkit
-argument-hint: "<product or marketing challenge>"
+description: 头脑风暴营销创意、定位、价值主张陈述和产品名称——创意营销工具包
+argument-hint: "<产品或营销挑战>"
 ---
 
-# /market-product -- Marketing Creative Toolkit
+# /market-product -- 营销创意工具包
 
-Generate creative marketing assets: campaign ideas, positioning statements, value prop copy, and product naming options. All in one workflow or pick specific modules.
+生成创意营销资产：营销活动创意、定位陈述、价值主张文案和产品命名选项。可一次性生成完整工作流，或选择特定模块。
 
-## Invocation
-
-```
-/market-product AI scheduling tool for remote teams — need launch marketing
-/market-product Help me position our analytics product against enterprise competitors
-/market-product We need a name for our new developer productivity feature
-```
-
-## Workflow
-
-### Step 1: Understand the Marketing Need
-
-Ask:
-- What is the product? Target audience?
-- What do you need? (full marketing toolkit, or specific: ideas, positioning, naming, copy)
-- What's the context? (launch, rebrand, campaign, competitive repositioning)
-- Any existing brand guidelines or tone of voice?
-
-### Step 2: Generate Based on Need
-
-**Marketing Ideas** — apply **marketing-ideas** skill:
-- 5 creative, cost-effective campaign ideas
-- Each with: channel, messaging angle, engagement rationale, estimated effort
-- Mix of quick wins and bigger bets
-
-**Positioning** — apply **positioning-ideas** skill:
-- Identify top 5 competitors for positioning context
-- Generate 3-5 positioning statements differentiated from each
-- Include rationale for each positioning angle
-
-**Value Proposition Statements** — apply **value-prop-statements** skill:
-- Generate copy for marketing, sales, and onboarding contexts
-- Segment-specific variations
-- Short (tagline), medium (elevator pitch), and long (landing page) versions
-
-**Product Naming** — apply **product-name** skill:
-- Brainstorm 5 unique, memorable names
-- Each with: rationale, brand alignment, domain availability notes
-- Check for unintended meanings or conflicts
-
-### Step 3: Generate Output
+## 调用方式
 
 ```
-## Marketing Toolkit: [Product]
+/market-product 面向远程团队的AI调度工具——需要发布营销
+/market-product 帮我定位我们的分析产品以应对企业级竞争对手
+/market-product 我们需要为新的开发者生产力功能命名
+```
 
-**Date**: [today]
-**Context**: [launch / rebrand / campaign / etc.]
+## 工作流程
 
-### Marketing Campaign Ideas
-| # | Idea | Channel | Effort | Expected Impact |
+### 步骤 1：理解营销需求
+
+询问：
+- 产品是什么？目标受众是谁？
+- 您需要什么？（完整的营销工具包，或特定内容：创意、定位、命名、文案）
+- 上下文是什么？（产品发布、品牌重塑、营销活动、竞争性重新定位）
+- 是否有现有的品牌指导原则或语调风格？
+
+### 步骤 2：根据需求生成内容
+
+**营销创意** — 应用 **marketing-ideas** 技能：
+- 5个创意性强、成本效益高的营销活动创意
+- 每个创意包含：渠道、传播角度、参与理由、预估工作量
+- 结合快速见效的策略和更有野心的尝试
+
+**定位** — 应用 **positioning-ideas** 技能：
+- 识别前5个竞争对手作为定位参考
+- 生成3-5个与竞争对手差异化的定位陈述
+- 包含每个定位角度的理由
+
+**价值主张陈述** — 应用 **value-prop-statements** 技能：
+- 为营销、销售和入职场景生成文案
+- 针对不同细分受众的变体
+- 短版本（标语）、中版本（电梯演讲）、长版本（落地页）
+
+**产品命名** — 应用 **product-name** 技能：
+- 头脑风暴5个独特、易记的名称
+- 每个名称包含：命名理由、品牌契合度、域名可用性说明
+- 检查是否存在意外的含义或冲突
+
+### 步骤 3：生成输出
+
+```
+## 营销工具包：[产品]
+
+**日期**：[今天]
+**上下文**：[产品发布 / 品牌重塑 / 营销活动 / 等]
+
+### 营销活动创意
+| # | 创意 | 渠道 | 工作量 | 预期影响 |
 |---|------|---------|--------|----------------|
 
-### Positioning Options
-| # | Positioning | vs Competitor | Strength | Risk |
+### 定位选项
+| # | 定位 | 相对于竞争对手 | 优势 | 风险 |
 |---|-----------|--------------|----------|------|
 
-**Recommended positioning**: [which and why]
+**推荐定位**：[选择哪个以及为什么]
 
-### Value Prop Copy
-**Tagline**: [one line]
-**Elevator pitch**: [2-3 sentences]
-**Landing page hero**: [headline + subheading]
-**Sales one-liner**: [for sales conversations]
+### 价值主张文案
+**标语**：[一行文案]
+**电梯演讲**：[2-3句话]
+**落地页首屏**：[标题 + 副标题]
+**销售一句话**：[用于销售对话]
 
-### Product Name Options (if requested)
-| # | Name | Rationale | Domain | Risk |
+### 产品名称选项（如果需要）
+| # | 名称 | 理由 | 域名 | 风险 |
 |---|------|----------|--------|------|
 
-### Messaging Matrix
-| Audience | Key Message | Proof Point | CTA |
+### 传播矩阵
+| 受众 | 核心信息 | 证明点 | 行动号召 |
 |----------|-----------|------------|-----|
 ```
 
-Save as markdown.
+保存为markdown格式。
 
-### Step 4: Offer Next Steps
+### 步骤 4：提供后续步骤
 
-- "Want me to **draft full marketing content** (blog post, email, social)?"
-- "Should I **define the North Star metric** for this campaign?"
-- "Want me to **create a competitive battlecard** to support positioning?"
-- "Should I **plan the full launch**?"
+- "需要我**起草完整的营销内容**吗？（博客文章、邮件、社交媒体）"
+- "我应该为这个活动**定义北极星指标**吗？"
+- "需要我**创建竞争对战卡**来支持定位吗？"
+- "我应该**规划完整的发布计划**吗？"
 
-## Notes
+## 注意事项
 
-- Positioning should be tested, not assumed — recommend A/B testing headlines
-- Value prop copy should use the customer's language, not internal jargon
-- Marketing ideas should be specific and actionable, not generic ("use social media")
-- Product names should be checked for trademark conflicts before committing
-- Always tie marketing back to customer JTBD, not product features
+- 定位应该经过测试，而非假设——建议对标题进行A/B测试
+- 价值主张文案应该使用客户的语言，而不是内部术语
+- 营销创意应该具体且可执行，而非泛泛而谈（如"使用社交媒体"）
+- 在确定产品名称之前，应检查商标冲突
+- 始终将营销与客户的待完成任务（JTBD）联系起来，而不是产品功能

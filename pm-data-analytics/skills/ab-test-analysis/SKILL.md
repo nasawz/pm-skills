@@ -1,82 +1,82 @@
 ---
 name: ab-test-analysis
-description: "Analyze A/B test results with statistical significance, sample size validation, confidence intervals, and ship/extend/stop recommendations. Use when evaluating experiment results, checking if a test reached significance, interpreting split test data, or deciding whether to ship a variant."
+description: "分析A/B测试结果，包括统计显著性、样本量验证、置信区间，以及发布/延长/停止的建议。适用于评估实验结果、检查测试是否达到显著性、解读分流测试数据或决定是否发布变体。"
 ---
 
-## A/B Test Analysis
+## A/B测试分析
 
-Evaluate A/B test results with statistical rigor and translate findings into clear product decisions.
+以统计严谨性评估A/B测试结果，并将发现转化为清晰的产品决策。
 
-### Context
+### 背景
 
-You are analyzing A/B test results for **$ARGUMENTS**.
+你正在分析 **$ARGUMENTS** 的A/B测试结果。
 
-If the user provides data files (CSV, Excel, or analytics exports), read and analyze them directly. Generate Python scripts for statistical calculations when needed.
+如果用户提供数据文件（CSV、Excel或分析导出文件），请直接读取并分析。需要时生成Python脚本进行统计计算。
 
-### Instructions
+### 操作指引
 
-1. **Understand the experiment**:
-   - What was the hypothesis?
-   - What was changed (the variant)?
-   - What is the primary metric? Any guardrail metrics?
-   - How long did the test run?
-   - What is the traffic split?
+1. **理解实验**：
+   - 假设是什么？
+   - 改变了什么（变体）？
+   - 主要指标是什么？是否有护栏指标？
+   - 测试运行了多长时间？
+   - 流量分配比例是多少？
 
-2. **Validate the test setup**:
-   - **Sample size**: Is the sample large enough for the expected effect size?
-     - Use the formula: n = (Z²α/2 × 2 × p × (1-p)) / MDE²
-     - Flag if the test is underpowered (<80% power)
-   - **Duration**: Did the test run for at least 1-2 full business cycles?
-   - **Randomization**: Any evidence of sample ratio mismatch (SRM)?
-   - **Novelty/primacy effects**: Was there enough time to wash out initial behavior changes?
+2. **验证测试设置**：
+   - **样本量**：样本量是否足够检测预期的效应量？
+     - 使用公式：n = (Z²α/2 × 2 × p × (1-p)) / MDE²
+     - 如果检验力不足（<80%），需要标记提醒
+   - **持续时间**：测试是否运行了至少1-2个完整业务周期？
+   - **随机化**：是否存在样本比例偏差（SRM）的证据？
+   - **新颖性/首因效应**：是否有足够时间消除初始行为变化的影响？
 
-3. **Calculate statistical significance**:
-   - **Conversion rate** for control and variant
-   - **Relative lift**: (variant - control) / control × 100
-   - **p-value**: Using a two-tailed z-test or chi-squared test
-   - **Confidence interval**: 95% CI for the difference
-   - **Statistical significance**: Is p < 0.05?
-   - **Practical significance**: Is the lift meaningful for the business?
+3. **计算统计显著性**：
+   - **转化率**：对照组和实验组的转化率
+   - **相对提升**：(实验组 - 对照组) / 对照组 × 100
+   - **p值**：使用双尾z检验或卡方检验
+   - **置信区间**：差异的95%置信区间
+   - **统计显著性**：p值是否小于0.05？
+   - **实际显著性**：提升幅度对业务是否有意义？
 
-   If the user provides raw data, generate and run a Python script to calculate these.
+   如果用户提供原始数据，请生成并运行Python脚本进行计算。
 
-4. **Check guardrail metrics**:
-   - Did any guardrail metrics (revenue, engagement, page load time) degrade?
-   - A winning primary metric with degraded guardrails may not be a true win
+4. **检查护栏指标**：
+   - 是否有护栏指标（收入、参与度、页面加载时间）出现下降？
+   - 主要指标获胜但护栏指标下降可能不是真正的胜利
 
-5. **Interpret results**:
+5. **解读结果**：
 
-   | Outcome | Recommendation |
+   | 结果 | 建议 |
    |---|---|
-   | Significant positive lift, no guardrail issues | **Ship it** — roll out to 100% |
-   | Significant positive lift, guardrail concerns | **Investigate** — understand trade-offs before shipping |
-   | Not significant, positive trend | **Extend the test** — need more data or larger effect |
-   | Not significant, flat | **Stop the test** — no meaningful difference detected |
-   | Significant negative lift | **Don't ship** — revert to control, analyze why |
+   | 显著正向提升，无护栏指标问题 | **发布** — 全量上线 |
+   | 显著正向提升，护栏指标有顾虑 | **深入调查** — 发布前了解权衡取舍 |
+   | 不显著，正向趋势 | **延长测试** — 需要更多数据或更大效应 |
+   | 不显著，持平 | **停止测试** — 未检测到有意义的差异 |
+   | 显著负向提升 | **不要发布** — 回退到对照组，分析原因 |
 
-6. **Provide the analysis summary**:
+6. **提供分析总结**：
    ```
-   ## A/B Test Results: [Test Name]
+   ## A/B测试结果：[测试名称]
 
-   **Hypothesis**: [What we expected]
-   **Duration**: [X days] | **Sample**: [N control / M variant]
+   **假设**：[我们预期的内容]
+   **持续时间**：[X天] | **样本量**：[N 对照组 / M 实验组]
 
-   | Metric | Control | Variant | Lift | p-value | Significant? |
+   | 指标 | 对照组 | 实验组 | 提升幅度 | p值 | 是否显著？ |
    |---|---|---|---|---|---|
-   | [Primary] | X% | Y% | +Z% | 0.0X | Yes/No |
-   | [Guardrail] | ... | ... | ... | ... | ... |
+   | [主要指标] | X% | Y% | +Z% | 0.0X | 是/否 |
+   | [护栏指标] | ... | ... | ... | ... | ... |
 
-   **Recommendation**: [Ship / Extend / Stop / Investigate]
-   **Reasoning**: [Why]
-   **Next steps**: [What to do]
+   **建议**：[发布 / 延长 / 停止 / 深入调查]
+   **理由**：[原因]
+   **下一步行动**：[具体行动]
    ```
 
-Think step by step. Save as markdown. Generate Python scripts for calculations if raw data is provided.
+逐步思考。保存为markdown格式。如果提供了原始数据，请生成Python脚本进行计算。
 
 ---
 
-### Further Reading
+### 延伸阅读
 
-- [A/B Testing 101 + Examples](https://www.productcompass.pm/p/ab-testing-101-for-pms)
-- [Testing Product Ideas: The Ultimate Validation Experiments Library](https://www.productcompass.pm/p/the-ultimate-experiments-library)
-- [Are You Tracking the Right Metrics?](https://www.productcompass.pm/p/are-you-tracking-the-right-metrics)
+- [A/B测试入门 + 案例](https://www.productcompass.pm/p/ab-testing-101-for-pms)
+- [验证产品创意：终极实验验证库](https://www.productcompass.pm/p/the-ultimate-experiments-library)
+- [你在追踪正确的指标吗？](https://www.productcompass.pm/p/are-you-tracking-the-right-metrics)

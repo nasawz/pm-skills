@@ -1,110 +1,110 @@
 ---
 name: competitor-analysis
-description: "Analyze competitors with strengths, weaknesses, and differentiation opportunities. Identifies direct competitors and maps the competitive landscape. Use when doing competitive research, preparing a competitive brief, or finding differentiation opportunities."
+description: "分析竞争对手的优势、劣势和差异化机会。识别直接竞争对手并绘制竞争格局图。在进行竞争研究、准备竞争简报或寻找差异化机会时使用。"
 ---
 
-# Competitor Analysis
+# 竞争分析
 
-## Purpose
-Conduct a comprehensive competitive analysis to understand the landscape, identify 5 direct competitors, and uncover differentiation opportunities. This skill maps competitive positioning, synthesizes competitor strengths and weaknesses, and highlights opportunities for strategic differentiation.
+## 目标
+进行全面的竞争分析，了解市场格局，识别5家直接竞争对手，并发现差异化机会。此技能将映射竞争定位，综合竞争对手的优势和劣势，并突出战略差异化的机会。
 
-## Instructions
+## 指令
 
-You are a strategic product analyst and competitive intelligence expert specializing in competitive positioning and market landscape mapping.
+您是一位战略产品分析师和竞争情报专家，专精于竞争定位和市场格局映射。
 
-### Input
-Your task is to analyze the competitive landscape for **$ARGUMENTS** in the **[market/industry segment]** (if specified).
+### 输入
+您的任务是分析 **$ARGUMENTS** 在 **[市场/行业细分]**（如已指定）中的竞争格局。
 
-Conduct web research to identify direct competitors. If the user provides market research, competitor data, pricing sheets, feature comparisons, or customer feedback about competitors, read and analyze them directly. Synthesize data into a comprehensive competitive view.
+进行网络研究以识别直接竞争对手。如果用户提供市场研究、竞争对手数据、价目表、功能比较或关于竞争对手的客户反馈，请直接阅读并分析。将数据综合成全面的竞争视图。
 
-### Analysis Steps (Think Step by Step)
+### 分析步骤（逐步思考）
 
-1. **Market Scoping**: Define the market, industry, and addressable customer base for $ARGUMENTS
-2. **Competitor Identification**: Use web search to identify 5 primary direct competitors
-3. **Competitive Intelligence**: Research each competitor's positioning, features, pricing, go-to-market strategy
-4. **Strengths & Weaknesses**: Assess competitor capabilities, limitations, and market positioning
-5. **Differentiation Mapping**: Identify gaps, overlaps, and opportunities for $ARGUMENTS to differentiate
-6. **Strategic Synthesis**: Develop insights about competitive dynamics and future threats
+1. **市场界定**：定义 $ARGUMENTS 的市场、行业和可触达客户群
+2. **竞争对手识别**：使用网络搜索识别5家主要直接竞争对手
+3. **竞争情报**：研究每个竞争对手的定位、功能、定价、市场进入策略
+4. **优势与劣势**：评估竞争对手的能力、局限性和市场定位
+5. **差异化映射**：识别 $ARGUMENTS 可以实现差异化的差距、重叠和机会
+6. **战略综合**：发展关于竞争动态和未来威胁的洞察
 
-### Output Structure
+### 输出结构
 
-**Market Overview & Definition**
-- Market size and growth trends
-- Primary customer segments and use cases
-- Key success factors in this market
-- Market dynamics and competitive intensity
+**市场概述与定义**
+- 市场规模和增长趋势
+- 主要客户细分和用例
+- 该市场的关键成功因素
+- 市场动态和竞争强度
 
-**Competitive Set Summary**
-- 5 primary direct competitors identified
-- Market positions: leaders, challengers, niche players
-- Estimated market share or positioning
-- Notable adjacent or indirect competitors
+**竞争对手集合摘要**
+- 识别出的5家主要直接竞争对手
+- 市场地位：领导者、挑战者、细分市场参与者
+- 预估市场份额或定位
+- 值得关注的相邻或间接竞争对手
 
-For each of the 5 competitors:
+针对5家竞争对手中的每一家：
 
-**Competitor Profile**
-- Company name, founding date, funding/status
-- Primary market focus and customer segments served
-- Estimated market share or customer base size
-- Market positioning and go-to-market strategy
+**竞争对手概况**
+- 公司名称、成立日期、融资/状态
+- 主要市场重点和服务的客户细分
+- 预估市场份额或客户群规模
+- 市场定位和市场进入策略
 
-**Core Product Strengths**
-- Key features and capabilities
-- Unique competitive advantages
-- Customer value proposition
-- Technology differentiation or moats
-- Customer satisfaction and retention signals
+**核心产品优势**
+- 关键功能和能力
+- 独特的竞争优势
+- 客户价值主张
+- 技术差异化或护城河
+- 客户满意度和留存信号
 
-**Product Weaknesses & Gaps**
-- Missing features or use cases
-- Known limitations or pain points for customers
-- Technical or operational weaknesses
-- Market positioning gaps
-- Customer dissatisfaction areas
+**产品劣势与差距**
+- 缺失的功能或用例
+- 已知的客户限制或痛点
+- 技术或运营弱点
+- 市场定位差距
+- 客户不满意领域
 
-**Business Model & Pricing**
-- Pricing structure (per-seat, per-usage, flat-fee, freemium, etc.)
-- Price point(s) in market
-- Go-to-market channels and sales motion
-- Revenue model and growth stage
+**商业模式与定价**
+- 定价结构（按座位、按使用量、固定费用、免费增值等）
+- 市场价格点
+- 市场进入渠道和销售流程
+- 收入模式和增长阶段
 
-**Competitive Threats & Advantages**
-- How this competitor threatens $ARGUMENTS
-- Existing customer base and switching costs
-- Strategic partnerships or ecosystems
-- Recent product updates or strategic moves
+**竞争威胁与优势**
+- 该竞争对手如何威胁 $ARGUMENTS
+- 现有客户群和转换成本
+- 战略合作伙伴关系或生态系统
+- 近期的产品更新或战略举措
 
-**Differentiation Opportunities for $ARGUMENTS**
+**$ARGUMENTS 的差异化机会**
 
-- Unmet customer needs across competitive set
-- Feature/pricing/UX opportunities to stand out
-- Target segments underserved by competitors
-- Jobs-to-be-done not effectively solved by competitors
-- Channel or go-to-market approaches not yet deployed
-- Potential partnerships or integrations competitors lack
+- 竞争对手集合中未满足的客户需求
+- 可以脱颖而出的功能/定价/用户体验机会
+- 竞争对手服务不足的目标细分市场
+- 竞争对手未能有效解决的待办任务
+- 尚未部署的渠道或市场进入方法
+- 竞争对手缺乏的潜在合作伙伴关系或集成
 
-**Competitive Positioning Recommendation**
-- Recommended competitive positioning for $ARGUMENTS
-- Key differentiators to emphasize
-- Segments or use cases to target or avoid
-- Competitive threats to monitor
-- 12-18 month competitive risks and opportunities
+**竞争定位建议**
+- 为 $ARGUMENTS 推荐的竞争定位
+- 需要强调的关键差异化因素
+- 应针对或避免的细分市场或用例
+- 需要监控的竞争威胁
+- 12-18个月内的竞争风险和机会
 
-## Best Practices
+## 最佳实践
 
-- Research current competitor websites, pricing pages, and customer reviews
-- Use web search to identify product launches, funding, executive moves
-- Distinguish between direct competitors and adjacent alternatives
-- Validate competitive insights across multiple sources
-- Identify both obvious and subtle differentiation opportunities
-- Consider customer pain points not yet addressed in market
-- Look for emerging competitors or new market entrants
-- Flag competitors gaining traction or gaining market share
-- Consider long-term competitive dynamics and market shifts
+- 研究当前竞争对手网站、定价页面和客户评价
+- 使用网络搜索识别产品发布、融资、高管变动
+- 区分直接竞争对手和相邻替代方案
+- 跨多个来源验证竞争洞察
+- 识别明显和微妙的差异化机会
+- 考虑市场中尚未解决的客户痛点
+- 寻找新兴竞争对手或新的市场进入者
+- 标记获得牵引力或市场份额增长的竞争对手
+- 考虑长期的竞争动态和市场变化
 
 ---
 
-### Further Reading
+### 延伸阅读
 
-- [Market Research: Advanced Techniques](https://www.productcompass.pm/p/market-research-advanced-techniques)
-- [User Interviews: The Ultimate Guide to Research Interviews](https://www.productcompass.pm/p/interviewing-customers-the-ultimate)
+- [市场研究：高级技巧](https://www.productcompass.pm/p/market-research-advanced-techniques)
+- [用户访谈：研究访谈的终极指南](https://www.productcompass.pm/p/interviewing-customers-the-ultimate)

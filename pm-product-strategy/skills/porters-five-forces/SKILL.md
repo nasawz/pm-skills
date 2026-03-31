@@ -1,212 +1,212 @@
 ---
 name: porters-five-forces
-description: "Perform Porter's Five Forces analysis — competitive rivalry, supplier power, buyer power, threat of substitutes, and threat of new entrants. Use when analyzing industry dynamics, assessing competitive forces, or evaluating market attractiveness."
+description: "执行波特五力分析——竞争强度、供应商议价能力、买方议价能力、替代品威胁和新进入者威胁。适用于分析行业动态、评估竞争力量或评价市场吸引力。"
 ---
-# Porter's Five Forces
+# 波特五力模型
 
-## Metadata
-- **Name**: porters-five-forces
-- **Description**: Perform a Porter's Five Forces analysis evaluating competitive rivalry, supplier power, buyer power, threat of substitutes, and threat of new entrants.
-- **Triggers**: Porter's five forces, competitive forces, industry analysis, market forces, competitive dynamics
+## 元数据
+- **名称**: porters-five-forces
+- **描述**: 执行波特五力分析，评估竞争强度、供应商议价能力、买方议价能力、替代品威胁和新进入者威胁。
+- **触发词**: Porter's five forces, competitive forces, industry analysis, market forces, competitive dynamics
 
-## Instructions
+## 指令
 
-You are a competitive strategist conducting a Porter's Five Forces analysis for $ARGUMENTS.
+您是一位竞争战略家，正在为 $ARGUMENTS 进行波特五力分析。
 
-Your task is to evaluate the structural attractiveness of an industry and identify the competitive dynamics that will determine profitability.
+您的任务是评估行业的结构吸引力，并识别将决定盈利能力的竞争动态。
 
-## Input Requirements
-- Industry or market definition
-- Current competitors and competitive positioning
-- Supplier and customer landscape
-- Potential substitutes and new entrants
-- Product or service specifics
+## 输入要求
+- 行业或市场定义
+- 当前竞争对手及竞争定位
+- 供应商和客户格局
+- 潜在替代品和新进入者
+- 产品或服务具体信息
 
-## Porter's Five Forces Framework
+## 波特五力模型框架
 
-### 1. Competitive Rivalry (How intense is competition?)
-The degree to which companies compete directly for market share and customers.
+### 1. 竞争强度（竞争有多激烈？）
+公司之间直接争夺市场份额和客户的程度。
 
-**High Rivalry When:**
-- Many competitors of similar size and strength
-- Slow industry growth (zero-sum competition)
-- Low product differentiation (commoditized)
-- High fixed costs (pressure to maintain volume)
-- Exit barriers are high (expensive to leave)
-- Price competition is intense
-- Rivals have diverse strategies and goals
-- Emotional or strategic commitments keep rivals fighting
+**竞争强度高的情况：**
+- 竞争对手数量众多，规模和实力相当
+- 行业增长缓慢（零和竞争）
+- 产品差异化程度低（商品化）
+- 固定成本高（维持产量的压力大）
+- 退出壁垒高（退出成本昂贵）
+- 价格竞争激烈
+- 竞争对手策略和目标多样化
+- 情感或战略承诺使竞争对手持续对抗
 
-**Low Rivalry When:**
-- Few competitors
-- High growth market
-- High differentiation (less price-sensitive)
-- Low fixed costs
-- Low switching costs for competitors
-- Industry leader has clear dominance
-- Rivals are cooperative or have compatible goals
+**竞争强度低的情况：**
+- 竞争对手数量少
+- 市场增长快速
+- 高度差异化（价格敏感度低）
+- 固定成本低
+- 竞争对手的转换成本低
+- 行业领导者具有明显的主导地位
+- 竞争对手合作或目标一致
 
-**Strategic Implications:**
-- Assess competitive positioning and differentiation
-- Define defensible competitive advantages
-- Monitor competitor moves and market consolidation
-- Invest in differentiation or cost leadership
-
----
-
-### 2. Supplier Power (How much power do suppliers have?)
-The ability of suppliers to increase prices or reduce quality, affecting your profitability.
-
-**High Supplier Power When:**
-- Few suppliers or concentrated supplier base
-- Switching costs are high (changing suppliers is expensive)
-- Backward integration threat (suppliers become competitors)
-- Suppliers' product is critical or unique
-- Suppliers have strong bargaining position
-- No substitutes for supplier offerings
-- Suppliers sell to many industries (less dependent on you)
-
-**Low Supplier Power When:**
-- Many suppliers available
-- Low switching costs
-- Suppliers depend on your business
-- Commodity products (interchangeable suppliers)
-- Threat of forward integration (you become your own supplier)
-- Available substitutes for supplier offerings
-- You have significant bargaining leverage
-
-**Strategic Implications:**
-- Diversify supplier base to reduce dependency
-- Build strong supplier relationships
-- Consider vertical integration or alternatives
-- Negotiate long-term contracts with favorable terms
-- Invest in suppliers' success (partnerships)
+**战略影响：**
+- 评估竞争定位和差异化
+- 定义可防御的竞争优势
+- 监控竞争对手动向和市场整合
+- 投资于差异化或成本领先
 
 ---
 
-### 3. Buyer Power (How much power do customers have?)
-The ability of customers to negotiate lower prices or demand higher quality, affecting your margin.
+### 2. 供应商议价能力（供应商有多大权力？）
+供应商提高价格或降低质量的能力，这会影响您的盈利能力。
 
-**High Buyer Power When:**
-- Few large customers (concentrated demand)
-- Buyers switch easily and often (low switching costs)
-- Backwards integration threat (customers become competitors)
-- Product is undifferentiated (commoditized)
-- Buyers have price sensitivity or tight budgets
-- Buyers have full information about alternatives
-- Customers can bypass you entirely
+**供应商议价能力高的情况：**
+- 供应商数量少或供应商集中
+- 转换成本高（更换供应商成本昂贵）
+- 后向整合威胁（供应商成为竞争对手）
+- 供应商的产品至关重要或具有独特性
+- 供应商具有强大的议价地位
+- 供应商的供应品无可替代
+- 供应商向多个行业销售（对您的依赖度低）
 
-**Low Buyer Power When:**
-- Many fragmented customers
-- High switching costs (lock-in, integration, training)
-- High product differentiation (fewer alternatives)
-- Customers depend on your product
-- You have strong brand or reputation
-- Switching to alternatives involves risk
-- Customers lack information about alternatives
+**供应商议价能力低的情况：**
+- 可供选择的供应商众多
+- 转换成本低
+- 供应商依赖您的业务
+- 商品化产品（供应商可互换）
+- 前向整合威胁（您成为自己的供应商）
+- 供应商的供应品有替代方案
+- 您拥有显著的议价优势
 
-**Strategic Implications:**
-- Build strong customer relationships and loyalty
-- Create switching costs through integration
-- Invest in brand and differentiation
-- Develop customer success programs
-- Create network effects or communities
-- Segment customers by willingness to pay
-
----
-
-### 4. Threat of Substitutes (Are there alternative solutions?)
-The risk that customers will switch to alternative products that solve the same problem.
-
-**High Threat When:**
-- Good substitutes exist and are easily accessible
-- Substitutes have similar performance or better value
-- Switching costs to substitutes are low
-- Customers are willing to try alternatives
-- Substitutes are improving faster than your product
-- Price-to-performance of substitutes is attractive
-- Substitute technology is disruptive or emerging
-
-**Low Threat When:**
-- No good substitutes exist
-- Substitutes are more expensive or inferior
-- Switching costs are high
-- Your product is deeply integrated into customer workflows
-- Customer preference and loyalty are strong
-- Barrier to substitute entry are high
-- Your product solves the problem uniquely
-
-**Strategic Implications:**
-- Monitor emerging substitutes and disruptive technologies
-- Build customer stickiness through integration and loyalty
-- Invest in product innovation and improvement
-- Create switching costs through ecosystem or community
-- Diversify into adjacent or complementary products
-- Defend through brand, service, or convenience
+**战略影响：**
+- 多元化供应商基础以减少依赖
+- 建立强大的供应商关系
+- 考虑垂直整合或替代方案
+- 谈判签订有利的长期合同
+- 投资于供应商的成功（合作伙伴关系）
 
 ---
 
-### 5. Threat of New Entrants (Can new competitors easily enter?)
-The risk that new competitors will enter the market and capture share.
+### 3. 买方议价能力（客户有多大权力？）
+客户谈判更低价格或要求更高质量的能力，这会影响您的利润率。
 
-**High Threat When:**
-- Low barriers to entry (capital, expertise, licensing)
-- Attractive industry margins and growth
-- Incumbents are vulnerable or complacent
-- Distribution or channel access is available
-- Economies of scale are limited
-- Network effects are weak or absent
-- Regulation is permissive
-- New technologies enable disruption
+**买方议价能力高的情况：**
+- 少数大客户（需求集中）
+- 买方容易且频繁转换（转换成本低）
+- 后向整合威胁（客户成为竞争对手）
+- 产品差异化程度低（商品化）
+- 买方价格敏感或预算紧张
+- 买方充分了解替代方案
+- 客户可以完全绕过您
 
-**Low Threat When:**
-- High barriers to entry (capital, IP, expertise, relationships)
-- Entrenched incumbents with scale advantages
-- Strong network effects or switching costs
-- Brand loyalty is high
-- Regulatory or licensing barriers exist
-- Economies of scale create cost advantage
-- Control of critical resources or distribution
-- Retaliation by incumbents is credible
+**买方议价能力低的情况：**
+- 客户众多且分散
+- 转换成本高（锁定、集成、培训）
+- 产品高度差异化（替代方案少）
+- 客户依赖您的产品
+- 您拥有强大的品牌或声誉
+- 转换到替代方案涉及风险
+- 客户缺乏替代方案的信息
 
-**Strategic Implications:**
-- Build defensible barriers (IP, brand, network effects)
-- Establish cost leadership and scale advantages
-- Create switching costs and customer lock-in
-- Invest in brand and customer relationships
-- Monitor startups and disruptors in your space
-- Build alliances and control key resources
+**战略影响：**
+- 建立强大的客户关系和忠诚度
+- 通过集成创造转换成本
+- 投资于品牌和差异化
+- 开发客户成功计划
+- 创建网络效应或社区
+- 按支付意愿细分客户
 
 ---
 
-## Output Process
-1. Assess each of the five forces (High, Medium, Low)
-2. Rate industry attractiveness (High rivalry + strong forces = less attractive)
-3. For each force, identify:
-   - Current state and trend (getting stronger/weaker)
-   - Key players or dynamics
-   - Implications for profitability
-4. Prioritize the 2-3 forces most critical to your strategy
-5. Develop strategic responses:
-   - How can we reduce threat of high-power forces?
-   - How can we leverage weak forces for advantage?
-6. Identify competitive positioning opportunities
-7. Create strategic initiatives aligned with force analysis
+### 4. 替代品威胁（是否存在替代解决方案？）
+客户转向解决同一问题的替代产品的风险。
 
-## Industry Attractiveness
-- **Attractive**: Low rivalry, weak supplier/buyer power, few substitutes, high entry barriers
-- **Unattractive**: High rivalry, strong supplier/buyer power, many substitutes, low entry barriers
-- **Moderate**: Mixed dynamics requiring strategic differentiation
+**替代品威胁高的情况：**
+- 存在良好的替代品且易于获得
+- 替代品性能相似或价值更高
+- 转换到替代品的成本低
+- 客户愿意尝试替代方案
+- 替代品的改进速度比您的产品快
+- 替代品的性价比具有吸引力
+- 替代技术具有颠覆性或新兴性
 
-## Notes
-- No industry is universally attractive or unattractive; position matters
-- Same industry can be attractive for some companies, unattractive for others
-- Forces change over time; re-assess as market evolves
-- Use Porter's Five Forces with SWOT and PESTLE for comprehensive analysis
-- Strategy should directly address the highest-force threats
+**替代品威胁低的情况：**
+- 不存在良好的替代品
+- 替代品更昂贵或性能较差
+- 转换成本高
+- 您的产品深度集成到客户工作流程中
+- 客户偏好和忠诚度强
+- 替代品进入壁垒高
+- 您的产品能够独特地解决问题
+
+**战略影响：**
+- 监控新兴替代品和颠覆性技术
+- 通过集成和忠诚度建立客户粘性
+- 投资于产品创新和改进
+- 通过生态系统或社区创造转换成本
+- 多元化进入相邻或互补产品
+- 通过品牌、服务或便利性进行防御
 
 ---
 
-### Further Reading
+### 5. 新进入者威胁（新竞争对手能否容易进入？）
+新竞争对手进入市场并抢占份额的风险。
+
+**新进入者威胁高的情况：**
+- 进入壁垒低（资本、专业知识、许可）
+- 行业利润率和增长具有吸引力
+- 在位企业脆弱或自满
+- 可获得分销或渠道准入
+- 规模经济有限
+- 网络效应弱或不存在
+- 监管宽松
+- 新技术推动颠覆
+
+**新进入者威胁低的情况：**
+- 进入壁垒高（资本、知识产权、专业知识、关系）
+- 在位企业具有规模优势且地位稳固
+- 强大的网络效应或转换成本
+- 品牌忠诚度高
+- 存在监管或许可壁垒
+- 规模经济创造成本优势
+- 控制关键资源或分销
+- 在位企业的报复具有可信度
+
+**战略影响：**
+- 建立可防御的壁垒（知识产权、品牌、网络效应）
+- 确立成本领先和规模优势
+- 创造转换成本和客户锁定
+- 投资于品牌和客户关系
+- 监控您所在领域的初创企业和颠覆者
+- 建立联盟并控制关键资源
+
+---
+
+## 输出流程
+1. 评估五力中的每一力（高、中、低）
+2. 评价行业吸引力（高竞争强度 + 强大的力量 = 吸引力较低）
+3. 针对每一力，识别：
+   - 当前状态和趋势（变强/变弱）
+   - 关键参与者或动态
+   - 对盈利能力的影响
+4. 优先考虑对您的战略最关键的2-3个力量
+5. 制定战略应对措施：
+   - 我们如何减少高权力力量的威胁？
+   - 我们如何利用弱势力量获得优势？
+6. 识别竞争定位机会
+7. 创建与力量分析一致的战略举措
+
+## 行业吸引力
+- **有吸引力**: 竞争强度低、供应商/买方议价能力弱、替代品少、进入壁垒高
+- **无吸引力**: 竞争强度高、供应商/买方议价能力强、替代品多、进入壁垒低
+- **中等**: 混合动态，需要战略差异化
+
+## 注意事项
+- 没有任何行业是普遍有吸引力或无吸引力的；定位很重要
+- 同一行业对某些公司可能具有吸引力，对其他公司则不然
+- 力量随时间变化；随着市场演变重新评估
+- 将波特五力与SWOT和PESTLE结合使用以进行全面分析
+- 战略应直接针对最高力量的威胁
+
+---
+
+### 延伸阅读
 
 - [The Product Management Frameworks Compendium + Templates](https://www.productcompass.pm/p/the-product-frameworks-compendium)

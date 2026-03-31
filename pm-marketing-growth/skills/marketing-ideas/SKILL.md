@@ -1,44 +1,44 @@
 ---
 name: marketing-ideas
-description: "Generate 5 creative, cost-effective marketing ideas with channels, messaging, and engagement rationale. Use when brainstorming marketing campaigns, planning product promotion, or looking for creative marketing tactics."
+description: "生成5个具有创意且具有成本效益的营销思路，包含渠道、信息传递和参与度理由。适用于头脑风暴营销活动、策划产品推广或寻找创意营销策略。"
 ---
-# Marketing Ideas
+# 营销思路
 
-Generate 5 creative, cost-effective marketing ideas with channels, messaging, and engagement rationale. Use when brainstorming marketing campaigns, planning product promotion, or exploring creative marketing approaches.
+生成5个具有创意且具有成本效益的营销思路，包含渠道、信息传递和参与度理由。适用于头脑风暴营销活动、策划产品推广或探索创意营销方法。
 
-## When to Use
+## 使用场景
 
-- Brainstorming marketing campaigns
-- Planning product promotion strategies
-- Exploring creative marketing approaches
-- Building growth initiatives
-- Triggers: marketing ideas, promote product, marketing campaign, creative marketing, growth ideas
+- 头脑风暴营销活动
+- 策划产品推广策略
+- 探索创意营销方法
+- 构建增长计划
+- 触发词：营销思路、推广产品、营销活动、创意营销、增长思路
 
-## Prompt
+## 提示词
 
-You are an experienced product marketer specializing in cost-effective growth strategies and creative campaign development.
+你是一位经验丰富的产品营销专家，专注于高性价比增长策略和创意活动开发。
 
-Analyze the following product and market context: $ARGUMENTS
+分析以下产品和市场背景：$ARGUMENTS
 
-Generate 5 creative marketing ideas for promoting this product to the target market segment. For each idea:
+为向目标市场细分群体推广该产品，生成5个创意营销思路。对于每个思路：
 
-1. **Channel**: Identify the primary marketing channel (social media, content, partnerships, community, email, etc.)
-2. **Core Message**: Craft a compelling message that resonates with the audience
-3. **Why It Works**: Provide a brief explanation of why this approach is likely to engage the target audience
-4. **Cost Efficiency**: Highlight what makes this strategy cost-effective or resource-efficient
+1. **渠道**：确定主要营销渠道（社交媒体、内容营销、合作伙伴关系、社区、电子邮件等）
+2. **核心信息**：构思一个能够引起目标受众共鸣的 compelling 信息
+3. **为何有效**：简要说明为何该方法可能吸引目标受众
+4. **成本效益**：突出使该策略具有成本效益或资源效率的因素
 
-Prioritize strategies that deliver high impact with limited budget. Consider unconventional approaches and leverage emerging trends where applicable.
+优先考虑在有限预算下能够带来高影响力的策略。考虑非传统方法，并在适用时利用新兴趋势。
 
-## Tips for Best Results
+## 获取最佳效果的建议
 
-- Provide specific details about your product, target market, and business constraints
-- Include any existing brand positioning or messaging guidelines
-- Mention your current marketing channels and what's already working
-- Share any budget limitations or resource constraints
-- Include information about your target audience's preferences and behaviors
+- 提供关于你的产品、目标市场和业务约束的具体细节
+- 包含任何现有的品牌定位或信息传递指导原则
+- 提及你当前的营销渠道以及已经行之有效的方法
+- 分享任何预算限制或资源约束
+- 包含关于目标受众偏好和行为的信息
 
 ---
 
-### Further Reading
+### 延伸阅读
 
-- [Product Management vs. Product Marketing vs. Product Growth 101](https://www.productcompass.pm/p/product-management-vs-product-marketing)
+- [产品管理 vs 产品营销 vs 产品增长 101](https://www.productcompass.pm/p/product-management-vs-product-marketing)

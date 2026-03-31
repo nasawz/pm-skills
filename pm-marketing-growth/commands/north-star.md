@@ -1,113 +1,113 @@
 ---
-description: Define your North Star Metric and supporting input metrics — classify the business game and validate against best practices
-argument-hint: "<product or business>"
+description: 定义您的北极星指标及支持性输入指标 — 分类业务模式并依据最佳实践进行验证
+argument-hint: "<产品或业务>"
 ---
 
-# /north-star -- North Star Metric Definition
+# /north-star -- 北极星指标定义
 
-Identify the single metric that best captures the value your product delivers, plus the input metrics that drive it. Classifies your business game and validates against proven criteria.
+识别最能体现产品交付价值的单一指标，以及驱动该指标的输入指标。分类您的业务模式，并依据经过验证的标准进行评估。
 
-## Invocation
-
-```
-/north-star B2B SaaS for team collaboration
-/north-star Consumer fitness app monetized through subscriptions
-/north-star Help me fix our North Star — we're tracking DAU but it doesn't feel right
-```
-
-## Workflow
-
-### Step 1: Understand the Product
-
-Ask:
-- What is the product? What value does it deliver to users?
-- What's the business model? (subscription, transaction, advertising, marketplace)
-- Current metrics being tracked (if any)
-- Why is this needed now? (new product, existing metric feels wrong, team alignment)
-
-### Step 2: Classify the Business Game
-
-Apply the **north-star-metric** skill:
-
-Identify which game the product is playing:
-- **Attention**: Revenue from user time/engagement (media, social, ad-supported)
-- **Transaction**: Revenue from purchases (e-commerce, marketplace)
-- **Productivity**: Revenue from efficiency gains (SaaS, tools, B2B)
-
-The game determines what kind of North Star makes sense.
-
-### Step 3: Define the North Star
-
-- Propose 2-3 North Star candidates
-- Validate each against 7 criteria:
-  1. Expresses value delivered to customers
-  2. Is a leading indicator of revenue
-  3. Is measurable and trackable
-  4. Is understandable by the whole team
-  5. Is actionable (teams can influence it)
-  6. Is not a vanity metric
-  7. Is not gameable without delivering real value
-- Recommend the strongest candidate with rationale
-
-### Step 4: Define Input Metrics
-
-For the selected North Star, identify 3-5 input metrics:
-- Each input metric should be a lever that directly drives the North Star
-- Each should be ownable by a specific team
-- Together, inputs should be MECE in explaining North Star movement
-
-### Step 5: Generate Metrics Framework
+## 调用方式
 
 ```
-## North Star Framework: [Product]
+/north-star 用于团队协作的 B2B SaaS
+/north-star 通过订阅变现的消费者健身应用
+/north-star 帮我修正我们的北极星指标 — 我们目前追踪日活跃用户数（DAU），但感觉不太对
+```
 
-**Business Game**: [Attention / Transaction / Productivity]
+## 工作流程
 
-### North Star Metric
-**Metric**: [precise name]
-**Definition**: [formula or measurement method]
-**Why this metric**: [explains value, leads revenue, is actionable]
-**Current value**: [if known]
-**Target**: [goal]
+### 步骤 1：理解产品
 
-### Validation
-| Criterion | Pass? | Notes |
+询问：
+- 产品是什么？为用户创造什么价值？
+- 商业模式是什么？（订阅制、交易制、广告变现、平台模式）
+- 目前追踪的指标（如有）
+- 为什么现在需要这个？（新产品、现有指标感觉不对、团队对齐）
+
+### 步骤 2：分类业务模式
+
+应用 **north-star-metric** 技能：
+
+识别产品属于哪种模式：
+- **注意力经济**：从用户时间/参与度中获得收入（媒体、社交、广告支持）
+- **交易模式**：从购买行为中获得收入（电商、平台）
+- **生产力模式**：从效率提升中获得收入（SaaS、工具、B2B）
+
+业务模式决定了适合哪种类型的北极星指标。
+
+### 步骤 3：定义北极星指标
+
+- 提出 2-3 个北极星指标候选
+- 依据 7 项标准逐一验证：
+  1. 体现为客户交付的价值
+  2. 是收入的领先指标
+  3. 可测量且可追踪
+  4. 团队全员都能理解
+  5. 可行动（团队能够影响它）
+  6. 不是虚荣指标
+  7. 无法在不交付真实价值的情况下进行操纵
+- 推荐最佳候选指标并说明理由
+
+### 步骤 4：定义输入指标
+
+对于选定的北极星指标，识别 3-5 个输入指标：
+- 每个输入指标都应该是直接驱动北极星指标的杠杆
+- 每个指标都应该由特定团队负责
+- 所有输入指标在解释北极星指标变化时应做到 MECE（相互独立，完全穷尽）
+
+### 步骤 5：生成指标框架
+
+```
+## 北极星指标框架：[产品]
+
+**业务模式**：[注意力经济 / 交易模式 / 生产力模式]
+
+### 北极星指标
+**指标**：[精确名称]
+**定义**：[公式或测量方法]
+**选择理由**：[解释价值体现、收入领先性、可行动性]
+**当前值**：[如已知]
+**目标值**：[目标]
+
+### 验证
+| 标准 | 是否通过 | 备注 |
 |----------|-------|-------|
-| Expresses value | [Y/N] | [explanation] |
-| Leading indicator | [Y/N] | [explanation] |
-| Measurable | [Y/N] | [explanation] |
-| Understandable | [Y/N] | [explanation] |
-| Actionable | [Y/N] | [explanation] |
-| Not vanity | [Y/N] | [explanation] |
-| Not gameable | [Y/N] | [explanation] |
+| 体现价值 | [Y/N] | [说明] |
+| 领先指标 | [Y/N] | [说明] |
+| 可测量 | [Y/N] | [说明] |
+| 可理解 | [Y/N] | [说明] |
+| 可行动 | [Y/N] | [说明] |
+| 非虚荣指标 | [Y/N] | [说明] |
+| 不可操纵 | [Y/N] | [说明] |
 
-### Input Metrics
-| Input Metric | Drives North Star By | Owner | Current | Target |
+### 输入指标
+| 输入指标 | 驱动北极星的方式 | 负责人 | 当前值 | 目标值 |
 |-------------|---------------------|-------|---------|--------|
 
-### Metrics Constellation
-[Visual tree showing North Star → Input Metrics → Team Actions]
+### 指标星座图
+[展示北极星指标 → 输入指标 → 团队行动的可视化树状图]
 
-### Counter-Metrics
-| Metric | Protects Against |
+### 对冲指标
+| 指标 | 防范风险 |
 |--------|-----------------|
 
-### Anti-Patterns Avoided
-[Why we didn't choose DAU, revenue, or other common but flawed metrics]
+### 避免的反模式
+[说明为什么没有选择 DAU、收入或其他常见但有缺陷的指标]
 ```
 
-Save as markdown.
+保存为 markdown 格式。
 
-### Step 6: Offer Next Steps
+### 步骤 6：提供后续步骤
 
-- "Want me to **build a full metrics dashboard** around this?"
-- "Should I **create OKRs** based on these metrics?"
-- "Want me to **write SQL queries** to compute these metrics?"
+- "需要我围绕这个指标**构建完整的指标仪表盘**吗？"
+- "是否需要我基于这些指标**制定 OKRs**？"
+- "需要我**编写 SQL 查询**来计算这些指标吗？"
 
-## Notes
+## 注意事项
 
-- The North Star should measure *value delivered*, not just *activity* — "daily active users" is only good if active use = value delivery
-- Revenue is never a good North Star — it's a lagging indicator that doesn't capture user value
-- Input metrics are what make the framework actionable — without them, the North Star is just a vanity dashboard
-- Revisit the North Star annually or when the business model changes significantly
-- Counter-metrics prevent Goodhart's Law — when a metric becomes a target, it ceases to be a good metric
+- 北极星指标应该衡量*交付的价值*，而不仅仅是*活动* — "日活跃用户数"只有在活跃使用 = 价值交付时才有意义
+- 收入永远不是好的北极星指标 — 它是滞后指标，无法捕捉用户价值
+- 输入指标是让框架具备可行动性的关键 — 没有它们，北极星指标只是一个虚荣的仪表盘
+- 每年重新审视北极星指标，或在商业模式发生重大变化时进行调整
+- 对冲指标可以防止古德哈特定律 — 当一个指标成为目标时，它就不再是一个好指标

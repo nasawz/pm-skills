@@ -1,52 +1,52 @@
 ---
 name: prioritize-features
-description: "Prioritize a backlog of feature ideas based on impact, effort, risk, and strategic alignment with top 5 recommendations. Use when prioritizing a feature backlog, making scope decisions, or ranking product ideas."
+description: "基于影响力、投入、风险和战略一致性对功能创意待办事项进行优先级排序，并给出前5项推荐建议。适用于对功能待办事项进行优先级排序、制定范围决策或对产品创意进行排名的场景。"
 ---
 
-## Prioritize Feature Backlog
+## 功能待办事项优先级排序
 
-Evaluate and rank a backlog of feature ideas to identify the top 5 to pursue.
+评估和排序功能创意待办事项，以确定要推进的前5项功能。
 
-### Context
+### 背景
 
-You are helping prioritize features for **$ARGUMENTS**.
+您正在帮助为 **$ARGUMENTS** 进行功能优先级排序。
 
-If the user provides files (spreadsheets, backlogs, opportunity assessments), read and analyze them directly.
+如果用户提供了文件（电子表格、待办事项、机会评估），请直接读取并分析它们。
 
-### Domain Context
+### 领域背景
 
-For framework selection guidance, see the `prioritization-frameworks` skill. Key recommendations:
+有关框架选择的指导，请参阅 `prioritization-frameworks` 技能。关键建议：
 
-**Opportunity Score** (Dan Olsen, *The Lean Product Playbook*) is recommended for evaluating customer problems: Opportunity Score = Importance × (1 − Satisfaction), normalized to 0–1. High Importance + low Satisfaction = best opportunities. Prioritize **problems (opportunities)**, not solutions.
+**机会评分**（Opportunity Score，Dan Olsen，《精益产品手册》）推荐用于评估客户问题：机会评分 = 重要性 × (1 − 满意度)，标准化为0-1。高重要性 + 低满意度 = 最佳机会。优先考虑**问题（机会）**，而非解决方案。
 
-**ICE** is recommended for quick scoring of initiatives: Impact (Opportunity Score × # Customers) × Confidence × Ease. **RICE** adds Reach as a separate factor for larger teams.
+**ICE** 推荐用于快速评估举措：影响力（机会评分 × 客户数量）× 信心 × 容易程度。**RICE** 为大型团队增加了触达范围（Reach）作为独立因素。
 
-### Instructions
+### 指令
 
-The user will describe their product objective, desired outcomes, and provide feature ideas. Work through these steps:
+用户将描述其产品目标、期望成果，并提供功能创意。按以下步骤进行：
 
-1. **Understand priorities**: Confirm the product objective and success metrics.
+1. **理解优先级**：确认产品目标和成功指标。
 
-2. **Evaluate each feature** against:
-   - **Impact**: How much does it move the needle on desired outcomes? Consider Opportunity Score if customer data is available.
-   - **Effort**: How much development, design, and coordination is required?
-   - **Risk**: How much uncertainty exists? What assumptions need testing?
-   - **Strategic alignment**: How well does it fit the product vision and current goals?
+2. **评估每项功能**，考虑：
+   - **影响力**：它对期望成果有多大推动作用？如果客户数据可用，请考虑机会评分。
+   - **投入**：需要多少开发、设计和协调工作？
+   - **风险**：存在多少不确定性？哪些假设需要验证？
+   - **战略一致性**：它与产品愿景和当前目标的契合程度如何？
 
-3. **Recommend the top 5 features** with:
-   - Clear ranking (1-5)
-   - Brief rationale for each selection
-   - Key trade-offs considered
-   - What was deprioritized and why
+3. **推荐前5项功能**，包括：
+   - 明确的排名（1-5）
+   - 每项选择的简要理由
+   - 考虑的关键权衡
+   - 哪些事项被降低优先级以及原因
 
-4. **Present as a prioritization table** if helpful.
+4. **如有帮助，以优先级排序表的形式呈现**。
 
-Think step by step. Save as markdown if the output is substantial.
+逐步思考。如果输出内容较多，请保存为markdown格式。
 
 ---
 
-### Further Reading
+### 延伸阅读
 
-- [Kano Model: How to Delight Your Customers Without Becoming a Feature Factory](https://www.productcompass.pm/p/kano-model-how-to-delight-your-customers)
-- [The Product Management Frameworks Compendium + Templates](https://www.productcompass.pm/p/the-product-frameworks-compendium)
-- [Continuous Product Discovery Masterclass (CPDM)](https://www.productcompass.pm/p/cpdm) (video course)
+- [Kano 模型：如何在不沦为功能工厂的情况下取悦客户](https://www.productcompass.pm/p/kano-model-how-to-delight-your-customers)
+- [产品管理框架汇编 + 模板](https://www.productcompass.pm/p/the-product-frameworks-compendium)
+- [持续产品发现大师课程（CPDM）](https://www.productcompass.pm/p/cpdm)（视频课程）

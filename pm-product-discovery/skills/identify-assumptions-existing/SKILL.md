@@ -1,44 +1,44 @@
 ---
 name: identify-assumptions-existing
-description: "Identify risky assumptions for a feature idea in an existing product across Value, Usability, Viability, and Feasibility. Uses multi-perspective devil's advocate thinking. Use when stress-testing a feature idea, doing risk assessment, or preparing for assumption mapping."
+description: "识别现有产品中一个功能想法在价值、可用性、可行性和可行性方面的风险假设。采用多角度的魔鬼辩护思考方式。在压力测试功能想法、进行风险评估或准备假设映射时使用。"
 ---
 
-## Identify Assumptions (Existing Product)
+## 识别假设（现有产品）
 
-Devil's advocate analysis to surface risky assumptions across four risk areas.
+通过反向思维分析，揭示四个风险领域中的风险假设。
 
-### Context
+### 背景
 
-You are stress-testing a feature idea for **$ARGUMENTS**.
+你正在对 **$ARGUMENTS** 的功能构思进行压力测试。
 
-If the user provides files (designs, PRDs, research), read them first.
+如果用户提供了文件（设计稿、PRD、研究报告），请先阅读这些文件。
 
-### Instructions
+### 指导说明
 
-The user will describe their product, objective, market segment, and feature idea. Work through these steps:
+用户将描述他们的产品、目标、市场细分和功能构思。请按以下步骤进行分析：
 
-1. **Think from three perspectives** about why this feature might fail:
-   - **Product Manager perspective**: Business viability, market fit, strategic alignment
-   - **Designer perspective**: Usability, user experience, adoption barriers
-   - **Engineer perspective**: Technical feasibility, performance, integration challenges
+1. **从三个视角思考**该功能可能失败的原因：
+   - **产品经理视角**：商业可行性、市场契合度、战略对齐
+   - **设计师视角**：可用性、用户体验、采用障碍
+   - **工程师视角**：技术可行性、性能、集成挑战
 
-2. **Identify assumptions across four risk areas**:
-   - **Value**: Will it create value for customers? Does it solve a real problem?
-   - **Usability**: Will users figure out how to use it? Is the learning curve acceptable?
-   - **Viability**: Can marketing, sales, finance, and legal support it?
-   - **Feasibility**: Can it be built with existing technology? Are there integration risks?
+2. **在四个风险领域中识别假设**：
+   - **价值**：它能为客户创造价值吗？是否解决了真实问题？
+   - **可用性**：用户能弄清楚如何使用它吗？学习曲线是否可接受？
+   - **可行性（商业）**：市场营销、销售、财务和法务部门能否支持它？
+   - **可实现性（技术）**：能否用现有技术构建它？是否存在集成风险？
 
-3. **For each assumption**, note:
-   - What specifically could go wrong
-   - How confident you are (High/Medium/Low)
-   - Suggested way to test it
+3. **针对每个假设**，记录：
+   - 具体可能出现的问题
+   - 你的信心程度（高/中/低）
+   - 建议的测试方法
 
-Think step by step. Be thorough but constructive — the goal is to strengthen the idea, not kill it.
+逐步思考。要全面但具有建设性——目标是强化这个创意，而不是扼杀它。
 
 ---
 
-### Further Reading
+### 延伸阅读
 
 - [Assumption Prioritization Canvas: How to Identify And Test The Right Assumptions](https://www.productcompass.pm/p/assumption-prioritization-canvas)
 - [How to Manage Risks as a Product Manager](https://www.productcompass.pm/p/how-to-manage-risks-as-a-product-manager)
-- [Continuous Product Discovery Masterclass (CPDM)](https://www.productcompass.pm/p/cpdm) (video course)
+- [Continuous Product Discovery Masterclass (CPDM)](https://www.productcompass.pm/p/cpdm) (视频课程)

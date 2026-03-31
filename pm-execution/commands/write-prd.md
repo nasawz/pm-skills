@@ -1,118 +1,118 @@
 ---
-description: Create a comprehensive Product Requirements Document from a feature idea or problem statement
-argument-hint: "<feature or problem statement>"
+description: 从功能创意或问题陈述创建完整的产品需求文档
+argument-hint: "<功能或问题陈述>"
 ---
 
-# /write-prd -- Product Requirements Document
+# /write-prd — 产品需求文档
 
-Create a structured PRD that aligns stakeholders and guides development. Accepts anything from a vague idea to a detailed brief.
+创建结构化的 PRD，对齐干系人并指导开发。可接受从模糊创意到详细简报的任何输入。
 
-## Invocation
-
-```
-/write-prd SSO support for enterprise customers
-/write-prd Users are dropping off during onboarding — we need to fix step 3
-/write-prd [upload a brief, research doc, or strategy deck]
-```
-
-## Workflow
-
-### Step 1: Understand the Feature
-
-Accept the input in any form:
-- A feature name ("SSO support")
-- A problem statement ("Enterprise customers keep asking for centralized auth")
-- A user request ("Users want to export their data as CSV")
-- A vague idea ("We should do something about onboarding drop-off")
-- An uploaded document (brief, research, Slack thread, email)
-
-### Step 2: Gather Context
-
-Ask conversationally — most important questions first, fill gaps as you go:
-
-1. **User problem**: What problem does this solve? Who experiences it? How painful is it?
-2. **Target users**: Which user segment(s)? How many? What's their current workaround?
-3. **Success metrics**: How will we know this worked? What moves if we nail it?
-4. **Constraints**: Technical constraints, timeline, regulatory, dependencies on other teams?
-5. **Prior art**: Has this been attempted before? Existing solutions in the market?
-6. **Scope preference**: Full solution or phased approach?
-
-If the user provides a document with context, extract what's available and only ask about gaps.
-
-### Step 3: Generate the PRD
-
-Apply the **create-prd** skill to produce an 8-section document:
+## 调用方式
 
 ```
-## Product Requirements Document: [Feature Name]
+/write-prd 企业客户 SSO 支持
+/write-prd 用户在入职流程中流失 — 我们需要修复第 3 步
+/write-prd [上传简报、研究报告或策略演示文稿]
+```
 
-**Author**: [user]
-**Date**: [today]
-**Status**: Draft
-**Stakeholders**: [if known]
+## 工作流程
 
-### 1. Executive Summary
-[2-3 sentences: what, for whom, why now]
+### 步骤 1：理解功能
 
-### 2. Background & Context
-[Problem space, prior research, market context, what prompted this]
+接受任意形式的输入：
+- 功能名称（"SSO 支持"）
+- 问题陈述（"企业客户反复要求集中身份认证"）
+- 用户需求（"用户希望将其数据导出为 CSV"）
+- 模糊创意（"我们需要针对入职流程流失采取行动"）
+- 上传的文档（简报、研究、Slack 线索、邮件）
 
-### 3. Objectives & Success Metrics
-**Goals** (what success looks like):
-1. [Specific, measurable goal]
+### 步骤 2：收集上下文
+
+以对话方式询问 — 优先最重要的问题，过程中逐步填补缺口：
+
+1. **用户问题**：这解决了什么问题？谁会遇到？影响多严重？
+2. **目标用户**：哪些用户细分？有多少？他们当前的变通方案是什么？
+3. **成功指标**：如何判断有效？如果做到位了，哪些指标会变化？
+4. **约束条件**：技术约束、时间表、合规性、对其他团队的依赖？
+5. **已有尝试**：此前是否尝试过？市场上现有方案？
+6. **范围偏好**：完整解决方案还是分阶段实施？
+
+若用户提供了包含上下文的文档，从中提取可用信息，仅询问缺口部分。
+
+### 步骤 3：生成 PRD
+
+调用 **create-prd** 技能，产出 8 个章节的文档：
+
+```
+## 产品需求文档：[功能名称]
+
+**作者**：[用户]
+**日期**：[今天]
+**状态**：草稿
+**干系人**：[如有]
+
+### 1. 执行摘要
+[2-3 句话：是什么、为谁、为何现在]
+
+### 2. 背景与上下文
+[问题空间、既往研究、市场背景、动因]
+
+### 3. 目标与成功指标
+**目标**（成功是什么样子）：
+1. [具体、可衡量的目标]
 2. [...]
 
-**Non-Goals** (explicitly out of scope):
-1. [What we're not doing, and why]
+**非目标**（明确不在范围内）：
+1. [我们不做什么，以及原因]
 2. [...]
 
-**Success Metrics**:
-| Metric | Current | Target | Measurement |
+**成功指标**：
+| 指标 | 当前值 | 目标值 | 衡量方式 |
 |--------|---------|--------|-------------|
 
-### 4. Target Users & Segments
-[Who this serves, user profiles, segment sizing]
+### 4. 目标用户与细分
+[为谁服务、用户画像、细分规模]
 
-### 5. User Stories & Requirements
+### 5. 用户故事与需求
 
-**P0 — Must Have**:
-| # | User Story | Acceptance Criteria |
+**P0 — 必须有**：
+| # | 用户故事 | 验收标准 |
 |---|-----------|-------------------|
 
-**P1 — Should Have**:
-| # | User Story | Acceptance Criteria |
+**P1 — 应该有**：
+| # | 用户故事 | 验收标准 |
 |---|-----------|-------------------|
 
-**P2 — Nice to Have / Future**:
-| # | User Story | Acceptance Criteria |
+**P2 — 可有 / 未来**：
+| # | 用户故事 | 验收标准 |
 |---|-----------|-------------------|
 
-### 6. Solution Overview
-[High-level approach, key design decisions, technical approach if known]
+### 6. 解决方案概述
+[高层方法、关键设计决策、已知的技术方法]
 
-### 7. Open Questions
-| Question | Owner | Deadline |
+### 7. 待决问题
+| 问题 | 负责人 | 截止日期 |
 |----------|-------|----------|
 
-### 8. Timeline & Phasing
-[Milestones, dependencies, phasing if applicable]
+### 8. 时间线与分阶段
+[里程碑、依赖、如适用则说明分阶段计划]
 ```
 
-### Step 4: Review and Iterate
+### 步骤 4：审查与迭代
 
-After generating, offer:
-- "Want me to **tighten the scope**? I can challenge which P1s should really be P2s."
-- "Should I **run a pre-mortem** on this PRD?"
-- "Want me to **break this into user stories** for engineering?"
-- "Should I **create a stakeholder update** to socialize this?"
+生成后，提供：
+- "需要我 **收紧范围** 吗？我可以挑战哪些 P1 其实应该归为 P2。"
+- "是否需要我对该 PRD 进行 **事前验尸（pre-mortem）**？"
+- "需要我 **将其拆解为用户故事** 以供工程实施吗？"
+- "是否需要我 **准备一份干系人更新** 以便同步推广？"
 
-Save the PRD as a markdown file to the user's workspace.
+将 PRD 以 Markdown 文件保存到用户的工作区。
 
-## Notes
+## 备注
 
-- Be opinionated about scope — a tight PRD is better than an expansive vague one
-- If the idea is too big, proactively suggest phasing and spec only Phase 1
-- Non-goals are as important as goals — they prevent scope creep
-- Success metrics must be specific: "improve NPS" is bad, "increase NPS from 32 to 45 within 90 days of launch" is good
-- Open questions should be genuinely unresolved — don't list things you can answer from context
-- If the user provides research, weave insights into the Background section with attribution
+- 对范围要鲜明 — 紧凑的 PRD 优于宏大模糊的 PRD
+- 若创意过大，主动建议分阶段，仅规范第一阶段
+- 非目标与目标同样重要 — 防止范围蔓延
+- 成功指标必须具体："提升 NPS" 不好，"上线后 90 天内将 NPS 从 32 提升到 45" 才是好的指标
+- 待决问题应确实未解决 — 不要列出能从上下文中回答的事项
+- 若用户提供研究资料，请在"背景"章节中融入洞察并注明来源

@@ -1,61 +1,61 @@
 ---
 name: positioning-ideas
-description: "Brainstorm product positioning ideas differentiated from competitors. Identifies top competitors and generates positioning statements with rationale. Use when developing product positioning, differentiating from competitors, or crafting brand positioning strategy."
+description: "头脑风暴与竞争对手差异化的产品定位理念。识别主要竞争对手并生成带有战略依据的定位陈述。适用于开发产品定位、与竞争对手差异化定位或制定品牌定位策略时使用。"
 ---
-# Positioning Ideas
+# 定位理念
 
-Brainstorm product positioning ideas differentiated from competitors. Identifies top competitors and generates positioning statements with strategic rationale. Use when developing product positioning, differentiating from competitors, or crafting brand positioning strategy.
+头脑风暴与竞争对手差异化的产品定位理念。识别主要竞争对手并生成带有战略依据的定位陈述。适用于开发产品定位、与竞争对手差异化定位或制定品牌定位策略时使用。
 
-## When to Use
+## 使用场景
 
-- Developing product positioning strategy
-- Differentiating from competitors
-- Crafting brand positioning statements
-- Identifying market positioning gaps
-- Triggers: positioning, brand positioning, differentiation, how to position, positioning statement
+- 开发产品定位策略
+- 与竞争对手进行差异化
+- 制定品牌定位陈述
+- 识别市场定位空白
+- 触发词：定位、品牌定位、差异化、如何定位、定位陈述
 
-## Prompt
+## 提示词
 
-You are an experienced brand strategist with expertise in competitive positioning, market differentiation, and brand strategy.
+你是一位经验丰富的品牌战略专家，在竞争定位、市场差异化和品牌战略方面拥有深厚的专业知识。
 
-Given the following product and market context: $ARGUMENTS
+基于以下产品和市场背景：$ARGUMENTS
 
-Follow these steps:
+请按照以下步骤执行：
 
-**Step 1: Competitive Landscape Analysis**
-Identify and briefly describe the top 5 competitors in this market. For each, note:
-- Their primary positioning angle
-- Their target audience focus
-- Key differentiators they emphasize
-- Potential positioning gaps they leave open
+**第一步：竞争格局分析**
+识别并简要描述该市场中的前 5 名竞争对手。对于每个竞争对手，请记录：
+- 他们的主要定位角度
+- 他们的目标受众聚焦点
+- 他们强调的关键差异化因素
+- 他们可能留出的定位空白
 
-**Step 2: Positioning Brainstorm**
-Generate 5 unique positioning ideas for this product that target the specified market segment. Each positioning idea should:
-- Be clearly differentiated from competitor positioning
-- Resonate with the target audience's values and needs
-- Emphasize specific capabilities that competitors downplay or ignore
-- Open an unclaimed market territory
+**第二步：定位头脑风暴**
+为该产品针对指定市场细分生成 5 个独特的定位理念。每个定位理念应该：
+- 与竞争对手的定位形成清晰差异
+- 与目标受众的价值观和需求产生共鸣
+- 强调竞争对手淡化或忽视的特定能力
+- 开拓一个未被占据的市场领域
 
-**Step 3: Positioning Statements**
-For each idea, provide:
+**第三步：定位陈述**
+对于每个理念，请提供：
 
-1. **Positioning Statement**: A one-sentence statement that captures the core positioning (e.g., "The [product] is the only [category] designed for [target segment] who want to [primary benefit]")
-2. **Strategic Rationale**: Explain why this positioning would resonate with the audience and create differentiation
-3. **Supporting Message**: Key supporting messages that reinforce this positioning
-4. **Competitive Advantage**: What specific advantages enable this positioning claim
+1. **定位陈述**：一句能够概括核心定位的陈述（例如：「[产品]是唯一为[目标细分群体]设计的[类别]，他们希望[主要益处]」）
+2. **战略依据**：解释为什么这个定位能够与受众产生共鸣并创造差异化
+3. **支撑信息**：强化此定位的关键支撑信息
+4. **竞争优势**：支撑此定位主张的具体优势是什么
 
-## Tips for Best Results
+## 最佳实践建议
 
-- Provide detailed target audience profiles and their pain points
-- Share your product's unique capabilities and differentiators
-- Mention current positioning (if any) and what's working or not working
-- Include information about competitor positioning and messaging
-- Describe what market segment or niche you want to own
-- Share your long-term vision and business strategy
+- 提供详细的目标受众画像及其痛点
+- 分享产品的独特能力和差异化因素
+- 提及当前定位（如果有）以及哪些方面有效或无效
+- 包含竞争对手定位和传播信息的相关信息
+- 描述你希望占据的市场细分或利基市场
+- 分享你的长期愿景和业务战略
 
 ---
 
-### Further Reading
+### 延伸阅读
 
-- [Product Management vs. Product Marketing vs. Product Growth 101](https://www.productcompass.pm/p/product-management-vs-product-marketing)
-- [How to Design a Value Proposition Customers Can't Resist?](https://www.productcompass.pm/p/how-to-design-value-proposition-template)
+- [产品管理 vs 产品营销 vs 产品增长 101](https://www.productcompass.pm/p/product-management-vs-product-marketing)
+- [如何设计让客户无法抗拒的价值主张？](https://www.productcompass.pm/p/how-to-design-value-proposition-template)

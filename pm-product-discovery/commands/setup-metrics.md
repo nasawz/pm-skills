@@ -1,119 +1,119 @@
 ---
-description: Design a product metrics dashboard with North Star metric, input metrics, health metrics, and alert thresholds
-argument-hint: "<product or feature area>"
+description: 设计产品指标仪表盘，包含北极星指标、输入指标、健康指标和告警阈值
+argument-hint: "<产品或功能领域>"
 ---
 
-# /setup-metrics -- Product Metrics Dashboard Design
+# /setup-metrics -- 产品指标仪表盘设计
 
-Design a comprehensive metrics framework for your product or feature — from selecting the right North Star to defining alert thresholds that catch problems early.
+为您的产品或功能设计一套全面的指标体系——从选择正确的北极星指标到定义能够及早发现问题的告警阈值。
 
-## Invocation
+## 调用方式
 
 ```
-/setup-metrics SaaS project management tool
-/setup-metrics New checkout flow we just launched
-/setup-metrics             # asks what you're measuring
+/setup-metrics SaaS 项目管理工具
+/setup-metrics 我们刚上线的新结账流程
+/setup-metrics             # 询问您要衡量什么
 ```
 
-## Workflow
+## 工作流程
 
-### Step 1: Understand What to Measure
+### 第一步：了解衡量对象
 
-Ask the user:
-- What product or feature area are you setting up metrics for?
-- What stage is it in? (pre-launch, recently launched, mature)
-- What are the current business goals or OKRs?
-- Do you have existing metrics? What's missing or broken?
-- What analytics tools are you using? (helps tailor implementation advice)
+询问用户：
+- 您要为哪个产品或功能领域设置指标？
+- 它处于什么阶段？（上线前、刚上线、成熟期）
+- 当前的业务目标或 OKR 是什么？
+- 您已有指标吗？有什么缺失或问题？
+- 您使用什么分析工具？（有助于提供针对性的实施建议）
 
-### Step 2: Define the Metrics Framework
+### 第二步：定义指标框架
 
-Apply the **metrics-dashboard** skill:
+应用 **metrics-dashboard** 技能：
 
-**North Star Metric:**
-- Identify the single metric that best captures the value your product delivers to users
-- Validate against criteria: measures value delivery, is a leading indicator, is actionable
-- Define the metric precisely (formula, data source, time window)
+**北极星指标：**
+- 识别最能体现产品为用户创造价值的单一指标
+- 根据标准验证：衡量价值交付、是领先指标、可采取行动
+- 精确定义指标（公式、数据源、时间窗口）
 
-**Input Metrics (3-5):**
-- Identify the levers that drive the North Star
-- Each input metric should be directly actionable by a team
-- Map the causal chain: Input → North Star → Business Outcome
+**输入指标（3-5 个）：**
+- 识别驱动北极星指标的杠杆
+- 每个输入指标都应能被团队直接采取行动
+- 绘制因果链：输入指标 → 北极星指标 → 业务结果
 
-**Health Metrics (3-5):**
-- Metrics that should stay stable — if they degrade, something is wrong
-- Examples: error rates, latency, support ticket volume, NPS, churn rate
-- Define "healthy" ranges and degradation thresholds
+**健康指标（3-5 个）：**
+- 应该保持稳定的指标——如果下降，说明有问题
+- 示例：错误率、延迟、支持工单量、NPS、流失率
+- 定义"健康"范围和下降阈值
 
-**Counter-Metrics (1-2):**
-- Metrics that could indicate you're optimizing the wrong way
-- Example: if North Star is "daily active users", counter-metric is "session quality" to prevent empty engagement
+**反向指标（1-2 个）：**
+- 可能表明您在错误方向上优化的指标
+- 示例：如果北极星指标是"日活跃用户"，反向指标是"会话质量"，以防止无效参与
 
-### Step 3: Design Alert Thresholds
+### 第三步：设计告警阈值
 
-For each metric:
+针对每个指标：
 
-| Metric | Green | Yellow | Red | Check Frequency |
+| 指标 | 绿色 | 黄色 | 红色 | 检查频率 |
 |--------|-------|--------|-----|----------------|
-| [metric] | [healthy range] | [warning] | [critical] | [daily/weekly] |
+| [指标] | [健康范围] | [警告] | [严重] | [每日/每周] |
 
-- **Yellow**: Investigate — something may be off
-- **Red**: Act immediately — page someone or escalate
+- **黄色**：调查——可能有些问题
+- **红色**：立即行动——通知人员或升级处理
 
-### Step 4: Create Dashboard Spec
+### 第四步：创建仪表盘规范
 
 ```
-## Metrics Dashboard: [Product/Feature]
+## 指标仪表盘：[产品/功能]
 
-**North Star**: [metric name]
-**Definition**: [precise formula]
-**Current value**: [if known]
-**Target**: [goal]
+**北极星指标**：[指标名称]
+**定义**：[精确公式]
+**当前值**：[如果已知]
+**目标**：[目标]
 
-### Input Metrics
-| Metric | Definition | Owner | Target | Current |
+### 输入指标
+| 指标 | 定义 | 负责人 | 目标 | 当前值 |
 |--------|-----------|-------|--------|---------|
 
-### Health Metrics
-| Metric | Healthy Range | Yellow Threshold | Red Threshold |
+### 健康指标
+| 指标 | 健康范围 | 黄色阈值 | 红色阈值 |
 |--------|-------------|-----------------|---------------|
 
-### Counter-Metrics
-| Metric | Why It Matters | Watch For |
+### 反向指标
+| 指标 | 为什么重要 | 需要关注 |
 |--------|---------------|-----------|
 
-### Metrics Tree
-North Star: [metric]
-├── Input: [metric 1] → driven by [team/action]
-├── Input: [metric 2] → driven by [team/action]
-├── Input: [metric 3] → driven by [team/action]
-└── Counter: [metric] → watch for [degradation signal]
+### 指标树
+北极星指标：[指标]
+├── 输入：[指标 1] → 由[团队/行动]驱动
+├── 输入：[指标 2] → 由[团队/行动]驱动
+├── 输入：[指标 3] → 由[团队/行动]驱动
+└── 反向：[指标] → 关注[下降信号]
 
-### Implementation Notes
-- Data sources: [where each metric comes from]
-- Refresh frequency: [real-time / hourly / daily]
-- Tool recommendations: [based on user's stack]
+### 实施说明
+- 数据来源：[每个指标来自哪里]
+- 刷新频率：[实时 / 每小时 / 每日]
+- 工具推荐：[基于用户的技术栈]
 
-### Review Cadence
-- **Daily**: Glance at North Star and health metrics
-- **Weekly**: Review input metrics trends, discuss in team standup
-- **Monthly**: Deep dive — are inputs driving the North Star as expected?
-- **Quarterly**: Reassess the metrics framework itself
+### 审查节奏
+- **每日**：快速查看北极星指标和健康指标
+- **每周**：审查输入指标趋势，在团队站会中讨论
+- **每月**：深度分析——输入指标是否按预期驱动北极星指标？
+- **每季度**：重新评估指标框架本身
 ```
 
-Save as a markdown file to the user's workspace.
+将此保存为 markdown 文件到用户的工作区。
 
-### Step 5: Offer Next Steps
+### 第五步：提供后续步骤
 
-- "Want me to **write SQL queries** to compute these metrics?"
-- "Should I **create OKRs** based on this metrics framework?"
-- "Want me to **build a cohort analysis** to set realistic baselines?"
-- "Should I **set up a weekly metrics review template**?"
+- "需要我**编写 SQL 查询**来计算这些指标吗？"
+- "我应该基于此指标框架**创建 OKR** 吗？"
+- "需要我**构建同期群分析**来设定合理的基线吗？"
+- "我应该**设置每周指标审查模板**吗？"
 
-## Notes
+## 注意事项
 
-- A good North Star is rare — most teams pick vanity metrics. Push for a metric that captures *user value delivered*, not just engagement
-- Input metrics should be MECE (mutually exclusive, collectively exhaustive) in explaining the North Star
-- If the product is pre-launch, define metrics now but note that baselines will need calibration after launch
-- Counter-metrics prevent Goodhart's Law — when a metric becomes a target, it ceases to be a good metric
-- Recommend starting with fewer metrics, well-instrumented, over a sprawling dashboard nobody checks
+- 一个好的北极星指标很少见——大多数团队会选择虚荣指标。要推动选择能体现*用户价值交付*的指标，而不仅仅是参与度
+- 输入指标在解释北极星指标时应符合 MECE 原则（相互独立，完全穷尽）
+- 如果产品尚未上线，现在定义指标，但要注意上线后需要校准基线
+- 反向指标可以防止古德哈特定律——当一个指标成为目标时，它就不再是一个好指标
+- 建议从较少的指标开始，充分埋点，而不是创建一个没人查看的庞大仪表盘

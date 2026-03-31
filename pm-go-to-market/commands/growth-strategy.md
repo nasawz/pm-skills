@@ -1,116 +1,116 @@
 ---
-description: Design sustainable growth mechanisms — growth loops and GTM motions for product-led and sales-led strategies
-argument-hint: "<product or growth challenge>"
+description: 设计可持续增长机制——产品驱动和销售驱动策略的增长循环与 GTM 动作
+argument-hint: "<产品或增长挑战>"
 ---
 
-# /growth-strategy -- Growth Loops & GTM Motions
+# /growth-strategy —— 增长循环与 GTM 动作
 
-Identify and design the growth mechanisms that will drive sustainable traction. Evaluates five growth loop types and seven GTM motions to build a balanced acquisition and expansion strategy.
+识别并设计能够驱动可持续增长的增长机制。评估五种增长循环类型和七种 GTM 动作，构建平衡的获客与拓展策略。
 
-## Invocation
-
-```
-/growth-strategy B2B collaboration tool — growth has stalled at 5K users
-/growth-strategy Consumer fitness app looking for viral growth
-/growth-strategy [upload product metrics or growth data]
-```
-
-## Workflow
-
-### Step 1: Understand Growth Context
-
-Ask:
-- What is the product? Who uses it?
-- Current growth metrics: user count, growth rate, acquisition channels
-- What's working? What's not?
-- Business model: how does revenue relate to user growth?
-- Team and budget: what resources can you put toward growth?
-
-### Step 2: Evaluate Growth Loops
-
-Apply the **growth-loops** skill:
-
-Analyze five growth loop types for your product:
-
-1. **Viral Loop**: Users invite others as part of natural product use
-2. **Usage Loop**: More usage creates more value, bringing users back
-3. **Collaboration Loop**: Product becomes more valuable when used with others
-4. **User-Generated Content Loop**: Users create content that attracts new users
-5. **Referral Loop**: Satisfied users actively recommend to others
-
-For each applicable loop: mechanism, requirements, expected impact, implementation effort.
-
-### Step 3: Evaluate GTM Motions
-
-Apply the **gtm-motions** skill:
-
-Assess seven GTM approaches:
-
-1. **Inbound**: Content, SEO, thought leadership
-2. **Outbound**: Sales, cold outreach, account-based
-3. **Paid Digital**: SEM, social ads, display, retargeting
-4. **Community**: Forums, events, user groups, developer relations
-5. **Partners**: Integrations, resellers, co-marketing
-6. **ABM (Account-Based Marketing)**: Targeted enterprise acquisition
-7. **PLG (Product-Led Growth)**: Free tier, self-serve, product virality
-
-For each: fit for your product, expected CAC, timeline to results, tools needed.
-
-### Step 4: Design Growth Strategy
+## 调用方式
 
 ```
-## Growth Strategy: [Product]
+/growth-strategy B2B 协作工具——增长停滞在 5000 用户
+/growth-strategy 寻求病毒式增长的消费者健身应用
+/growth-strategy [上传产品指标或增长数据]
+```
 
-**Date**: [today]
-**Current state**: [user count, growth rate, key channels]
-**Growth goal**: [target]
+## 工作流程
 
-### Recommended Growth Loops
-| Loop Type | Mechanism | Fit | Impact | Effort | Priority |
+### 步骤 1：了解增长背景
+
+询问：
+- 产品是什么？谁在使用它？
+- 当前增长指标：用户数、增长率、获客渠道
+- 什么有效？什么无效？
+- 商业模式：营收如何与用户增长相关联？
+- 团队和预算：你能投入哪些资源用于增长？
+
+### 步骤 2：评估增长循环
+
+应用 **growth-loops** 技能：
+
+为你的产品分析五种增长循环类型：
+
+1. **病毒式循环（Viral Loop）**：用户在自然使用产品的过程中邀请他人
+2. **使用循环（Usage Loop）**：更多使用创造更多价值，吸引用户回归
+3. **协作循环（Collaboration Loop）**：与他人一起使用时产品变得更有价值
+4. **用户生成内容循环（User-Generated Content Loop）**：用户创建的内容吸引新用户
+5. **推荐循环（Referral Loop）**：满意用户主动向他人推荐
+
+对于每个适用的循环：机制、要求、预期影响、实施难度。
+
+### 步骤 3：评估 GTM 动作
+
+应用 **gtm-motions** 技能：
+
+评估七种 GTM 方法：
+
+1. **入站营销（Inbound）**：内容、SEO、思想领导力
+2. **外拓营销（Outbound）**：销售、主动触达、基于账户
+3. **付费数字营销（Paid Digital）**：SEM、社交媒体广告、展示广告、重定向
+4. **社区（Community）**：论坛、活动、用户群、开发者关系
+5. **合作伙伴（Partners）**：集成、经销商、联合营销
+6. **ABM（基于账户的营销，Account-Based Marketing）**：精准的企业获客
+7. **PLG（产品驱动增长，Product-Led Growth）**：免费版、自助服务、产品病毒式传播
+
+对于每种方法：与产品的契合度、预期客户获取成本（CAC）、见效时间、所需工具。
+
+### 步骤 4：设计增长策略
+
+```
+## 增长策略：[产品名称]
+
+**日期**：[今天]
+**当前状态**：[用户数、增长率、主要渠道]
+**增长目标**：[目标]
+
+### 推荐的增长循环
+| 循环类型 | 机制 | 契合度 | 影响程度 | 实施难度 | 优先级 |
 |----------|-----------|-----|--------|--------|----------|
 
-### Primary Growth Loop: [Type]
-**How it works**: [step-by-step mechanism]
-**Requirements**: [what needs to be true/built]
-**Key metrics**: [how to measure loop health]
-**Implementation plan**: [concrete next steps]
+### 主增长循环：[类型]
+**运作方式**：[分步骤机制]
+**要求**：[需要具备或构建什么]
+**关键指标**：[如何衡量循环健康状况]
+**实施计划**：[具体的下一步行动]
 
-### Secondary Growth Loop: [Type]
-[same format]
+### 次增长循环：[类型]
+[相同格式]
 
-### GTM Motion Mix
-| Motion | Investment | Expected ROI | Timeline | Tools |
+### GTM 动作组合
+| 动作 | 投入 | 预期 ROI | 时间周期 | 工具 |
 |--------|-----------|-------------|----------|-------|
 
-### Growth Experiments
-| # | Experiment | Tests What | Effort | Expected Learning |
+### 增长实验
+| # | 实验 | 测试内容 | 难度 | 预期收获 |
 |---|-----------|-----------|--------|------------------|
 
-### Growth Metrics Framework
-- **North Star**: [growth metric]
-- **Loop health**: [metrics per loop]
-- **CAC by channel**: [tracking approach]
-- **Payback period**: [target]
+### 增长指标框架
+- **北极星指标**：[增长指标]
+- **循环健康度**：[各循环的指标]
+- **各渠道 CAC**：[追踪方法]
+- **回本周期**：[目标]
 
-### 90-Day Growth Plan
-**Month 1**: [focus areas and experiments]
-**Month 2**: [scale what works, cut what doesn't]
-**Month 3**: [optimize and systematize]
+### 90 天增长计划
+**第 1 个月**：[重点领域和实验]
+**第 2 个月**：[扩展有效的，淘汰无效的]
+**第 3 个月**：[优化和系统化]
 ```
 
-Save as markdown.
+保存为 markdown 格式。
 
-### Step 5: Offer Next Steps
+### 步骤 5：提供后续步骤
 
-- "Want me to **plan a specific launch campaign**?"
-- "Should I **create marketing content** for the inbound motion?"
-- "Want me to **set up metrics** to track growth loop health?"
-- "Should I **design a referral program** based on the referral loop?"
+- "需要我**规划具体的发布活动**吗？"
+- "需要我为入站营销**创建营销内容**吗？"
+- "需要我**设置指标**以追踪增长循环健康度吗？"
+- "需要我基于推荐循环**设计推荐计划**吗？"
 
-## Notes
+## 备注
 
-- Growth loops compound; growth tactics don't — prioritize loops over one-off campaigns
-- The best growth loop uses the product itself as the channel (PLG, viral, collaboration)
-- Not every loop works for every product — a B2B analytics tool won't go viral on TikTok
-- Budget should follow learning: invest small in experiments, then scale what proves out
-- CAC should be < 1/3 of LTV for sustainable growth — flag if projected CAC is too high
+- 增长循环会复利增长，增长策略则不会——优先考虑循环而非一次性活动
+- 最佳增长循环将产品本身作为渠道（PLG、病毒式、协作）
+- 并非每个循环都适用于每个产品——B2B 分析工具不会在 TikTok 上病毒式传播
+- 预算应跟随学习：在实验中投入小额资金，然后扩展经过验证的方法
+- CAC 应低于 LTV 的 1/3 以实现可持续增长——如果预测 CAC 过高需标记

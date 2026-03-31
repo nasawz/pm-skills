@@ -1,139 +1,139 @@
 ---
 name: beachhead-segment
-description: "Identify the first beachhead market segment for a product launch. Evaluates segments against burning pain, willingness to pay, winnable market share, and referral potential. Use when choosing a first market, targeting an initial customer segment, or planning market entry strategy."
+description: "确定产品首次发布的滩头市场细分市场。根据痛点紧迫性、付费意愿、可赢得的市场份额和推荐潜力评估细分市场。在选择首个市场、定位初始客户细分或规划市场进入策略时使用。"
 ---
-# Beachhead Segment
+# 滩头细分市场
 
-## Overview
-Identify the first beachhead market segment for product launch. This skill evaluates potential market segments against key criteria to find your initial winning segment that enables fast PMF validation and adjacent expansion.
+## 概述
+确定产品首次发布的滩头市场细分市场。此技能根据关键标准评估潜在市场细分，找到您的初始获胜细分，从而实现快速的产品市场契合度（PMF）验证和相邻市场扩张。
 
-## When to Use
-- Choosing a first market for your product
-- Targeting an initial customer segment
-- Planning initial market entry strategy
-- Deciding where to focus limited resources
-- Validating GTM assumptions with early adopters
+## 适用场景
+- 为您的产品选择首个市场
+- 定位初始客户细分群体
+- 规划初始市场进入策略
+- 决定在何处集中有限资源
+- 通过早期采用者验证 GTM 假设
 
-## Key Evaluation Criteria
+## 关键评估标准
 
-### 1. Burning Pain Point
-Does this segment experience an acute, unmet problem?
-- Daily frustration with the status quo
-- Significant productivity loss or cost impact
-- Emotional urgency to find a solution
-- Current workarounds are expensive or fragile
-- Problem is getting worse over time
+### 1. 紧迫的痛点
+该细分市场是否经历着尖锐的、未满足的问题？
+- 对现状的日常挫败感
+- 显著的生产力损失或成本影响
+- 寻找解决方案的情感紧迫性
+- 当前的临时解决方案昂贵或脆弱
+- 问题随时间推移日趋严重
 
-### 2. Willingness to Pay
-Does this segment have budget and motivation to pay for a solution?
-- Documented budget allocation for this problem area
-- ROI is clear and compelling (value > cost)
-- Economic impact of problem justifies solution cost
-- Decision-maker has autonomy or influence over budget
-- No free or DIY alternatives that fully satisfy need
+### 2. 付费意愿
+该细分市场是否有预算和动力为解决方案付费？
+- 针对此问题领域的预算分配有据可查
+- 投资回报率（ROI）清晰且具有说服力（价值 > 成本）
+- 问题的经济影响足以证明解决方案成本的合理性
+- 决策者对预算拥有自主权或影响力
+- 没有能够完全满足需求的免费或 DIY 替代方案
 
-### 3. Winnable Market Share
-Can you realistically capture 60-70% of this segment in 3-18 months?
-- Segment is large enough but not oversaturated
-- Limited competition or easy differentiation
-- Market players are fragmented or complacent
-- Your product has clear competitive advantage
-- You have unique access or distribution advantage
+### 3. 可赢得的市场份额
+您能否在 3-18 个月内实际获得该细分市场 60-70% 的份额？
+- 细分市场足够大但未过度饱和
+- 竞争有限或易于差异化
+- 市场参与者分散或自满
+- 您的产品具有明显的竞争优势
+- 您拥有独特的获取或分销优势
 
-### 4. Referral Potential
-Will customers naturally refer or recommend to others?
-- Segment contains professional communities
-- Customers interact with adjacent segments (expansion opportunity)
-- High word-of-mouth culture in this industry
-- Network effects within the segment
-- Solving problem for one creates demand in adjacent segments
+### 4. 推荐潜力
+客户是否会自然地向他人推荐或引荐？
+- 细分市场包含专业社区
+- 客户与相邻细分市场有互动（扩张机会）
+- 该行业具有高口碑文化
+- 细分市场内部的网络效应
+- 为一个客户解决问题会在相邻细分市场创造需求
 
-## How It Works
+## 工作原理
 
-### Step 1: List Potential Segments
-Brainstorm all possible target segments:
-- Industry verticals (SaaS, healthcare, manufacturing, etc.)
-- Company size (SMB, mid-market, enterprise)
-- Job titles or roles
-- Geographic regions
-- Use cases or use-case variations
-- Customer maturity level
+### 第一步：列出潜在细分市场
+头脑风暴所有可能的目标细分市场：
+- 行业垂直领域（SaaS、医疗保健、制造业等）
+- 公司规模（中小企业、中型市场、企业级）
+- 职位名称或角色
+- 地理区域
+- 用例或用例变体
+- 客户成熟度水平
 
-### Step 2: Research Pain Points
-Validate burning pain in each segment:
-- Customer interviews and discovery calls
-- Problem validation through surveys
-- Market research and analyst reports
-- Competitor positioning and customer reviews
-- Quantify cost/impact of the problem
-- Identify current workarounds and limitations
+### 第二步：研究痛点
+验证每个细分市场的紧迫痛点：
+- 客户访谈和探索性电话
+- 通过调查进行问题验证
+- 市场研究和分析师报告
+- 竞争对手定位和客户评价
+- 量化问题的成本/影响
+- 识别当前的临时解决方案及其局限性
 
-### Step 3: Assess Willingness to Pay
-Determine budget and economic viability:
-- Segment's budget for this problem category
-- ROI calculation (value gained vs cost)
-- Current spending on solutions or workarounds
-- Budget decision-making process
-- Typical deal size expectations
-- Pricing sensitivity in the segment
+### 第三步：评估付费意愿
+确定预算和经济可行性：
+- 细分市场针对此问题类别的预算
+- ROI 计算（获得的价值 vs 成本）
+- 当前在解决方案或临时解决方案上的支出
+- 预算决策流程
+- 典型的交易规模预期
+- 细分市场的价格敏感度
 
-### Step 4: Evaluate Winnability
-Assess realistic market share potential:
-- Total addressable market (TAM) size
-- Competitive landscape and positioning
-- Your differentiation or unfair advantage
-- Distribution access to this segment
-- Time and resources required
-- Market growth and momentum
+### 第四步：评估可获胜性
+评估实际的市场份额潜力：
+- 总可获得市场（TAM）规模
+- 竞争格局和定位
+- 您的差异化优势或不公平优势
+- 对该细分市场的分销获取能力
+- 所需的时间和资源
+- 市场增长和势头
 
-### Step 5: Identify Referral Pathways
-Map expansion opportunities:
-- Adjacent segments that reference segment influences
-- Network effects within the segment
-- Professional communities and associations
-- Customer-to-customer recommendations
-- Natural expansion path to adjacent markets
-- Viral or network effects from solving core pain
+### 第五步：识别推荐路径
+绘制扩张机会图谱：
+- 受参考细分市场影响的相邻细分市场
+- 细分市场内部的网络效应
+- 专业社区和协会
+- 客户对客户的推荐
+- 向相邻市场的自然扩张路径
+- 解决核心痛点带来的病毒式或网络效应
 
-### Step 6: Select Beachhead
-Choose your primary launch segment:
-- Highest combined score across four criteria
-- Most achievable for your current resources
-- Shortest path to PMF and revenue
-- Best reference for adjacent expansion
-- Most enthusiastic early customer cohort
+### 第六步：选择滩头市场
+选择您的主要发布细分市场：
+- 在四个标准上综合得分最高
+- 对您当前资源而言最可达成
+- 通向 PMF 和收入的路径最短
+- 作为相邻扩张的最佳参考
+- 最热情的早期客户群体
 
-## Input Format
-Use $ARGUMENTS to pass:
-- Product description and capabilities
-- Initial market research and validation data
-- Potential segment options
-- Constraints and limitations
-- Timeline and resource constraints
-- Current customer data or feedback
+## 输入格式
+使用 $ARGUMENTS 传递：
+- 产品描述和功能
+- 初始市场研究和验证数据
+- 潜在细分市场选项
+- 约束和限制条件
+- 时间和资源约束
+- 当前客户数据或反馈
 
-## Output
-A beachhead segment analysis including:
-- Top 3-5 recommended segments with scoring
-- Primary beachhead segment recommendation
-- Pain point validation and evidence
-- Willingness to pay assessment and pricing guidance
-- Realistic market share and revenue projections
-- Referral and expansion pathways to adjacent segments
-- 90-day customer acquisition plan for beachhead
-- Post-beachhead expansion roadmap
+## 输出
+包括以下内容的滩头细分市场分析：
+- 带有评分的前 3-5 个推荐细分市场
+- 首选滩头细分市场推荐
+- 痛点验证和证据
+- 付费意愿评估和定价指导
+- 实际的市场份额和收入预测
+- 向相邻细分市场的推荐和扩张路径
+- 滩头市场的 90 天客户获取计划
+- 滩头市场后的扩张路线图
 
-## Framework
-Based on Geoffrey Moore's beachhead market strategy in "Crossing the Chasm." Focuses on finding the smallest winnable, referenceable market that validates PMF and enables expansion.
+## 框架
+基于 Geoffrey Moore 在《跨越鸿沟》（Crossing the Chasm）中提出的滩头市场策略。专注于找到最小的、可获胜的、可参考的市场，以验证 PMF 并实现扩张。
 
-## Tips
-- Start absurdly specific. A niche beachhead is better than a vague mass market
-- Choose the segment most likely to evangelize your solution
-- Validate all four criteria with at least 10 customer interviews
-- Select segment with fastest path to revenue and references
-- Ensure beachhead can reference to adjacent market segments
-- Focus all resources on dominating the beachhead (not diluting efforts)
-- Plan exit from beachhead only after 60%+ market share
+## 建议
+- 从极其具体的细分市场开始。一个利基滩头市场胜过模糊的大众市场
+- 选择最可能为您解决方案进行布道的细分市场
+- 通过至少 10 次客户访谈验证所有四个标准
+- 选择通向收入和参考客户路径最短的细分市场
+- 确保滩头市场能够向相邻细分市场进行参考
+- 集中所有资源主导滩头市场（而不是分散精力）
+- 仅在获得 60% 以上市场份额后才计划退出滩头市场
 
 ---
 

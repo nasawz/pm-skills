@@ -1,111 +1,111 @@
 ---
-description: Create a sales-ready competitive battlecard — positioning, feature comparison, objection handling, and win strategies
-argument-hint: "<your product> vs <competitor>"
+description: 创建面向销售的竞争作战卡——包括定位、功能对比、异议处理和获胜策略
+argument-hint: "<您的产品> vs <竞争对手>"
 ---
 
-# /battlecard -- Competitive Battlecard
+# /battlecard -- 竞争作战卡
 
-Create a concise, sales-ready battlecard that helps your team win deals against a specific competitor. Includes positioning, feature comparison, objection handling, and conversation strategies.
+创建一份简洁、面向销售的作战卡，帮助您的团队在与特定竞争对手的竞争中赢得交易。包括定位、功能对比、异议处理和对话策略。
 
-## Invocation
-
-```
-/battlecard Our CRM vs Salesforce
-/battlecard ProjectFlow vs Monday.com for mid-market teams
-/battlecard [upload competitor materials or win/loss data]
-```
-
-## Workflow
-
-### Step 1: Identify the Matchup
-
-Ask:
-- Your product and the specific competitor
-- Who is the typical buyer choosing between you?
-- Do you have win/loss data or sales feedback?
-- What deal stage does this typically come up? (early evaluation, final decision, displacement)
-
-### Step 2: Research the Competitor
-
-Apply the **competitive-battlecard** skill with web research:
-
-- Current product capabilities and recent launches
-- Pricing model and published pricing
-- Target market and positioning
-- Known weaknesses (from reviews, forums, customer feedback)
-- Recent company news (funding, leadership, strategy shifts)
-
-### Step 3: Generate Battlecard
+## 调用方式
 
 ```
-## Competitive Battlecard: [Your Product] vs [Competitor]
+/battlecard 我们的 CRM vs Salesforce
+/battlecard ProjectFlow vs Monday.com，针对中型团队
+/battlecard [上传竞争对手资料或赢/输数据]
+```
 
-**Last updated**: [today]
-**Use when**: [situation where this competitor comes up]
+## 工作流程
 
-### Quick Summary
-**We win when**: [buyer profile and situation where you have advantage]
-**We lose when**: [buyer profile and situation where competitor has advantage]
-**Key differentiator**: [one sentence]
+### 步骤 1：确定竞争对决
 
-### Positioning
-**How they position**: [their messaging]
-**How we position against them**: [our counter-positioning]
+询问：
+- 您的产品和特定竞争对手
+- 典型的采购决策者是谁？
+- 您是否有赢/输数据或销售反馈？
+- 通常在哪个交易阶段会出现这个竞争对手？（早期评估、最终决策、替换）
 
-### Feature Comparison
-| Capability | Us | Them | Verdict |
+### 步骤 2：研究竞争对手
+
+应用 **competitive-battlecard** 技能进行网络研究：
+
+- 当前产品能力和近期发布
+- 定价模式和公开定价
+- 目标市场和定位
+- 已知弱点（来自评测、论坛、客户反馈）
+- 最新公司新闻（融资、管理层、战略转变）
+
+### 步骤 3：生成作战卡
+
+```
+## 竞争作战卡：[您的产品] vs [竞争对手]
+
+**最后更新**：[今天]
+**适用场景**：[该竞争对手出现的情况]
+
+### 快速摘要
+**我们获胜的情况**：[您有优势的买家画像和场景]
+**我们失利的情况**：[竞争对手有优势的买家画像和场景]
+**核心差异化优势**：[一句话概括]
+
+### 定位
+**他们的定位**：[他们的宣传信息]
+**我们对抗他们的定位**：[我们的反制定位]
+
+### 功能对比
+| 能力 | 我们 | 他们 | 结论 |
 |-----------|-----|------|---------|
-| [capability] | [status] | [status] | [advantage] |
+| [能力] | [状态] | [状态] | [优势] |
 
-### Pricing Comparison
-| Dimension | Us | Them | Notes |
+### 定价对比
+| 维度 | 我们 | 他们 | 备注 |
 |----------|-----|------|-------|
 
-### Objection Handling
-| Objection | Response | Proof Point |
+### 异议处理
+| 异议 | 回应 | 证据 |
 |----------|---------|------------|
-| "They have [feature]" | [response] | [evidence] |
-| "They're cheaper" | [response] | [TCO analysis] |
-| "They're more established" | [response] | [counter] |
+| "他们有 [功能]" | [回应] | [证据] |
+| "他们更便宜" | [回应] | [总体拥有成本分析] |
+| "他们更成熟" | [回应] | [反驳] |
 
-### Landmines to Plant
-[Questions to ask the prospect that expose competitor weaknesses]
-1. "Ask them about [topic] — their answer will reveal [weakness]"
+### 布置"地雷"
+[向潜在客户提出的问题，以暴露竞争对手的弱点]
+1. "询问他们关于 [主题] 的问题——他们的回答将揭示 [弱点]"
 
-### Trap Questions to Expect
-[Questions the competitor will encourage the prospect to ask you]
-1. "[Question]" — How to respond: [response]
+### 预期的陷阱问题
+[竞争对手会引导潜在客户向您提出的问题]
+1. "[问题]" —— 回应方式：[回应]
 
-### Win/Loss Patterns
-**We typically win because**: [top 3 reasons]
-**We typically lose because**: [top 3 reasons]
+### 赢/输模式
+**我们通常获胜的原因**：[前 3 个原因]
+**我们通常失利的原因**：[前 3 个原因]
 
-### Conversation Starters
-**If they're already using [Competitor]**:
-- [approach for displacement deals]
+### 对话开场
+**如果他们已经在使用 [竞争对手]**：
+- [替换交易的方法]
 
-**If they're evaluating both**:
-- [approach for competitive evaluations]
+**如果他们正在评估两者**：
+- [竞争性评估的方法]
 
-### Resources
-- [Customer story / case study that counters this competitor]
-- [Third-party comparison or review]
-- [Demo script optimized for this competitive situation]
+### 资源
+- [针对该竞争对手的客户案例/案例研究]
+- [第三方对比或评测]
+- [针对该竞争情况优化的演示脚本]
 ```
 
-Save as markdown.
+保存为 markdown 格式。
 
-### Step 4: Offer Next Steps
+### 步骤 4：提供后续步骤
 
-- "Want me to **create battlecards for other competitors**?"
-- "Should I **run a full competitive analysis** of the market?"
-- "Want me to **draft customer-facing comparison content** based on this?"
-- "Should I **update the positioning** based on competitive insights?"
+- "您是否需要我为**其他竞争对手创建作战卡**？"
+- "我是否应该**对市场进行全面竞争分析**？"
+- "您是否需要我**基于此起草面向客户的对比内容**？"
+- "我是否应该**基于竞争洞察更新定位**？"
 
-## Notes
+## 注意事项
 
-- Battlecards should be updated quarterly — competitors change fast
-- "Landmines" are the most valuable section for sales — teach reps what questions to ask
-- Never trash the competitor in front of the prospect — position on your strengths, not their weaknesses
-- Win/loss data from real deals is worth 10x any analysis — encourage the user to add it
-- Keep it to one page equivalent — sales reps won't read a 10-page document during a call
+- 作战卡应每季度更新——竞争对手变化很快
+- "地雷"是销售最有价值的部分——培训销售代表应该问什么问题
+- 切勿在潜在客户面前诋毁竞争对手——要强调自己的优势，而非他们的弱点
+- 真实交易的赢/输数据价值是任何分析的 10 倍——鼓励用户添加这些数据
+- 保持在一页的篇幅——销售代表在通话过程中不会阅读 10 页的文档

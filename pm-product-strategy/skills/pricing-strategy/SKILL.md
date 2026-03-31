@@ -1,85 +1,85 @@
 ---
 name: pricing-strategy
-description: "Analyze and design pricing strategies including pricing models, competitive pricing analysis, willingness-to-pay estimation, and price elasticity. Use when setting prices, evaluating pricing models, preparing for a pricing change, or comparing freemium vs paid approaches."
+description: "分析和设计定价策略，包括定价模式、竞争定价分析、支付意愿估算和价格弹性。适用于设定价格、评估定价模式、准备价格变更或比较免费增值与付费模式时使用。"
 ---
 
-## Pricing Strategy
+## 定价策略
 
-Design a pricing strategy grounded in value delivery, competitive positioning, and willingness to pay.
+设计基于价值交付、竞争定位和支付意愿的定价策略。
 
-### Context
+### 背景
 
-You are developing a pricing strategy for **$ARGUMENTS**.
+您正在为 **$ARGUMENTS** 制定定价策略。
 
-If the user provides files (competitor pricing, survey data, financial models, or usage data), read them first. Use web search to research competitor pricing if needed.
+如果用户提供了文件（竞争对手定价、调研数据、财务模型或使用数据），请先阅读这些文件。如需要，可使用网络搜索研究竞争对手定价。
 
-### Instructions
+### 指南
 
-1. **Understand the value delivered**:
-   - What is the core value proposition?
-   - What is the customer's alternative (and its cost)?
-   - What quantifiable outcomes does the product deliver? (time saved, revenue gained, cost reduced)
-   - What is the customer's willingness to pay based on that value?
+1. **理解交付的价值**：
+   - 核心价值主张是什么？
+   - 客户的替代方案是什么（及其成本）？
+   - 产品能带来哪些可量化的成果？（节省的时间、增加的收入、降低的成本）
+   - 基于该价值，客户的支付意愿如何？
 
-2. **Evaluate pricing models** — recommend the best fit:
+2. **评估定价模式** — 推荐最适合的方案：
 
-   | Model | Best For | Example |
+   | 模式 | 最适合 | 示例 |
    |---|---|---|
-   | **Flat-rate** | Simple products, predictable costs | Basecamp ($99/mo flat) |
-   | **Per-seat** | Collaboration tools, team products | Slack, Figma |
-   | **Usage-based** | Infrastructure, API products | AWS, Twilio |
-   | **Tiered** | Products with distinct user segments | Most SaaS (Free/Pro/Enterprise) |
-   | **Freemium** | Products with viral/network effects | Spotify, Notion |
-   | **Freemium + usage** | Platform products | Vercel, OpenAI API |
-   | **Value-based** | High-impact enterprise tools | Salesforce, Palantir |
+   | **Flat-rate（固定费率）** | 简单产品，成本可预测 | Basecamp（$99/月固定） |
+   | **Per-seat（按席位）** | 协作工具、团队产品 | Slack, Figma |
+   | **Usage-based（按使用量）** | 基础设施、API 产品 | AWS, Twilio |
+   | **Tiered（分层定价）** | 有明确用户细分的产品 | 大多数 SaaS（免费/专业/企业版） |
+   | **Freemium（免费增值）** | 具有病毒/网络效应的产品 | Spotify, Notion |
+   | **Freemium + usage（免费增值 + 使用量）** | 平台产品 | Vercel, OpenAI API |
+   | **Value-based（基于价值）** | 高影响力企业工具 | Salesforce, Palantir |
 
-3. **Analyze competitive pricing**:
-   - Map competitor pricing tiers and what's included
-   - Identify where your product sits (premium, mid-market, budget)
-   - Find pricing gaps or opportunities
-   - Note any industry pricing conventions
+3. **分析竞争定价**：
+   - 绘制竞争对手的定价层级及其包含内容
+   - 确定您产品的定位（高端、中端市场、预算型）
+   - 找出定价空白或机会
+   - 注意任何行业定价惯例
 
-4. **Design the pricing structure**:
-   - **Tiers**: Define 2-4 tiers with clear differentiation
-   - **Feature gating**: Which features go in which tier? (Use value metrics, not arbitrary limits)
-   - **Value metric**: What unit do you charge on? (users, events, storage, API calls)
-   - **Anchor pricing**: Set the most popular tier to feel like the obvious choice
-   - **Annual discount**: Typically 15-20% off monthly pricing
+4. **设计定价结构**：
+   - **分层（Tiers）**：定义 2-4 个层级，并有清晰差异化
+   - **功能门控（Feature gating）**：哪些功能放在哪个层级？（使用价值指标，而非任意限制）
+   - **价值指标（Value metric）**：按什么单位收费？（用户数、事件数、存储量、API 调用次数）
+   - **锚定定价（Anchor pricing）**：将最受欢迎的层级设置为显而易见的选择
+   - **年度折扣**：通常比月度定价优惠 15-20%
 
-5. **Estimate price sensitivity**:
-   - Van Westendorp Price Sensitivity Meter (if survey data available):
-     - Too cheap → quality concerns
-     - Cheap → good value
-     - Expensive → starting to hesitate
-     - Too expensive → won't buy
-   - Alternatively, estimate based on competitor pricing and value delivered
+5. **估算价格敏感度**：
+   - Van Westendorp 价格敏感度测试仪（如有调研数据可用）：
+     - 太便宜 → 质量担忧
+     - 便宜 → 物有所值
+     - 贵 → 开始犹豫
+     - 太贵 → 不会购买
+   - 或者，基于竞争对手定价和交付的价值进行估算
 
-6. **Plan pricing experiments**:
-   - A/B test pricing pages (different price points, tier names, feature bundles)
-   - Founder-led sales conversations to test willingness to pay
-   - Landing page tests with different price anchors
-   - Cohort analysis of conversion rates by price point
+6. **规划定价实验**：
+   - A/B 测试定价页面（不同的价格点、层级名称、功能组合）
+   - 创始人主导的销售对话，测试支付意愿
+   - 使用不同价格锚点的落地页测试
+   - 按价格点分析转化率的群组分析
 
-7. **Output a pricing recommendation**:
+7. **输出定价建议**：
    ```
-   Recommended Model: [Model type]
-   Value Metric: [What you charge on]
+   推荐模式：[模式类型]
+   价值指标：[收费依据]
 
-   | Tier | Price | Target Segment | Key Features | Positioning |
+   | 层级 | 价格 | 目标细分 | 核心功能 | 定位 |
    |---|---|---|---|---|
 
-   Key Assumptions:
-   - [Assumption] → [How to test]
+   关键假设：
+   - [假设] → [如何验证]
 
-   Risks:
-   - [Risk] → [Mitigation]
+   风险：
+   - [风险] → [缓解措施]
    ```
 
-Think step by step. Save as markdown. Flag any assumptions that need validation before launch.
+逐步思考。保存为 markdown 格式。标记任何在发布前需要验证的假设。
 
 ---
 
-### Further Reading
+### 延伸阅读
 
 - [Product Pricing Strategies 101](https://www.productcompass.pm/p/product-pricing-strategies-101)
-- [The AI Product Pricing Masterclass: OpenAI Product Lead on Why SaaS Pricing Fails in AI (and How to Fix It)](https://www.productcompass.pm/p/ai-product-pricing) (video course)
+- [The AI Product Pricing Masterclass: OpenAI Product Lead on Why SaaS Pricing Fails in AI (and How to Fix It)](https://www.productcompass.pm/p/ai-product-pricing)（视频课程）

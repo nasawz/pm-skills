@@ -1,122 +1,122 @@
 ---
-description: Brainstorm product ideas or experiments from PM, Designer, and Engineer perspectives — for existing or new products
-argument-hint: "[ideas|experiments] [existing|new] <product or feature description>"
+description: 从产品经理、设计师和工程师的视角头脑风暴产品创意或实验方案 —— 适用于现有产品或新产品
+argument-hint: "[ideas|experiments] [existing|new] <产品或功能描述>"
 ---
 
-# /brainstorm -- Multi-Perspective Ideation
+# /brainstorm -- 多视角创意构思
 
-Generate creative product ideas or experiment designs from three perspectives (PM, Designer, Engineer), tailored to whether you're working on an existing product or building something new.
+从三个视角（产品经理、设计师、工程师）生成创新的产品创意或实验设计方案，根据您是在改进现有产品还是构建新产品进行量身定制。
 
-## Invocation
+## 调用方式
 
 ```
-/brainstorm ideas existing Mobile banking app engagement
-/brainstorm ideas new AI-powered meal planning for busy parents
-/brainstorm experiments existing Onboarding flow redesign
-/brainstorm experiments new Marketplace for freelance designers
-/brainstorm                          # interactive mode — asks what you need
+/brainstorm ideas existing 移动银行应用用户参与度
+/brainstorm ideas new 为忙碌的父母提供 AI 智能的膳食规划
+/brainstorm experiments existing 新用户引导流程重新设计
+/brainstorm experiments new 自由设计师市场平台
+/brainstorm                          # 交互模式 —— 询问您需要什么
 ```
 
-## Workflow
+## 工作流程
 
-### Step 1: Determine Mode
+### 步骤 1：确定模式
 
-Parse the arguments to identify two dimensions:
+解析参数以识别两个维度：
 
-1. **What to brainstorm**: `ideas` (feature concepts) or `experiments` (validation tests)
-2. **Product stage**: `existing` (continuous discovery) or `new` (initial discovery)
+1. **头脑风暴内容**：`ideas`（功能概念）或 `experiments`（验证测试）
+2. **产品阶段**：`existing`（持续探索）或 `new`（初始探索）
 
-If either dimension is missing, ask the user. If both are missing, ask:
-- "Are you brainstorming **ideas** for what to build, or **experiments** to validate assumptions?"
-- "Is this for an **existing** product or a **new** product concept?"
+如果任一维度缺失，请询问用户。如果两个维度都缺失，请询问：
+- "您是在为要构建的内容头脑风暴 **ideas**（创意），还是为验证假设设计 **experiments**（实验）？"
+- "这是针对 **existing**（现有）产品还是 **new**（全新）产品概念？"
 
-### Step 2: Gather Context
+### 步骤 2：收集背景信息
 
-Ask the user for context. Be conversational — ask the most critical question first:
+向用户询问背景信息。采用对话式方式 —— 先询问最关键的问题：
 
-**For existing products:**
-- What is the product? Who are current users?
-- What opportunity area or problem space are you exploring?
-- Any constraints (technical debt, platform limitations, team capacity)?
-- What has been tried before?
+**对于现有产品：**
+- 产品是什么？当前用户是谁？
+- 您正在探索哪些机会领域或问题空间？
+- 有哪些限制（技术债、平台限制、团队产能）？
+- 之前尝试过什么？
 
-**For new products:**
-- What is the product concept? What problem does it solve?
-- Who is the target user? What's their current alternative?
-- What stage are you at? (napkin sketch, validated problem, early prototype)
-- What are the riskiest assumptions?
+**对于新产品：**
+- 产品概念是什么？它解决了什么问题？
+- 目标用户是谁？他们当前使用什么替代方案？
+- 您处于什么阶段？（草图阶段、问题已验证、早期原型）
+- 最具风险的假设是什么？
 
-Accept context from uploaded files (PRDs, research docs, strategy decks), pasted text, or conversation.
+接受来自上传文件（PRD、研究文档、策略演示文稿）、粘贴文本或对话的背景信息。
 
-### Step 3: Generate Output
+### 步骤 3：生成输出
 
-**If brainstorming ideas** — apply the **brainstorm-ideas-existing** or **brainstorm-ideas-new** skill:
-- Generate ideas from three perspectives: Product Manager (user value, business impact), Designer (UX, delight, accessibility), Engineer (technical innovation, platform leverage, scalability)
-- For each idea: name, description, target user impact, feasibility assessment
-- Rank the top 5 ideas with rationale
-- Flag which ideas could be quick wins vs. strategic bets
+**如果头脑风暴创意** —— 应用 **brainstorm-ideas-existing** 或 **brainstorm-ideas-new** 技能：
+- 从三个视角生成创意：产品经理（用户价值、业务影响）、设计师（用户体验、愉悦感、可访问性）、工程师（技术创新、平台利用、可扩展性）
+- 对于每个创意：名称、描述、目标用户影响、可行性评估
+- 排列出前 5 个创意并说明理由
+- 标注哪些创意可以作为速赢项目，哪些属于战略性投入
 
-**If brainstorming experiments** — apply the **brainstorm-experiments-existing** or **brainstorm-experiments-new** skill:
-- For existing products: suggest A/B tests, prototypes, fake-door tests, wizard-of-oz, concierge experiments, and spikes
-- For new products: create XYZ+S hypotheses and suggest pretotype experiments (landing pages, explainer videos, pre-orders, concierge MVPs)
-- For each experiment: hypothesis, method, success criteria, effort estimate, expected timeline
-- Rank by learning-per-effort ratio
+**如果头脑风暴实验** —— 应用 **brainstorm-experiments-existing** 或 **brainstorm-experiments-new** 技能：
+- 对于现有产品：建议 A/B 测试、原型、假门测试、绿野仙踪测试、门房式实验和探索性验证
+- 对于新产品：创建 XYZ+S 假设并建议预原型实验（落地页、说明视频、预购、门房式 MVP）
+- 对于每个实验：假设、方法、成功标准、工作量估算、预期时间线
+- 按学习效率（投入产出比）排序
 
-### Step 4: Deepen and Iterate
+### 步骤 4：深化和迭代
 
-After presenting initial results, offer:
-- "Want me to **detail** any of these ideas into a fuller spec?"
-- "Should I **identify assumptions** behind the top ideas?" (chains into the `identify-assumptions-existing` or `identify-assumptions-new` skill)
-- "Want to **design experiments** to validate the top ideas?" (chains into experiment mode)
-- "Should I **prioritize** these against your current backlog?" (chains into the `prioritize-features` skill)
+展示初步结果后，提供以下选项：
+- "需要我**详细阐述**其中任何一个创意为完整的规格说明吗？"
+- "需要我**识别**顶级创意背后的**假设**吗？"（链入 `identify-assumptions-existing` 或 `identify-assumptions-new` 技能）
+- "需要我**设计实验**来验证顶级创意吗？"（链入实验模式）
+- "需要我根据您当前的待办事项对这些创意进行**优先级排序**吗？"（链入 `prioritize-features` 技能）
 
-## Output Format
+## 输出格式
 
-### For Ideas:
+### 对于创意：
 ```
-## Brainstorm: [Product/Feature Area]
-**Mode**: Ideas for [existing/new] product
-**Context**: [1-2 sentence summary]
+## 头脑风暴：[产品/功能领域]
+**模式**：[现有/全新]产品的创意
+**背景**：[1-2 句话总结]
 
-### PM Perspective
-1. **[Idea Name]** — [description] | Impact: [H/M/L] | Effort: [H/M/L]
+### 产品经理视角
+1. **[创意名称]** — [描述] | 影响度：[H/M/L] | 工作量：[H/M/L]
 2. ...
 
-### Designer Perspective
-1. **[Idea Name]** — [description] | Impact: [H/M/L] | Effort: [H/M/L]
+### 设计师视角
+1. **[创意名称]** — [描述] | 影响度：[H/M/L] | 工作量：[H/M/L]
 2. ...
 
-### Engineer Perspective
-1. **[Idea Name]** — [description] | Impact: [H/M/L] | Effort: [H/M/L]
+### 工程师视角
+1. **[创意名称]** — [描述] | 影响度：[H/M/L] | 工作量：[H/M/L]
 2. ...
 
-### Top 5 Recommendations
-| Rank | Idea | Why | Quick Win? |
+### 前 5 项推荐
+| 排名 | 创意 | 理由 | 速赢项目？ |
 |------|------|-----|------------|
 
-### Next Steps
-[What to do with these ideas]
+### 下一步行动
+[如何处理这些创意]
 ```
 
-### For Experiments:
+### 对于实验：
 ```
-## Experiment Design: [Product/Feature Area]
-**Mode**: Experiments for [existing/new] product
+## 实验设计：[产品/功能领域]
+**模式**：[现有/全新]产品的实验
 
-### Hypotheses
-1. **[Hypothesis]** — XYZ format: [X]% of [Y] will [Z] within [S timeframe]
+### 假设
+1. **[假设]** — XYZ 格式：[S 时间范围内]，[Y] 的 [X]% 将 [Z]
 
-### Recommended Experiments
-| # | Experiment | Tests Hypothesis | Method | Effort | Timeline |
+### 推荐实验
+| # | 实验 | 验证的假设 | 方法 | 工作量 | 时间线 |
 |---|-----------|-----------------|--------|--------|----------|
 
-### Experiment Details
-[For each experiment: setup, success criteria, risks, what you'll learn]
+### 实验详情
+[对于每个实验：设置、成功标准、风险、您将学到什么]
 ```
 
-## Notes
+## 注意事项
 
-- For existing products, ground ideas in current user behavior and validated problems
-- For new products, focus on desirability and feasibility risks first
-- If the user uploads a research doc or interview transcript, extract insights before brainstorming
-- Encourage breadth first, then depth — generate many ideas before evaluating
+- 对于现有产品，创意应基于当前用户行为和已验证的问题
+- 对于新产品，首先关注需求性和可行性风险
+- 如果用户上传了研究文档或访谈记录，在头脑风暴前先提取洞察
+- 鼓励先广度后深度 —— 在评估之前先生成大量创意

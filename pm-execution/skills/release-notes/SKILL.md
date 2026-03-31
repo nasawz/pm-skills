@@ -1,63 +1,63 @@
 ---
 name: release-notes
-description: "Generate user-facing release notes from tickets, PRDs, or changelogs. Creates clear, engaging summaries organized by category (new features, improvements, fixes). Use when writing release notes, creating changelogs, announcing product updates, or summarizing what shipped."
+description: "从工单、PRD 或变更日志生成面向用户的发布说明。创建清晰、引人入胜的摘要，按类别组织（新功能、改进、修复）。适用于编写发布说明、创建变更日志、发布产品更新或总结已发布内容。"
 ---
 
-## Release Notes Generator
+## 发布说明生成器
 
-Transform technical tickets, PRDs, or internal changelogs into polished, user-facing release notes.
+将技术工单、PRD 或内部变更日志转化为经过打磨的、面向用户的发布说明。
 
-### Context
+### 上下文
 
-You are writing release notes for **$ARGUMENTS**.
+您正在为 **$ARGUMENTS** 撰写发布说明。
 
-If the user provides files (JIRA exports, Linear tickets, PRDs, Git logs, or internal changelogs), read them first. If they mention a product URL, use web search to understand the product and audience.
+如果用户提供了文件（JIRA 导出、Linear 工单、PRD、Git 日志或内部变更日志），请先阅读这些文件。如果用户提到了产品 URL，请使用网络搜索来了解产品和目标受众。
 
-### Instructions
+### 指导说明
 
-1. **Gather raw material**: Read all provided tickets, changelogs, or descriptions. Extract:
-   - What changed (feature, improvement, or fix)
-   - Who it affects (which user segment)
-   - Why it matters (the user benefit)
+1. **收集原始材料**：阅读所有提供的工单、变更日志或描述。提取：
+   - 发生了什么变化（功能、改进或修复）
+   - 影响哪些用户（哪个用户群体）
+   - 为什么重要（用户价值）
 
-2. **Categorize changes**:
-   - **New Features**: Entirely new capabilities
-   - **Improvements**: Enhancements to existing features
-   - **Bug Fixes**: Issues resolved
-   - **Breaking Changes**: Anything that requires user action (migrations, API changes)
-   - **Deprecations**: Features being sunset
+2. **对变更进行分类**：
+   - **新功能 (New Features)**：全新的能力
+   - **改进 (Improvements)**：对现有功能的增强
+   - **错误修复 (Bug Fixes)**：已解决的问题
+   - **重大变更 (Breaking Changes)**：任何需要用户采取行动的内容（迁移、API 变更）
+   - **废弃 (Deprecations)**：即将下线的功能
 
-3. **Write each entry** following these principles:
-   - Lead with the user benefit, not the technical change
-   - Use plain language — avoid jargon, internal codenames, or ticket numbers
-   - Keep each entry to 1-3 sentences
-   - Include visuals or screenshots if the user provides them
+3. **按照以下原则撰写每个条目**：
+   - 以用户价值开头，而非技术变更
+   - 使用平实的语言——避免使用术语、内部代码名或工单编号
+   - 每个条目控制在 1-3 句话
+   - 如果用户提供了视觉素材或截图，请包含它们
 
-   **Example transformations**:
-   - Technical: "Implemented Redis caching layer for dashboard API endpoints"
-   - User-facing: "Dashboards now load up to 3× faster, so you spend less time waiting and more time analyzing."
+   **转换示例**：
+   - 技术语言："Implemented Redis caching layer for dashboard API endpoints"
+   - 面向用户："仪表板现在的加载速度最多可提升 3 倍，让您减少等待时间，更多时间用于分析。"
 
-   - Technical: "Fixed race condition in concurrent checkout flow"
-   - User-facing: "Fixed an issue where some orders could fail during high-traffic periods."
+   - 技术语言："Fixed race condition in concurrent checkout flow"
+   - 面向用户："修复了在高流量期间部分订单可能失败的问题。"
 
-4. **Structure the release notes**:
+4. **构建发布说明结构**：
 
    ```
-   # [Product Name] — [Version / Date]
+   # [产品名称] — [版本 / 日期]
 
-   ## New Features
-   - **[Feature name]**: [1-2 sentence description of what it does and why it matters]
+   ## 新功能 (New Features)
+   - **[功能名称]**：[1-2 句话描述其功能及重要性]
 
-   ## Improvements
-   - **[Area]**: [What got better and how it helps]
+   ## 改进 (Improvements)
+   - **[领域]**：[哪些方面得到改进以及如何帮助用户]
 
-   ## Bug Fixes
-   - Fixed [issue description in user terms]
+   ## 错误修复 (Bug Fixes)
+   - 修复了 [以用户术语描述的问题]
 
-   ## Breaking Changes (if any)
-   - **Action required**: [What users need to do]
+   ## 重大变更 (Breaking Changes)（如有）
+   - **需要采取的行动**：[用户需要做什么]
    ```
 
-5. **Adjust tone** to match the product's voice — professional for B2B, friendly for consumer, developer-focused for APIs.
+5. **调整语气**以匹配产品的语调——B2B 产品使用专业语气，消费者产品使用友好语气，API 产品使用面向开发者的语气。
 
-Save as a markdown document. If the user wants HTML or another format, convert accordingly.
+保存为 Markdown 文档。如果用户需要 HTML 或其他格式，请相应转换。

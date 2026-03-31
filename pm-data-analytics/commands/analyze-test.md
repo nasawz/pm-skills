@@ -1,109 +1,109 @@
 ---
-description: Analyze A/B test results — statistical significance, sample size validation, and ship/extend/stop recommendations
-argument-hint: "<test results as data, screenshot, or description>"
+description: 分析A/B测试结果 —— 统计显著性、样本量验证，以及发布/延长/停止的建议
+argument-hint: "<测试结果数据、截图或描述>"
 ---
 
-# /analyze-test -- A/B Test Analysis
+# /analyze-test -- A/B测试分析
 
-Evaluate experiment results with statistical rigor and translate findings into a clear product decision: ship, extend, or stop.
+以统计严谨性评估实验结果，并将发现转化为明确的产品决策：发布、延长或停止。
 
-## Invocation
-
-```
-/analyze-test Control: 4.2% conversion (n=5000), Variant: 4.8% conversion (n=5100)
-/analyze-test [upload a CSV of test results]
-/analyze-test [screenshot from your experimentation platform]
-```
-
-## Workflow
-
-### Step 1: Accept Test Data
-
-Accept in any format:
-- Summary statistics (conversion rates, sample sizes per variant)
-- Raw event data (CSV with user_id, variant, converted, timestamp)
-- Screenshot from an experimentation platform (Optimizely, LaunchDarkly, etc.)
-- Description of the experiment and results
-
-### Step 2: Validate Test Design
-
-Before analyzing results, check:
-- Was sample size sufficient? (run a power analysis)
-- Was the test run long enough? (capture weekly cycles, minimum 1-2 business cycles)
-- Was randomization clean? (check for sample ratio mismatch)
-- Were there any external factors during the test period?
-
-Flag issues if found — results from a flawed test can be misleading.
-
-### Step 3: Analyze Results
-
-Apply the **ab-test-analysis** skill:
-
-- **Statistical significance**: Calculate p-value and confidence interval
-- **Effect size**: Absolute and relative difference between variants
-- **Practical significance**: Is the effect large enough to matter for the business?
-- **Confidence interval**: What's the range of plausible true effects?
-- **Segment analysis**: If data allows, check for differential effects by user segment
-
-### Step 4: Generate Analysis
+## 调用方式
 
 ```
-## A/B Test Analysis: [Test Name]
+/analyze-test 对照组：4.2%转化率 (n=5000)，实验组：4.8%转化率 (n=5100)
+/analyze-test [上传测试结果的CSV文件]
+/analyze-test [上传实验平台的截图]
+```
 
-**Date**: [today]
-**Test duration**: [X days/weeks]
-**Total sample**: [N users]
+## 工作流程
 
-### Results Summary
-| Variant | Sample | Metric | Rate | 95% CI |
+### 第1步：接收测试数据
+
+接受以下任意格式：
+- 汇总统计数据（各变体的转化率、样本量）
+- 原始事件数据（包含user_id、variant、converted、timestamp的CSV文件）
+- 实验平台截图（Optimizely、LaunchDarkly等）
+- 实验及结果的描述说明
+
+### 第2步：验证测试设计
+
+在分析结果之前，检查以下内容：
+- 样本量是否充足？（进行功效分析）
+- 测试运行时间是否足够？（需覆盖完整的周周期，至少1-2个业务周期）
+- 随机化是否干净？（检查样本比例偏差）
+- 测试期间是否存在外部因素影响？
+
+如发现问题需标注 —— 有缺陷的测试结果可能产生误导。
+
+### 第3步：分析结果
+
+应用 **ab-test-analysis** 技能：
+
+- **统计显著性**：计算P值和置信区间
+- **效应量**：各变体之间的绝对差异和相对差异
+- **实际显著性**：效应大小是否足以对业务产生影响？
+- **置信区间**：真实效应的合理范围是多少？
+- **分群分析**：如果数据允许，检查不同用户群体的差异化效应
+
+### 第4步：生成分析报告
+
+```
+## A/B测试分析：[测试名称]
+
+**日期**：[今天]
+**测试周期**：[X天/周]
+**总样本量**：[N名用户]
+
+### 结果摘要
+| 变体 | 样本量 | 指标 | 比率 | 95%置信区间 |
 |---------|--------|--------|------|--------|
-| Control | [n] | [metric] | [X%] | [X% - Y%] |
-| Variant | [n] | [metric] | [X%] | [X% - Y%] |
+| 对照组 | [n] | [指标] | [X%] | [X% - Y%] |
+| 实验组 | [n] | [指标] | [X%] | [X% - Y%] |
 
-### Statistical Analysis
-- **Relative lift**: [+X%] ([CI range])
-- **P-value**: [X]
-- **Statistically significant**: [Yes/No] at 95% confidence
-- **Minimum detectable effect**: [X%] (what the test was powered to detect)
+### 统计分析
+- **相对提升**：[+X%]（[置信区间范围]）
+- **P值**：[X]
+- **统计显著性**：[是/否]，95%置信水平
+- **最小可检测效应**：[X%]（测试设计的检测能力）
 
-### Sample Size Check
-- **Required sample**: [N] per variant (for [X%] MDE at 80% power)
-- **Actual sample**: [N] per variant
-- **Verdict**: [Sufficiently powered / Underpowered / Overpowered]
+### 样本量检查
+- **所需样本量**：每组[N]（针对[X%] MDE，80%统计功效）
+- **实际样本量**：每组[N]
+- **结论**：[功效充足 / 功效不足 / 功效过高]
 
-### Decision
+### 决策建议
 
-**Recommendation: [SHIP / EXTEND / STOP]**
+**建议：[发布 / 延长 / 停止]**
 
-[Clear explanation of why, considering both statistical and practical significance]
+[综合考虑统计显著性和实际显著性的明确解释]
 
-### Business Impact Estimate
-If shipped to 100% of users:
-- **Expected impact**: [metric change per month/quarter]
-- **Revenue impact**: [if applicable]
-- **Confidence**: [How certain we are about this estimate]
+### 业务影响预估
+如果全量发布：
+- **预期影响**：[每月/每季度指标变化]
+- **收入影响**：[如适用]
+- **置信度**：[对该预估的确定程度]
 
-### Caveats
-- [Any concerns about the test validity]
-- [Segments where results differ]
-- [Novelty effects or other biases to consider]
+### 注意事项
+- [测试有效性的任何疑虑]
+- [结果存在差异的用户群体]
+- [需考虑的新奇效应或其他偏差]
 
-### Follow-Up
-- [What to test next based on learnings]
-- [Monitoring plan if shipping the variant]
+### 后续行动
+- [基于发现下一步要测试的内容]
+- [如发布变体后的监控计划]
 ```
 
-### Step 5: Offer Next Steps
+### 第5步：提供后续建议
 
-- "Want me to **design a follow-up experiment** based on these findings?"
-- "Should I **run the analysis for specific segments**?"
-- "Want me to **generate the SQL** to monitor this metric post-launch?"
+- "需要我**设计后续实验**来验证这些发现吗？"
+- "是否需要我**针对特定用户群体进行分析**？"
+- "需要我**生成SQL语句**来监控上线后的指标吗？"
 
-## Notes
+## 注意事项
 
-- Statistical significance ≠ practical significance — a 0.1% lift can be significant with enough data but not worth shipping
-- Always check for sample ratio mismatch before trusting results
-- Novelty effects can inflate short-term results — recommend monitoring for 2-4 weeks post-launch
-- If the test is underpowered, the right answer is usually "extend" not "no effect"
-- For revenue metrics, use confidence intervals to estimate best-case and worst-case business impact
-- If data is provided as CSV, generate the full analysis using Python with scipy.stats
+- 统计显著性 ≠ 实际显著性 —— 0.1%的提升在数据量足够时可能具有显著性，但不值得发布
+- 在信任结果之前，务必检查样本比例偏差
+- 新奇效应可能夸大短期效果 —— 建议上线后持续监控2-4周
+- 如果测试功效不足，正确的做法通常是"延长"而非"无效果"
+- 对于收入类指标，使用置信区间估算最好和最坏情况下的业务影响
+- 如果以CSV格式提供数据，使用Python和scipy.stats生成完整分析

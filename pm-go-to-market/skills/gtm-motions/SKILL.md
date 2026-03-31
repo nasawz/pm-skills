@@ -1,155 +1,155 @@
 ---
 name: gtm-motions
-description: "Identify the best GTM motions and tools across 7 motion types: Inbound, Outbound, Paid Digital, Community, Partners, ABM, and PLG. Use when selecting marketing channels, choosing between inbound and outbound strategy, or planning cross-channel campaigns."
+description: "识别最佳的 GTM（市场进入）策略和工具，涵盖 7 种策略类型：入站营销、外拓销售、付费数字广告、社区营销、合作伙伴营销、基于账户的营销（ABM）和产品驱动增长（PLG）。适用于选择营销渠道、制定入站与外拓策略，或规划跨渠道营销活动。"
 ---
-# GTM Motions
+# GTM 市场进入策略
 
-## Overview
-Identify and evaluate the best go-to-market motions for your product. This skill analyzes seven proven GTM approaches with specific tools and tactics to help you build a balanced acquisition strategy.
+## 概述
+识别并评估最适合您产品的市场进入策略。本技能分析七种经过验证的 GTM 方法，提供具体的工具和战术，帮助您构建平衡的用户获取策略。
 
-## When to Use
-- Selecting marketing channels for your product
-- Choosing between inbound vs outbound strategy
-- Building your GTM toolkit and tech stack
-- Evaluating PLG vs traditional sales motion
-- Planning cross-channel marketing campaigns
+## 适用场景
+- 为您的产品选择营销渠道
+- 在入站营销与外拓销售策略之间做出选择
+- 构建 GTM 工具箱和技术栈
+- 评估产品驱动增长（PLG）与传统销售模式
+- 规划跨渠道营销活动
 
-## The 7 GTM Motions
+## 7 种 GTM 市场进入策略
 
-### 1. Inbound Marketing
-Attract customers through valuable content and thought leadership.
-- **Tools**: LinkedIn, SEMRush, Grammarly, HubSpot, Airtable
-- **Tactics**: Blog content, webinars, whitepapers, SEO, email nurture sequences
-- **Best For**: B2B SaaS, technical products, long sales cycles
-- **Strength**: Builds brand authority and attracts high-intent prospects
-- **Challenge**: Requires consistent content creation; slower to show results
+### 1. 入站营销
+通过有价值的内容和思想领导力吸引客户。
+- **工具**：LinkedIn、SEMRush、Grammarly、HubSpot、Airtable
+- **战术**：博客内容、网络研讨会、白皮书、SEO、邮件培育序列
+- **最适合**：B2B SaaS、技术产品、长销售周期
+- **优势**：建立品牌权威，吸引高意向潜在客户
+- **挑战**：需要持续的内容创作；见效较慢
 
-### 2. Outbound Sales
-Proactively reach target prospects through direct engagement.
-- **Tools**: LinkedIn Sales Navigator, ZoomInfo, Lemlist, Apollo, Hunter
-- **Tactics**: Cold email campaigns, LinkedIn outreach, phone prospecting, personalized demos
-- **Best For**: Enterprise sales, high-value contracts, niche markets
-- **Strength**: Predictable pipeline generation; control over target selection
-- **Challenge**: Low response rates; resource-intensive; requires skilled sales team
+### 2. 外拓销售
+通过直接接触主动触达目标潜在客户。
+- **工具**：LinkedIn Sales Navigator、ZoomInfo、Lemlist、Apollo、Hunter
+- **战术**：冷邮件营销、LinkedIn 触达、电话拓客、个性化演示
+- **最适合**：企业级销售、高价值合同、细分市场
+- **优势**：可预测的管道生成；对目标选择有控制权
+- **挑战**：回复率低；资源密集；需要专业的销售团队
 
-### 3. Paid Digital Advertising
-Reach target audiences through paid channels with precision targeting.
-- **Tools**: Google Ads, Meta Ads, LinkedIn Ads, Newswire, Retargeting platforms
-- **Tactics**: Search ads, display advertising, social ads, video advertising, retargeting
-- **Best For**: Products with clear target demographics, competitive keywords
-- **Strength**: Fast results; scalable; measurable ROI; precise targeting
-- **Challenge**: Can be expensive; requires continuous optimization; competitive
+### 3. 付费数字广告
+通过付费渠道以精准定位触达目标受众。
+- **工具**：Google Ads、Meta Ads、LinkedIn Ads、Newswire、重定向平台
+- **战术**：搜索广告、展示广告、社交广告、视频广告、重定向
+- **最适合**：目标人群明确的产品、竞争性关键词
+- **优势**：见效快；可扩展；ROI 可衡量；定位精准
+- **挑战**：成本可能较高；需要持续优化；竞争激烈
 
-### 4. Community Marketing
-Build engaged communities where customers help each other and spread the word.
-- **Tools**: Slack, Reddit, Discord, Circle, Mighty Networks, WhatsApp
-- **Tactics**: Community forums, user groups, events, mentorship, ambassador programs
-- **Best For**: Developer products, communities of practice, loyal user bases
-- **Strength**: Builds loyalty; organic word-of-mouth; valuable feedback; low CAC
-- **Challenge**: Requires active moderation; time to build critical mass
+### 4. 社区营销
+构建活跃的社区，让客户相互帮助并传播口碑。
+- **工具**：Slack、Reddit、Discord、Circle、Mighty Networks、WhatsApp
+- **战术**：社区论坛、用户群组、活动、导师计划、大使计划
+- **最适合**：开发者产品、专业实践社区、忠实用户群体
+- **优势**：建立忠诚度；自然口碑传播；宝贵反馈；低 CAC
+- **挑战**：需要积极管理；需要时间建立规模
 
-### 5. Partner Marketing
-Leverage partner networks to co-market and reach new audiences.
-- **Tools**: Miro, AWS Startups, Oracle Partners, Stripe, Shopify App Store
-- **Tactics**: Partner integrations, co-marketing agreements, channel partnerships, resellers
-- **Best For**: Complementary products, platform ecosystems, expanding market reach
-- **Strength**: Access to established customer bases; shared costs; credibility
-- **Challenge**: Partner alignment; revenue sharing; dependency on partners
+### 5. 合作伙伴营销
+利用合作伙伴网络进行联合营销并触达新受众。
+- **工具**：Miro、AWS Startups、Oracle Partners、Stripe、Shopify App Store
+- **战术**：合作伙伴集成、联合营销协议、渠道合作、代理商
+- **最适合**：互补产品、平台生态系统、扩大市场覆盖
+- **优势**：接触既有客户群体；成本共担；可信度提升
+- **挑战**：合作伙伴对齐；收益分成；对合作伙伴的依赖
 
-### 6. Account-Based Marketing (ABM)
-Treat high-value accounts as individual markets with personalized campaigns.
-- **Tools**: Pipedrive, Hunter, Clay, 6sense, Terminus, Demandbase
-- **Tactics**: Personalized messaging, account-targeted content, coordinated sales/marketing
-- **Best For**: Enterprise deals, limited target accounts, high deal values
-- **Strength**: Higher conversion rates; larger deal sizes; strong sales-marketing alignment
-- **Challenge**: Requires detailed account research; resource intensive; not scalable to SMB
+### 6. 基于账户的营销（ABM）
+将高价值账户视为独立市场，提供个性化营销活动。
+- **工具**：Pipedrive、Hunter、Clay、6sense、Terminus、Demandbase
+- **战术**：个性化信息、账户定向内容、销售与营销协同
+- **最适合**：企业级交易、有限目标账户、高交易价值
+- **优势**：更高的转化率；更大的交易规模；销售与营销强协同
+- **挑战**：需要详细的账户研究；资源密集；不适用于中小企业（SMB）
 
-### 7. Product-Led Growth (PLG)
-Drive adoption through the product experience itself with minimal sales friction.
-- **Tools**: Hotjar, Amplitude, Sentry, PostHog, Intercom, Appcues
-- **Tactics**: Free trials, freemium models, in-app onboarding, self-serve demos, product analytics
-- **Best For**: Self-service products, SMB market, low ACV, viral potential
-- **Strength**: Low CAC; aligns product and growth; strong PMF signals; scalable
-- **Challenge**: Requires excellent product experience; lower price points; longer ROI
+### 7. 产品驱动增长（PLG）
+通过产品体验本身推动采用，最大限度减少销售摩擦。
+- **工具**：Hotjar、Amplitude、Sentry、PostHog、Intercom、Appcues
+- **战术**：免费试用、免费增值模式、应用内引导、自助式演示、产品分析
+- **最适合**：自助服务产品、中小企业市场、低 ACV、具备病毒式传播潜力
+- **优势**：低 CAC；产品与增长协同；强 PMF 信号；可扩展
+- **挑战**：需要卓越的产品体验；价格点较低；ROI 回报周期较长
 
-## How It Works
+## 工作原理
 
-### Step 1: Understand Your Product
-Define product characteristics:
-- Price point and ACV (contract value)
-- Sales cycle length
-- Buyer type and decision-making process
-- Product complexity and learning curve
-- Target market size and concentration
+### 步骤 1：了解您的产品
+定义产品特征：
+- 价格点和 ACV（合同价值）
+- 销售周期长度
+- 买家类型和决策流程
+- 产品复杂度和学习曲线
+- 目标市场规模和集中度
 
-### Step 2: Evaluate Market Conditions
-Assess your market dynamics:
-- Competitive intensity of your keywords/channels
-- Target audience location and accessibility
-- Budget availability for paid channels
-- Your team size and capabilities
-- Timeline to revenue generation
+### 步骤 2：评估市场条件
+评估您的市场动态：
+- 关键词/渠道的竞争强度
+- 目标受众的位置和可访问性
+- 付费渠道的预算可用性
+- 团队规模和能力
+- 产生收入的时间线
 
-### Step 3: Score Each Motion
-Rate fit for your product (1-10 scale):
-- Inbound: Content creation capability, brand building timeline
-- Outbound: Prospect list availability, sales team capacity
-- Paid: Budget flexibility, target audience clarity, conversion potential
-- Community: Existing communities, product network effects
-- Partners: Complementary products, channel availability
-- ABM: Deal size and account concentration
-- PLG: Product trial-ability, pricing flexibility
+### 步骤 3：为每种策略评分
+评估与您产品的匹配度（1-10 分制）：
+- 入站营销：内容创作能力、品牌建设时间线
+- 外拓销售：潜在客户名单可用性、销售团队能力
+- 付费广告：预算灵活性、目标受众清晰度、转化潜力
+- 社区营销：现有社区、产品网络效应
+- 合作伙伴营销：互补产品、渠道可用性
+- ABM：交易规模和账户集中度
+- PLG：产品可试用性、定价灵活性
 
-### Step 4: Design Motion Stack
-Select and prioritize 2-4 motions to execute:
-- Primary motion (highest potential for your business)
-- Secondary motions (complementary acquisition channels)
-- Motion sequencing (which to start first)
-- Resource allocation across channels
+### 步骤 4：设计策略组合
+选择并确定 2-4 种要执行的策略优先级：
+- 主要策略（对您的业务潜力最大）
+- 次要策略（互补的获客渠道）
+- 策略顺序（从哪个开始）
+- 跨渠道的资源分配
 
-### Step 5: Build Execution Plan
-Create 90-day implementation roadmap:
-- Quick wins and early validation
-- Team and tool requirements
-- Success metrics for each motion
-- Optimization and scaling strategy
-- Budget and resource allocation
+### 步骤 5：制定执行计划
+创建 90 天实施路线图：
+- 快速胜利和早期验证
+- 团队和工具需求
+- 每种策略的成功指标
+- 优化和扩展策略
+- 预算和资源分配
 
-## Input Format
-Use $ARGUMENTS to pass:
-- Product description and positioning
-- Target customer profile and market
-- Price point and sales cycle
-- Team size and capabilities
-- Budget and timeline constraints
-- Existing channels or data
+## 输入格式
+使用 $ARGUMENTS 传递：
+- 产品描述和定位
+- 目标客户画像和市场
+- 价格点和销售周期
+- 团队规模和能力
+- 预算和时间限制
+- 现有渠道或数据
 
-## Output
-A comprehensive GTM motions analysis including:
-- Scoring of all 7 motions for your product
-- Recommended motion stack (primary and secondary)
-- Tool recommendations for each motion
-- 90-day execution plan with milestones
-- Resource and budget requirements
-- Success metrics and measurement framework
-- Competitive differentiation through motion choice
+## 输出
+全面的 GTM 策略分析，包括：
+- 为您的产品对全部 7 种策略进行评分
+- 推荐的策略组合（主要和次要）
+- 每种策略的工具推荐
+- 90 天执行计划及里程碑
+- 资源和预算需求
+- 成功指标和衡量框架
+- 通过策略选择实现的竞争差异化
 
-## Framework
-Based on Product Compass GTM motion analysis. Provides a systematic approach to balancing customer acquisition across multiple channels.
+## 框架
+基于 Product Compass GTM 策略分析。提供系统化的方法来平衡多个渠道的客户获取。
 
-## Tips
-- Most successful products use 2-4 complementary motions
-- Start with your strongest motion; add complexity gradually
-- Paid channels fund growth while organic channels build long-term value
-- Revisit motion mix quarterly as company scales
-- Combine inbound (brand) with outbound (sales) for B2B strength
-- Use PLG to reduce CAC; use paid to accelerate proven channels
+## 提示
+- 大多数成功的产品使用 2-4 种互补策略
+- 从您最强的策略开始；逐步增加复杂度
+- 付费渠道资助增长，而有机渠道建立长期价值
+- 随着公司规模扩大，每季度重新审视策略组合
+- 将入站营销（品牌）与外拓销售（销售）相结合以增强 B2B 实力
+- 使用 PLG 降低 CAC；使用付费广告加速已验证的渠道
 
 ---
 
-### Further Reading
+### 延伸阅读
 
-- [5 GTM Principles You Should Know as a PM](https://www.productcompass.pm/p/5-gtm-principles-with-frameworks-templates)
-- [OpenAI’s Product Leader Shares 3-Layer Distribution Framework To Win Mind & Market Share in the AI World](https://www.productcompass.pm/p/distribution-framework-ai-products)
-- [Product Management vs. Product Marketing vs. Product Growth 101](https://www.productcompass.pm/p/product-management-vs-product-marketing)
-- [How to Design a Value Proposition Customers Can't Resist?](https://www.productcompass.pm/p/how-to-design-value-proposition-template)
+- [作为 PM 应该了解的 5 个 GTM 原则](https://www.productcompass.pm/p/5-gtm-principles-with-frameworks-templates)
+- [OpenAI 产品负责人分享在 AI 世界赢得心智和市场份额的三层分销框架](https://www.productcompass.pm/p/distribution-framework-ai-products)
+- [产品管理 vs 产品营销 vs 产品增长 101](https://www.productcompass.pm/p/product-management-vs-product-marketing)
+- [如何设计让客户无法抗拒的价值主张？](https://www.productcompass.pm/p/how-to-design-value-proposition-template)

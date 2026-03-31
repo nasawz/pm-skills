@@ -1,77 +1,77 @@
 ---
 name: competitive-battlecard
-description: "Create sales-ready competitive battlecards comparing your product against a specific competitor — positioning, feature comparison, objection handling, and win/loss patterns. Use when preparing sales teams, creating competitive materials, or responding to 'why not competitor X?'"
+description: "创建可直接用于销售团队使用的竞争对战卡，将您的产品与特定竞争对手进行对比——包括市场定位、功能对比、异议处理以及胜败模式分析。适用于准备销售团队、创建竞争材料或回答"为什么不选择竞争对手X"等场景。"
 ---
 
-## Competitive Battlecard
+## 竞争对战卡
 
-Create a concise, sales-ready battlecard for use against a specific competitor.
+针对特定竞争对手创建一份简洁、可直接用于销售的对战卡。
 
-### Context
+### 背景
 
-You are creating a competitive battlecard for **$ARGUMENTS**.
+您正在为 **$ARGUMENTS** 创建竞争对战卡。
 
-Use web search to research the competitor's current product, pricing, positioning, and recent changes. If the user provides files (feature lists, win/loss data, sales call notes), read them first.
+使用网络搜索来研究竞争对手的当前产品、定价、市场定位和最新变化。如果用户提供了文件（功能列表、胜败数据、销售通话记录），请先阅读这些文件。
 
-### Instructions
+### 说明
 
-1. **Research the competitor** (use web search):
-   - Current product offerings and features
-   - Pricing tiers and model
-   - Target market and positioning
-   - Recent product launches or changes
-   - Known strengths and weaknesses
-   - Customer reviews and sentiment (G2, Capterra, Reddit)
+1. **研究竞争对手**（使用网络搜索）：
+   - 当前产品功能和特性
+   - 定价层级和模式
+   - 目标市场和市场定位
+   - 近期产品发布或变更
+   - 已知的优势和劣势
+   - 客户评价和口碑（G2、Capterra、Reddit）
 
-2. **Create the battlecard** with these sections:
+2. **创建对战卡**，包含以下部分：
 
-   ### Company Overview
-   - Founded, HQ, funding/revenue (if public)
-   - Target market and ICP
-   - Positioning in one sentence
+   ### 公司概览
+   - 成立时间、总部所在地、融资/营收（如果是上市公司）
+   - 目标市场和理想客户画像（ICP）
+   - 一句话市场定位
 
-   ### Quick Comparison
+   ### 快速对比
 
-   | Capability | Us | Them | Winner |
+   | 能力 | 我们 | 他们 | 胜出者 |
    |---|---|---|---|
-   | [Feature area 1] | [Our approach] | [Their approach] | [Us/Them/Tie] |
-   | [Feature area 2] | ... | ... | ... |
-   | Pricing | ... | ... | ... |
-   | Support | ... | ... | ... |
+   | [功能领域 1] | [我们的方案] | [他们的方案] | [我们/他们/平局] |
+   | [功能领域 2] | ... | ... | ... |
+   | 定价 | ... | ... | ... |
+   | 支持 | ... | ... | ... |
 
-   ### Where We Win
-   - [Advantage 1]: [Proof point or customer quote]
-   - [Advantage 2]: [Specific capability they lack]
-   - [Advantage 3]: [Better approach with reasoning]
+   ### 我们的胜出点
+   - [优势 1]：[证明点或客户引用]
+   - [优势 2]：[他们缺乏的具体能力]
+   - [优势 3]：[更好的方案及理由]
 
-   ### Where They Win
-   - [Their strength 1]: [Our counter-positioning]
-   - [Their strength 2]: [How we mitigate this gap]
+   ### 他们的胜出点
+   - [他们的优势 1]：[我们的反制定位]
+   - [他们的优势 2]：[我们如何缓解这一差距]
 
-   ### Common Objections & Responses
+   ### 常见异议与回应
 
-   | Prospect Says | Respond With |
+   | 潜在客户说 | 回应要点 |
    |---|---|
-   | "Competitor X has [feature]" | "[Our alternative approach and why it's better for them]" |
-   | "They're cheaper" | "[Value framing: total cost of ownership, ROI, hidden costs]" |
-   | "They're more established" | "[Our advantages: speed, innovation, focus, support]" |
+   | "竞争对手 X 有 [功能]" | "[我们的替代方案及为什么更适合他们]" |
+   | "他们更便宜" | "[价值框架：总拥有成本、投资回报率、隐性成本]" |
+   | "他们更成熟" | "[我们的优势：速度、创新、专注、支持]" |
 
-   ### Landmines to Plant
-   Questions to ask the prospect that highlight competitor weaknesses:
-   - "How important is [area where we excel] to your team?"
-   - "Have you evaluated [specific capability they lack]?"
+   | 埋设的"地雷"问题
+   向潜在客户提出的问题，以突出竞争对手的弱点：
+   - "[我们擅长的领域] 对您的团队有多重要？"
+   - "您是否评估过 [他们缺乏的具体能力]？"
 
-   ### Win/Loss Patterns
-   - We tend to win when: [pattern]
-   - We tend to lose when: [pattern]
-   - Key differentiator in competitive deals: [what tips the scale]
+   ### 胜败模式
+   - 我们倾向于在以下情况下获胜：[模式]
+   - 我们倾向于在以下情况下失败：[模式]
+   - 竞争性交易中的关键差异化因素：[决定性因素]
 
-3. **Keep it scannable**: Sales reps need to reference this during calls. Use tables, bold text, and short bullets.
+3. **保持易读性**：销售代表需要在通话过程中参考此内容。使用表格、粗体文本和简短的要点。
 
-Save as markdown. Format for easy printing or sharing in Notion/Confluence.
+保存为 markdown 格式。便于打印或在 Notion/Confluence 中分享。
 
 ---
 
-### Further Reading
+### 延伸阅读
 
 - [How to Design a Value Proposition Customers Can't Resist?](https://www.productcompass.pm/p/how-to-design-value-proposition-template)

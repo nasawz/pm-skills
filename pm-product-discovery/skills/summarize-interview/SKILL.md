@@ -1,53 +1,53 @@
 ---
 name: summarize-interview
-description: "Summarize a customer interview transcript into a structured template with JTBD, satisfaction signals, and action items. Use when processing interview recordings or transcripts, synthesizing discovery interviews, or creating interview summaries."
+description: "将客户访谈记录总结为结构化模板，包含待办任务(JTBD)、满意度信号和行动项。在处理访谈录音或记录、综合探索访谈或创建访谈总结时使用。"
 ---
 
-## Summarize Customer Interview
+## 客户访谈总结
 
-Transform an interview transcript into a structured summary focused on Jobs to Be Done, satisfaction, and action items.
+将访谈记录转换为结构化总结，重点关注待办任务、满意度和行动项。
 
-### Context
+### 背景
 
-You are summarizing a customer interview for the product discovery of **$ARGUMENTS**.
+您正在为 **$ARGUMENTS** 的产品探索工作总结客户访谈。
 
-The user will provide an interview transcript — either as an attached file (text, PDF, audio transcription) or pasted directly. Read any attached files first.
+用户将提供访谈记录——可能以附件形式（文本、PDF、音频转录）或直接粘贴内容。请首先阅读所有附件。
 
-### Instructions
+### 说明
 
-1. **Read the full transcript** carefully before summarizing.
+1. **在总结之前仔细阅读完整的访谈记录**。
 
-2. **Fill in the summary template** below. Use "-" if information is unavailable. Replace numeric values with qualitative descriptions if needed (e.g., "not satisfied").
+2. **填写下面的总结模板**。如果信息不可用，请使用"-"。如有需要，将数值替换为定性描述（例如"不满意"）。
 
-3. **Use clear, simple language** — a primary school graduate should be able to understand the summary.
+3. **使用清晰简单的语言**——小学毕业生也应能理解该总结。
 
-### Output Template
+### 输出模板
 
 ```
-**Date**: [Date and time of the interview]
-**Participants**: [Full names and roles]
-**Background**: [Background information about the customer]
+**日期**: [访谈的日期和时间]
+**参与者**: [全名和角色]
+**背景**: [客户背景信息]
 
-**Current Solution**: [What solution they currently use]
+**现有解决方案**: [他们目前使用的解决方案]
 
-**What They Like About Current Solution**:
-- [Job to be done, desired outcome, importance, and satisfaction level]
+**现有解决方案的优点**:
+- [待办任务、期望结果、重要性和满意度水平]
 
-**Problems With Current Solution**:
-- [Job to be done, desired outcome, importance, and satisfaction level]
+**现有解决方案的问题**:
+- [待办任务、期望结果、重要性和满意度水平]
 
-**Key Insights**:
-- [Unexpected findings or notable quotes]
+**关键洞察**:
+- [意外发现或重要引用]
 
-**Action Items**:
-- [Date, Owner, Action — e.g., "2025-01-15, Paweł Huryn, Follow up with customer about pricing"]
+**行动项**:
+- [日期、负责人、行动——例如："2025-01-15, Paweł Huryn, 就定价问题跟进客户"]
 ```
 
-Save the summary as a markdown document in the user's workspace.
+将总结保存为用户工作区中的 markdown 文档。
 
 ---
 
-### Further Reading
+### 延伸阅读
 
-- [User Interviews: The Ultimate Guide to Research Interviews](https://www.productcompass.pm/p/interviewing-customers-the-ultimate)
-- [Continuous Product Discovery Masterclass (CPDM)](https://www.productcompass.pm/p/cpdm) (video course)
+- [用户访谈：研究访谈终极指南](https://www.productcompass.pm/p/interviewing-customers-the-ultimate)
+- [持续产品探索大师课程 (CPDM)](https://www.productcompass.pm/p/cpdm) (视频课程)

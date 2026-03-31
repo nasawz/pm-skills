@@ -1,84 +1,84 @@
 ---
-description: Generate SQL queries from natural language — supports BigQuery, PostgreSQL, MySQL, and more
-argument-hint: "<what you want to know, in plain English>"
+description: 将自然语言转换为 SQL 查询语句 — 支持 BigQuery、PostgreSQL、MySQL 等多种数据库
+argument-hint: "<你想了解的数据，用自然语言描述>"
 ---
 
-# /write-query -- SQL Query Generator
+# /write-query -- SQL 查询生成器
 
-Describe what data you need in plain English and get an optimized SQL query. Supports multiple dialects and can read your schema from uploaded files.
+用自然语言描述你需要的数据，即可获得优化后的 SQL 查询语句。支持多种数据库方言，并可从上传的文件中读取你的数据模式（Schema）。
 
-## Invocation
-
-```
-/write-query Show me daily active users for the last 30 days, broken down by plan tier
-/write-query Find users who signed up last month but never completed onboarding
-/write-query [upload a schema diagram] What's the conversion rate from trial to paid by cohort?
-```
-
-## Workflow
-
-### Step 1: Understand the Question
-
-Parse the user's natural language request to identify:
-- What data is being requested (metrics, dimensions, filters)
-- Time range and granularity
-- Grouping and ordering preferences
-- Output expectations (raw data, aggregated, ranked)
-
-### Step 2: Determine Schema
-
-If a schema is available (uploaded diagram, DDL, or description):
-- Map the request to specific tables and columns
-- Identify necessary joins
-
-If no schema is provided:
-- Ask for the database type (BigQuery, PostgreSQL, MySQL, etc.)
-- Infer a reasonable schema from the question and ask the user to confirm
-- Use common SaaS data model conventions as defaults
-
-### Step 3: Generate Query
-
-Apply the **sql-queries** skill:
-
-- Write the SQL query in the correct dialect
-- Optimize for readability and performance
-- Include comments explaining key logic
-- Add CTEs for complex queries to improve readability
-- Handle edge cases (NULLs, timezone considerations, duplicate handling)
-
-### Step 4: Present and Iterate
+## 调用方式
 
 ```
-## SQL Query: [What It Does]
-
-**Dialect**: [BigQuery / PostgreSQL / MySQL / etc.]
-**Tables used**: [list]
-
-### Query
-[SQL code block with comments]
-
-### What This Returns
-[Description of the output: columns, rows, expected result shape]
-
-### Assumptions
-- [Schema assumptions made]
-- [Business logic assumptions]
-
-### Notes
-- [Performance considerations for large datasets]
-- [Edge cases handled or flagged]
+/write-query 显示过去30天的日活跃用户数，按套餐层级分组
+/write-query 查找上个月注册但从未完成新手引导的用户
+/write-query [上传数据模式图] 各队列从试用到付费的转化率是多少？
 ```
 
-Offer:
-- "Want me to **modify this** — add filters, change grouping, extend the time range?"
-- "Should I **create a companion query** for a related metric?"
-- "Want me to **build a dashboard** around this query?"
-- "Need a **cohort analysis** version of this?"
+## 工作流程
 
-## Notes
+### 步骤 1：理解问题
 
-- Always include comments in the SQL — PMs share queries with analysts who need to understand intent
-- Default to readable over clever — CTEs over nested subqueries
-- Flag queries that might be slow on large datasets and suggest optimization
-- If the request is ambiguous (e.g., "active users"), ask the user to define the metric precisely
-- Offer to generate the query in multiple dialects if the user is unsure which database they're using
+解析用户的自然语言请求，识别以下内容：
+- 请求的数据内容（指标、维度、筛选条件）
+- 时间范围和粒度
+- 分组和排序偏好
+- 输出期望（原始数据、聚合数据、排名数据）
+
+### 步骤 2：确定数据模式
+
+如果有可用的数据模式（上传的图表、DDL 或描述）：
+- 将请求映射到具体的表和列
+- 识别必要的关联（JOIN）
+
+如果未提供数据模式：
+- 询问数据库类型（BigQuery、PostgreSQL、MySQL 等）
+- 根据问题推断合理的数据模式，请用户确认
+- 使用常见的 SaaS 数据模型约定作为默认值
+
+### 步骤 3：生成查询
+
+应用 **sql-queries** 技能：
+
+- 使用正确的方言编写 SQL 查询
+- 优化可读性和性能
+- 添加注释解释关键逻辑
+- 对于复杂查询，使用 CTE 提高可读性
+- 处理边界情况（NULL 值、时区问题、重复数据处理）
+
+### 步骤 4：展示与迭代
+
+```
+## SQL 查询：[功能说明]
+
+**数据库方言**: [BigQuery / PostgreSQL / MySQL / 等]
+**使用的表**: [列表]
+
+### 查询语句
+[带注释的 SQL 代码块]
+
+### 返回结果说明
+[输出描述：列、行、预期结果形态]
+
+### 假设条件
+- [数据模式假设]
+- [业务逻辑假设]
+
+### 注意事项
+- [大数据集的性能考虑]
+- [已处理或标记的边界情况]
+```
+
+提供后续建议：
+- "需要我**修改这个查询**吗 —— 添加筛选条件、更改分组、延长时间范围？"
+- "是否需要我为相关指标**创建配套查询**？"
+- "需要我围绕这个查询**搭建数据看板**吗？"
+- "需要这个查询的**队列分析版本**吗？"
+
+## 注意事项
+
+- 始终在 SQL 中添加注释 —— 产品经理会与数据分析师共享查询，注释能帮助理解意图
+- 优先保证可读性而非技巧性 —— 使用 CTE 而非嵌套子查询
+- 标记可能在大数据集上运行缓慢的查询，并建议优化方案
+- 如果请求存在歧义（如"活跃用户"），请用户精确定义该指标
+- 如果用户不确定使用的数据库类型，可提供多种方言版本的查询

@@ -1,103 +1,103 @@
 ---
-description: Analyze user feedback at scale — sentiment analysis, theme extraction, and segment-level insights
-argument-hint: "<feedback data as CSV, text, or file>"
+description: 批量分析用户反馈 — 情感分析、主题提取和细分群体洞察
+argument-hint: "<反馈数据，可以是 CSV、文本或文件>"
 ---
 
-# /analyze-feedback -- User Feedback Analysis
+# /analyze-feedback — 用户反馈分析
 
-Process large volumes of user feedback (reviews, surveys, support tickets, NPS responses) into structured insights with sentiment analysis and segment-level patterns.
+将大量用户反馈（评论、问卷、支持工单、NPS 响应）处理为结构化洞察，包含情感分析和细分群体模式。
 
-## Invocation
-
-```
-/analyze-feedback [upload a CSV of NPS responses]
-/analyze-feedback [paste app store reviews or survey responses]
-/analyze-feedback [upload support ticket export]
-```
-
-## Workflow
-
-### Step 1: Accept Feedback Data
-
-Accept in any format:
-- CSV/Excel with feedback text (and optional metadata: date, segment, rating)
-- Pasted text (reviews, survey responses, Slack messages)
-- Uploaded documents or exports from feedback tools
-
-Ask:
-- What kind of feedback is this? (NPS, reviews, support tickets, survey, etc.)
-- Any segments to analyze separately? (user tier, plan, geography)
-- What are you looking for? (general themes, specific issues, trends over time)
-
-### Step 2: Analyze
-
-Apply the **sentiment-analysis** skill:
-
-- **Sentiment scoring**: Classify each piece of feedback (positive, neutral, negative)
-- **Theme extraction**: Identify recurring topics and cluster related feedback
-- **Frequency analysis**: Count how often each theme appears
-- **Segment analysis**: Break down sentiment and themes by user segment (if data available)
-- **Trend detection**: If dates are available, identify sentiment shifts over time
-
-### Step 3: Generate Analysis Report
+## 调用方式
 
 ```
-## Feedback Analysis Report
+/analyze-feedback [上传 NPS 响应的 CSV 文件]
+/analyze-feedback [粘贴应用商店评论或问卷响应]
+/analyze-feedback [上传支持工单导出文件]
+```
 
-**Date**: [today]
-**Feedback analyzed**: [count] responses
-**Source**: [NPS survey / app reviews / support tickets / etc.]
-**Period**: [date range if available]
+## 工作流程
 
-### Overall Sentiment
-- Positive: [X%] | Neutral: [Y%] | Negative: [Z%]
-- Average sentiment score: [X/10]
-- Trend: [improving / stable / declining]
+### 第 1 步：接收反馈数据
 
-### Top Themes
-| # | Theme | Mentions | Sentiment | Segments Most Affected |
+接受任何格式：
+- 包含反馈文本的 CSV/Excel 文件（以及可选的元数据：日期、细分群体、评分）
+- 粘贴的文本（评论、问卷响应、Slack 消息）
+- 上传的文档或从反馈工具导出的文件
+
+询问：
+- 这是什么类型的反馈？（NPS、评论、支持工单、问卷等）
+- 是否需要单独分析某些细分群体？（用户层级、套餐、地区）
+- 您希望找到什么？（总体主题、具体问题、时间趋势）
+
+### 第 2 步：分析
+
+应用 **sentiment-analysis**（情感分析）技能：
+
+- **情感评分**：对每条反馈进行分类（正面、中性、负面）
+- **主题提取**：识别重复出现的主题并将相关反馈聚类
+- **频率分析**：统计每个主题出现的次数
+- **细分群体分析**：按用户细分群体拆解情感和主题（如果数据可用）
+- **趋势检测**：如果日期可用，识别情感随时间的变化
+
+### 第 3 步：生成分析报告
+
+```
+## 反馈分析报告
+
+**日期**：[今天]
+**分析反馈数**：[数量] 条响应
+**来源**：[NPS 问卷 / 应用评论 / 支持工单 / 等]
+**时间范围**：[如果可用，提供日期范围]
+
+### 整体情感
+- 正面：[X%] | 中性：[Y%] | 负面：[Z%]
+- 平均情感评分：[X/10]
+- 趋势：[改善 / 稳定 / 下降]
+
+### 热门主题
+| # | 主题 | 提及次数 | 情感 | 受影响最大的细分群体 |
 |---|-------|----------|-----------|----------------------|
 
-### Theme Deep-Dive
+### 主题深度分析
 
-#### Theme 1: [Name] — [X] mentions, [sentiment]
-- **What users are saying**: [summary with representative quotes]
-- **Root cause**: [what's driving this feedback]
-- **Impact**: [how this affects retention, satisfaction, or revenue]
-- **Recommendation**: [what to do about it]
+#### 主题 1：[名称] — [X] 次提及，[情感]
+- **用户反馈**：[摘要及代表性引述]
+- **根本原因**：[导致此反馈的原因]
+- **影响**：[这如何影响留存率、满意度或收入]
+- **建议**：[应采取的措施]
 
-[Repeat for top 5-8 themes]
+[为前 5-8 个主题重复上述内容]
 
-### Segment Analysis
-| Segment | Volume | Avg Sentiment | Top Theme | Key Difference |
+### 细分群体分析
+| 细分群体 | 数量 | 平均情感 | 主要主题 | 关键差异 |
 |---------|--------|-------------|-----------|---------------|
 
-### Notable Quotes
-> "[quote]" — [segment, sentiment]
+### 值得关注的引述
+> "[引述]" — [细分群体，情感]
 
-### Trends Over Time
-[If date data available: chart-ready data showing sentiment shifts]
+### 时间趋势
+[如果日期数据可用：显示情感变化的图表数据]
 
-### Actionable Insights
-1. [Insight + recommended action]
+### 可执行的洞察
+1. [洞察 + 建议行动]
 2. ...
 
-### Gaps
-[What this feedback doesn't tell you — suggested follow-up research]
+### 信息缺口
+[此反馈未涵盖的内容 — 建议的后续研究]
 ```
 
-Save as markdown. If input was structured data (CSV), also save enriched data with sentiment scores as CSV.
+保存为 Markdown 文件。如果输入是结构化数据（CSV），还需将包含情感评分的增强数据保存为 CSV。
 
-### Step 4: Offer Next Steps
+### 第 4 步：提供后续步骤
 
-- "Want me to **create user personas** from these feedback patterns?"
-- "Should I **triage the top themes as feature requests**?"
-- "Want me to **design an interview script** to go deeper on a specific theme?"
+- "需要我根据这些反馈模式**创建用户画像**吗？"
+- "需要我将热门主题**分类为功能需求**吗？"
+- "需要我**设计访谈提纲**以深入探讨特定主题吗？"
 
-## Notes
+## 注意事项
 
-- Sentiment analysis is approximate — flag edge cases (sarcasm, mixed sentiment, non-English text)
-- Theme extraction should look for needs behind requests, not just surface-level topics
-- If sample sizes are small per segment, note limited confidence
-- For NPS data specifically, analyze Detractors (0-6), Passives (7-8), and Promoters (9-10) separately
-- Output enriched CSV when input is structured, so the user can use it in their own tools
+- 情感分析是近似分析 — 需要标记边缘情况（讽刺、混合情感、非英文文本）
+- 主题提取应关注请求背后的需求，而不仅仅是表面话题
+- 如果每个细分群体的样本量较小，需说明置信度有限
+- 对于 NPS 数据，需单独分析贬损者（0-6 分）、中立者（7-8 分）和推荐者（9-10 分）
+- 当输入为结构化数据时，输出增强后的 CSV，以便用户在自己的工具中使用

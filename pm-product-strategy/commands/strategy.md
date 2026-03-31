@@ -1,118 +1,118 @@
 ---
-description: Create a comprehensive product strategy using the 9-section Strategy Canvas — from vision to defensibility
-argument-hint: "<product or company>"
+description: 使用 9 个部分的战略画布创建全面的产品战略 —— 从愿景到防御性
+argument-hint: "<产品或公司>"
 ---
 
-# /strategy -- Product Strategy Canvas
+# /strategy -- 产品战略画布
 
-Build a complete product strategy document using the 9-section Product Strategy Canvas. Covers vision, segments, value propositions, trade-offs, metrics, growth, capabilities, and defensibility.
+使用 9 个部分的产品战略画布构建完整的产品战略文档。涵盖愿景、细分市场、价值主张、战略取舍、关键指标、增长引擎、核心能力和防御性。
 
-## Invocation
-
-```
-/strategy AI-powered design tool for non-designers
-/strategy [upload existing strategy doc, pitch deck, or business plan]
-/strategy                    # asks about your product
-```
-
-## Workflow
-
-### Step 1: Understand the Product
-
-Accept context from:
-- Product description (verbal or written)
-- Uploaded documents (strategy decks, pitch decks, PRDs, business plans)
-- Existing strategy to refine or challenge
-
-Ask key questions:
-- What does the product do? Who is it for?
-- What stage is it in? (idea, MVP, growth, mature)
-- What's the business model?
-- What triggered the need for a strategy document? (new product, pivot, annual planning, fundraise)
-
-### Step 2: Build the Strategy Canvas
-
-Apply the **product-strategy** and **product-vision** skills:
-
-Work through all 9 sections of the Strategy Canvas:
-
-1. **Vision**: Inspiring north star that motivates the team
-2. **Target Segments**: Who you serve (and who you don't)
-3. **Pain Points & Value**: Problems you solve and the value you create
-4. **Value Propositions**: JTBD-framed value for each segment
-5. **Strategic Trade-offs**: What you choose NOT to do (as important as what you do)
-6. **Key Metrics**: How you measure success
-7. **Growth Engine**: How you acquire and expand users
-8. **Core Capabilities**: What you need to build and maintain
-9. **Defensibility**: What makes this hard to copy (network effects, data, brand, switching costs)
-
-For each section, provide specific content — not generic advice.
-
-### Step 3: Generate Strategy Document
+## 调用方式
 
 ```
-## Product Strategy: [Product Name]
+/strategy 面向非设计师的 AI 驱动设计工具
+/strategy [上传现有战略文档、融资演示文稿或商业计划书]
+/strategy                    # 询问关于您的产品
+```
 
-**Date**: [today]
-**Stage**: [idea / MVP / growth / mature]
-**Author**: [user]
+## 工作流程
 
-### 1. Vision
-[Inspiring, achievable, emotional — 2-3 sentences max]
+### 步骤 1：理解产品
 
-### 2. Target Segments
-| Segment | Size | Pain Level | Current Alternative | Priority |
+从以下来源接受上下文：
+- 产品描述（口头或书面）
+- 上传的文档（战略演示文稿、融资演示文稿、PRD、商业计划书）
+- 现有战略，用于优化或挑战
+
+询问关键问题：
+- 产品是什么？为谁服务？
+- 处于什么阶段？（创意阶段、MVP、增长期、成熟期）
+- 商业模式是什么？
+- 是什么触发了制定战略文档的需求？（新产品、转型、年度规划、融资）
+
+### 步骤 2：构建战略画布
+
+应用 **product-strategy** 和 **product-vision** 技能：
+
+完成战略画布的所有 9 个部分：
+
+1. **愿景**：激励团队的启发性北极星
+2. **目标细分市场**：您服务的对象（以及不服务的对象）
+3. **痛点与价值**：您解决的问题和创造的价值
+4. **价值主张**：针对每个细分市场的 JTBD 框架化价值
+5. **战略取舍**：您选择不做什么（与您做什么同样重要）
+6. **关键指标**：如何衡量成功
+7. **增长引擎**：如何获取和扩展用户
+8. **核心能力**：需要构建和维护的内容
+9. **防御性**：使产品难以复制的因素（网络效应、数据、品牌、转换成本）
+
+对于每个部分，提供具体内容 —— 而非通用建议。
+
+### 步骤 3：生成战略文档
+
+```
+## 产品战略：[产品名称]
+
+**日期**：[今天]
+**阶段**：[创意阶段 / MVP / 增长期 / 成熟期]
+**作者**：[用户]
+
+### 1. 愿景
+[启发性、可实现、富有情感 —— 最多 2-3 句话]
+
+### 2. 目标细分市场
+| 细分市场 | 市场规模 | 痛点程度 | 现有替代方案 | 优先级 |
 |---------|------|-----------|-------------------|----------|
 
-**Primary segment**: [who and why]
-**Explicitly not serving**: [who and why]
+**主要细分市场**：[谁以及为什么]
+**明确不服务**：[谁以及为什么]
 
-### 3. Pain Points & Value Created
-[For each segment: the problem, current cost, and value your solution delivers]
+### 3. 痛点与创造的价值
+[针对每个细分市场：问题、当前成本以及您的解决方案交付的价值]
 
-### 4. Value Propositions
-**For [Segment A]**: When [situation], they want [motivation], so they can [outcome]
-**For [Segment B]**: When [situation], they want [motivation], so they can [outcome]
+### 4. 价值主张
+**对于 [细分市场 A]**：当 [情境] 时，他们想要 [动机]，以便他们能够 [结果]
+**对于 [细分市场 B]**：当 [情境] 时，他们想要 [动机]，以便他们能够 [结果]
 
-### 5. Strategic Trade-offs
-| We Choose | Over | Because |
+### 5. 战略取舍
+| 我们选择 | 而非 | 原因 |
 |-----------|------|---------|
 
-### 6. Key Metrics
-- **North Star**: [metric]
-- **Input Metrics**: [3-5 levers]
-- **Health Metrics**: [guardrails]
+### 6. 关键指标
+- **北极星指标**：[指标]
+- **投入指标**：[3-5 个杠杆]
+- **健康指标**：[护栏指标]
 
-### 7. Growth Engine
-[How you acquire, activate, and expand — specific mechanisms, not generic]
+### 7. 增长引擎
+[如何获取、激活和扩展 —— 具体机制，而非通用描述]
 
-### 8. Core Capabilities
-| Capability | Build / Buy / Partner | Investment Level | Timeline |
+### 8. 核心能力
+| 能力 | 自研 / 购买 / 合作 | 投资级别 | 时间表 |
 |-----------|---------------------|-----------------|----------|
 
-### 9. Defensibility
-[What creates a moat — be specific about which type: network effects, data, brand, switching costs, economies of scale]
+### 9. 防御性
+[什么构成护城河 —— 具体说明类型：网络效应、数据、品牌、转换成本、规模经济]
 
-### Strategic Risks
-[Top 3 things that could invalidate this strategy]
+### 战略风险
+[可能导致此战略失效的前 3 件事]
 
-### Next Steps
-[What to do with this strategy — socialize, test, build]
+### 下一步行动
+[如何使用此战略 —— 传播、测试、构建]
 ```
 
-Save as markdown.
+保存为 markdown 格式。
 
-### Step 4: Offer Next Steps
+### 步骤 4：提供下一步行动
 
-- "Want me to **build a Lean Canvas** or **Business Model Canvas** for this?"
-- "Should I **create a roadmap** aligned to this strategy?"
-- "Want me to **run a macro environment scan** to stress-test assumptions?"
-- "Should I **define OKRs** based on Section 6?"
+- "需要我为此**构建精益画布**或**商业模式画布**吗？"
+- "我应该**创建与该战略对齐的产品路线图**吗？"
+- "需要我**进行宏观环境扫描**以压力测试假设吗？"
+- "我应该基于第 6 部分**定义 OKR** 吗？"
 
-## Notes
+## 备注
 
-- A good strategy is more about what you say NO to than what you say YES to — push hard on trade-offs
-- Vision should be emotional and memorable, not a corporate statement
-- Defensibility is the hardest section — most products don't have a real moat yet, and that's OK to acknowledge
-- If the product is early-stage, some sections will be hypotheses — label them as such
-- Strategy should fit on one page for executives — offer a condensed version
+- 优秀的战略更多是关于您说不做什么，而不是说做什么 —— 在取舍上要深入挖掘
+- 愿景应该具有情感和记忆点，而不是企业化的声明
+- 防御性是最难的部分 —— 大多数产品还没有真正的护城河，承认这一点也没关系
+- 如果产品处于早期阶段，某些部分将是假设 —— 将它们标记为假设
+- 战略应该能够在一页纸上呈现给高管 —— 提供精简版本

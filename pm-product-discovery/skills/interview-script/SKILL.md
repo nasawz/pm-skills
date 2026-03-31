@@ -1,105 +1,105 @@
 ---
 name: interview-script
-description: "Create a structured customer interview script with JTBD probing questions, warm-up, core exploration, and wrap-up sections. Follows The Mom Test principles — no leading questions, no pitching, focus on past behavior. Use when preparing for user interviews, creating interview guides, or planning discovery research."
+description: "创建结构化的客户访谈脚本，包含待办任务（JTBD）探询问题、热身、核心探索和收尾环节。遵循 The Mom Test 原则——不使用引导性问题、不推销、关注过去的行为。适用于准备用户访谈、创建访谈指南或规划探索性研究。"
 ---
 
-## Customer Interview Script
+## 客户访谈脚本
 
-Create a structured interview script that surfaces real insights, not just opinions. Follows "The Mom Test" principles — ask about their life, not your idea.
+创建结构化的访谈脚本，挖掘真实洞察，而非仅仅获取意见。遵循 "The Mom Test" 原则——询问他们的生活，而不是你的想法。
 
-### Domain Context
+### 领域背景
 
-Customer interviews are one source in **Stage 1 (Explore)** of continuous discovery. Other sources: stakeholder interviews, usage analytics, data analytics, surveys, market trends, SEO/SEM analysis. The PM needs direct access to users, stakeholders, engineers, and designers — "without proxies." The **Product Trio** (PM + Designer + Engineer — Teresa Torres) should work together on discovery, not just the PM alone.
+客户访谈是持续发现**第一阶段（探索）**的信息来源之一。其他来源包括：利益相关者访谈、使用分析、数据分析、调研、市场趋势、SEO/SEM 分析。产品经理（PM）需要直接接触用户、利益相关者、工程师和设计师——"不通过代理"。**产品三人组**（PM + 设计师 + 工程师 —— Teresa Torres 提出的概念）应该共同进行探索工作，而不仅仅是 PM 独自完成。
 
-### Context
+### 背景
 
-You are preparing a customer interview script for research on **$ARGUMENTS**.
+你正在为关于 **$ARGUMENTS** 的研究准备客户访谈脚本。
 
-If the user provides files (personas, hypothesis lists, product briefs, or previous interview notes), read them first.
+如果用户提供了文件（用户画像、假设列表、产品简报或之前的访谈笔记），请先阅读这些文件。
 
-### Instructions
+### 指导说明
 
-1. **Clarify research objectives**:
-   - What specific questions does the team need answered?
-   - What decisions will this research inform?
-   - What assumptions need validation?
+1. **明确研究目标**：
+   - 团队需要回答哪些具体问题？
+   - 这项研究将指导哪些决策？
+   - 哪些假设需要验证？
 
-2. **Create the interview script** with these sections:
+2. **创建访谈脚本**，包含以下部分：
 
-   ### Opening (2-3 min)
-   - Introduce yourself and the purpose (learning, not selling)
-   - Set expectations: "There are no right or wrong answers. We're here to learn from your experience."
-   - Ask permission to record (if applicable)
-   - Confirm time available
+   ### 开场（2-3 分钟）
+   - 介绍自己和目的（学习而非销售）
+   - 设定预期："没有正确或错误的答案。我们在这里是为了从您的经验中学习。"
+   - 请求录音许可（如适用）
+   - 确认可用时间
 
-   ### Warm-Up: Context & Background (5 min)
-   - "Tell me about your role and what a typical day/week looks like."
-   - "How long have you been doing [activity related to the product area]?"
-   - Goal: Build rapport and understand their context
+   ### 热身：背景与情境（5 分钟）
+   - "请介绍一下您的角色，以及您典型的一天/一周是怎样的。"
+   - "您从事[与产品领域相关的活动]有多长时间了？"
+   - 目标：建立融洽关系并了解他们的情境
 
-   ### Core Exploration: Jobs to Be Done (15-20 min)
+   ### 核心探索：待办任务（15-20 分钟）
 
-   **Current situation and behavior** (past tense, specific instances):
-   - "Walk me through the last time you [did the thing we're exploring]. What happened?"
-   - "What tools or methods did you use?"
-   - "How long did it take? Who else was involved?"
+   **当前情况与行为**（过去时态，具体实例）：
+   - "请跟我讲讲上一次您[做我们正在探索的这件事]时的情况。发生了什么？"
+   - "您使用了哪些工具或方法？"
+   - "花了多长时间？还有谁参与其中？"
 
-   **Pain points and frustrations** (observe, don't lead):
-   - "What was the hardest part about that?"
-   - "If you could wave a magic wand, what would change?"
-   - "What have you tried to solve this? What happened?"
+   **痛点与挫折**（观察而非引导）：
+   - "其中最难的部分是什么？"
+   - "如果您能挥动魔杖，您希望改变什么？"
+   - "您尝试过什么方法来解决这个问题？结果如何？"
 
-   **Desired outcomes** (their words, not yours):
-   - "What does 'good' look like for you in this area?"
-   - "How would you know if this was working well?"
+   **期望结果**（用他们的话，而不是你的话）：
+   - "在这个领域，对您来说'好的'是什么样的？"
+   - "您如何判断这是否运行良好？"
 
-   **Willingness to pay / priority** (skin in the game):
-   - "How much time/money do you currently spend on this?"
-   - "Have you looked for a better solution? What did you find?"
-   - "What would you give up to have this solved?"
+   **支付意愿 / 优先级**（切身投入）：
+   - "您目前在这上面花费多少时间/金钱？"
+   - "您寻找过更好的解决方案吗？发现了什么？"
+   - "为了解决这个问题，您愿意放弃什么？"
 
-   ### Probing Techniques
-   Use these when you hit an interesting thread:
-   - **"Tell me more about that"** — opens up any topic
-   - **"Why?"** (asked gently, 2-3 times) — gets to root causes
-   - **"Can you give me a specific example?"** — moves from opinions to facts
-   - **"What happened next?"** — follows the story
-   - **"How did that make you feel?"** — captures emotional intensity
+   ### 探询技巧
+   当遇到有趣的话题线索时，使用这些技巧：
+   - **"多跟我说说这个"** —— 开启任何话题
+   - **"为什么？"**（温和地追问 2-3 次）—— 挖掘根本原因
+   - **"能给我一个具体的例子吗？"** —— 从意见转向事实
+   - **"接下来发生了什么？"** —— 追随故事脉络
+   - **"那让您感觉如何？"** —— 捕捉情感强度
 
-   ### The Mom Test Rules
-   - Ask about **their life**, not your idea
-   - Ask about **the past**, not the future ("Would you use X?" is useless)
-   - **Talk less, listen more** — aim for 80/20 split
-   - **Never pitch** during the interview
-   - Look for **strong emotions** — they signal real pain or delight
-   - **Compliments are noise** — "That sounds cool!" tells you nothing
+   ### The Mom Test 原则
+   - 询问**他们的生活**，而不是你的想法
+   - 询问**过去**，而不是未来（"你会使用 X 吗？"这样的问题毫无价值）
+   - **少说多听** —— 目标是 80/20 的比例
+   - **访谈期间绝不推销**
+   - 寻找**强烈的情感** —— 它们预示着真实的痛苦或愉悦
+   - **夸奖只是噪音** —— "听起来很酷！" 什么也告诉不了你
 
-   ### Wrap-Up (3-5 min)
-   - "Is there anything I didn't ask that you think is important?"
-   - "Who else should I talk to about this?"
-   - Thank them for their time
-   - Share next steps (if any)
+   ### 收尾（3-5 分钟）
+   - "有没有什么我没能问到但您认为很重要的事情？"
+   - "关于这个话题，我还应该和谁谈谈？"
+   - 感谢他们的时间
+   - 分享后续步骤（如有）
 
-3. **Customize the script**: Adapt questions to the specific product area, persona, and research objectives. Add or remove sections based on the interview length available.
+3. **定制脚本**：根据具体产品领域、用户画像和研究目标调整问题。根据可用的访谈时长添加或删除部分。
 
-4. **Include a note-taking template**:
+4. **包含笔记模板**：
    ```
-   Participant: [Name / ID]
-   Date: [Date]
-   Key Jobs: [What they're trying to accomplish]
-   Current Solution: [What they use today]
-   Biggest Pain: [Their #1 frustration]
-   Desired Outcome: [What success looks like]
-   Willingness to Pay: [How much they invest / would invest]
-   Surprise Finding: [Something unexpected]
-   Follow-up: [Next steps]
+   参与者：[姓名 / ID]
+   日期：[日期]
+   核心任务：[他们试图完成的事项]
+   当前方案：[他们目前使用的方案]
+   最大痛点：[他们的首要挫折]
+   期望结果：[成功的样子]
+   支付意愿：[他们目前投入 / 愿意投入的金额]
+   意外发现：[意想不到的事情]
+   后续跟进：[下一步行动]
    ```
 
-Save as markdown. Include both the script and the note-taking template.
+保存为 markdown 格式。包含访谈脚本和笔记模板。
 
 ---
 
-### Further Reading
+### 延伸阅读
 
 - [User Interviews: The Ultimate Guide to Research Interviews](https://www.productcompass.pm/p/interviewing-customers-the-ultimate)
-- [Continuous Product Discovery Masterclass (CPDM)](https://www.productcompass.pm/p/cpdm) (video course)
+- [Continuous Product Discovery Masterclass (CPDM)](https://www.productcompass.pm/p/cpdm)（视频课程）

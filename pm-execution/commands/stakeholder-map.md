@@ -1,107 +1,107 @@
 ---
-description: Map stakeholders on a Power × Interest grid and create a tailored communication plan
-argument-hint: "<project, initiative, or launch>"
+description: 在权力×关注度矩阵上绘制利益相关者图谱，并制定定制化的沟通计划
+argument-hint: "<项目、举措或发布>"
 ---
 
-# /stakeholder-map -- Stakeholder Mapping & Communication Plan
+# /stakeholder-map -- 利益相关者图谱与沟通计划
 
-Identify all stakeholders for a project, map them by influence and interest, and generate a communication plan that ensures the right people get the right information at the right time.
+识别项目的所有利益相关者，按影响力和关注度进行映射，并生成沟通计划，确保在合适的时间向合适的人传达合适的信息。
 
-## Invocation
-
-```
-/stakeholder-map New analytics platform launch
-/stakeholder-map Pricing model change affecting all customers
-/stakeholder-map [upload a project brief or org chart]
-```
-
-## Workflow
-
-### Step 1: Understand the Initiative
-
-Ask:
-- What is the project or initiative?
-- What phase is it in? (planning, building, launching, post-launch)
-- Who are the obvious stakeholders you already know about?
-- Are there any politically sensitive dynamics to be aware of?
-
-### Step 2: Identify Stakeholders
-
-Brainstorm stakeholders the user might not have considered:
-- **Internal**: Engineering, Design, QA, Data, Legal, Finance, Marketing, Sales, Support, Leadership
-- **External**: Customers, partners, vendors, regulators, board members
-- **Often missed**: Adjacent teams, on-call engineers, customer success, documentation team
-
-### Step 3: Map to Power × Interest Grid
-
-Apply the **stakeholder-map** skill:
-
-Place each stakeholder in a quadrant:
+## 调用方式
 
 ```
-                    HIGH INTEREST
+/stakeholder-map 新分析平台发布
+/stakeholder-map 影响所有客户的定价模式变更
+/stakeholder-map [上传项目简介或组织架构图]
+```
+
+## 工作流程
+
+### 第一步：了解举措
+
+询问：
+- 该项目或举措是什么？
+- 目前处于哪个阶段？（规划、开发、发布、发布后）
+- 你已经知道的明显利益相关者有哪些？
+- 是否需要注意任何政治敏感的动态？
+
+### 第二步：识别利益相关者
+
+头脑风暴用户可能未考虑到的利益相关者：
+- **内部**：工程、设计、QA、数据、法务、财务、市场、销售、支持、领导层
+- **外部**：客户、合作伙伴、供应商、监管机构、董事会成员
+- **常被遗漏**：相关团队、值班工程师、客户成功、文档团队
+
+### 第三步：映射到权力×关注度矩阵
+
+应用 **stakeholder-map** 技能：
+
+将每个利益相关者放置在相应的象限中：
+
+```
+                    高关注度
                          │
-    KEEP SATISFIED       │      MANAGE CLOSELY
-    (High Power,         │      (High Power,
-     Low Interest)       │       High Interest)
+    让其满意              │      密切管理
+    (高权力，             │      (高权力，
+     低关注度)            │       高关注度)
                          │
    ──────────────────────┼──────────────────────
                          │
-    MONITOR              │      KEEP INFORMED
-    (Low Power,          │      (Low Power,
-     Low Interest)       │       High Interest)
+    保持监控              │      让其知情
+    (低权力，             │      (低权力，
+     低关注度)            │       高关注度)
                          │
-                    LOW INTEREST
+                    低关注度
 ```
 
-### Step 4: Generate Communication Plan
+### 第四步：生成沟通计划
 
 ```
-## Stakeholder Map: [Initiative]
+## 利益相关者图谱：[举措名称]
 
-### Stakeholder Grid
-| Stakeholder | Role | Power | Interest | Quadrant | Stance |
+### 利益相关者矩阵
+| 利益相关者 | 角色 | 权力 | 关注度 | 象限 | 态度 |
 |------------|------|-------|----------|----------|--------|
 
-### Communication Plan
+### 沟通计划
 
-#### Manage Closely (High Power, High Interest)
-| Stakeholder | Channel | Frequency | Content | Owner |
+#### 密切管理（高权力，高关注度）
+| 利益相关者 | 沟通渠道 | 频率 | 内容 | 负责人 |
 |------------|---------|-----------|---------|-------|
 
-#### Keep Satisfied (High Power, Low Interest)
-| Stakeholder | Channel | Frequency | Content | Owner |
+#### 让其满意（高权力，低关注度）
+| 利益相关者 | 沟通渠道 | 频率 | 内容 | 负责人 |
 |------------|---------|-----------|---------|-------|
 
-#### Keep Informed (Low Power, High Interest)
-| Stakeholder | Channel | Frequency | Content | Owner |
+#### 让其知情（低权力，高关注度）
+| 利益相关者 | 沟通渠道 | 频率 | 内容 | 负责人 |
 |------------|---------|-----------|---------|-------|
 
-#### Monitor (Low Power, Low Interest)
-[Minimal communication — include in broad updates only]
+#### 保持监控（低权力，低关注度）
+[最少沟通——仅包含在广泛更新中]
 
-### Potential Conflicts
-[Where stakeholder interests may clash — with mitigation strategies]
+### 潜在冲突
+[利益相关者利益可能冲突的地方——附带缓解策略]
 
-### Escalation Path
-[Who to go to when decisions are blocked]
+### 升级路径
+[决策受阻时找谁]
 
-### RACI Matrix
-| Decision Area | Responsible | Accountable | Consulted | Informed |
+### RACI 矩阵
+| 决策领域 | 负责人 | 承担者 | 咨询者 | 知情者 |
 |--------------|-------------|-------------|-----------|----------|
 ```
 
-Save as markdown.
+保存为 markdown 格式。
 
-### Step 5: Offer Next Steps
+### 第五步：提供后续步骤
 
-- "Want me to **draft the first stakeholder update** for the 'Manage Closely' group?"
-- "Should I **create a meeting prep brief** for key stakeholder conversations?"
-- "Want me to **set up a communication cadence** as a recurring checklist?"
+- "需要我为'密切管理'组**起草第一份利益相关者更新**吗？"
+- "我是否应该**为关键利益相关者对话创建会议准备简报**？"
+- "需要我**设置沟通节奏**作为重复性检查清单吗？"
 
-## Notes
+## 注意事项
 
-- The "Manage Closely" quadrant is where PMs spend most of their political capital — get these relationships right
-- "Stance" (supportive, neutral, resistant) helps prioritize where to invest relationship-building effort
-- Don't forget downstream stakeholders: support, docs, and sales enablement teams are often surprised by launches
-- Update the map as the project evolves — stakeholder interest shifts with project phase
+- "密切管理"象限是产品经理投入大部分政治资本的地方——务必处理好这些关系
+- "态度"（支持、中立、抵制）有助于优先考虑在何处投入建立关系的努力
+- 不要忘记下游利益相关者：支持、文档和销售赋能团队往往对发布感到意外
+- 随着项目的发展更新图谱——利益相关者的关注度会随项目阶段而变化

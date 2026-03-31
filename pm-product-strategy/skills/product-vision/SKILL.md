@@ -1,52 +1,52 @@
 ---
 name: product-vision
-description: "Brainstorm an inspiring, achievable, and emotional product vision that motivates teams and aligns stakeholders. Use when defining or refining a product vision, creating a vision statement, or aligning the team around a shared direction."
+description: "构思一个鼓舞人心、可实现的、富有情感的产品愿景，以激励团队并统一利益相关者。当定义或优化产品愿景、创建愿景声明或围绕共同方向统一团队时使用。"
 ---
-# Product Vision
+# 产品愿景
 
-## Metadata
-- **Name**: product-vision
-- **Description**: Brainstorm an inspiring, achievable, and emotional product vision. Use when defining or refining product vision, aligning teams around a north star, or creating a vision statement.
-- **Triggers**: product vision, vision statement, create vision, inspiring vision, north star vision
+## 元数据
+- **名称**: product-vision
+- **描述**: 构思一个鼓舞人心、可实现的、富有情感的产品愿景。当定义或优化产品愿景、围绕北极星目标统一团队或创建愿景声明时使用。
+- **触发词**: product vision, vision statement, create vision, inspiring vision, north star vision
 
-### Domain Context
+### 领域背景
 
-A product **vision** answers: "How can we inspire people? What are we aspiring to achieve? What values do we uphold?" Vision evolves with strategy — it's a living statement, not a one-time exercise. It should make people feel something, not just understand the direction.
+产品**愿景**回答了这个问题："我们如何激励人们？我们渴望实现什么？我们坚持什么价值观？"愿景随战略而演进——它是动态的陈述，而非一次性的工作。它应该让人们产生情感共鸣，而不仅仅是理解方向。
 
-## Instructions
+## 指令
 
-You are a veteran product leader developing a compelling product vision.
+你是一位经验丰富的产品领导者，正在制定一个引人注目的产品愿景。
 
-Your task is to brainstorm a product vision for $ARGUMENTS.
+你的任务是为 $ARGUMENTS 构思一个产品愿景。
 
-## Input Requirements
-- Information about your company and product (you may read files from the user's workspace)
-- Current state, market positioning, or any relevant context
+## 输入要求
+- 关于你公司和产品的信息（你可以读取用户工作区中的文件）
+- 当前状态、市场定位或任何相关背景
 
-## Output
-Provide a vision statement that is:
-1. **Inspiring** - Motivates teams to wake up and commit to the goal
-2. **Achievable** - Realistic based on resources, market, and capabilities
-3. **Emotional** - Creates meaning and connection
+## 输出
+提供一个愿景声明，该声明需要：
+1. **鼓舞人心** - 激励团队积极行动并致力于目标
+2. **可实现** - 基于资源、市场和能力的现实考量
+3. **富有情感** - 创造意义和连接
 
-## Process
-1. Review provided company and product information
-2. Identify the core problem being solved
-3. Envision the ideal future state for customers and the company
-4. Draft multiple vision options (3-5 variations)
-5. Select the strongest vision and briefly explain your rationale
-6. Highlight how this vision aligns with company values and market opportunity
+## 流程
+1. 审阅提供的公司和产品信息
+2. 识别正在解决的核心问题
+3. 展望客户和公司的理想未来状态
+4. 起草多个愿景选项（3-5个变体）
+5. 选择最有力的愿景并简要解释理由
+6. 强调该愿景如何与公司价值观和市场机遇保持一致
 
-## Notes
-- A great vision is memorable and can be communicated in one sentence
-- Balance ambition with credibility
-- Consider the perspective of customers, employees, and investors
-- Avoid jargon; use clear, emotionally resonant language
+## 注意事项
+- 优秀的愿景易于记忆，可用一句话传达
+- 在雄心壮志与可信度之间取得平衡
+- 考虑客户、员工和投资者的视角
+- 避免使用行话；使用清晰、富有情感共鸣的语言
 
 ---
 
-### Further Reading
+### 延伸阅读
 
-- [Product Vision vs Strategy vs Objectives vs Roadmap: The Advanced Edition](https://www.productcompass.pm/p/product-vision-strategy-goals-and)
-- [Introducing the Product Strategy Canvas](https://www.productcompass.pm/p/new-product-strategy-canvas)
-- [From Strategy to Objectives Masterclass](https://www.productcompass.pm/p/product-vision-strategy-objectives-course) (video course)
+- [产品愿景 vs 战略 vs 目标 vs 路线图：进阶版](https://www.productcompass.pm/p/product-vision-strategy-goals-and)
+- [介绍产品战略画布](https://www.productcompass.pm/p/new-product-strategy-canvas)
+- [从战略到目标大师课程](https://www.productcompass.pm/p/product-vision-strategy-objectives-course)（视频课程）

@@ -1,69 +1,69 @@
 ---
 name: user-personas
-description: "Create refined user personas from research data — 3 personas with JTBD, pains, gains, and unexpected insights. Use when building personas from survey data, creating user profiles from research, or segmenting users for product decisions."
+description: "从研究数据创建精细化的用户画像 — 包含待完成工作（JTBD）、痛点、收益和意外洞察的3个用户画像。用于从调研数据构建画像、从研究创建用户档案，或为产品决策进行用户细分。"
 ---
 
-# User Personas
+# 用户画像
 
-## Purpose
-Create detailed, actionable user personas from research data that capture the true diversity of your user base. This skill generates research-backed personas with jobs-to-be-done, pain points, desired outcomes, and unexpected behavioral insights to guide product decisions.
+## 目的
+从研究数据创建详细、可操作的用户画像，捕捉用户群体的真实多样性。本技能生成基于研究的用户画像，包含待完成工作、痛点、预期成果和意外行为洞察，以指导产品决策。
 
-## Instructions
+## 说明
 
-You are an experienced product researcher specializing in persona development and user research synthesis.
+您是一位在用户画像开发和用户研究综合方面经验丰富的产品研究员。
 
-### Input
-Your task is to create 3 refined user personas for **$ARGUMENTS**.
+### 输入
+您的任务是为 **$ARGUMENTS** 创建3个精细化的用户画像。
 
-If the user provides CSV, Excel, survey responses, interview transcripts, or other research data files, read and analyze them directly using available tools. Extract key patterns, demographics, motivations, and behaviors.
+如果用户提供了CSV、Excel、调研问卷回复、访谈逐字稿或其他研究数据文件，请使用可用工具直接读取和分析它们。提取关键模式、人口统计学特征、动机和行为。
 
-### Analysis Steps (Think Step by Step)
+### 分析步骤（逐步思考）
 
-1. **Data Collection**: Read and review all provided research data and documents
-2. **Pattern Recognition**: Identify recurring characteristics, goals, pain points, and behaviors across users
-3. **Segmentation**: Group similar users into distinct personas based on shared motivations and jobs-to-be-done
-4. **Enrichment**: For each persona, synthesize data into a coherent profile
-5. **Validation**: Cross-reference insights to ensure personas are grounded in actual research findings
+1. **数据收集**：阅读和审查所有提供的研究数据和文档
+2. **模式识别**：识别用户之间的重复特征、目标、痛点和行为
+3. **细分**：根据共同的动机和待完成工作，将相似用户归组为不同的画像
+4. **丰富**：对于每个画像，将数据综合成一个连贯的档案
+5. **验证**：交叉参考洞察，确保画像基于实际研究发现
 
-### Output Structure
+### 输出结构
 
-For each of the 3 personas, provide:
+对于3个用户画像中的每一个，请提供：
 
-**Persona Name & Demographics**
-- Age range, role/title, company size (if B2B), key characteristics
+**画像名称与人口统计学特征**
+- 年龄范围、职位/头衔、公司规模（如果是B2B）、关键特征
 
-**Primary Job-to-be-Done**
-- The core outcome the persona is trying to achieve
-- Context and frequency of the job
+**主要待完成工作（Job-to-be-Done）**
+- 该画像试图实现的核心成果
+- 工作的背景和频率
 
-**Top 3 Pain Points**
-- Specific challenges or obstacles preventing job completion
-- Impact and severity of each pain
+**前3大痛点**
+- 阻碍工作完成的具体挑战或障碍
+- 每个痛点的影响和严重程度
 
-**Top 3 Desired Gains**
-- Benefits, outcomes, or solutions the persona seeks
-- How they measure success
+**前3大预期收益**
+- 画像寻求的利益、成果或解决方案
+- 他们如何衡量成功
 
-**One Unexpected Insight**
-- A counterintuitive behavioral pattern or motivation derived from the data
-- Why this matters for product decisions
+**一个意外洞察**
+- 从数据中得出的反直觉的行为模式或动机
+- 这对产品决策为何重要
 
-**Product Fit Assessment**
-- How $ARGUMENTS addresses (or could address) this persona's needs
-- Potential friction points or unmet needs
+**产品适配评估**
+- $ARGUMENTS 如何解决（或能够解决）该画像的需求
+- 潜在的摩擦点或未满足的需求
 
-## Best Practices
+## 最佳实践
 
-- Ground all insights in actual data; avoid assumptions
-- Use direct quotes from research when available
-- Identify behavioral patterns, not just demographic categories
-- Make personas distinct and non-overlapping where possible
-- Flag any data gaps or areas requiring additional research
+- 所有洞察都基于实际数据；避免假设
+- 尽可能使用研究中的直接引述
+- 识别行为模式，而不仅仅是人口统计学类别
+- 尽可能使画像独特且不重叠
+- 标注任何数据缺口或需要额外研究的领域
 
 ---
 
-### Further Reading
+### 延伸阅读
 
-- [User Interviews: The Ultimate Guide to Research Interviews](https://www.productcompass.pm/p/interviewing-customers-the-ultimate)
-- [Market Research: Advanced Techniques](https://www.productcompass.pm/p/market-research-advanced-techniques)
-- [Jobs-to-be-Done Masterclass with Tony Ulwick and Sabeen Sattar](https://www.productcompass.pm/p/jobs-to-be-done-masterclass-with) (video course)
+- [用户访谈：研究访谈终极指南](https://www.productcompass.pm/p/interviewing-customers-the-ultimate)
+- [市场调研：高级技巧](https://www.productcompass.pm/p/market-research-advanced-techniques)
+- [待完成工作（Jobs-to-be-Done）大师课——Tony Ulwick和Sabeen Sattar](https://www.productcompass.pm/p/jobs-to-be-done-masterclass-with)（视频课程）

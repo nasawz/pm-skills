@@ -1,131 +1,131 @@
 ---
-description: Run a full product discovery cycle — from ideation through assumption mapping to experiment design
-argument-hint: "<product or feature idea>"
+description: 运行完整的产品发现流程 — 从创意构思到假设映射再到实验设计
+argument-hint: "<产品或功能创意>"
 ---
 
-# /discover -- Full Discovery Cycle
+# /discover -- 完整发现流程
 
-Run a structured product discovery process that moves from divergent thinking to focused validation. This command chains multiple skills into a single end-to-end workflow.
+运行结构化的产品发现流程，从发散思维走向聚焦验证。此命令将多个技能串联成一个端到端的工作流程。
 
-## Invocation
-
-```
-/discover Smart notification system for our project management tool
-/discover New product: AI writing assistant for non-native speakers
-/discover                    # asks what you're discovering
-```
-
-## Workflow
-
-### Step 1: Understand the Discovery Context
-
-Determine whether this is:
-- **Existing product** — continuous discovery on a known product with real users
-- **New product** — initial discovery for a concept without validated demand
-
-Ask the user:
-- What are you exploring? (product idea, feature area, opportunity space)
-- What do you already know? (prior research, customer feedback, data)
-- What decisions will this discovery inform? (build/kill, prioritize, pivot)
-
-Accept context from uploaded files (research, PRDs, transcripts, data), links, or conversation.
-
-### Step 2: Brainstorm Ideas (Divergent Phase)
-
-Apply the **brainstorm-ideas-existing** or **brainstorm-ideas-new** skill:
-
-- Generate ideas from PM, Designer, and Engineer perspectives
-- Present the top 10 ideas with brief rationale
-- Ask the user to select 3-5 ideas to carry forward, or accept all
-
-**Checkpoint**: "Here are 10 ideas. Which ones should we stress-test? Pick 3-5, or I can carry all forward."
-
-### Step 3: Identify Assumptions (Critical Thinking Phase)
-
-For each selected idea, apply the **identify-assumptions-existing** or **identify-assumptions-new** skill:
-
-- Surface assumptions across risk categories:
-  - **Value**: Will users want this?
-  - **Usability**: Can users figure it out?
-  - **Feasibility**: Can we build it?
-  - **Viability**: Does the business case work?
-  - **Go-to-Market** (new products only): Can we reach and convert users?
-- Use devil's advocate multi-perspective analysis
-- Compile a master list of all assumptions across all ideas
-
-### Step 4: Prioritize Assumptions (Focus Phase)
-
-Apply the **prioritize-assumptions** skill:
-
-- Map assumptions on an Impact × Risk matrix
-- Identify the "leap of faith" assumptions — high impact, high uncertainty
-- Rank assumptions by test priority
-- Group related assumptions that can be tested together
-
-**Checkpoint**: "Here are your riskiest assumptions. Which ones feel most critical to validate first?"
-
-### Step 5: Design Experiments (Validation Phase)
-
-For the top-priority assumptions, apply **brainstorm-experiments-existing** or **brainstorm-experiments-new** skill:
-
-- Design 1-2 experiments per critical assumption
-- For existing products: A/B tests, fake doors, prototypes, user tests, data analysis
-- For new products: XYZ hypotheses, pretotypes, landing pages, concierge MVPs
-- Include success criteria, timeline, and effort for each
-- Sequence experiments by dependency and effort
-
-### Step 6: Create Discovery Plan
-
-Compile everything into a discovery plan document:
+## 调用方式
 
 ```
-## Discovery Plan: [Topic]
+/discover 智能通知系统用于我们的项目管理工具
+/discover 新产品：面向非母语者的AI写作助手
+/discover                    # 询问你正在探索什么
+```
 
-**Date**: [today]
-**Product Stage**: [existing/new]
-**Discovery Question**: [what we're trying to learn]
+## 工作流程
 
-### Ideas Explored
-[Summary of brainstormed ideas with brief descriptions]
+### 步骤 1：理解发现背景
 
-### Selected Ideas for Validation
-[3-5 ideas carried forward with rationale]
+确定这是：
+- **现有产品** — 在已有真实用户的产品上进行持续发现
+- **新产品** — 对尚未验证需求的概念进行初步发现
 
-### Critical Assumptions
-| # | Assumption | Category | Impact | Uncertainty | Priority |
+询问用户：
+- 你在探索什么？（产品创意、功能领域、机会空间）
+- 你已经了解什么？（前期研究、客户反馈、数据）
+- 这项发现将支持哪些决策？（开发/终止、优先级排序、转型）
+
+接受来自上传文件（研究、PRD、访谈记录、数据）、链接或对话中的背景信息。
+
+### 步骤 2：头脑风暴创意（发散阶段）
+
+应用 **brainstorm-ideas-existing** 或 **brainstorm-ideas-new** 技能：
+
+- 从产品经理（PM）、设计师和工程师的角度生成创意
+- 展示前10个创意及简要理由
+- 请用户选择3-5个创意继续推进，或接受全部
+
+**检查点**："这里有10个创意。我们应该对哪些进行压力测试？请选择3-5个，或者我可以全部带过。"
+
+### 步骤 3：识别假设（批判思维阶段）
+
+对每个选中的创意，应用 **identify-assumptions-existing** 或 **identify-assumptions-new** 技能：
+
+- 挖掘各类风险假设：
+  - **价值**：用户会想要这个吗？
+  - **可用性**：用户能够理解和使用吗？
+  - **可行性**：我们能够构建它吗？
+  - **商业可行性**：商业案例是否成立？
+  - **市场推广**（仅新产品）：我们能够触达并转化用户吗？
+- 采用多视角的魔鬼代言人分析法
+- 汇总所有创意的所有假设清单
+
+### 步骤 4：优先级排序假设（聚焦阶段）
+
+应用 **prioritize-assumptions** 技能：
+
+- 在影响程度 × 风险矩阵上映射假设
+- 识别"信仰飞跃"假设 — 高影响、高不确定性
+- 按测试优先级对假设进行排序
+- 将可以一起测试的相关假设分组
+
+**检查点**："这里是你风险最高的假设。哪些感觉最需要首先验证？"
+
+### 步骤 5：设计实验（验证阶段）
+
+对于优先级最高的假设，应用 **brainstorm-experiments-existing** 或 **brainstorm-experiments-new** 技能：
+
+- 为每个关键假设设计1-2个实验
+- 对于现有产品：A/B测试、虚假门（fake door）、原型、用户测试、数据分析
+- 对于新产品：XYZ假设、预原型（pretotype）、落地页、贴身式MVP（concierge MVP）
+- 包含每个实验的成功标准、时间表和投入
+- 按依赖关系和投入对实验进行排序
+
+### 步骤 6：创建发现计划
+
+将所有内容汇编成发现计划文档：
+
+```
+## 发现计划：[主题]
+
+**日期**：[今天]
+**产品阶段**：[现有/新产品]
+**发现问题**：[我们试图学习的内容]
+
+### 探索的创意
+[头脑风暴创意的摘要及简要描述]
+
+### 选择的待验证创意
+[3-5个推进的创意及理由]
+
+### 关键假设
+| # | 假设 | 类别 | 影响程度 | 不确定性 | 优先级 |
 |---|-----------|----------|--------|-------------|----------|
 
-### Validation Experiments
-| # | Tests Assumption | Method | Success Criteria | Effort | Timeline |
+### 验证实验
+| # | 验证的假设 | 方法 | 成功标准 | 投入 | 时间表 |
 |---|-----------------|--------|-----------------|--------|----------|
 
-### Experiment Details
-[For each experiment: hypothesis, setup, measurement, decision criteria]
+### 实验详情
+[每个实验：假设、设置、测量、决策标准]
 
-### Discovery Timeline
-Week 1: [experiments]
-Week 2: [experiments]
-Week 3: [analysis and decision]
+### 发现时间表
+第1周：[实验]
+第2周：[实验]
+第3周：[分析和决策]
 
-### Decision Framework
-- If [experiment] succeeds → proceed to [next step]
-- If [experiment] fails → [pivot/kill/investigate further]
+### 决策框架
+- 如果[实验]成功 → 进入[下一步]
+- 如果[实验]失败 → [转型/终止/进一步调查]
 ```
 
-Save the plan as a markdown file to the user's workspace.
+将计划保存为markdown文件到用户的工作空间。
 
-### Step 7: Offer Next Steps
+### 步骤 7：提供后续步骤
 
-- "Want me to **create a PRD** for the top idea?"
-- "Should I **design an interview script** to supplement these experiments?"
-- "Want me to **set up metrics** to track the experiments?"
-- "Should I **estimate effort** and create user stories for the MVP?"
+- "需要我为**顶级创意创建PRD**吗？"
+- "我应该**设计访谈脚本**来补充这些实验吗？"
+- "需要我**设置指标**来跟踪实验吗？"
+- "我应该**估算投入**并为MVP创建用户故事吗？"
 
-## Notes
+## 注意事项
 
-- This is a 15-30 minute structured workflow — let the user know upfront
-- At each checkpoint, the user can redirect, skip, or go deeper
-- If the user has research data, pull insights from it before brainstorming
-- The discovery plan should be a living document — offer to update it as experiments run
-- For new products, emphasize desirability validation before feasibility
-- For existing products, check if there's usage data that can inform assumptions
+- 这是一个15-30分钟的结构化工作流程 — 提前告知用户
+- 在每个检查点，用户可以重定向、跳过或深入
+- 如果用户有研究数据，在头脑风暴前从中提取洞察
+- 发现计划应该是一个动态文档 — 提议在实验运行时更新它
+- 对于新产品，在可行性之前强调可取性验证
+- 对于现有产品，检查是否有可以使用数据来为假设提供信息的使用数据

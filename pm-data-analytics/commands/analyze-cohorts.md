@@ -1,99 +1,99 @@
 ---
-description: Perform cohort analysis on user data — retention curves, feature adoption, and engagement trends
-argument-hint: "<data file or description of what to analyze>"
+description: 对用户数据进行群组分析——留存曲线、功能采用和参与趋势
+argument-hint: "<数据文件或需要分析的内容描述>"
 ---
 
-# /analyze-cohorts -- Cohort Analysis
+# /analyze-cohorts —— 群组分析
 
-Analyze user retention and engagement patterns by cohort. Upload your data or describe what you need, and get retention curves, feature adoption trends, and actionable insights.
+按群组分析用户留存和参与模式。上传数据或描述需求，获取留存曲线、功能采用趋势和可操作的洞察。
 
-## Invocation
-
-```
-/analyze-cohorts [upload a CSV of user activity data]
-/analyze-cohorts Monthly retention for users who signed up in Jan-Jun, grouped by acquisition channel
-/analyze-cohorts Help me set up a cohort analysis for our onboarding redesign
-```
-
-## Workflow
-
-### Step 1: Accept Data or Define Analysis
-
-Two paths:
-- **With data**: User uploads a CSV/spreadsheet with user-level data (user_id, signup_date, activity_date, event_type, etc.)
-- **Without data**: User describes the analysis they need → generate the SQL query and analysis framework
-
-### Step 2: Define Cohorts
-
-Ask:
-- What defines a cohort? (signup week/month, acquisition channel, plan tier, first feature used)
-- What is the retention event? (login, core action, any activity, purchase)
-- What time granularity? (daily, weekly, monthly)
-- What time range?
-
-### Step 3: Analyze
-
-Apply the **cohort-analysis** skill:
-
-**If data is provided:**
-- Process the data using Python (pandas) to create cohort tables
-- Calculate retention rates per cohort per period
-- Generate retention curves
-- Identify patterns: improving/declining cohorts, seasonal effects, anomalies
-- Compare feature adoption across cohorts
-
-**If describing an analysis:**
-- Design the cohort analysis framework
-- Generate SQL queries to extract the data
-- Create a template spreadsheet for the analysis
-- Define the metrics and visualization approach
-
-### Step 4: Generate Report
+## 调用方式
 
 ```
-## Cohort Analysis: [Description]
+/analyze-cohorts [上传用户活动数据的 CSV 文件]
+/analyze-cohorts 1-6月注册用户的月度留存，按获客渠道分组
+/analyze-cohorts 帮我为新用户引导改版设置群组分析
+```
 
-**Date**: [today]
-**Cohort definition**: [e.g., signup month]
-**Retention event**: [e.g., completed a project]
-**Granularity**: [weekly/monthly]
+## 工作流程
 
-### Retention Table
-| Cohort | Size | Week 1 | Week 2 | Week 3 | ... | Week 12 |
-|--------|------|--------|--------|--------|-----|---------|
+### 步骤 1：接收数据或定义分析
 
-### Key Findings
-1. **[Finding]** — [supporting data]
+两种路径：
+- **有数据**：用户上传包含用户级别数据的 CSV/电子表格（user_id、signup_date、activity_date、event_type 等）
+- **无数据**：用户描述所需分析 → 生成 SQL 查询和分析框架
+
+### 步骤 2：定义群组
+
+询问：
+- 群组定义依据是什么？（注册周/月、获客渠道、套餐等级、首次使用的功能）
+- 留存事件是什么？（登录、核心操作、任意活动、购买）
+- 时间粒度是什么？（日、周、月）
+- 时间范围是什么？
+
+### 步骤 3：分析
+
+应用 **cohort-analysis** 技能：
+
+**如果提供了数据：**
+- 使用 Python (pandas) 处理数据，创建群组表
+- 计算各群组各周期的留存率
+- 生成留存曲线
+- 识别模式：改善/下降的群组、季节性效应、异常值
+- 比较各群组的功能采用情况
+
+**如果描述分析需求：**
+- 设计群组分析框架
+- 生成用于提取数据的 SQL 查询
+- 创建分析模板电子表格
+- 定义指标和可视化方法
+
+### 步骤 4：生成报告
+
+```
+## 群组分析：[描述]
+
+**日期**：[今天]
+**群组定义**：[例如：注册月份]
+**留存事件**：[例如：完成项目]
+**粒度**：[周/月]
+
+### 留存表
+| 群组 | 规模 | 第1周 | 第2周 | 第3周 | ... | 第12周 |
+|------|------|-------|-------|-------|-----|--------|
+
+### 关键发现
+1. **[发现]** — [支撑数据]
 2. ...
 
-### Cohort Comparison
-- **Best-performing cohort**: [which, why]
-- **Worst-performing cohort**: [which, why]
-- **Trend**: [improving/declining/stable over time]
+### 群组对比
+- **表现最佳的群组**：[哪个，原因]
+- **表现最差的群组**：[哪个，原因]
+- **趋势**：[随时间改善/下降/稳定]
 
-### Retention Benchmarks
-| Period | Your Rate | Industry Benchmark | Gap |
-|--------|----------|-------------------|-----|
+### 留存基准
+| 周期 | 你的留存率 | 行业基准 | 差距 |
+|------|-----------|----------|------|
 
-### Recommendations
-1. [What to investigate or change based on findings]
+### 建议
+1. [根据发现应调查或改变的内容]
 2. ...
 
-### Follow-Up Queries
-[SQL queries for deeper investigation]
+### 后续查询
+[用于深入调查的 SQL 查询]
 ```
 
-If data was provided, save analysis as both markdown report and CSV/spreadsheet.
+如果提供了数据，将分析保存为 Markdown 报告和 CSV/电子表格两种格式。
 
-### Step 5: Offer Next Steps
+### 步骤 5：提供后续步骤
 
-- "Want me to **segment this further** by another dimension?"
-- "Should I **set up metrics alerts** based on these retention thresholds?"
-- "Want me to **design experiments** to improve retention for the weakest cohort?"
+- "需要我按另一个维度**进一步细分**吗？"
+- "要我基于这些留存阈值**设置指标预警**吗？"
+- "需要我为表现最差的群组**设计实验**以提升留存吗？"
 
-## Notes
+## 注意事项
 
-- Cohort analysis is only as good as the retention event definition — push for a meaningful action, not just "logged in"
-- Early cohorts often look different due to founding user bias — note this when comparing
-- If retention is calculated using a Python script, save the script so the user can re-run with new data
-- Seasonal effects can masquerade as trends — flag if cohort differences might be calendar-driven
+- 群组分析的质量取决于留存事件的定义——应推动使用有意义的操作，而非仅仅是"登录"
+- 早期群组通常因种子用户偏差而表现不同——比较时需注明
+- 如果使用 Python 脚本计算留存，保存脚本以便用户可以使用新数据重新运行
+- 季节性效应可能伪装成趋势——如果群组差异可能受日历因素影响，需标注说明

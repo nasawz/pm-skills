@@ -1,193 +1,193 @@
 ---
-description: Sprint lifecycle — plan a sprint, run a retrospective, or generate release notes
-argument-hint: "[plan|retro|release-notes] <context>"
+description: 冲刺周期 — 规划冲刺、执行回顾或生成发布说明
+argument-hint: "[plan|retro|release-notes] <上下文>"
 ---
 
-# /sprint -- Sprint Lifecycle
+# /sprint — 冲刺周期
 
-Three modes covering the sprint lifecycle: **plan** for sprint planning, **retro** for retrospectives, **release-notes** for shipping communication.
+三种模式覆盖冲刺周期：**plan** 用于冲刺规划，**retro** 用于回顾会议，**release-notes** 用于发布沟通。
 
-## Invocation
-
-```
-/sprint plan 2-week sprint, 4 engineers, focus on checkout improvements
-/sprint retro [paste team feedback or sprint data]
-/sprint release-notes [paste tickets, changelog, or PRD]
-/sprint                    # asks which phase you're in
-```
-
-## Modes
-
----
-
-### Plan Mode
-
-Prepare for sprint planning with capacity estimation, story selection, and risk identification.
-
-#### Workflow
-
-**Step 1: Gather Sprint Context**
-- Sprint duration (1 or 2 weeks)
-- Team composition (engineers, designers, QA — and availability)
-- Sprint goal or focus area
-- Backlog items to consider (paste, upload, or describe)
-- Any carry-over from last sprint
-- Known interruptions (holidays, on-call, meetings)
-
-**Step 2: Estimate Capacity**
-
-Apply the **sprint-plan** skill:
-
-- Calculate available engineering hours/points after meetings, on-call, PTO
-- Apply a velocity adjustment based on historical data (if provided) or industry standard (70% of theoretical capacity)
-- Show capacity breakdown per team member
-
-**Step 3: Select and Sequence Stories**
-
-- Recommend which stories fit within capacity
-- Flag dependency chains (A must complete before B starts)
-- Identify risks: stories that are underspecified, have external dependencies, or need design input
-- Balance quick wins with larger items
-- Ensure every story has acceptance criteria
-
-**Step 4: Generate Sprint Plan**
+## 调用方式
 
 ```
-## Sprint Plan: [Sprint Name/Number]
-
-**Duration**: [dates]
-**Sprint Goal**: [one sentence]
-**Team**: [members and availability]
-
-### Capacity
-| Member | Available Days | Points/Hours | Notes |
-|--------|--------------|-------------|-------|
-
-**Total capacity**: [X] points/hours
-**Recommended commitment**: [Y] points/hours (with buffer)
-
-### Selected Stories
-| # | Story | Points | Owner | Dependencies | Risk |
-|---|-------|--------|-------|-------------|------|
-
-### Sprint Risks
-1. [Risk] — Mitigation: [action]
-
-### Definition of Done
-- [ ] Code reviewed
-- [ ] Tests passing
-- [ ] Deployed to staging
-- [ ] QA approved
-- [ ] Documentation updated (if applicable)
+/sprint plan 2周冲刺，4名工程师，专注于结账流程改进
+/sprint retro [粘贴团队反馈或冲刺数据]
+/sprint release-notes [粘贴工单、变更日志或PRD]
+/sprint                    # 询问你当前处于哪个阶段
 ```
+
+## 模式
 
 ---
 
-### Retro Mode
+### 规划模式 (Plan Mode)
 
-Facilitate a structured retrospective that produces actionable improvements.
+为冲刺规划做准备，包括产能估算、故事选择和风险识别。
 
-#### Workflow
+#### 工作流程
 
-**Step 1: Gather Sprint Feedback**
+**第一步：收集冲刺背景**
+- 冲刺持续时间（1周或2周）
+- 团队构成（工程师、设计师、测试 — 及其可用性）
+- 冲刺目标或重点领域
+- 待考虑的待办事项（粘贴、上传或描述）
+- 上一个冲刺的遗留事项
+- 已知的中断因素（节假日、值班、会议）
 
-Accept input as:
-- Team feedback (pasted from a survey, Slack, or collaborative doc)
-- Sprint metrics (velocity, bugs, incidents)
-- The user's own observations
+**第二步：估算产能**
 
-Ask: "Which retro format do you prefer?"
-- **Start/Stop/Continue** (simple, fast)
-- **4Ls** (Liked, Learned, Lacked, Longed for)
-- **Sailboat** (Wind = helps, Anchor = slows, Rocks = risks, Island = goals)
+应用 **sprint-plan** 技能：
 
-**Step 2: Analyze and Structure**
+- 在扣除会议、值班、休假后计算可用的工程工时/故事点
+- 根据历史数据（如果提供）或行业标准（理论产能的 70%）调整速度
+- 展示每个团队成员的产能分解
 
-Apply the **retro** skill:
+**第三步：选择和排序故事**
 
-- Categorize feedback into the chosen framework
-- Identify themes and patterns
-- Separate symptoms from root causes
-- Highlight wins worth celebrating
+- 推荐哪些故事适合在产能内完成
+- 标记依赖链（A 必须在 B 开始前完成）
+- 识别风险：规格不足、有外部依赖或需要设计输入的故事
+- 平衡快速见效的小项目与较大的项目
+- 确保每个故事都有验收标准
 
-**Step 3: Generate Retro Summary**
+**第四步：生成冲刺计划**
 
 ```
-## Sprint Retrospective: [Sprint Name]
+## 冲刺计划：[冲刺名称/编号]
 
-**Date**: [today]
-**Format**: [Start/Stop/Continue | 4Ls | Sailboat]
-**Participants**: [if known]
+**持续时间**：[日期]
+**冲刺目标**：[一句话描述]
+**团队**：[成员及其可用性]
 
-### What Went Well
-[Grouped themes with supporting evidence]
+### 产能
+| 成员 | 可用天数 | 故事点/工时 | 备注 |
+|------|---------|-----------|------|
 
-### What Didn't Go Well
-[Grouped themes with root cause analysis]
+**总产能**：[X] 故事点/工时
+**建议承诺**：[Y] 故事点/工时（含缓冲）
 
-### Key Insights
-[2-3 patterns that emerged]
+### 选定故事
+| # | 故事 | 故事点 | 负责人 | 依赖 | 风险 |
+|---|------|--------|--------|------|------|
 
-### Action Items
-| # | Action | Owner | Deadline | Priority |
-|---|--------|-------|----------|----------|
+### 冲刺风险
+1. [风险] — 缓解措施：[行动]
 
-### Metrics This Sprint
-| Metric | This Sprint | Last Sprint | Trend |
-|--------|-----------|------------|-------|
+### 完成标准
+- [ ] 代码已审核
+- [ ] 测试通过
+- [ ] 已部署到预发布环境
+- [ ] 测试已批准
+- [ ] 文档已更新（如适用）
 ```
 
 ---
 
-### Release Notes Mode
+### 回顾模式 (Retro Mode)
 
-Generate user-facing release notes from technical artifacts.
+组织结构化的回顾会议，产生可执行的改进措施。
 
-#### Workflow
+#### 工作流程
 
-**Step 1: Accept Release Content**
+**第一步：收集冲刺反馈**
 
-Accept:
-- Jira/Linear tickets or changelog
-- PRD or feature specs
-- Git commit messages or PR descriptions
-- Team's internal summary of what shipped
+接受以下形式的输入：
+- 团队反馈（从调查问卷、Slack 或协作文档粘贴）
+- 冲刺指标（速度、缺陷、事故）
+- 用户自己的观察
 
-**Step 2: Transform**
+询问："你偏好哪种回顾格式？"
+- **开始/停止/继续**（简单、快速）
+- **4Ls**（Liked 喜欢、Learned 学到、Lacked 缺少、Longed for 渴望）
+- **帆船**（Wind 帮助、Anchor 阻碍、Rocks 风险、Island 目标）
 
-Apply the **release-notes** skill:
+**第二步：分析和构建结构**
 
-- Translate technical language into user benefits
-- Categorize as: New Features, Improvements, Bug Fixes
-- Write in the product's voice (ask about tone if not clear)
-- Highlight the most impactful change first
+应用 **retro** 技能：
 
-**Step 3: Generate Release Notes**
+- 将反馈归类到所选框架中
+- 识别主题和模式
+- 将症状与根本原因区分开
+- 突出值得庆祝的成果
+
+**第三步：生成回顾总结**
 
 ```
-## What's New — [Version/Date]
+## 冲刺回顾：[冲刺名称]
 
-### Highlights
-[1-2 sentence summary of the most important change]
+**日期**：[今天]
+**格式**：[开始/停止/继续 | 4Ls | 帆船]
+**参与者**：[如已知]
 
-### New Features
-- **[Feature Name]** — [user-facing benefit in plain language]
+### 做得好的方面
+[分组主题及支持性证据]
 
-### Improvements
-- **[Improvement]** — [what's better now]
+### 做得不好的方面
+[分组主题及根本原因分析]
 
-### Bug Fixes
-- Fixed [issue] that caused [user impact]
+### 关键洞察
+[出现的 2-3 个模式]
 
-### Coming Soon
-[Optional teaser for next release]
+### 行动项
+| # | 行动 | 负责人 | 截止日期 | 优先级 |
+|---|------|--------|----------|--------|
+
+### 本冲刺指标
+| 指标 | 本冲刺 | 上冲刺 | 趋势 |
+|------|--------|--------|------|
 ```
 
-Save as markdown and offer to format for different channels (blog post, in-app, email, Slack announcement).
+---
 
-## Notes
+### 发布说明模式 (Release Notes Mode)
 
-- For plan mode: protect 20% buffer for unplanned work — teams that plan at 100% capacity always miss
-- For retro mode: focus on 2-3 high-impact action items, not 10 things nobody will do
-- For release notes: always frame changes as user benefits, not technical implementations
-- Each mode can chain to the others: plan → (sprint happens) → retro → release-notes
+从技术工件生成面向用户的发布说明。
+
+#### 工作流程
+
+**第一步：接受发布内容**
+
+接受：
+- Jira/Linear 工单或变更日志
+- PRD 或功能规格
+- Git 提交消息或 PR 描述
+- 团队内部发布的总结
+
+**第二步：转换**
+
+应用 **release-notes** 技能：
+
+- 将技术语言转化为用户收益
+- 分类为：新功能、改进、缺陷修复
+- 使用产品语调撰写（如果不明确，询问语调）
+- 首先突出最有影响力的变更
+
+**第三步：生成发布说明**
+
+```
+## 新增内容 — [版本/日期]
+
+### 亮点
+[1-2 句话总结最重要的变更]
+
+### 新功能
+- **[功能名称]** — [用通俗语言描述的用户收益]
+
+### 改进
+- **[改进项]** — [现在的改进之处]
+
+### 缺陷修复
+- 修复了导致 [用户影响] 的 [问题]
+
+### 即将推出
+[可选：下个版本的预告]
+```
+
+保存为 markdown 格式，并提供为不同渠道格式化（博客文章、应用内、邮件、Slack 公告）。
+
+## 备注
+
+- 规划模式：为计划外工作保留 20% 的缓冲空间 — 按 100% 产能规划的团队总会延期
+- 回顾模式：专注于 2-3 个高影响力的行动项，而不是 10 个没人会做的事
+- 发布说明：始终将变更框架化为用户收益，而不是技术实现
+- 每种模式都可以链接到其他模式：规划 → （冲刺进行）→ 回顾 → 发布说明

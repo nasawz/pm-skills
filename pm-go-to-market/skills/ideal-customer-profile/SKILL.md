@@ -1,164 +1,164 @@
 ---
 name: ideal-customer-profile
-description: "Identify the Ideal Customer Profile (ICP) from research data with demographics, behaviors, JTBD, and needs. Use when defining your ICP, analyzing PMF survey data, or understanding who your best customers are."
+description: "从研究数据中识别理想客户画像（ICP），包括人口统计特征、行为模式、待完成任务（JTBD）和需求。在定义ICP、分析产品市场匹配度调查数据或了解最佳客户时使用。"
 ---
-# Ideal Customer Profile
+# 理想客户画像（ICP）
 
-## Overview
-Identify your Ideal Customer Profile (ICP) from research and survey data. This skill synthesizes customer research to define the customer most likely to find value, retain, and expand with your product.
+## 概述
+从研究和调查数据中识别您的理想客户画像（ICP）。该技能综合客户研究，以定义最有可能从您的产品中发现价值、留存并扩展的客户。
 
-## When to Use
-- Defining ICP from product-market fit survey data
-- Targeting high-value customer segments
-- Analyzing customer success and expansion patterns
-- Prioritizing sales and marketing efforts
-- Evaluating new customer opportunities for fit
-- Refining target market definition
+## 使用场景
+- 从产品市场匹配度调查数据中定义ICP
+- 锁定高价值客户细分
+- 分析客户成功和扩展模式
+- 优先考虑销售和营销工作
+- 评估新客户机会的匹配度
+- 完善目标市场定义
 
-## ICP Framework Components
+## ICP框架组件
 
-### Demographics
-Who are they from a firmographic and personal perspective?
-- Company size (employees, revenue)
-- Industry or vertical
-- Geographic location
-- Job title and department
-- Years of experience in role
-- Education and background
-- Organizational structure and reporting
+### 人口统计特征（公司画像）
+从公司和个人角度来看，他们是谁？
+- 公司规模（员工人数、营收）
+- 行业或垂直领域
+- 地理位置分布
+- 职位和部门
+- 岗位经验年限
+- 教育背景和个人背景
+- 组织架构和汇报关系
 
-### Behaviors
-How do they work and make decisions?
-- How they discover and evaluate solutions
-- Buying process and decision-making timeline
-- Technical literacy and product adoption speed
-- Collaboration style (solo decision vs committee)
-- Change management and adoption style
-- Tool switching frequency
-- Community involvement and peer influence
+### 行为模式
+他们如何工作和做出决策？
+- 他们如何发现和评估解决方案
+- 购买流程和决策时间线
+- 技术素养和产品采用速度
+- 协作风格（个人决策 vs 委员会决策）
+- 变革管理和采用风格
+- 工具切换频率
+- 社区参与度和同行影响力
 
-### Jobs to Be Done (JTBD)
-What are they trying to accomplish?
-- Primary job/goal they're trying to achieve
-- Secondary jobs that support the primary job
-- Emotional jobs (how they want to feel)
-- Social jobs (status and perception)
-- Jobs they avoid or want to eliminate
-- Frequency and importance of each job
-- Success metrics for completing job
+### 待完成任务（JTBD）
+他们试图完成什么？
+- 他们试图实现的主要任务/目标
+- 支持主要任务的次要任务
+- 情感任务（他们希望获得的感受）
+- 社交任务（地位和认知）
+- 他们希望避免或消除的任务
+- 每个任务的频率和重要性
+- 完成任务的成功指标
 
-### Needs and Pain Points
-What problems does your product solve?
-- Specific pain points they experience
-- Current workarounds and limitations
-- Impact on productivity or outcomes
-- Cost or time burden of the problem
-- Emotional frustration levels
-- Barriers to solving the problem
-- Available budget to solve
-- Competing priorities
+### 需求和痛点
+您的产品解决了什么问题？
+- 他们遇到的具体痛点
+- 当前的临时解决方案和局限性
+- 对生产力或成果的影响
+- 问题的成本或时间负担
+- 情绪挫败程度
+- 解决问题的障碍
+- 可用于解决问题的预算
+- 竞争优先级
 
-## How It Works
+## 工作原理
 
-### Step 1: Gather Customer Data
-Collect research about actual and potential customers:
-- Product-market fit survey responses
-- Customer interview transcripts
-- Trial or freemium user behavior data
-- Customer feedback and support tickets
-- Churn analysis and customer lifecycle data
-- Win/loss analysis from sales
-- Competitor customer analysis
+### 步骤 1：收集客户数据
+收集关于实际和潜在客户的研究：
+- 产品市场匹配度调查回复
+- 客户访谈记录
+- 试用或免费用户行为数据
+- 客户反馈和支持工单
+- 流失分析和客户生命周期数据
+- 销售赢/输分析
+- 竞争对手客户分析
 
-### Step 2: Segment by Value
-Identify customer cohorts and their value:
-- Highest LTV (lifetime value) customers
-- Fastest time-to-value customers
-- Lowest churn rate customers
-- Highest expansion/upsell customers
-- Most enthusiastic/engaged customers
-- Best reference/case study potential
-- Most aligned with product vision
+### 步骤 2：按价值细分
+识别客户群体及其价值：
+- 最高生命周期价值（LTV）客户
+- 价值实现时间最快的客户
+- 流失率最低的客户
+- 扩展/向上销售最高的客户
+- 最热情/参与度最高的客户
+- 最佳参考/案例研究潜力
+- 与产品愿景最契合的客户
 
-### Step 3: Profile Demographics
-Extract firmographic patterns:
-- Common company sizes (employee count, revenue)
-- Industry verticals and sub-verticals
-- Geographic concentrations
-- Typical department and reporting structure
-- Budget holders and budget available
-- Company stage (startup, growth, enterprise)
-- Company culture indicators
+### 步骤 3：刻画人口统计特征
+提取公司画像模式：
+- 常见公司规模（员工人数、营收）
+- 行业垂直领域和子垂直领域
+- 地理集中度
+- 典型部门和汇报结构
+- 预算持有者和可用预算
+- 公司阶段（初创、成长、企业）
+- 公司文化指标
 
-### Step 4: Identify Behaviors
-Map decision-making and adoption patterns:
-- How they discovered your product (channel)
-- Evaluation process and timeline
-- Key stakeholders in decision
-- Obstacles during sales process
-- Product adoption speed and breadth
-- Team involvement in onboarding
-- Frequency of feature usage
-- Support and service needs
+### 步骤 4：识别行为模式
+绘制决策和采用模式：
+- 他们如何发现您的产品（渠道）
+- 评估流程和时间线
+- 决策中的关键利益相关者
+- 销售过程中的障碍
+- 产品采用速度和广度
+- 团队在入职过程中的参与度
+- 功能使用频率
+- 支持和服务需求
 
-### Step 5: Define JTBD
-Articulate what they're trying to accomplish:
-- Primary job/goal (functional job)
-- Emotional dimensions (how they want to feel)
-- Social dimensions (team and stakeholder impact)
-- Success metrics (how they measure success)
-- Context and constraints (when, where, with whom)
-- Competing jobs and priorities
-- Importance ranking of various jobs
+### 步骤 5：定义JTBD
+明确他们试图完成的事情：
+- 主要任务/目标（功能性任务）
+- 情感维度（他们希望获得的感受）
+- 社交维度（团队和利益相关者影响）
+- 成功指标（他们如何衡量成功）
+- 上下文和约束条件（何时、何地、与谁一起）
+- 竞争任务和优先级
+- 各种任务的重要性排序
 
-### Step 6: Document Pain Points and Needs
-Synthesize specific problem areas:
-- Before state (current situation and frustrations)
-- Desired after state (ideal future state)
-- Gap size and impact quantification
-- Emotional dimensions of the problem
-- Resource constraints preventing solutions
-- Skepticism or hesitations
-- Success criteria for solution
+### 步骤 6：记录痛点和需求
+综合具体问题领域：
+- 之前状态（当前情况和挫败感）
+- 期望的之后状态（理想未来状态）
+- 差距大小和影响量化
+- 问题的情感维度
+- 阻碍解决方案的资源约束
+- 怀疑或犹豫
+- 解决方案的成功标准
 
-## Input Format
-Use $ARGUMENTS to pass:
-- Research data (surveys, interviews, transcripts)
-- Customer success/metrics data
-- Product usage analytics
-- Sales activity and win/loss data
-- Existing customer database
-- Competitive intelligence
+## 输入格式
+使用 $ARGUMENTS 传递：
+- 研究数据（调查、访谈、记录）
+- 客户成功/指标数据
+- 产品使用分析
+- 销售活动和赢/输数据
+- 现有客户数据库
+- 竞争情报
 
-## Output
-A comprehensive ICP definition including:
-- Firmographic profile (company size, industry, location)
-- Behavioral profile (buying patterns, adoption style)
-- Complete JTBD mapping (functional, emotional, social jobs)
-- Top 5-7 pain points and specific needs
-- Quantified impact metrics (cost of problem, value of solution)
-- Decision-making process and key stakeholders
-- Typical customer journey and timeline
-- Go-to-market implications and messaging
-- Disqualification criteria (who is NOT a good fit)
-- High-value segment within ICP (ideal-of-the-ideal)
+## 输出
+包括以下内容的综合ICP定义：
+- 公司画像（公司规模、行业、位置）
+- 行为画像（购买模式、采用风格）
+- 完整的JTBD映射（功能性、情感性、社交性任务）
+- 前5-7个痛点和具体需求
+- 量化影响指标（问题成本、解决方案价值）
+- 决策流程和关键利益相关者
+- 典型客户旅程和时间线
+- 市场进入策略影响和传递信息
+- 不合格标准（谁不是合适人选）
+- ICP内的高价值细分（理想中的理想）
 
-## Framework
-Based on Jobs to Be Done theory by Clayton Christensen and customer profiling methodology. Combines behavioral data with motivational insights to define actionable customer profiles.
+## 框架
+基于 Clayton Christensen 的待完成任务理论和客户画像方法论。结合行为数据和动机洞察，定义可操作的客户画像。
 
-## Tips
-- Use quantitative and qualitative data together
-- Interview 10+ high-value customers for pattern identification
-- Look for non-obvious demographic patterns (outliers can be high-value)
-- Define both ideal ICP and acceptable secondary segments
-- Revisit ICP quarterly as you gather more customer data
-- Use ICP to evaluate all new sales opportunities
-- Share ICP across entire organization (marketing, sales, product)
-- Remember: ICP should drive focus, not exclude all others
+## 提示
+- 结合定量和定性数据使用
+- 访谈10位以上高价值客户以识别模式
+- 寻找非显而易见的人口统计模式（异常值可能是高价值客户）
+- 同时定义理想ICP和可接受的次要细分
+- 随着收集更多客户数据，每季度重新审视ICP
+- 使用ICP评估所有新的销售机会
+- 在整个组织（营销、销售、产品）中共享ICP
+- 记住：ICP应该驱动聚焦，而不是排除所有其他客户
 
 ---
 
-### Further Reading
+### 延伸阅读
 
 - [5 GTM Principles You Should Know as a PM](https://www.productcompass.pm/p/5-gtm-principles-with-frameworks-templates)
 - [How to Design a Value Proposition Customers Can't Resist?](https://www.productcompass.pm/p/how-to-design-value-proposition-template)

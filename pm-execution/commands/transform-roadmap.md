@@ -1,96 +1,96 @@
 ---
-description: Convert a feature-based roadmap into an outcome-focused roadmap that communicates strategic intent
-argument-hint: "<roadmap as text, file, or list of planned features>"
+description: 将基于功能的产品路线图转换为聚焦成果的路线图，传达战略意图
+argument-hint: "<路线图文本、文件或计划功能列表>"
 ---
 
-# /transform-roadmap -- Outcome-Focused Roadmap
+# /transform-roadmap -- 聚焦成果的路线图
 
-Take a list of planned features or an output-focused roadmap and rewrite it as an outcome-focused roadmap that communicates *why* instead of *what*.
+将计划功能列表或聚焦产出的路线图重写为聚焦成果的路线图，传达*为什么*而不是*做什么*。
 
-## Invocation
-
-```
-/transform-roadmap [paste your feature list or roadmap]
-/transform-roadmap [upload a roadmap doc, spreadsheet, or screenshot]
-```
-
-## Workflow
-
-### Step 1: Accept the Current Roadmap
-
-Accept in any format:
-- Feature list or backlog items
-- Roadmap document (Now/Next/Later, quarterly, timeline)
-- Spreadsheet or Gantt chart export
-- Screenshot of a roadmap tool
-
-Parse each item to extract: feature name, description, target date/timeframe, and any context.
-
-### Step 2: Understand Strategic Context
-
-Ask:
-- What are the product goals or OKRs for this period?
-- Who is the audience for this roadmap? (execs, engineering, customers, board)
-- What format do you prefer? (Now/Next/Later, quarterly, timeline)
-
-### Step 3: Transform Each Item
-
-Apply the **outcome-roadmap** skill:
-
-For each feature/output on the roadmap:
-1. Identify the **user or business outcome** it's trying to achieve
-2. Rewrite as an outcome statement: "[Verb] [metric/experience] for [user segment]"
-3. Group features that serve the same outcome under one initiative
-4. Add success metrics to each outcome
-
-**Before → After examples:**
-- "Build SSO integration" → "Reduce enterprise onboarding friction — target: 50% faster time-to-first-value for enterprise accounts"
-- "Redesign dashboard" → "Help power users find insights faster — target: 30% reduction in time-to-insight"
-- "Add CSV export" → "Enable teams to share data outside the product — target: 25% increase in report sharing"
-
-### Step 4: Generate Transformed Roadmap
+## 调用方式
 
 ```
-## Outcome-Focused Roadmap: [Product] — [Period]
+/transform-roadmap [粘贴功能列表或路线图]
+/transform-roadmap [上传路线图文档、电子表格或截图]
+```
 
-**Strategic themes**: [2-3 high-level themes]
+## 工作流程
 
-### Now (Current Quarter)
-**Theme: [Strategic Theme]**
-| Outcome | Success Metric | Key Initiatives | Status |
+### 步骤 1：接受当前路线图
+
+接受任何格式：
+- 功能列表或待办事项
+- 路线图文档（Now/Next/Later、季度、时间轴）
+- 电子表格或甘特图导出
+- 路线图工具截图
+
+解析每个项目以提取：功能名称、描述、目标日期/时间段以及任何上下文信息。
+
+### 步骤 2：理解战略背景
+
+询问：
+- 该时期的产品目标或 OKR 是什么？
+- 这份路线图的受众是谁？（高管、工程团队、客户、董事会）
+- 您偏好什么格式？（Now/Next/Later、季度、时间轴）
+
+### 步骤 3：转换每个项目
+
+应用 **outcome-roadmap** 技能：
+
+对于路线图上的每个功能/产出：
+1. 识别它试图实现的**用户或业务成果**
+2. 重写为成果陈述："[动词] [指标/体验] 针对目标用户群体 [用户群体]"
+3. 将服务于同一成果的多个功能归为一个计划
+4. 为每个成果添加成功指标
+
+**转换前 → 转换后示例：**
+- "构建 SSO 集成" → "降低企业入驻摩擦 — 目标：企业客户首次实现价值的时间缩短 50%"
+- "重新设计仪表板" → "帮助高级用户更快发现洞察 — 目标：获取洞察的时间减少 30%"
+- "添加 CSV 导出" → "支持团队在产品外部共享数据 — 目标：报告共享增加 25%"
+
+### 步骤 4：生成转换后的路线图
+
+```
+## 聚焦成果的路线图：[产品名称] — [时期]
+
+**战略主题**：[2-3 个高层级主题]
+
+### Now（当前季度）
+**主题：[战略主题]**
+| 成果 | 成功指标 | 关键计划 | 状态 |
 |---------|---------------|----------------|--------|
 
-### Next (Next Quarter)
-**Theme: [Strategic Theme]**
-| Outcome | Success Metric | Key Initiatives | Confidence |
+### Next（下季度）
+**主题：[战略主题]**
+| 成果 | 成功指标 | 关键计划 | 置信度 |
 |---------|---------------|----------------|------------|
 
-### Later (Future)
-**Theme: [Strategic Theme]**
-| Outcome | Success Metric | Key Initiatives | Dependencies |
+### Later（未来）
+**主题：[战略主题]**
+| 成果 | 成功指标 | 关键计划 | 依赖项 |
 |---------|---------------|----------------|-------------|
 
-### Transformation Notes
-| Original Feature | Transformed Outcome | Why This Framing |
+### 转换说明
+| 原始功能 | 转换后的成果 | 采用此框架的原因 |
 |-----------------|--------------------|-----------------|
 
-### What Changed
-[Summary of how the roadmap narrative shifted]
+### 变更总结
+[路线图叙事方式转变的摘要]
 ```
 
-Save as a markdown file.
+保存为 markdown 文件。
 
-### Step 5: Review
+### 步骤 5：审查
 
-Offer:
-- "Want me to **add OKR alignment** for each outcome?"
-- "Should I **draft a stakeholder presentation** of this roadmap?"
-- "Want me to **identify risks** for the Now items?"
+提供以下选项：
+- "您需要我为每个成果**添加 OKR 对齐**吗？"
+- "我应该**起草这份路线图的利益相关者演示文稿**吗？"
+- "您需要我**识别 Now 项目的风险**吗？"
 
-## Notes
+## 注意事项
 
-- Outcomes should be measurable and have a clear "done" state
-- Multiple features can map to one outcome — this is a feature, not a bug
-- If an output doesn't clearly serve an outcome, flag it for the user to justify or deprioritize
-- The audience matters: exec roadmaps should be outcome-only, engineering roadmaps can include deliverables under each outcome
-- "Later" items should be less specific — outcomes without committed solutions
+- 成果应该是可衡量的，并具有明确的"完成"状态
+- 多个功能可以对应一个成果 — 这是特性而非缺陷
+- 如果某个产出没有明确服务于某个成果，请标记出来供用户论证或降低优先级
+- 受众很重要：高管路线图应只包含成果，工程路线图可以在每个成果下包含交付物
+- "Later" 项目应该不那么具体 — 是没有承诺解决方案的成果

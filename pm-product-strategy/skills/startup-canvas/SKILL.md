@@ -1,138 +1,138 @@
 ---
 name: startup-canvas
-description: "Generate a Startup Canvas combining Product Strategy (9 sections) and Business Model (costs + revenue) for a new product. An alternative to BMC and Lean Canvas that separates strategy from business model. Use when launching a new product or evaluating a startup concept."
+description: "为新产品生成创业画布（Startup Canvas），结合产品策略（9个部分）和商业模式（成本+收入）。这是BMC和精益画布的替代方案，将策略与商业模式分离。在推出新产品或评估创业概念时使用。"
 ---
-# Startup Canvas
+# 创业画布（Startup Canvas）
 
-## Metadata
-- **Name**: startup-canvas
-- **Description**: Generate a Startup Canvas for a new product. Combines the 9-section Product Strategy Canvas with a Business Model (Cost Structure + Revenue Streams). Designed specifically for startups and new products.
-- **Triggers**: startup canvas, new product canvas, startup strategy, startup business model
+## 元数据
+- **名称**：startup-canvas
+- **描述**：为新产品生成创业画布。结合9个部分的产品策略画布和商业模式（成本结构+收入来源）。专为初创公司和新产品设计。
+- **触发词**：startup canvas, new product canvas, startup strategy, startup business model
 
-## Domain Context
+## 领域背景
 
-### Startup Canvas vs Business Model Canvas vs Lean Canvas
+### 创业画布 vs 商业模式画布 vs 精益画布
 
-Popular approaches like Business Model Canvas (Strategyzer) and Lean Canvas (Ash Maurya) mix strategy and business model into one artifact. The **Startup Canvas** (Paweł Huryn) separates them: 9 strategy sections from the Product Strategy Canvas + Cost Structure & Revenue Streams.
+像商业模式画布（Business Model Canvas，Strategyzer）和精益画布（Lean Canvas，Ash Maurya）这样的流行方法将策略和商业模式混合在一个文档中。**创业画布**（Paweł Huryn）将它们分离：来自产品策略画布的9个策略部分 + 成本结构和收入来源。
 
-**Why not Business Model Canvas?**
-- No vision — why should your team wake up every day?
-- No Can't/Won't test — what stops competitors from copying you?
-- No trade-offs — what you choose NOT to do creates focus
-- No key metrics — how do you know the strategy is working?
-- Key Partnerships and Key Resources are rarely useful for early-stage products
+**为什么不使用商业模式画布？**
+- 缺乏愿景——你的团队每天为什么要起床工作？
+- 缺乏"不能/不会"测试——什么能阻止竞争对手复制你？
+- 缺乏取舍——你选择不做的事情创造了专注
+- 缺乏关键指标——你怎么知道策略是否有效？
+- 关键合作伙伴关系和关键资源对早期产品很少有用
 
-**Why not Lean Canvas?**
-- Introduces redundancy: "Problem" overlaps with Market Segments (markets are defined by problems), "Solution" overlaps with Value Proposition (which by definition includes features)
-- No vision, no trade-offs, no relative costs
-- "Unfair Advantage" is too narrow — the entire strategy should be hard to copy, not just one element
-- Doesn't address the holistic fit of strategic choices reinforcing each other
+**为什么不使用精益画布？**
+- 引入冗余："问题"与市场细分重叠（市场由问题定义），"解决方案"与价值主张重叠（根据定义，价值主张包含功能）
+- 缺乏愿景、缺乏取舍、缺乏相对成本
+- "不公平优势"过于狭隘——整个策略都难以复制，而不仅仅是一个元素
+- 没有解决战略选择相互强化的整体契合度
 
-**When to use which:**
-- **Business Model Canvas**: Established businesses, corporate strategy, investor materials
-- **Lean Canvas**: Quick hypothesis testing when you just need speed
-- **Startup Canvas**: New products where you need both strategic clarity AND a business model — the recommended approach
+**何时使用哪种方法：**
+- **商业模式画布**：成熟企业、企业战略、投资者材料
+- **精益画布**：当只需要速度时的快速假设测试
+- **创业画布**：需要战略清晰度和商业模式的新产品——推荐的方法
 
-## Instructions
+## 指导说明
 
-You are a product strategist and startup advisor designing a Startup Canvas for $ARGUMENTS.
+你是一名产品策略师和创业顾问，正在为 $ARGUMENTS 设计创业画布。
 
-Your task is to create a comprehensive Startup Canvas that covers both the strategic choices and the business model for a new product.
+你的任务是创建一个全面的创业画布，涵盖新产品的战略选择和商业模式。
 
-## Input Requirements
-- Product or startup idea
-- Target market and customer insights
-- Competitive landscape
-- Founder/team constraints and resources
+## 输入要求
+- 产品或创业想法
+- 目标市场和客户洞察
+- 竞争格局
+- 创始人/团队的约束和资源
 
-## Startup Canvas Template
+## 创业画布模板
 
-### Part 1: Product Strategy (9 Sections)
+### 第一部分：产品策略（9个部分）
 
-**1. Vision**
-- How can we inspire people? What are we aspiring to achieve? What values do we uphold?
-- Start simple. Your vision will evolve alongside the strategy.
+**1. 愿景**
+- 我们如何激励人们？我们渴望实现什么？我们坚持什么价值观？
+- 从简单开始。你的愿景将随着策略一起演进。
 
-**2. Market Segments**
-- The market is defined by the problems people have (not demographics).
-- Jobs to Be Done (JTBD), desired outcomes, constraints.
-- What will be your first customer segment? Why this one first?
+**2. 市场细分**
+- 市场由人们的问题定义（而非人口统计学特征）。
+- 待完成任务（Jobs to Be Done，JTBD）、期望的结果、约束条件。
+- 你的第一个客户细分是什么？为什么先做这个？
 
-**3. Relative Costs**
-- Do you optimize for low cost (like Southwest Airlines) or unique value (like Starbucks)?
-- Low costs don't necessarily mean low prices.
+**3. 相对成本**
+- 你是优化低成本（如西南航空）还是独特价值（如星巴克）？
+- 低成本不一定意味着低价格。
 
-**4. Value Proposition**
-For each market segment:
-- **What before**: Existing, problematic state
-- **How**: Features and capabilities that change the situation
-- **What after**: The benefits and outcomes
-- **Alternatives**: Your unique value vs. competitors and substitutes (consider a Value Curve)
+**4. 价值主张**
+对于每个市场细分：
+- **之前是什么**：现有的、有问题的状态
+- **如何实现**：改变情况的功能和能力
+- **之后是什么**：好处和结果
+- **替代方案**：你与竞争对手和替代品的独特价值（考虑价值曲线）
 
-**5. Trade-offs**
-- What will you NOT do? Trade-offs create focus and amplify value.
-- Especially important for startups where it's tempting to chase every opportunity.
+**5. 取舍**
+- 你不会做什么？取舍创造专注并放大价值。
+- 对初创公司尤为重要，因为追逐每个机会很诱人。
 
-**6. Key Metrics**
-- A few key metrics to measure if the product and strategy are working.
-- North Star Metric and One Metric That Matters (OMTM) for this quarter.
+**6. 关键指标**
+- 几个关键指标来衡量产品和策略是否有效。
+- 本季度的北极星指标和唯一重要指标（OMTM）。
 
-**7. Growth**
-- Product-Led Growth or Sales-Led Growth?
-- Preferred channels: Social Media, SEO, Influencers, Resellers?
+**7. 增长**
+- 产品驱动增长（Product-Led Growth）还是销售驱动增长（Sales-Led Growth）？
+- 首选渠道：社交媒体、SEO、影响者、经销商？
 
-**8. Capabilities**
-- What competencies and resources do you need to acquire?
-- What do you build vs. partner for?
+**8. 能力**
+- 你需要获取哪些能力和资源？
+- 什么自己构建，什么通过合作伙伴实现？
 
-**9. Can't/Won't**
-- What makes you think competitors can't or won't copy your strategy?
-- The entire strategy should be difficult to copy — not just one element.
-- Do all elements fit together and reinforce each other?
+**9. 不能/不会**
+- 什么让你认为竞争对手不能或不会复制你的策略？
+- 整个策略应该难以复制——不仅仅是一个元素。
+- 所有元素是否相互契合并相互强化？
 
-### Part 2: Business Model
+### 第二部分：商业模式
 
-**10. Cost Structure**
-- Rent, hardware, licenses, technology, marketing, subscriptions, salaries.
-- Which are recurring? How will they scale?
+**10. 成本结构**
+- 租金、硬件、许可证、技术、营销、订阅、薪资。
+- 哪些是经常性的？它们将如何扩展？
 
-**11. Revenue Streams**
-- How much money from each channel?
-- Pricing approach: penetration, value-based, competitive, usage-based, SaaS?
-- Is the revenue model scalable? What are the biggest uncertainties?
+**11. 收入来源**
+- 每个渠道的收入是多少？
+- 定价方法：渗透定价、价值定价、竞争定价、基于使用量、SaaS？
+- 收入模型是否可扩展？最大的不确定性是什么？
 
-## Output Process
-1. Define the vision and aspirational impact
-2. Identify 2–3 target market segments with JTBD
-3. Establish cost positioning (low cost vs premium)
-4. Develop value propositions for each segment
-5. List explicit trade-offs
-6. Set North Star and quarterly OMTM
-7. Outline growth strategy and channels
-8. Document required capabilities
-9. Explain defensibility (Can't/Won't test)
-10. Estimate cost structure and revenue streams
-11. Validate strategy coherence: do all elements reinforce each other?
-12. Surface hypotheses that must be true for success
-13. Suggest low-effort experiments to test key assumptions
+## 输出流程
+1. 定义愿景和期望的影响
+2. 使用JTBD识别2-3个目标市场细分
+3. 确立成本定位（低成本 vs 高端）
+4. 为每个细分开发价值主张
+5. 列出明确的取舍
+6. 设定北极星指标和季度OMTM
+7. 概述增长策略和渠道
+8. 记录所需能力
+9. 解释可防御性（"不能/不会"测试）
+10. 估算成本结构和收入来源
+11. 验证策略一致性：所有元素是否相互强化？
+12. 提出必须为真的假设才能成功
+13. 建议低投入的实验来测试关键假设
 
-## Notes
-- The Startup Canvas separates strategy from business model — keep them distinct but connected
-- Strategy should pass the Can't/Won't test: your competitors can't or won't copy the integrated set of choices
-- After drafting the first version, identify and start testing hypotheses
-- Mix and adapt approaches to suit your specific needs rather than following any canvas rigidly
-
----
-
-### Templates
-
-- [Startup Canvas (PPTX)](https://docs.google.com/presentation/d/1lA0SPflj5JT6jFV_jIDsqZJAYYperTFx/edit?usp=sharing&ouid=111307342557889008106&rtpof=true&sd=true)
+## 注意事项
+- 创业画布将策略与商业模式分离——保持它们的区别但又相互关联
+- 策略应通过"不能/不会"测试：你的竞争对手不能或不会复制这套整合的选择
+- 起草初稿后，识别并开始测试假设
+- 混合并调整方法以适应你的特定需求，而不是僵化地遵循任何画布
 
 ---
 
-### Further Reading
+### 模板
 
-- [Startup Canvas: Product Strategy and a Business Model for a New Product](https://www.productcompass.pm/p/startup-canvas)
-- [Product Strategy Canvas](https://www.productcompass.pm/p/product-strategy-canvas)
-- [How to Design a Value Proposition Customers Can't Resist?](https://www.productcompass.pm/p/how-to-design-value-proposition-template)
-- [Business Model Canvas Examples: Google Maps, Airbnb, Uber](https://www.productcompass.pm/p/business-model-canvas-examples)
+- [创业画布（PPTX）](https://docs.google.com/presentation/d/1lA0SPflj5JT6jFV_jIDsqZJAYYperTFx/edit?usp=sharing&ouid=111307342557889008106&rtpof=true&sd=true)
+
+---
+
+### 延伸阅读
+
+- [创业画布：新产品的产品策略和商业模式](https://www.productcompass.pm/p/startup-canvas)
+- [产品策略画布](https://www.productcompass.pm/p/product-strategy-canvas)
+- [如何设计让客户无法抗拒的价值主张？](https://www.productcompass.pm/p/how-to-design-value-proposition-template)
+- [商业模式画布示例：谷歌地图、Airbnb、Uber](https://www.productcompass.pm/p/business-model-canvas-examples)

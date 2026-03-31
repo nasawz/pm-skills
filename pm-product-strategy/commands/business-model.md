@@ -1,183 +1,183 @@
 ---
-description: Explore business models using Lean Canvas, Business Model Canvas, Startup Canvas, or Value Proposition frameworks
-argument-hint: "[lean|full|startup|value-prop] <product or business>"
+description: 探索使用精益画布、商业模式画布、创业画布或价值主张框架的企业模式
+argument-hint: "[lean|full|startup|value-prop] <产品或业务>"
 ---
 
-# /business-model -- Business Model Exploration
+# /business-model -- 商业模式探索
 
-Build and analyze business models using four complementary frameworks. Choose one or run all for a complete picture.
+使用四个互补的框架构建和分析商业模式。选择一个或运行全部以获得完整的视角。
 
-## Invocation
+## 调用方式
 
 ```
 /business-model lean Marketplace connecting freelance PMs with startups
 /business-model full Enterprise analytics platform
 /business-model startup AI writing tool for non-native English speakers
 /business-model value-prop SaaS onboarding tool
-/business-model all SaaS onboarding tool        # runs all four
-/business-model                                   # asks what you need
+/business-model all SaaS onboarding tool        # 运行全部四个框架
+/business-model                                   # 询问您的需求
 ```
 
-## Modes
+## 模式
 
 ---
 
-### Lean Canvas Mode
+### 精益画布模式（Lean Canvas Mode）
 
-Best for: Early-stage ideas, startups, new product lines.
+最适用于：早期想法、初创公司、新产品线。
 
-Apply the **lean-canvas** skill to produce a complete Lean Canvas:
+应用 **lean-canvas** 技能生成完整的精益画布：
 
 ```
-## Lean Canvas: [Product]
+## Lean Canvas：[产品名称]
 
-| Problem (Top 3) | Solution | Unique Value Proposition |
+| 问题（前3个） | 解决方案 | 独特价值主张 |
 |-----------------|----------|------------------------|
-| 1. [problem]    | [solution to each] | [single clear message] |
-| 2. [problem]    |          |                        |
-| 3. [problem]    |          |                        |
+| 1. [问题]    | [针对每个问题的解决方案] | [单一清晰的信息] |
+| 2. [问题]    |          |                        |
+| 3. [问题]    |          |                        |
 
-| Key Metrics | Unfair Advantage |
+| 关键指标 | 不公平优势 |
 |------------|-----------------|
-| [what you measure] | [what can't be copied] |
+| [您测量的内容] | [无法复制的内容] |
 
-| Channels | Customer Segments |
+| 渠道 | 客户细分 |
 |---------|------------------|
-| [how you reach them] | [who, early adopters first] |
+| [如何触达客户] | [目标客户，早期采用者优先] |
 
-| Cost Structure | Revenue Streams |
+| 成本结构 | 收入来源 |
 |---------------|----------------|
-| [fixed + variable] | [how you make money] |
+| [固定成本 + 可变成本] | [如何赚钱] |
 
-### Riskiest Assumptions
-[What must be true for this to work — prioritized by risk]
+### 最危险的假设
+[要使此模型成立必须具备的条件——按风险优先级排序]
 
-### Experiments to Run
-[How to validate the riskiest assumptions cheaply]
+### 需要进行的实验
+[如何低成本地验证最危险的假设]
 ```
 
 ---
 
-### Full Business Model Canvas Mode
+### 完整商业模式画布模式（Full Business Model Canvas Mode）
 
-Best for: Established products, strategic planning, investor materials.
+最适用于：成熟产品、战略规划、投资者材料。
 
-Apply the **business-model** skill to produce all 9 building blocks:
+应用 **business-model** 技能生成所有9个构建模块：
 
 ```
-## Business Model Canvas: [Product]
+## Business Model Canvas：[产品名称]
 
-| Key Partners | Key Activities | Value Propositions | Customer Relationships | Customer Segments |
+| 关键合作伙伴 | 关键活动 | 价值主张 | 客户关系 | 客户细分 |
 |-------------|---------------|-------------------|----------------------|------------------|
-| [who helps you] | [core actions] | [why customers choose you] | [how you interact] | [who you serve] |
+| [谁帮助您] | [核心行动] | [客户选择您的原因] | [如何互动] | [服务对象] |
 
-| Key Resources | | Channels | |
+| 关键资源 | | 渠道 | |
 |-------------|---|---------|---|
-| [what you need] | | [how you deliver] | |
+| [您需要的资源] | | [如何交付] | |
 
-| Cost Structure | Revenue Streams |
+| 成本结构 | 收入来源 |
 |---------------|----------------|
-| [your costs] | [your revenue] |
+| [您的成本] | [您的收入] |
 
-### Analysis
-[Strengths and weaknesses of this model]
-[How the pieces reinforce each other]
-[Vulnerabilities and dependencies]
+### 分析
+[此模型的优势和劣势]
+[各要素如何相互强化]
+[脆弱性和依赖关系]
 ```
 
 ---
 
-### Startup Canvas Mode
+### 初创公司画布模式（Startup Canvas Mode）
 
-Best for: New products and startups that need both strategy and business model in one artifact. Recommended over Lean Canvas and BMC for new products.
+最适用于：需要在一个文档中同时包含战略和商业模式的新产品和初创公司。对于新产品，推荐使用此模式而非精益画布和商业模式画布。
 
-Apply the **startup-canvas** skill to produce a Startup Canvas with 9 strategy sections + business model:
+应用 **startup-canvas** 技能生成包含9个战略部分 + 商业模式的初创公司画布：
 
 ```
-## Startup Canvas: [Product]
+## Startup Canvas：[产品名称]
 
-### Part 1: Product Strategy
+### 第一部分：产品战略
 
-| Vision | Market Segments | Relative Costs |
+| 愿景 | 市场细分 | 相对成本 |
 |--------|----------------|---------------|
-| [inspiring why] | [JTBD, first segment] | [low cost vs unique value] |
+| [激励性的"为什么"] | [待办任务，第一个细分市场] | [低成本 vs 独特价值] |
 
-| Value Proposition | Trade-offs | Key Metrics |
+| 价值主张 | 权衡取舍 | 关键指标 |
 |------------------|-----------|------------|
-| [What before → How → What after → Alternatives] | [what you won't do] | [North Star + OMTM] |
+| [之前的状态 → 如何做 → 之后的状态 → 替代方案] | [您不会做的事情] | [北极星指标 + OMTM] |
 
-| Growth | Capabilities | Can't/Won't |
+| 增长 | 能力 | 无法/不会 |
 |--------|-------------|------------|
-| [PLG vs Sales-Led, channels] | [build vs partner] | [why competitors can't copy] |
+| [产品驱动增长 vs 销售驱动增长，渠道] | [自建 vs 合作] | [竞争对手无法复制的原因] |
 
-### Part 2: Business Model
+### 第二部分：商业模式
 
-| Cost Structure | Revenue Streams |
+| 成本结构 | 收入来源 |
 |---------------|----------------|
-| [fixed + variable, how they scale] | [pricing model, revenue per channel] |
+| [固定成本 + 可变成本，如何扩展] | [定价模式，各渠道收入] |
 
-### Strategy Coherence Check
-[Do all elements reinforce each other?]
+### 战略一致性检查
+[所有要素是否相互强化？]
 
-### Riskiest Assumptions
-[What must be true — and how to test it]
+### 最危险的假设
+[必须具备的条件——以及如何验证]
 ```
 
 ---
 
-### Value Proposition Mode
+### 价值主张模式（Value Proposition Mode）
 
-Best for: Refining messaging, understanding user value, product-market fit analysis.
+最适用于：优化信息传达、理解用户价值、产品市场契合度分析。
 
-Apply the **value-proposition** skill to produce a JTBD-framed value proposition:
+应用 **value-proposition** 技能生成基于待办任务（JTBD）框架的价值主张：
 
 ```
-## Value Proposition: [Product]
+## Value Proposition：[产品名称]
 
-### For [Segment]:
-1. **Who**: [target user profile]
-2. **Why**: [the job they're trying to do]
-3. **What Before**: [their current painful reality]
-4. **How**: [your solution approach]
-5. **What After**: [their improved reality]
-6. **Alternatives**: [what they'd use without you, and why you're better]
+### 针对 [细分市场]：
+1. **谁**：[目标用户画像]
+2. **为什么**：[他们试图完成的任务]
+3. **之前的状态**：[当前痛苦的现实]
+4. **如何做**：[您的解决方案方法]
+5. **之后的状态**：[改善后的现实]
+6. **替代方案**：[没有您时他们会使用什么，以及您为什么更好]
 
-### Value Proposition Statement
-[One sentence: For [who] who [need], [product] is a [category] that [benefit]. Unlike [alternative], we [differentiator].]
+### 价值主张声明
+[一句话：对于 [谁] 需要 [需求]，[产品] 是一个 [类别]，它 [带来什么益处]。与 [替代方案] 不同，我们 [差异化优势]。]
 ```
 
 ---
 
-### All Mode
+### 全部模式（All Mode）
 
-Runs all four frameworks and adds a synthesis section comparing insights across frameworks.
+运行所有四个框架，并添加一个综合部分，比较各框架的洞察。
 
-## Workflow (All Modes)
+## 工作流程（所有模式）
 
-### Step 1: Gather Context
+### 第一步：收集背景信息
 
-Ask:
-- What is the product or business idea?
-- What stage? (idea, validated, scaling)
-- Any existing business model to refine?
-- Who is the target customer?
+询问：
+- 产品或商业想法是什么？
+- 处于什么阶段？（想法、已验证、规模化）
+- 是否有需要优化的现有商业模式？
+- 目标客户是谁？
 
-### Step 2: Generate the Selected Framework(s)
+### 第二步：生成选定的框架
 
-Apply the relevant skill(s) as described above.
+如上所述应用相关技能。
 
-### Step 3: Save and Iterate
+### 第三步：保存和迭代
 
-Save as markdown. Offer:
-- "Want me to **stress-test this model** with a SWOT or PESTLE analysis?"
-- "Should I **design a pricing strategy** for the revenue streams?"
-- "Want me to **build a strategy canvas** around this model?"
-- "Should I **identify the beachhead segment**?"
+保存为 markdown 格式。提供：
+- "您希望我使用 SWOT 或 PESTLE 分析来**压力测试此模型**吗？"
+- "我是否应该为收入来源**设计定价策略**？"
+- "您希望我围绕此模型**构建战略画布**吗？"
+- "我是否应该**确定桥头堡细分市场**？"
 
-## Notes
+## 注意事项
 
-- **Startup Canvas** is the recommended starting point for new products — it separates strategy from business model and covers what BMC and Lean Canvas miss (vision, trade-offs, metrics, Can't/Won't)
-- **Lean Canvas** is best for speed and hypothesis testing — don't overthink it, but be aware it mixes strategy and business model into one artifact
-- **BMC** is better for mature businesses that need to articulate how everything connects, but lacks strategic sections (vision, trade-offs, metrics)
-- **Value Proposition** is the sharpest tool for product-market fit conversations
-- In "all" mode, highlight where frameworks agree (strong signal) and where they diverge (needs investigation)
+- **初创公司画布** 是新产品的推荐起点——它将战略与商业模式分开，并涵盖了商业模式画布和精益画布缺失的内容（愿景、权衡取舍、指标、无法/不会）
+- **精益画布** 最适合快速验证和假设测试——不要过度思考，但要注意它将战略和商业模式混合在一个文档中
+- **商业模式画布（BMC）** 更适合需要阐明所有要素如何连接的成熟企业，但缺乏战略部分（愿景、权衡取舍、指标）
+- **价值主张** 是产品市场契合度对话中最锋利的工具
+- 在"全部"模式下，突出显示框架一致的地方（强信号）和存在分歧的地方（需要调查）

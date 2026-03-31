@@ -1,96 +1,96 @@
 ---
 name: swot-analysis
-description: "Perform a detailed SWOT analysis — strengths, weaknesses, opportunities, and threats with actionable recommendations. Use when doing strategic assessment, competitive analysis, or evaluating a product or business position."
+description: "进行详细的SWOT分析——优势、劣势、机会和威胁，并提供可执行的建议。在进行战略评估、竞争分析或评估产品或业务地位时使用。"
 ---
-# SWOT Analysis
+# SWOT分析
 
-## Metadata
-- **Name**: swot-analysis
-- **Description**: Perform a detailed SWOT analysis for a product. Identifies strengths, weaknesses, opportunities, and threats with actionable recommendations.
-- **Triggers**: SWOT analysis, strengths weaknesses, SWOT matrix, strategic assessment
+## 元数据
+- **名称**: swot-analysis
+- **描述**: 为产品进行详细的SWOT分析。识别优势、劣势、机会和威胁，并提供可执行的建议。
+- **触发词**: SWOT分析、优势劣势、SWOT矩阵、战略评估
 
-## Instructions
+## 指令
 
-You are a strategic analyst conducting a SWOT analysis for $ARGUMENTS.
+您是一位战略分析师，正在为$ARGUMENTS进行SWOT分析。
 
-Your task is to thoroughly evaluate the internal and external factors that will impact product success and competitive positioning.
+您的任务是全面评估将影响产品成功和竞争定位的内部和外部因素。
 
-## Input Requirements
-- Product description and current state
-- Competitive landscape and market context
-- Company capabilities, resources, and constraints
-- Market trends and industry dynamics
-- Customer feedback or usage data (optional)
+## 输入要求
+- 产品描述和当前状态
+- 竞争格局和市场背景
+- 公司能力、资源和约束
+- 市场趋势和行业动态
+- 客户反馈或使用数据（可选）
 
-## SWOT Analysis Framework
+## SWOT分析框架
 
-### 1. Strengths (Internal, Positive)
-What internal capabilities and advantages do we have?
+### 1. 优势（内部，积极）
+我们拥有哪些内部能力和优势？
 
-- Unique capabilities or expertise
-- Brand recognition or reputation
-- Customer relationships and loyalty
-- Technology or IP advantages
-- Cost advantages or operational efficiency
-- Team talent and experience
-- Existing customer base or distribution
+- 独特的能力或专业知识
+- 品牌知名度或声誉
+- 客户关系和忠诚度
+- 技术或知识产权优势
+- 成本优势或运营效率
+- 团队人才和经验
+- 现有客户群或分销渠道
 
-### 2. Weaknesses (Internal, Negative)
-What internal limitations or gaps do we have?
+### 2. 劣势（内部，消极）
+我们存在哪些内部局限或差距？
 
-- Resource constraints (budget, team size, skills)
-- Technology or infrastructure limitations
-- Lack of brand awareness or market presence
-- Weak customer relationships or high churn
-- High cost structure relative to competitors
-- Outdated processes or legacy systems
-- Dependence on key people or partners
+- 资源约束（预算、团队规模、技能）
+- 技术或基础设施限制
+- 品牌知名度或市场影响力不足
+- 客户关系薄弱或流失率高
+- 相对于竞争对手的高成本结构
+- 流程过时或遗留系统
+- 对关键人员或合作伙伴的依赖
 
-### 3. Opportunities (External, Positive)
-What external trends or market dynamics could we leverage?
+### 3. 机会（外部，积极）
+我们可以利用哪些外部趋势或市场动态？
 
-- Growing market segments or customer needs
-- Technological advances enabling new solutions
-- Regulatory changes favoring our approach
-- Competitor weaknesses or market gaps
-- Partnership or acquisition opportunities
-- Expansion into adjacent markets or segments
-- Shifting customer preferences or behaviors
+- 增长的市场细分或客户需求
+- 实现新解决方案的技术进步
+- 有利于我们方法的监管变化
+- 竞争对手弱点或市场空白
+- 合作伙伴关系或收购机会
+- 向相邻市场或细分市场扩展
+- 客户偏好或行为的转变
 
-### 4. Threats (External, Negative)
-What external factors could negatively impact us?
+### 4. 威胁（外部，消极）
+哪些外部因素可能对我们产生负面影响？
 
-- Emerging or stronger competitors
-- Changing customer preferences or needs
-- Technological disruption or obsolescence
-- Regulatory changes or compliance risks
-- Economic downturns or market contraction
-- Supply chain disruptions
-- Supplier or partner consolidation
+- 新兴或更强的竞争对手
+- 客户偏好或需求的变化
+- 技术颠覆或过时
+- 监管变化或合规风险
+- 经济衰退或市场萎缩
+- 供应链中断
+- 供应商或合作伙伴整合
 
-## Output Process
-1. Identify 5-7 strengths (be honest about competitive advantages)
-2. List 5-7 weaknesses (avoid minimizing; focus on addressable gaps)
-3. Map 5-7 opportunities (prioritize by market size and alignment)
-4. Flag 5-7 threats (assess probability and impact)
-5. Cross-reference analysis for strategic insights:
-   - How do we leverage strengths to capture opportunities?
-   - How do we shore up weaknesses to mitigate threats?
-   - Which opportunities can overcome weaknesses?
-   - Which threats could exploit weaknesses?
-6. Develop 3-5 strategic recommendations
-7. Prioritize actions and owners
-8. Identify metrics to track progress
+## 输出流程
+1. 识别5-7个优势（诚实评估竞争优势）
+2. 列出5-7个劣势（避免轻描淡写；专注于可解决的差距）
+3. 梳理5-7个机会（按市场规模和契合度优先排序）
+4. 标记5-7个威胁（评估可能性和影响）
+5. 交叉参考分析以获得战略洞察：
+   - 我们如何利用优势来抓住机会？
+   - 我们如何巩固劣势以减轻威胁？
+   - 哪些机会可以克服劣势？
+   - 哪些威胁可能利用劣势？
+6. 制定3-5条战略建议
+7. 优先确定行动和责任人
+8. 识别跟踪进度的指标
 
-## Strategic Applications
-- **Build**: Double down on strengths + opportunities
-- **Defend**: Fortify weaknesses + mitigate threats
-- **Pivot**: Explore opportunities that change the competitive dynamic
-- **Exit**: If too many threats and weak competitive position
+## 战略应用
+- **构建（Build）**: 加大优势+机会的投入
+- **防御（Defend）**: 加强劣势+减轻威胁
+- **转型（Pivot）**: 探索改变竞争动态的机会
+- **退出（Exit）**: 如果威胁过多且竞争地位薄弱
 
-## Notes
-- SWOT is internal to external assessment
-- Context matters: compare against competitors and industry standards
-- Update SWOT quarterly or when market conditions change
-- Use SWOT to inform product roadmap, partnerships, and resource allocation
-- Opportunities and threats should consider both current and emerging dynamics
+## 注意事项
+- SWOT是从内部到外部的评估
+- 背景很重要：与竞争对手和行业标准进行比较
+- 每季度或在市场条件变化时更新SWOT
+- 使用SWOT来指导产品路线图、合作伙伴关系和资源配置
+- 机会和威胁应考虑当前和新兴的动态

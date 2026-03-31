@@ -1,121 +1,121 @@
 ---
-description: Comprehensive user research — build personas, segment users, and map the customer journey from research data
-argument-hint: "<research data, survey results, or product description>"
+description: 全面的用户研究 — 从研究数据构建用户画像、细分用户群体，并绘制客户旅程图
+argument-hint: "<研究数据、调研结果或产品描述>"
 ---
 
-# /research-users -- User Research Synthesis
+# /research-users -- 用户研究综合分析
 
-Turn raw research data into actionable user personas, behavioral segments, and customer journey maps. Accepts survey data, interview notes, feedback, analytics, or a product description for exploratory research.
+将原始研究数据转化为可执行的用户画像、行为细分和客户旅程图。接受调研数据、访谈笔记、反馈、分析数据，或产品描述用于探索性研究。
 
-## Invocation
-
-```
-/research-users [upload survey results, interview notes, or feedback data]
-/research-users B2B project management tool for agencies — help me understand our users
-/research-users [paste user feedback or support ticket data]
-```
-
-## Workflow
-
-### Step 1: Accept Research Inputs
-
-Accept from any combination:
-- Survey responses (CSV, spreadsheet, pasted)
-- Interview notes or transcripts
-- Support tickets or feature requests
-- Product analytics / behavioral data
-- NPS or satisfaction data
-- Product description (for exploratory research without data)
-
-Ask:
-- What research do you have? What format?
-- What do you want to understand? (who are our users, how do they differ, where's the friction)
-- What decisions will this inform? (roadmap, positioning, pricing, onboarding)
-
-### Step 2: Build Personas
-
-Apply the **user-personas** skill:
-
-- Identify 3-4 distinct personas from the data
-- For each persona: name, role, goals (JTBD), pains, gains, behavioral patterns
-- Include unexpected insights — things that surprised you in the data
-- Note persona prevalence (what % of your base each represents, if data allows)
-
-### Step 3: Segment Users
-
-Apply the **user-segmentation** and **market-segments** skills:
-
-- Create behavioral segments (not just demographics)
-- For each segment: size, JTBD, product fit, willingness to pay, engagement level
-- Identify the highest-value segment and the highest-growth segment
-- Map segments to personas (how they overlap)
-
-### Step 4: Map the Customer Journey
-
-Apply the **customer-journey-map** skill:
-
-- Map the end-to-end journey: Awareness → Consideration → Onboarding → Active Use → Expansion → Advocacy
-- For each stage: touchpoints, emotions, pain points, aha moments
-- Identify the biggest drop-off points
-- Highlight moments of delight worth amplifying
-
-### Step 5: Generate Research Report
+## 调用方式
 
 ```
-## User Research Report: [Product]
+/research-users [上传调研结果、访谈笔记或反馈数据]
+/research-users 面向代理公司的B2B项目管理工具 — 帮我了解我们的用户
+/research-users [粘贴用户反馈或支持工单数据]
+```
 
-**Date**: [today]
-**Data sources**: [what was analyzed]
-**Sample size**: [if applicable]
+## 工作流程
 
-### Executive Summary
-[3-5 sentences: key findings and implications]
+### 第一步：接收研究输入
 
-### Personas
+接受以下任意组合：
+- 调研响应（CSV、电子表格、粘贴文本）
+- 访谈笔记或转录稿
+- 支持工单或功能请求
+- 产品分析/行为数据
+- 净推荐值（NPS）或满意度数据
+- 产品描述（用于无数据的探索性研究）
 
-#### Persona 1: [Name] — "[Quote that captures them]"
-- **Who**: [role, context, experience level]
-- **Primary JTBD**: [When..., I want to..., so I can...]
-- **Key pains**: [top 3]
-- **Key gains**: [what delights them]
-- **Behavioral pattern**: [how they use the product]
-- **Prevalence**: [X% of user base]
+询问：
+- 您有哪些研究数据？什么格式？
+- 您想要了解什么？（我们的用户是谁，他们有何差异，痛点在哪里）
+- 这将影响哪些决策？（产品路线图、市场定位、定价策略、用户引导）
 
-[Repeat for each persona]
+### 第二步：构建用户画像
 
-### User Segments
-| Segment | Size | Primary JTBD | Product Fit | Value | Growth |
-|---------|------|-------------|-------------|-------|--------|
+应用 **user-personas**（用户画像）技能：
 
-### Customer Journey Map
-| Stage | Touchpoints | Emotion | Pain Points | Opportunities |
-|-------|------------|---------|-------------|---------------|
+- 从数据中识别3-4个不同的用户画像
+- 对于每个画像：名称、角色、目标（JTBD）、痛点、收益、行为模式
+- 包含意外洞察——数据中让你惊讶的内容
+- 注明画像占比（如果数据允许，每个画像占用户群的百分比）
 
-### Key Insights
-1. [Insight with supporting evidence]
+### 第三步：细分用户群体
+
+应用 **user-segmentation**（用户细分）和 **market-segments**（市场细分）技能：
+
+- 创建行为细分（不仅仅是人口统计学细分）
+- 对于每个细分：规模、JTBD、产品匹配度、支付意愿、参与度
+- 识别最高价值细分和最高增长细分
+- 将细分映射到画像（它们如何重叠）
+
+### 第四步：绘制客户旅程
+
+应用 **customer-journey-map**（客户旅程图）技能：
+
+- 绘制端到端旅程：认知 → 考虑 → 入职引导 → 活跃使用 → 扩展使用 → 推荐
+- 对于每个阶段：接触点、情绪、痛点、顿悟时刻
+- 识别最大的流失点
+- 突出值得放大的愉悦时刻
+
+### 第五步：生成研究报告
+
+```
+## 用户研究报告：[产品]
+
+**日期**：[今天]
+**数据来源**：[分析的内容]
+**样本规模**：[如适用]
+
+### 执行摘要
+[3-5句话：关键发现和影响]
+
+### 用户画像
+
+#### 画像1：[名称] — "[捕捉其特征的引言]"
+- **是谁**：[角色、背景、经验水平]
+- **主要JTBD**：[当...时，我希望...，这样我就能...]
+- **关键痛点**：[前3个]
+- **关键收益**：[让他们满意的内容]
+- **行为模式**：[他们如何使用产品]
+- **占比**：[占用户群的X%]
+
+[为每个画像重复]
+
+### 用户细分
+| 细分 | 规模 | 主要JTBD | 产品匹配度 | 价值 | 增长 |
+|------|------|----------|------------|------|------|
+
+### 客户旅程图
+| 阶段 | 接触点 | 情绪 | 痛点 | 机会 |
+|------|--------|------|------|------|
+
+### 关键洞察
+1. [有证据支持的洞察]
 2. ...
 
-### Recommendations
-1. [Actionable recommendation tied to findings]
+### 建议
+1. [与研究发现相关的可执行建议]
 2. ...
 
-### Open Questions
-[What the data didn't answer — suggested follow-up research]
+### 待解决的问题
+[数据未回答的内容——建议的后续研究]
 ```
 
-Save as markdown.
+保存为markdown格式。
 
-### Step 6: Offer Next Steps
+### 第六步：提供后续步骤
 
-- "Want me to **create interview scripts** to go deeper on a specific persona?"
-- "Should I **analyze sentiment** across these segments?"
-- "Want me to **build a value proposition** for the top persona?"
-- "Should I **prioritize the journey map pain points** as feature opportunities?"
+- "需要我**创建访谈提纲**以深入了解某个特定画像吗？"
+- "需要我**分析情绪**在这些细分中的表现吗？"
+- "需要我为顶级画像**构建价值主张**吗？"
+- "需要我**对旅程图中的痛点进行优先级排序**作为功能机会吗？"
 
-## Notes
+## 注意事项
 
-- If data is thin, be transparent about confidence levels — 5 interviews → hypotheses, not conclusions
-- Personas should be useful, not decorative — every persona should influence a product decision
-- Behavioral segments are more actionable than demographic segments for product decisions
-- The journey map should surface emotions, not just actions — where users feel frustrated vs. delighted drives prioritization
-- If no data is provided, generate research-informed hypotheses and recommend how to validate them
+- 如果数据较少，请明确置信度水平——5次访谈只能得出假设，而非结论
+- 用户画像应该是有用的，而非装饰性的——每个画像都应该影响产品决策
+- 对于产品决策而言，行为细分比人口统计学细分更具可执行性
+- 旅程图应该揭示情绪，而不仅仅是行为——用户感到沮丧与愉悦的地方决定了优先级
+- 如果未提供数据，生成基于研究的假设并建议如何验证它们

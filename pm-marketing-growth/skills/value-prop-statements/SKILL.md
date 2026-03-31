@@ -2,50 +2,50 @@
 name: value-prop-statements
 description: "Generate value proposition statements for marketing, sales, and onboarding from existing value propositions. Use when writing marketing copy, creating sales messaging, or crafting onboarding messages."
 ---
-# Value Proposition Statements
+# 价值主张陈述
 
-Generate value proposition statements from existing value propositions for marketing, sales, and onboarding. Creates statements that address target segments, emphasize benefits, and highlight capabilities. Perfect for crafting targeted marketing content, sales presentations, and customer onboarding messages.
+从现有价值主张出发，为营销、销售和用户引导场景生成价值主张陈述。创建能够针对目标细分市场、强调核心优势并突出关键能力的陈述。适用于制作针对性营销内容、销售演示文稿和客户引导信息。
 
-## When to Use
+## 适用场景
 
-- Writing marketing copy and promotional content
-- Creating sales decks and pitch materials
-- Crafting customer onboarding messages
-- Developing segment-specific messaging
-- Triggers: value proposition statements, marketing copy, sales messaging, value statements, positioning copy
+- 撰写营销文案和推广内容
+- 创建销售演示文稿和推介材料
+- 制作客户引导信息
+- 开发细分市场特定的沟通信息
+- 触发关键词：价值主张陈述、营销文案、销售信息、价值陈述、定位文案
 
-## Prompt
+## 提示词
 
-You are an experienced product growth expert with expertise in value proposition development and targeted messaging.
+您是一位在价值主张开发和针对性沟通方面经验丰富的产品增长专家。
 
-Based on the following value proposition(s) for $ARGUMENTS, develop comprehensive value proposition statements that can be used across marketing, sales, and onboarding contexts.
+基于以下针对 $ARGUMENTS 的价值主张，开发全面的价值主张陈述，这些陈述可在营销、销售和用户引导场景中使用。
 
-For each statement, ensure it:
-- Directly addresses a specific target market segment or use case
-- Emphasizes the primary benefit and desired outcome
-- Highlights the key features and capabilities that make it possible
-- Uses clear, compelling language that resonates with the audience
+确保每个陈述：
+- 直接针对特定的目标市场细分或使用场景
+- 强调主要收益和期望结果
+- 突出实现这些收益的关键功能和能力
+- 使用清晰、有说服力的语言，与目标受众产生共鸣
 
-## Example Framework (Canva)
+## 示例框架（Canva）
 
-To illustrate the approach, here are value proposition statements for Canva:
+为了说明该方法，以下是针对 Canva 的价值主张陈述示例：
 
-1. **For Social Media Marketers**: Canva empowers social media marketers to create stunning, on-brand designs effortlessly, without requiring expensive design software or hiring dedicated designers. Quickly produce professional-quality graphics that boost engagement and strengthen brand consistency across all channels.
+1. **针对社交媒体营销人员**：Canva 赋予社交媒体营销人员轻松创建精美、符合品牌规范的视觉内容的能力，无需购买昂贵的设计软件或聘请专业设计师。快速制作专业级图形，提升互动效果并加强所有渠道的品牌一致性。
 
-2. **For Small Business Owners**: With Canva's intuitive drag-and-drop interface and extensive collection of pre-designed templates, small business owners can launch polished marketing campaigns in minutes. Create website graphics, social posts, flyers, and promotional materials that look professionally designed—all without prior design experience.
+2. **针对小企业主**：凭借 Canva 直观的拖放界面和丰富的预设计模板库，小企业主可以在几分钟内启动精美的营销活动。创建网站图形、社交媒体帖子、传单和促销材料，展现专业设计水准——所有这些都无需任何设计经验。
 
-3. **For Content Creators**: By using Canva, content creators can focus on storytelling while spending less time on design logistics. Produce consistent, visually appealing content at scale with templates tailored to different platforms, ultimately allowing more time for audience engagement and content strategy.
+3. **针对内容创作者**：通过使用 Canva，内容创作者可以专注于故事叙述，同时减少在设计后勤工作上花费的时间。利用针对不同平台定制的模板，批量制作一致、视觉吸引人的内容，最终腾出更多时间用于受众互动和内容策略。
 
-## Tips for Best Results
+## 最佳实践建议
 
-- Provide existing value propositions or key benefits
-- Specify target segments and their pain points
-- Include product features and differentiators
-- Share distribution channels (marketing, sales, onboarding)
-- Mention any brand tone or voice guidelines
+- 提供现有的价值主张或核心收益
+- 明确目标细分市场及其痛点
+- 包含产品功能和差异化优势
+- 说明分发渠道（营销、销售、用户引导）
+- 提及任何品牌语调或声音指南
 
 ---
 
-### Further Reading
+### 延伸阅读
 
 - [How to Design a Value Proposition Customers Can't Resist?](https://www.productcompass.pm/p/how-to-design-value-proposition-template)

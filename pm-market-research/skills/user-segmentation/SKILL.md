@@ -1,88 +1,88 @@
 ---
 name: user-segmentation
-description: "Segment users from feedback data based on behavior, JTBD, and needs. Identifies at least 3 distinct user segments. Use when segmenting a user base, analyzing diverse user feedback, or building a segmentation model."
+description: "根据行为、待完成任务(JTBD)和需求,从反馈数据中对用户进行细分。识别至少3个不同的用户细分群体。适用于用户群细分、分析多样化的用户反馈或构建细分模型时使用。"
 ---
 
-# User Segmentation
+# 用户细分 (User Segmentation)
 
-## Purpose
-Analyze diverse user feedback to identify at least 3 distinct behavioral and needs-based user segments. This skill surfaces hidden customer groups based on jobs-to-be-done, behaviors, and motivations rather than demographics alone, enabling targeted product strategy.
+## 目的
+分析多样化的用户反馈,识别至少3个基于行为和需求的独特用户细分群体。该技能基于待完成任务、行为和动机而非单纯的人口统计特征来发现隐藏的客户群体,从而实现有针对性的产品策略。
 
-## Instructions
+## 说明
 
-You are an expert behavioral researcher and data analyst specializing in user segmentation and behavioral clustering.
+您是一位专门从事用户细分和行为聚类的专家级行为研究员和数据分析师。
 
-### Input
-Your task is to segment users for **$ARGUMENTS** based on behavior, jobs-to-be-done, and unmet needs.
+### 输入
+您的任务是基于行为、待完成任务和未满足的需求,为 **$ARGUMENTS** 进行用户细分。
 
-If the user provides feedback data, interviews, support tickets, product usage logs, surveys, or other user data, read and analyze them directly. Extract behavioral patterns, motivations, and needs across the user base.
+如果用户提供了反馈数据、访谈记录、支持工单、产品使用日志、调查问卷或其他用户数据,请直接阅读并分析。从中提取用户群整体的行为模式、动机和需求。
 
-### Analysis Steps (Think Step by Step)
+### 分析步骤(逐步思考)
 
-1. **Data Preparation**: Read and organize all provided user feedback and data
-2. **Behavior Extraction**: Identify key behavioral patterns, usage modes, and user journeys
-3. **Needs Analysis**: Map jobs-to-be-done, desired outcomes, and pain points for each user
-4. **Clustering**: Group users into distinct segments based on behavior and needs similarity
-5. **Validation**: Ensure segments are coherent, non-overlapping, and actionable
-6. **Characterization**: Develop rich profiles for each segment with representative quotes
+1. **数据准备**: 阅读并整理所有提供的用户反馈和数据
+2. **行为提取**: 识别关键行为模式、使用方式和用户旅程
+3. **需求分析**: 映射每个用户的待完成任务、期望结果和痛点
+4. **聚类**: 基于行为和需求的相似性将用户分组为不同的细分群体
+5. **验证**: 确保细分群体具有内在一致性、互不重叠且可操作
+6. **特征描述**: 为每个细分群体开发丰富的画像,并包含代表性引用
 
-### Output Structure
+### 输出结构
 
-For each identified segment (minimum 3):
+对于每个识别出的细分群体(至少3个):
 
-**Segment Name & Overview**
-- Clear, descriptive segment identifier
-- Size: estimated number or percentage of user base
-- Brief one-sentence characterization
+**细分群体名称与概述**
+- 清晰、描述性的细分群体标识
+- 规模:用户群的估计数量或百分比
+- 简要的一句话描述
 
-**Behavioral Characteristics**
-- How this segment uses $ARGUMENTS (primary use cases, frequency, depth)
-- Typical user journey and key touchpoints
-- Technical proficiency or sophistication level
-- Integration with other tools or workflows
+**行为特征**
+- 该细分群体如何使用 $ARGUMENTS(主要使用场景、使用频率、使用深度)
+- 典型的用户旅程和关键触点
+- 技术熟练度或专业水平
+- 与其他工具或工作流程的集成
 
-**Jobs-to-be-Done & Motivations**
-- Core job(s) this segment is trying to accomplish
-- Underlying motivations and desired outcomes
-- Context and frequency of the job
-- What success looks like for this segment
+**待完成任务与动机**
+- 该细分群体试图完成的核心任务
+- 潜在动机和期望结果
+- 任务的背景和频率
+- 该细分群体的成功标准
 
-**Key Needs & Pain Points**
-- Unmet needs specific to this segment's behavior
-- Obstacles preventing effective job completion
-- Current workarounds or alternative solutions they employ
-- Severity and frequency of pain points
+**关键需求与痛点**
+- 特定于该细分群体行为的未满足需求
+- 阻碍有效完成任务的障碍
+- 当前采用的权宜之计或替代方案
+- 痛点的严重程度和发生频率
 
-**Current Product Fit**
-- How well $ARGUMENTS currently serves this segment
-- Features or capabilities this segment values most
-- Gaps or limitations most frustrating to this segment
-- Likelihood to continue using vs. churn risk
+**当前产品契合度**
+- $ARGUMENTS 当前服务该细分群体的程度
+- 该细分群体最重视的功能或能力
+- 最令该细分群体感到沮丧的差距或限制
+- 继续使用的可能性 vs. 流失风险
 
-**Differentiated Value Proposition**
-- What unique value could be unlocked for this segment
-- Feature or experience improvements that would maximize fit
-- Messaging and positioning most resonant with this segment
+**差异化价值主张**
+- 可为该细分群体解锁的独特价值
+- 能够最大化契合度的功能或体验改进
+- 与该细分群体最产生共鸣的定位和传播信息
 
-**Segment Prioritization**
-- Strategic importance: growth potential, revenue impact, alignment with vision
-- Implementation difficulty: ease of serving this segment's needs
-- Recommendation: invest, maintain, or de-prioritize
+**细分群体优先级**
+- 战略重要性:增长潜力、收入影响、与愿景的契合度
+- 实施难度:满足该细分群体需求的难易程度
+- 建议:投资、维持或降低优先级
 
-## Best Practices
+## 最佳实践
 
-- Ground segmentation in behavioral and motivational data, not just demographics
-- Use representative quotes and examples from actual user feedback
-- Ensure segments are distinct and serve different core needs
-- Consider interdependencies between segments and prioritization tradeoffs
-- Flag any segments that may be underrepresented in feedback data
-- Validate emerging segments against product usage or customer data when available
-- Consider adjacent behaviors and cross-segment patterns
+- 基于行为和动机数据进行细分,而不仅仅依赖人口统计特征
+- 使用来自真实用户反馈的代表性引用和示例
+- 确保细分群体彼此独立且满足不同的核心需求
+- 考虑细分群体之间的相互依赖性和优先级权衡
+- 标记在反馈数据中可能代表性不足的细分群体
+- 当有产品使用或客户数据可用时,验证新兴细分群体
+- 考虑相关行为和跨细分群体的模式
 
 ---
 
-### Further Reading
+### 延伸阅读
 
-- [Market Research: Advanced Techniques](https://www.productcompass.pm/p/market-research-advanced-techniques)
-- [User Interviews: The Ultimate Guide to Research Interviews](https://www.productcompass.pm/p/interviewing-customers-the-ultimate)
-- [Jobs-to-be-Done Masterclass with Tony Ulwick and Sabeen Sattar](https://www.productcompass.pm/p/jobs-to-be-done-masterclass-with) (video course)
+- [市场研究:高级技术](https://www.productcompass.pm/p/market-research-advanced-techniques)
+- [用户访谈:研究访谈终极指南](https://www.productcompass.pm/p/interviewing-customers-the-ultimate)
+- [待完成任务(JTBD)大师课 - Tony Ulwick 和 Sabeen Sattar](https://www.productcompass.pm/p/jobs-to-be-done-masterclass-with) (视频课程)

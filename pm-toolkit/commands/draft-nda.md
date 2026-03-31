@@ -1,66 +1,66 @@
 ---
-description: Draft a Non-Disclosure Agreement between two parties with jurisdiction-appropriate clauses
-argument-hint: "<parties and context>"
+description: 在两方之间起草保密协议（NDA），包含适用管辖权的相关条款
+argument-hint: "<当事人和背景信息>"
 ---
 
-# /draft-nda -- NDA Drafting
+# /draft-nda -- 保密协议（NDA）起草
 
-Draft a professional Non-Disclosure Agreement customized to your situation. Covers information types, jurisdiction, term, and clearly marks clauses that need legal review.
+根据您的具体情况起草专业的保密协议。涵盖信息类型、管辖权、期限，并明确标记需要法律审查的条款。
 
-## Invocation
-
-```
-/draft-nda Mutual NDA between our startup and a potential enterprise customer
-/draft-nda One-way NDA for a freelance contractor accessing our codebase
-```
-
-## Workflow
-
-### Step 1: Gather Context
-
-Ask:
-- Who are the parties? (company names and roles)
-- Mutual or one-way NDA?
-- What information is being protected? (trade secrets, code, business data, customer data)
-- Jurisdiction? (state/country for governing law)
-- Duration? (how long should confidentiality last)
-- Any specific concerns? (non-compete, non-solicit, IP ownership)
-
-### Step 2: Draft the NDA
-
-Apply the **draft-nda** skill:
-
-Generate a complete NDA covering:
-- Parties and recitals
-- Definition of confidential information (with specific examples)
-- Obligations of the receiving party
-- Exclusions (public knowledge, independent development, etc.)
-- Term and survival
-- Return/destruction of materials
-- Remedies
-- Governing law and jurisdiction
-- Standard boilerplate (severability, entire agreement, amendments)
-
-### Step 3: Deliver
+## 调用方式
 
 ```
-## Non-Disclosure Agreement
-
-[Full NDA text with marked sections]
-
-### Clauses Requiring Legal Review
-| Clause | Why It Needs Review | Consideration |
-|--------|-------------------|--------------|
-
-### Plain-Language Summary
-[What this NDA means in simple terms for non-lawyers]
+/draft-nda 我们初创公司与潜在企业客户之间的双向保密协议
+/draft-nda 适用于访问我们代码库的兼职合同工的单向保密协议
 ```
 
-Save as markdown. Offer to export as DOCX for signing.
+## 工作流程
 
-## Notes
+### 第一步：收集背景信息
 
-- This is a starting point — always recommend review by qualified legal counsel
-- Mark any clause that involves significant legal risk with a ⚠️ flag
-- Include plain-language annotations so non-lawyers understand what they're agreeing to
-- Mutual NDAs are generally preferred — they're fairer and faster to negotiate
+询问：
+- 当事人是谁？（公司名称和角色）
+- 双向还是单向保密协议？
+- 需要保护什么信息？（商业秘密、代码、业务数据、客户数据）
+- 管辖权是哪里？（适用法律的州/国家）
+- 期限多长？（保密义务应持续多久）
+- 是否有特殊关注点？（竞业禁止、不得招揽、知识产权归属）
+
+### 第二步：起草保密协议
+
+应用 **draft-nda** 技能：
+
+生成完整的保密协议，涵盖：
+- 当事人和前言（鉴于条款）
+- 保密信息的定义（附带具体示例）
+- 接收方的义务
+- 例外条款（公开信息、独立开发等）
+- 期限与存续
+- 材料的归还/销毁
+- 救济措施
+- 适用法律和管辖权
+- 标准格式条款（可分割性、完整协议、修订）
+
+### 第三步：交付
+
+```
+## 保密协议
+
+[完整保密协议文本，包含标记的章节]
+
+### 需要法律审查的条款
+| 条款 | 为何需要审查 | 考虑事项 |
+|------|------------|----------|
+
+### 通俗语言总结
+[用通俗易懂的语言解释此保密协议的含义，供非法律人士理解]
+```
+
+保存为 markdown 格式。主动提出可导出为 DOCX 格式用于签署。
+
+## 注意事项
+
+- 这只是一个起点 — 始终建议由合格的法律顾问进行审查
+- 用 ⚠️ 标记任何涉及重大法律风险的条款
+- 包含通俗语言的注释，以便非法律人士理解其同意的内容
+- 双向保密协议通常是首选 — 它们更公平且谈判更快

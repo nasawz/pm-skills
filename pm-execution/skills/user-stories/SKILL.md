@@ -1,74 +1,74 @@
 ---
 name: user-stories
-description: "Create user stories following the 3 C's (Card, Conversation, Confirmation) and INVEST criteria with descriptions, design links, and acceptance criteria. Use when writing user stories, breaking down features into backlog items, or defining acceptance criteria."
+description: "遵循3C原则（卡片、对话、确认）和INVEST标准创建用户故事，包含描述、设计链接和验收标准。适用于编写用户故事、将功能拆解为待办事项或定义验收标准时使用。"
 ---
-# User Stories
+# 用户故事
 
-Create user stories following the 3 C's (Card, Conversation, Confirmation) and INVEST criteria. Generates stories with descriptions, design links, and acceptance criteria.
+遵循3C原则（卡片、对话、确认）和INVEST标准创建用户故事。生成包含描述、设计链接和验收标准的故事。
 
-**Use when:** Writing user stories, breaking down features into stories, creating backlog items, or defining acceptance criteria.
+**适用场景：** 编写用户故事、将功能拆解为故事、创建待办事项或定义验收标准时使用。
 
-**Arguments:**
-- `$PRODUCT`: The product or system name
-- `$FEATURE`: The new feature to break into stories
-- `$DESIGN`: Link to design files (Figma, Miro, etc.)
-- `$ASSUMPTIONS`: Key assumptions or context
+**参数：**
+- `$PRODUCT`: 产品或系统名称
+- `$FEATURE`: 需要拆解为新功能
+- `$DESIGN`: 设计文件链接（Figma、Miro等）
+- `$ASSUMPTIONS`: 关键假设或背景信息
 
-## Step-by-Step Process
+## 分步流程
 
-1. **Analyze the feature** based on provided design and context
-2. **Identify user roles** and distinct user journeys
-3. **Apply 3 C's framework:**
-   - Card: Simple title and one-liner
-   - Conversation: Detailed discussion of intent
-   - Confirmation: Clear acceptance criteria
-4. **Respect INVEST criteria:** Independent, Negotiable, Valuable, Estimable, Small, Testable
-5. **Use plain language** a primary school graduate can understand
-6. **Link to design files** for visual reference
-7. **Output user stories** in structured format
+1. **分析功能** 基于提供的设计和背景信息
+2. **识别用户角色** 和独特的用户旅程
+3. **应用3C框架：**
+   - 卡片（Card）：简洁的标题和一句话描述
+   - 对话（Conversation）：详细讨论意图
+   - 确认（Confirmation）：明确的验收标准
+4. **遵循INVEST标准：** 独立（Independent）、可协商（Negotiable）、有价值（Valuable）、可估算（Estimable）、小（Small）、可测试（Testable）
+5. **使用通俗易懂的语言** 确保小学毕业生能够理解
+6. **链接到设计文件** 作为视觉参考
+7. **以结构化格式输出用户故事**
 
-## Story Template
+## 故事模板
 
-**Title:** [Feature name]
+**标题：** [功能名称]
 
-**Description:** As a [user role], I want to [action], so that [benefit].
+**描述：** 作为[用户角色]，我希望[行动]，以便[获得价值/效益]。
 
-**Design:** [Link to design files]
+**设计：** [设计文件链接]
 
-**Acceptance Criteria:**
-1. [Clear, testable criterion]
-2. [Observable behavior]
-3. [System validates correctly]
-4. [Edge case handling]
-5. [Performance or accessibility consideration]
-6. [Integration point]
+**验收标准：**
+1. [清晰、可测试的标准]
+2. [可观察的行为]
+3. [系统正确验证]
+4. [边界情况处理]
+5. [性能或可访问性考虑]
+6. [集成点]
 
-## Example User Story
+## 用户故事示例
 
-**Title:** Recently Viewed Section
+**标题：** 最近浏览区域
 
-**Description:** As an Online Shopper, I want to see a 'Recently viewed' section on the product page to easily revisit items I considered.
+**描述：** 作为在线购物者，我希望在产品页面上看到"最近浏览"区域，以便轻松重新查看我考虑过的商品。
 
-**Design:** [Figma link]
+**设计：** [Figma链接]
 
-**Acceptance Criteria:**
-1. The 'Recently viewed' section is displayed at the bottom of the product page for every user who has previously viewed at least 1 product.
-2. It is not displayed for users visiting the first product page of their session.
-3. The current product itself is excluded from the displayed items.
-4. The section showcases product cards or thumbnails with images, titles, and prices.
-5. Each product card indicates when it was viewed (e.g., 'Viewed 5 minutes ago').
-6. Clicking on a product card leads the user to the corresponding product page.
+**验收标准：**
+1. 对于之前至少浏览过1个产品的每个用户，产品页面底部显示"最近浏览"区域。
+2. 对于会话中首次访问产品页面的用户，不显示该区域。
+3. 当前产品本身不包含在显示的项目中。
+4. 该区域展示带有图片、标题和价格的产品卡片或缩略图。
+5. 每个产品卡片显示浏览时间（例如，"5分钟前查看"）。
+6. 点击产品卡片会将用户引导至相应的产品页面。
 
-## Output Deliverables
+## 交付成果
 
-- Complete set of user stories for the feature
-- Each story includes title, description, design link, and 4-6 acceptance criteria
-- Stories are independent and can be developed in any order
-- Stories are sized for one sprint cycle
-- Stories reference related design documentation
+- 该功能的完整用户故事集
+- 每个故事包含标题、描述、设计链接和4-6条验收标准
+- 故事相互独立，可以按任何顺序开发
+- 故事规模适合一个迭代周期
+- 故事引用相关设计文档
 
 ---
 
-### Further Reading
+### 延伸阅读
 
-- [How to Write User Stories: The Ultimate Guide](https://www.productcompass.pm/p/how-to-write-user-stories)
+- [如何编写用户故事：终极指南](https://www.productcompass.pm/p/how-to-write-user-stories)

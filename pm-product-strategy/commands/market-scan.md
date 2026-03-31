@@ -1,127 +1,127 @@
 ---
-description: Comprehensive macro environment analysis — SWOT, PESTLE, Porter's Five Forces, and Ansoff Matrix in one scan
-argument-hint: "<product, market, or industry>"
+description: 综合宏观环境分析——一次扫描完成SWOT、PESTLE、波特五力模型和安索夫矩阵
+argument-hint: "<产品、市场或行业>"
 ---
 
-# /market-scan -- Macro Environment Analysis
+# /market-scan -- 宏观环境分析
 
-Run multiple strategic analysis frameworks to understand your competitive and macro environment. Combines SWOT, PESTLE, Porter's Five Forces, and Ansoff Matrix into a single strategic overview.
+运行多个战略分析框架，了解您的竞争和宏观环境。将SWOT、PESTLE、波特五力模型和安索夫矩阵整合为单一的战略概览。
 
-## Invocation
-
-```
-/market-scan EdTech market for corporate learning
-/market-scan [upload a market brief or strategy doc]
-/market-scan Our fintech product — preparing for board strategy review
-```
-
-## Workflow
-
-### Step 1: Understand the Context
-
-Ask:
-- What product, company, or market are you analyzing?
-- What's the purpose? (strategic planning, market entry, investor prep, annual review)
-- Any specific frameworks you want to focus on? Or run all four?
-- What's your current position in this market?
-
-### Step 2: Run the Analysis
-
-Apply four skills in sequence, each building on insights from the previous:
-
-**SWOT Analysis** (apply **swot-analysis** skill):
-- Internal: Strengths and Weaknesses
-- External: Opportunities and Threats
-- Actionable recommendations for each quadrant
-
-**PESTLE Analysis** (apply **pestle-analysis** skill):
-- Political, Economic, Social, Technological, Legal, Environmental factors
-- Impact assessment and timeline for each factor
-
-**Porter's Five Forces** (apply **porters-five-forces** skill):
-- Competitive rivalry, supplier power, buyer power, threat of substitutes, threat of new entrants
-- Overall industry attractiveness rating
-
-**Ansoff Matrix** (apply **ansoff-matrix** skill):
-- Market penetration, market development, product development, diversification
-- Risk-adjusted growth opportunities
-
-### Step 3: Synthesize
-
-Cross-reference findings across frameworks to identify:
-- **Converging signals**: What multiple frameworks agree on
-- **Strategic imperatives**: Actions that appear critical across analyses
-- **Key risks**: Threats and forces to mitigate
-- **Growth opportunities**: Where the best risk-adjusted opportunities lie
-
-### Step 4: Generate Report
+## 调用方式
 
 ```
-## Strategic Market Scan: [Market/Product]
+/market-scan 企业学习EdTech市场
+/market-scan [上传市场简报或战略文档]
+/market-scan 我们的金融科技产品——为董事会战略评审做准备
+```
 
-**Date**: [today]
-**Purpose**: [strategic planning / market entry / etc.]
+## 工作流程
 
-### Executive Summary
-[5-7 sentences covering the strategic situation and key recommendations]
+### 第一步：了解背景
 
-### SWOT Analysis
-| Strengths | Weaknesses |
+询问：
+- 您正在分析什么产品、公司或市场？
+- 目的是什么？（战略规划、市场进入、投资者准备、年度评审）
+- 有任何想要特别关注的框架吗？还是运行全部四个？
+- 您在该市场的当前地位如何？
+
+### 第二步：运行分析
+
+依次应用四个技能，每个都基于前一个的洞察：
+
+**SWOT分析**（应用 **swot-analysis** 技能）：
+- 内部：优势和劣势
+- 外部：机会和威胁
+- 每个象限的可执行建议
+
+**PESTLE分析**（应用 **pestle-analysis** 技能）：
+- 政治、经济、社会、技术、法律、环境因素
+- 每个因素的影响评估和时间线
+
+**波特五力模型**（应用 **porters-five-forces** 技能）：
+- 竞争强度、供应商议价能力、买方议价能力、替代品威胁、新进入者威胁
+- 整体行业吸引力评级
+
+**安索夫矩阵**（应用 **ansoff-matrix** 技能）：
+- 市场渗透、市场开发、产品开发、多元化
+- 风险调整后的增长机会
+
+### 第三步：综合分析
+
+交叉参考各框架的发现，识别：
+- **汇聚信号**：多个框架一致的观点
+- **战略要务**：在各项分析中都显得关键的行动
+- **关键风险**：需要缓解的威胁和力量
+- **增长机会**：最佳风险调整机会所在
+
+### 第四步：生成报告
+
+```
+## 战略市场扫描：[市场/产品]
+
+**日期**：[今天]
+**目的**：[战略规划 / 市场进入 / 等]
+
+### 执行摘要
+[5-7句话，涵盖战略形势和关键建议]
+
+### SWOT分析
+| 优势 | 劣势 |
 |-----------|-----------|
-| [internal positives] | [internal negatives] |
+| [内部积极因素] | [内部消极因素] |
 
-| Opportunities | Threats |
+| 机会 | 威胁 |
 |-------------|---------|
-| [external positives] | [external negatives] |
+| [外部积极因素] | [外部消极因素] |
 
-**SWOT Actions**: [leverage S+O, mitigate W+T]
+**SWOT行动**：[利用优势+机会，缓解劣势+威胁]
 
-### PESTLE Analysis
-| Factor | Current State | Impact | Trend | Timeframe |
+### PESTLE分析
+| 因素 | 当前状态 | 影响 | 趋势 | 时间框架 |
 |--------|-------------|--------|-------|-----------|
 
-### Porter's Five Forces
-| Force | Intensity | Key Drivers | Implications |
+### 波特五力模型
+| 力量 | 强度 | 关键驱动因素 | 含义 |
 |-------|----------|------------|-------------|
 
-**Industry Attractiveness**: [High / Medium / Low]
+**行业吸引力**：[高 / 中 / 低]
 
-### Ansoff Growth Matrix
-| Strategy | Opportunity | Risk Level | Investment | Priority |
+### 安索夫增长矩阵
+| 战略 | 机会 | 风险等级 | 投资 | 优先级 |
 |----------|-----------|-----------|-----------|----------|
-| Market Penetration | [specifics] | Low | [est.] | [H/M/L] |
-| Market Development | [specifics] | Medium | [est.] | [H/M/L] |
-| Product Development | [specifics] | Medium | [est.] | [H/M/L] |
-| Diversification | [specifics] | High | [est.] | [H/M/L] |
+| 市场渗透 | [具体内容] | 低 | [估算] | [高/中/低] |
+| 市场开发 | [具体内容] | 中 | [估算] | [高/中/低] |
+| 产品开发 | [具体内容] | 中 | [估算] | [高/中/低] |
+| 多元化 | [具体内容] | 高 | [估算] | [高/中/低] |
 
-### Cross-Framework Synthesis
-**Converging signals**: [what all frameworks agree on]
-**Strategic imperatives**: [must-do actions]
-**Key risks**: [highest-priority threats]
-**Best opportunities**: [risk-adjusted growth plays]
+### 跨框架综合
+**汇聚信号**：[所有框架一致的观点]
+**战略要务**：[必须执行的行动]
+**关键风险**：[最高优先级的威胁]
+**最佳机会**：[风险调整后的增长策略]
 
-### Strategic Recommendations
-1. [Recommendation with supporting evidence from multiple frameworks]
+### 战略建议
+1. [建议，并附多个框架的支持证据]
 2. ...
 3. ...
 
-### Monitoring Plan
-| Signal | What to Watch | Source | Check Frequency |
+### 监控计划
+| 信号 | 监控内容 | 来源 | 检查频率 |
 |--------|-------------|--------|----------------|
 ```
 
-Save as markdown.
+保存为markdown格式。
 
-### Step 5: Offer Next Steps
+### 第五步：提供后续步骤
 
-- "Want me to **build a product strategy** based on these findings?"
-- "Should I **analyze specific competitors** identified in Porter's analysis?"
-- "Want me to **design a pricing strategy** for the market penetration opportunity?"
+- "需要我基于这些发现**构建产品战略**吗？"
+- "是否需要我**分析波特分析中识别的特定竞争对手**？"
+- "需要我为市场渗透机会**设计定价策略**吗？"
 
-## Notes
+## 注意事项
 
-- Use web research to ground the analysis in current market data, not just general knowledge
-- PESTLE factors should include specific regulations, market data, and trend signals — not generic observations
-- Porter's is most useful when you identify the *specific* forces, not just rate them abstractly
-- Ansoff should include concrete opportunities, not just generic "enter new markets"
-- The synthesis section is the most valuable part — it's where the frameworks talk to each other
+- 使用网络研究将分析建立在当前市场数据基础上，而不仅仅是通用知识
+- PESTLE因素应包括具体法规、市场数据和趋势信号——而非泛泛而谈的观察
+- 波特五力模型在您识别出*具体*力量时最有用，而不仅仅是抽象地给它们打分
+- 安索夫矩阵应包括具体机会，而不仅仅是泛泛的"进入新市场"
+- 综合部分是最有价值的——这是各框架相互对话的地方

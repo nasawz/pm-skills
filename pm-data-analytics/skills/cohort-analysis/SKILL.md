@@ -1,114 +1,113 @@
 ---
 name: cohort-analysis
-description: "Perform cohort analysis on user engagement data — retention curves, feature adoption trends, and segment-level insights. Use when analyzing user retention by cohort, studying feature adoption over time, investigating churn patterns, or identifying engagement trends."
+description: "对用户活跃数据进行同期群分析——包括留存曲线、功能采用趋势和细分群体洞察。适用于分析按同期群划分的用户留存、研究功能采用随时间的变化、调查流失模式或识别活跃趋势。"
 ---
 
-# Cohort Analysis & Retention Explorer
+# 同期群分析与留存探索器
 
-## Purpose
-Analyze user engagement and retention patterns by cohort to identify trends in user behavior, feature adoption, and long-term engagement. Combine quantitative insights with qualitative research recommendations.
+## 目的
+通过同期群分析用户活跃和留存模式，识别用户行为、功能采用和长期活跃中的趋势。将量化洞察与定性研究建议相结合。
 
-## How It Works
+## 工作原理
 
-### Step 1: Read and Validate Your Data
-- Accept CSV, Excel, or JSON data files with user cohort information
-- Verify data structure: cohort identifier, time periods, engagement metrics
-- Check for missing values and data quality issues
-- Summarize key statistics (cohort sizes, date ranges, metrics available)
+### 第一步：读取和验证数据
+- 接受包含用户同期群信息的 CSV、Excel 或 JSON 数据文件
+- 验证数据结构：同期群标识符、时间周期、活跃指标
+- 检查缺失值和数据质量问题
+- 汇总关键统计数据（同期群规模、日期范围、可用指标）
 
-### Step 2: Generate Quantitative Analysis
-- Calculate cohort retention rates and engagement trends
-- Identify retention curves, drop-off patterns, and anomalies
-- Compute feature adoption rates across cohorts
-- Calculate month-over-month or period-over-period changes
-- Generate Python analysis scripts using pandas and numpy if requested
+### 第二步：生成量化分析
+- 计算同期群留存率和活跃趋势
+- 识别留存曲线、流失节点和异常情况
+- 计算各同期群的功能采用率
+- 计算环比或周期变化
+- 如有需要，使用 pandas 和 numpy 生成 Python 分析脚本
 
-### Step 3: Create Visualizations
-- Generate retention heatmaps (cohorts vs. time periods)
-- Create line charts showing cohort progression
-- Build comparison charts for feature adoption
-- Visualize drop-off points and engagement trends
-- Output as interactive charts or static images
+### 第三步：创建可视化
+- 生成留存热力图（同期群 vs 时间周期）
+- 创建展示同期群演变的折线图
+- 构建功能采用的对比图表
+- 可视化流失节点和活跃趋势
+- 输出为交互式图表或静态图片
 
-### Step 4: Identify Insights & Patterns
-- Spot one or more significant patterns:
-  - Early churn in specific cohorts
-  - Late-stage engagement changes
-  - Feature adoption clusters
-  - Seasonal or temporal trends
-- Highlight surprising findings and deviations
-- Compare cohort performance to establish baselines
+### 第四步：识别洞察与模式
+- 发现一个或多个显著模式：
+  - 特定同期群的早期流失
+  - 后期活跃变化
+  - 功能采用聚集
+  - 季节性或时间趋势
+- 突出意外发现和偏差
+- 对比同期群表现以建立基准
 
-### Step 5: Suggest Follow-Up Research
-- Recommend qualitative research methods:
-  - Targeted user interviews with churning users
-  - Feature usage surveys with engaged cohorts
-  - Session replays of key interaction patterns
-  - Win/loss analysis for high vs. low retention cohorts
-- Design follow-up quantitative studies
-- Suggest A/B tests or feature experiments
+### 第五步：建议后续研究
+- 推荐定性研究方法：
+  - 针对流失用户的定向访谈
+  - 针对活跃同期群的功能使用调研
+  - 关键交互行为的会话回放分析
+  - 高留存 vs 低留存同期群的胜负分析
+- 设计后续量化研究
+- 建议 A/B 测试或功能实验
 
-## Usage Examples
+## 使用示例
 
-**Example 1: Upload CSV Data**
+**示例 1：上传 CSV 数据**
 ```
-Upload cohort_engagement.csv with columns: cohort_month, weeks_active,
+上传 cohort_engagement.csv，包含列：cohort_month, weeks_active,
 user_id, feature_x_usage, engagement_score
 
-Request: "Analyze retention patterns and identify why Q4 2025 cohorts
-underperform compared to Q3"
+请求："分析留存模式，识别 2025 年 Q4 同期群为何表现不如 Q3"
 ```
 
-**Example 2: Describe Data Format**
+**示例 2：描述数据格式**
 ```
-"I have monthly user cohorts from Jan-Dec 2025. Each row shows:
-cohort date, user ID, purchase frequency, and support tickets.
-Analyze which cohorts show best long-term retention."
-```
-
-**Example 3: Feature Adoption Analysis**
-```
-Upload feature_usage.xlsx with cohort adoption data.
-
-Request: "Compare adoption curves for our new feature across cohorts.
-Which cohorts adopted fastest? Any patterns?"
+"我有 2025 年 1-12 月的月度用户同期群数据。每行显示：
+同期群日期、用户 ID、购买频率和支持工单数量。
+分析哪些同期群展现出最佳长期留存。"
 ```
 
-## Key Capabilities
+**示例 3：功能采用分析**
+```
+上传包含同期群采用数据的 feature_usage.xlsx。
 
-- **Data Reading**: Import CSV, Excel, JSON, SQL query results
-- **Retention Analysis**: Calculate and visualize retention rates over time
-- **Cohort Comparison**: Compare metrics across cohort groups
-- **Anomaly Detection**: Flag unusual patterns or drop-offs
-- **Python Scripts**: Generate reusable analysis code for ongoing analysis
-- **Visualizations**: Create heatmaps, charts, and interactive dashboards
-- **Research Design**: Suggest targeted follow-up studies and interview approaches
-- **Statistical Summary**: Provide quantitative metrics and correlation analysis
+请求："比较各同期群新功能的采用曲线。
+哪些同期群采用最快？有什么模式？"
+```
 
-## Tips for Best Results
+## 核心能力
 
-1. **Include time dimension**: Provide data across multiple time periods
-2. **Define cohort clearly**: Make cohort grouping explicit (signup month, feature launch date, etc.)
-3. **Provide context**: Explain product changes, launches, or events during the period
-4. **Multiple metrics**: Include retention, engagement, feature usage, revenue, etc.
-5. **Sufficient data**: At least 3-4 cohorts for meaningful pattern identification
-6. **Request specific output**: Ask for visualizations, Python scripts, or research recommendations
+- **数据读取**：导入 CSV、Excel、JSON、SQL 查询结果
+- **留存分析**：计算并可视化随时间变化的留存率
+- **同期群对比**：比较各同期群群体的指标
+- **异常检测**：标记异常模式或流失节点
+- **Python 脚本**：生成可复用的分析代码用于持续分析
+- **可视化**：创建热力图、图表和交互式仪表板
+- **研究设计**：建议针对性的后续研究和访谈方法
+- **统计摘要**：提供量化指标和相关性分析
 
-## Output Format
+## 最佳实践建议
 
-You'll receive:
-- **Data Summary**: Cohort overview and data quality assessment
-- **Quantitative Findings**: Key metrics, retention rates, and trend analysis
-- **Visualizations**: Charts showing retention curves, adoption patterns
-- **Pattern Identification**: 2-3 significant insights from the data
-- **Research Recommendations**: Specific qualitative and quantitative follow-ups
-- **Analysis Scripts** (if requested): Python code for reproducible analysis
-- **Next Steps**: Prioritized actions based on findings
+1. **包含时间维度**：提供跨多个时间周期的数据
+2. **明确定义同期群**：明确同期群分组方式（注册月份、功能发布日期等）
+3. **提供背景信息**：解释期间的产品变更、发布或事件
+4. **多维指标**：包含留存、活跃、功能使用、收入等
+5. **充足数据**：至少需要 3-4 个同期群才能有效识别模式
+6. **明确输出需求**：指定需要可视化、Python 脚本或研究建议
+
+## 输出格式
+
+您将获得：
+- **数据摘要**：同期群概览和数据质量评估
+- **量化发现**：关键指标、留存率和趋势分析
+- **可视化**：展示留存曲线、采用模式的图表
+- **模式识别**：从数据中发现的 2-3 个重要洞察
+- **研究建议**：具体的定性和量化后续研究方案
+- **分析脚本**（如需）：可复现分析的 Python 代码
+- **后续步骤**：基于发现的优先级行动建议
 
 ---
 
-### Further Reading
+### 延伸阅读
 
-- [Cohort Analysis 101: How to Reduce Churn and Make Better Product Decisions](https://www.productcompass.pm/p/cohort-analysis)
-- [The Product Analytics Playbook: AARRR, HEART, Cohorts & Funnels for PMs](https://www.productcompass.pm/p/the-product-analytics-playbook-aarrr)
-- [Are You Tracking the Right Metrics?](https://www.productcompass.pm/p/are-you-tracking-the-right-metrics)
+- [同期群分析入门：如何减少流失并做出更好的产品决策](https://www.productcompass.pm/p/cohort-analysis)
+- [产品分析实战手册：面向产品经理的 AARRR、HEART、同期群与漏斗分析](https://www.productcompass.pm/p/the-product-analytics-playbook-aarrr)
+- [你在追踪正确的指标吗？](https://www.productcompass.pm/p/are-you-tracking-the-right-metrics)

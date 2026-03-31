@@ -1,94 +1,94 @@
 ---
 name: metrics-dashboard
-description: "Define and design a product metrics dashboard with key metrics, data sources, visualization types, and alert thresholds. Use when creating a metrics dashboard, defining KPIs, setting up product analytics, or building a data monitoring plan."
+description: "定义和设计产品指标仪表板，包含关键指标、数据源、可视化类型和告警阈值。适用于创建指标仪表板、定义KPI、设置产品分析或构建数据监控计划。"
 ---
 
-## Product Metrics Dashboard
+## 产品指标仪表板
 
-Design a comprehensive product metrics dashboard with the right metrics, visualizations, and alert thresholds.
+设计一个综合的产品指标仪表板，包含恰当的指标、可视化图表和告警阈值。
 
-### Context
+### 背景
 
-You are designing a metrics dashboard for **$ARGUMENTS**.
+您正在为 **$ARGUMENTS** 设计指标仪表板。
 
-If the user provides files (existing dashboards, analytics data, OKRs, or strategy docs), read them first.
+如果用户提供了文件（现有仪表板、分析数据、OKR或战略文档），请先阅读这些文件。
 
-### Domain Context
+### 领域背景
 
-**Metrics vs KPIs vs NSM**: Metrics = all measurable things. KPIs = a few key quantitative metrics tracked over a longer period. North Star Metric = a single customer-centric KPI that is a leading indicator of business success.
+**指标 vs KPI vs 北极星指标**：指标 = 所有可衡量的事物。KPI = 少数在较长时间内追踪的关键量化指标。北极星指标（North Star Metric）= 单一以客户为中心的KPI，是业务成功的领先指标。
 
-**4 criteria for a good metric** (Ben Yoskovitz, *Lean Analytics*): (1) Understandable — creates a common language. (2) Comparative — over time, not a snapshot. (3) Ratio or Rate — more revealing than whole numbers. (4) Behavior-changing — the Golden Rule: "If a metric won't change how you behave, it's a bad metric."
+**好指标的4个标准**（Ben Yoskovitz，《精益分析》）：（1）可理解 — 创造共同语言。（2）可比较 — 基于时间维度，而非快照。（3）比率或速率 — 比整数更能揭示真相。（4）改变行为 — 黄金法则："如果一个指标不会改变你的行为，那它就是一个坏指标。"
 
-**8 metric types**: Vanity vs Actionable (only actionable metrics change behavior), Qualitative vs Quantitative (WHAT vs WHY — you need both; never stop talking to customers), Exploratory vs Reporting (explore data to uncover unexpected insights), Lagging vs Leading (leading indicators enable faster learning cycles, e.g. customer complaints predict churn).
+**8种指标类型**：虚荣指标 vs 可行动指标（只有可行动指标才能改变行为），定性 vs 定量（WHAT vs WHY — 两者都需要；永远不要停止与客户对话），探索性 vs 汇报性（探索数据以发现意外洞察），滞后 vs 领先（领先指标实现更快的学习周期，例如客户投诉预测流失）。
 
-**5 action steps**: (1) Audit metrics against the 4 good-metric criteria. (2) Update dashboards — ensure all key metrics are good ones. (3) Identify vanity metrics — be careful how you use them. (4) Classify leading vs lagging indicators. (5) Pick one problem and dig deep into the data.
+**5个行动步骤**：（1）对照4个好指标标准审查指标。（2）更新仪表板 — 确保所有关键指标都是好指标。（3）识别虚荣指标 — 谨慎使用它们。（4）分类领先指标和滞后指标。（5）选择一个问题并深入挖掘数据。
 
-For case studies and more detail: [Are You Tracking the Right Metrics?](https://www.productcompass.pm/p/are-you-tracking-the-right-metrics) by Ben Yoskovitz
+案例研究和更多详情参见：Ben Yoskovitz的 [Are You Tracking the Right Metrics?](https://www.productcompass.pm/p/are-you-tracking-the-right-metrics)（英文）
 
-### Instructions
+### 指导步骤
 
-1. **Identify the metrics framework** — organize metrics into layers:
+1. **确定指标框架** — 将指标分层组织：
 
-   **North Star Metric**: The single metric that best captures core value delivery
+   **北极星指标**：最能体现核心价值交付的单一指标
 
-   **Input Metrics** (3-5): The levers that drive the North Star
+   **输入指标**（3-5个）：驱动北极星指标的杠杆
 
-   **Health Metrics**: Guardrails that ensure overall product health
+   **健康指标**：确保产品整体健康的护栏
 
-   **Business Metrics**: Revenue, cost, and unit economics
+   **业务指标**：收入、成本和单位经济效益
 
-2. **For each metric, define**:
+2. **为每个指标定义**：
 
-   | Metric | Definition | Data Source | Visualization | Target | Alert Threshold |
+   | 指标 | 定义 | 数据源 | 可视化 | 目标 | 告警阈值 |
    |---|---|---|---|---|---|
-   | [Name] | [Exact calculation: numerator/denominator, time window] | [Where the data comes from] | [Line chart / Bar / Number / Funnel] | [Goal value] | [When to trigger an alert] |
+   | [名称] | [精确计算：分子/分母，时间窗口] | [数据来源] | [折线图 / 柱状图 / 数字 / 漏斗图] | [目标值] | [何时触发告警] |
 
-3. **Design the dashboard layout**:
+3. **设计仪表板布局**：
 
    ```
    ┌─────────────────────────────────────────────┐
-   │  NORTH STAR: [Metric] — [Current Value]     │
-   │  Trend: [↑/↓ X% vs last period]             │
+   │  北极星：[指标] — [当前值]                   │
+   │  趋势：[↑/↓ X% vs 上周期]                    │
    ├──────────────────┬──────────────────────────┤
-   │  Input Metric 1  │  Input Metric 2          │
-   │  [Sparkline]     │  [Sparkline]             │
+   │  输入指标 1      │  输入指标 2               │
+   │  [迷你图]        │  [迷你图]                 │
    ├──────────────────┼──────────────────────────┤
-   │  Input Metric 3  │  Input Metric 4          │
-   │  [Sparkline]     │  [Sparkline]             │
+   │  输入指标 3      │  输入指标 4               │
+   │  [迷你图]        │  [迷你图]                 │
    ├──────────────────┴──────────────────────────┤
-   │  HEALTH: [Latency] [Error Rate] [NPS]       │
+   │  健康：[延迟] [错误率] [NPS]                │
    ├─────────────────────────────────────────────┤
-   │  BUSINESS: [MRR] [CAC] [LTV] [Churn]        │
+   │  业务：[MRR] [CAC] [LTV] [流失率]           │
    └─────────────────────────────────────────────┘
    ```
 
-4. **Set review cadence**:
-   - **Daily**: Operational health (errors, latency, critical flows)
-   - **Weekly**: Input metrics and engagement trends
-   - **Monthly**: North Star, business metrics, OKR progress
-   - **Quarterly**: Strategic review and metric recalibration
+4. **设定审查节奏**：
+   - **每日**：运营健康（错误、延迟、关键流程）
+   - **每周**：输入指标和参与度趋势
+   - **每月**：北极星指标、业务指标、OKR进展
+   - **每季度**：战略审查和指标重新校准
 
-5. **Define alerts**:
-   - What thresholds trigger investigation?
-   - Who gets alerted and through what channel?
-   - What's the expected response time?
+5. **定义告警**：
+   - 什么阈值会触发调查？
+   - 谁收到告警以及通过什么渠道？
+   - 预期的响应时间是多少？
 
-6. **Recommend tools** based on the user's context:
-   - Amplitude, Mixpanel, PostHog for product analytics
-   - Looker, Metabase, Mode for SQL-based dashboards
-   - Datadog, Grafana for operational health
+6. **根据用户背景推荐工具**：
+   - Amplitude、Mixpanel、PostHog 用于产品分析
+   - Looker、Metabase、Mode 用于基于SQL的仪表板
+   - Datadog、Grafana 用于运营健康监控
 
-Think step by step. Save the dashboard specification as a markdown document.
+逐步思考。将仪表板规范保存为markdown文档。
 
 ---
 
-### Further Reading
+### 延伸阅读
 
-- [The Ultimate List of Product Metrics](https://www.productcompass.pm/p/the-ultimate-list-of-product-metrics)
-- [The North Star Framework 101](https://www.productcompass.pm/p/the-north-star-framework-101)
-- [The Product Analytics Playbook: AARRR, HEART, Cohorts & Funnels for PMs](https://www.productcompass.pm/p/the-product-analytics-playbook-aarrr)
-- [AARRR (Pirate) Metrics: The 5-Stage Framework for Growth](https://www.productcompass.pm/p/aarrr-pirate-metrics)
-- [The Google HEART Framework: Your Guide to Measuring User-Centric Success](https://www.productcompass.pm/p/the-google-heart-framework)
-- [Funnel Analysis 101: How to Track and Optimize Your User Journey](https://www.productcompass.pm/p/funnel-analysis)
-- [Are You Tracking the Right Metrics?](https://www.productcompass.pm/p/are-you-tracking-the-right-metrics)
-- [Continuous Product Discovery Masterclass (CPDM)](https://www.productcompass.pm/p/cpdm) (video course)
+- [The Ultimate List of Product Metrics](https://www.productcompass.pm/p/the-ultimate-list-of-product-metrics)（英文）
+- [The North Star Framework 101](https://www.productcompass.pm/p/the-north-star-framework-101)（英文）
+- [The Product Analytics Playbook: AARRR, HEART, Cohorts & Funnels for PMs](https://www.productcompass.pm/p/the-product-analytics-playbook-aarrr)（英文）
+- [AARRR (Pirate) Metrics: The 5-Stage Framework for Growth](https://www.productcompass.pm/p/aarrr-pirate-metrics)（英文）
+- [The Google HEART Framework: Your Guide to Measuring User-Centric Success](https://www.productcompass.pm/p/the-google-heart-framework)（英文）
+- [Funnel Analysis 101: How to Track and Optimize Your User Journey](https://www.productcompass.pm/p/funnel-analysis)（英文）
+- [Are You Tracking the Right Metrics?](https://www.productcompass.pm/p/are-you-tracking-the-right-metrics)（英文）
+- [Continuous Product Discovery Masterclass (CPDM)](https://www.productcompass.pm/p/cpdm) (video course)（英文视频课程）

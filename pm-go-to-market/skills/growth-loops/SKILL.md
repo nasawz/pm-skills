@@ -1,125 +1,125 @@
 ---
 name: growth-loops
-description: "Identify growth loops (flywheels) for sustainable traction. Evaluates 5 loop types: Viral, Usage, Collaboration, User-Generated, and Referral. Use when designing growth mechanisms, building product-led traction, or understanding how growth loops work."
+description: "识别可持续增长的增长循环（飞轮）。评估5种循环类型：病毒式、使用型、协作型、用户生成型和推荐型。适用于设计增长机制、构建产品驱动的增长，或理解增长循环如何运作。"
 ---
-# Growth Loops
+# 增长循环
 
-## Overview
-Identify and design growth loops (flywheels) that create sustainable traction. This skill evaluates five proven growth loop mechanisms to reduce reliance on paid acquisition and build product-led growth.
+## 概述
+识别和设计能够创造可持续增长势头的增长循环（飞轮）。该技能评估五种经过验证的增长循环机制，以减少对付费获客的依赖，构建产品驱动型增长。
 
-## When to Use
-- Designing growth mechanisms for a product
-- Building sustainable viral or referral traction
-- Reducing reliance on paid acquisition
-- Analyzing competitor growth strategies
-- Optimizing product for product-led growth
+## 使用场景
+- 为产品设计增长机制
+- 构建可持续的病毒式或推荐型增长
+- 减少对付费获客的依赖
+- 分析竞争对手的增长策略
+- 优化产品以实现产品驱动型增长
 
-## The 5 Growth Loop Types
+## 5种增长循环类型
 
-### 1. Viral Loop
-Product content created by users gets shared on external platforms, bringing new users back to the product.
-- **Mechanism**: Users create content in-product → Share on social/external platforms → New users discover and signup
-- **Example**: Figma designs shared as links, Loom videos shared in emails
-- **Strength**: Exponential user acquisition if content is inherently shareable
-- **Challenge**: Requires highly shareable output and strong incentive to share
+### 1. 病毒式循环
+用户在产品中创建的内容被分享到外部平台，将新用户带回产品。
+- **机制**：用户在产品内创建内容 → 在社交/外部平台分享 → 新用户发现并注册
+- **示例**：Figma设计作为链接分享，Loom视频通过邮件分享
+- **优势**：如果内容具有天然分享性，可实现指数级用户获取
+- **挑战**：需要高度可分享的输出内容和强烈的分享动机
 
-### 2. Usage Loop
-Users create content or value within the product, then share it, which invites new users or drives re-engagement.
-- **Mechanism**: User creates → Shares creation → Others consume → Become engaged users
-- **Example**: Twitter threads, Medium articles, Notion templates shared publicly
-- **Strength**: Growth tied directly to product usage and network effects
-- **Challenge**: Requires content creation friction to be very low
+### 2. 使用型循环
+用户在产品中创建内容或价值，然后进行分享，从而邀请新用户或驱动重新参与。
+- **机制**：用户创建 → 分享创作 → 他人消费 → 成为活跃用户
+- **示例**：Twitter推文串、Medium文章、公开分享的Notion模板
+- **优势**：增长与产品使用和网络效应直接相关
+- **挑战**：需要内容创建的摩擦成本非常低
 
-### 3. Collaboration Loop
-Users invite colleagues to co-create or collaborate within the product, expanding the user base within organizations.
-- **Mechanism**: User creates → Invites colleagues for collaboration → Colleagues discover product value
-- **Example**: Google Docs invitations, Figma team projects, Slack channels
-- **Strength**: Deep organizational penetration and high retention
-- **Challenge**: Works best for collaborative/team-based products
+### 3. 协作型循环
+用户邀请同事在产品内共同创建或协作，从而在组织内扩展用户基础。
+- **机制**：用户创建 → 邀请同事协作 → 同事发现产品价值
+- **示例**：Google Docs邀请、Figma团队项目、Slack频道
+- **优势**：深度组织渗透和高留存率
+- **挑战**：最适合协作型/团队导向的产品
 
-### 4. User-Generated Loop
-Users discover new content or features through other users' creations, then create and share their own content.
-- **Mechanism**: User discovers content → Creates similar content → Shares creation → Others discover
-- **Example**: TikTok, Pinterest, YouTube trends driving creator participation
-- **Strength**: Creates content flywheel and network effects
-- **Challenge**: Requires critical mass of quality content to sustain
+### 4. 用户生成型循环
+用户通过其他用户的创作发现新内容或功能，然后创建并分享自己的内容。
+- **机制**：用户发现内容 → 创建类似内容 → 分享创作 → 他人发现
+- **示例**：TikTok、Pinterest、YouTube趋势驱动创作者参与
+- **优势**：创造内容飞轮和网络效应
+- **挑战**：需要达到优质内容的临界规模以维持循环
 
-### 5. Referral Loop
-Users invite other potential users in exchange for rewards, incentives, or social recognition.
-- **Mechanism**: User refers → Referred user joins → Referrer gets reward → Shares more referrals
-- **Example**: Dropbox referral bonus, Uber rider referrals, PayPal signup bonuses
-- **Strength**: Directly incentivizes acquisition; easy to measure ROI
-- **Challenge**: Requires valuable incentive without eroding unit economics
+### 5. 推荐型循环
+用户邀请其他潜在用户以换取奖励、激励或社会认可。
+- **机制**：用户推荐 → 被推荐用户加入 → 推荐人获得奖励 → 分享更多推荐
+- **示例**：Dropbox推荐奖励、Uber乘客推荐、PayPal注册奖励
+- **优势**：直接激励获客；易于衡量ROI
+- **挑战**：需要有价值的激励，同时不损害单位经济模型
 
-## How It Works
+## 工作原理
 
-### Step 1: Define Product Value
-Clarify the core value users experience:
-- Primary action users take in your product
-- Value created per user action
-- Network effects present (if any)
-- Friction points in the experience
+### 第一步：定义产品价值
+明确用户体验到的核心价值：
+- 用户在产品中的主要行为
+- 每次用户行为创造的价值
+- 现有的网络效应（如有）
+- 体验中的摩擦点
 
-### Step 2: Evaluate Loop Fit
-Assess which growth loops align with your product:
-- Product type (collaborative, content-based, utility, etc.)
-- Target user behavior and sharing habits
-- Network effects already present
-- Existing user base and engagement
+### 第二步：评估循环适配度
+评估哪些增长循环与您的产品相匹配：
+- 产品类型（协作型、内容型、工具型等）
+- 目标用户行为和分享习惯
+- 已存在的网络效应
+- 现有用户基础和参与度
 
-### Step 3: Design Loop Mechanics
-Create specific loop implementation:
-- Trigger that initiates sharing or invitations
-- Incentive for participation (intrinsic or extrinsic)
-- Ease of sharing mechanism
-- Conversion rate from invite to activation
-- Frequency of loop repetition per user
+### 第三步：设计循环机制
+创建具体的循环实施方案：
+- 触发分享或邀请的契机
+- 参与的激励（内在或外在）
+- 分享机制的便捷性
+- 从邀请到激活的转化率
+- 每位用户的循环重复频率
 
-### Step 4: Calculate Loop Coefficient
-Estimate growth velocity:
-- Invites/shares per user per cycle
-- Conversion rate of invites to new users
-- Net new users per cycle
-- Time per cycle iteration
+### 第四步：计算循环系数
+估算增长速度：
+- 每个周期每位用户的邀请/分享数
+- 邀请转化为新用户的转化率
+- 每个周期的净增新用户数
+- 每个周期迭代的时间
 
-### Step 5: Build the Loop
-Implement the highest-leverage loop first:
-- Start with the most natural loop for your product
-- Optimize messaging and friction
-- Measure loop metrics and conversion rates
-- Compound results over time
+### 第五步：构建循环
+首先实施杠杆率最高的循环：
+- 从对产品最自然的循环开始
+- 优化信息传达和摩擦成本
+- 衡量循环指标和转化率
+- 随时间积累结果
 
-## Input Format
-Use $ARGUMENTS to pass:
-- Product description and primary user action
-- Target user demographics and behavior
-- Existing sharing/collaboration features
-- Current growth channels and metrics
-- Constraints or opportunities
+## 输入格式
+使用 $ARGUMENTS 传递：
+- 产品描述和主要用户行为
+- 目标用户画像和行为
+- 现有的分享/协作功能
+- 当前增长渠道和指标
+- 约束条件或机会
 
-## Output
-A growth loops analysis including:
-- Ranked evaluation of all 5 loop types for your product
-- Recommended primary growth loop with implementation plan
-- Secondary loops to layer over time
-- Key metrics and measurement framework
-- 30-60-90 day implementation roadmap
-- Potential loop coefficient and growth projections
+## 输出
+增长循环分析，包括：
+- 针对您产品的5种循环类型排序评估
+- 推荐的主要增长循环及实施计划
+- 可逐步叠加的次要循环
+- 关键指标和衡量框架
+- 30-60-90天实施路线图
+- 潜在的循环系数和增长预测
 
-## Framework
-Based on growth loops research by Ognjen Bošković. Focuses on compounding user acquisition through built-in, product-native sharing and collaboration mechanisms.
+## 框架基础
+基于Ognjen Bošković的增长循环研究。聚焦于通过内置的、产品原生化的分享和协作机制实现复利式用户获取。
 
-## Tips
-- Start with one loop and master it before adding complexity
-- Viral loops compound fastest but take time to build
-- Collaboration loops create strongest retention and LTV
-- Measure loop health weekly during optimization phase
-- Combine loops for multiplicative effect once operating at scale
+## 实用建议
+- 先从一种循环开始并掌握它，再增加复杂性
+- 病毒式循环复利最快，但需要时间构建
+- 协作型循环创造最强的留存率和LTV
+- 在优化阶段每周衡量循环健康状况
+- 达到规模化运营后，结合多种循环以产生乘数效应
 
 ---
 
-### Further Reading
+### 延伸阅读
 
-- [Product-Led Growth 101, Part 1/2](https://www.productcompass.pm/p/product-led-growth-101-12)
-- [OpenAI’s Product Leader Shares 3-Layer Distribution Framework To Win Mind & Market Share in the AI World](https://www.productcompass.pm/p/distribution-framework-ai-products)
-- [How to Design a Value Proposition Customers Can't Resist?](https://www.productcompass.pm/p/how-to-design-value-proposition-template)
+- [Product-Led Growth 101，第1/2部分](https://www.productcompass.pm/p/product-led-growth-101-12)
+- [OpenAI产品负责人分享在AI世界中赢得心智和市场份额的三层分发框架](https://www.productcompass.pm/p/distribution-framework-ai-products)
+- [如何设计客户无法抗拒的价值主张？](https://www.productcompass.pm/p/how-to-design-value-proposition-template)

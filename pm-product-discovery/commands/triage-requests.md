@@ -1,120 +1,120 @@
 ---
-description: Analyze, categorize, and prioritize a batch of feature requests from customers or stakeholders
-argument-hint: "<feature requests as text, file, or paste>"
+description: 分析、分类和优先级排序来自客户或利益相关者的一批功能需求
+argument-hint: "<功能需求（文本、文件或粘贴）>"
 ---
 
-# /triage-requests -- Feature Request Triage
+# /triage-requests -- 功能需求优先级排序
 
-Take a pile of feature requests — from support tickets, sales calls, surveys, or Slack — and turn them into a prioritized, actionable backlog.
+将一堆功能需求——来自支持工单、销售通话、调研或 Slack——转化为已排序的可执行待办事项。
 
-## Invocation
+## 调用方式
 
 ```
-/triage-requests                           # asks for input
-/triage-requests [paste a list of requests]
-/triage-requests [upload a CSV/spreadsheet]
+/triage-requests                           # 请求输入
+/triage-requests [粘贴需求列表]
+/triage-requests [上传 CSV/电子表格]
 ```
 
-## Workflow
+## 工作流程
 
-### Step 1: Accept Feature Requests
+### 步骤 1：接受功能需求
 
-Accept requests in any format:
-- **Pasted text**: List of requests, one per line or paragraph
-- **Uploaded file**: CSV, Excel, or text file with request data
-- **Structured data**: If the input has columns (requester, request, date, etc.), preserve them
+接受任何格式的需求：
+- **粘贴文本**：需求列表，每行或每段一个需求
+- **上传文件**：包含需求数据的 CSV、Excel 或文本文件
+- **结构化数据**：如果输入包含列（请求者、需求、日期等），请保留这些信息
 
-If no input is provided, ask the user to paste or upload their feature requests.
+如果未提供输入，请用户粘贴或上传他们的功能需求。
 
-Parse each request to extract:
-- The core ask (what the user wants)
-- Context (who asked, when, why — if available)
-- Frequency signals (how many people asked for similar things)
+解析每个需求以提取：
+- 核心诉求（用户想要什么）
+- 上下文（谁提出的、何时、为何——如果可用）
+- 频率信号（有多少人提出了类似的需求）
 
-### Step 2: Gather Prioritization Context
+### 步骤 2：收集优先级排序上下文
 
-Ask the user (conversationally, not all at once):
-- What is the product? What stage is it in?
-- What are the current strategic goals or OKRs? (helps assess alignment)
-- Any constraints to consider? (team size, technical debt, upcoming deadlines)
-- Are there segments whose requests should carry more weight? (enterprise, churning users, power users)
+与用户对话式询问（不要一次性问完）：
+- 产品是什么？处于哪个阶段？
+- 当前的战略目标或 OKRs 是什么？（有助于评估对齐度）
+- 有哪些约束需要考虑？（团队规模、技术债务、即将到来的截止日期）
+- 是否有某些细分群体的需求应该被赋予更高的权重？（企业客户、流失风险用户、重度用户）
 
-### Step 3: Categorize and Analyze
+### 步骤 3：分类和分析
 
-Apply the **analyze-feature-requests** skill:
+应用 **analyze-feature-requests** 技能：
 
-- **Theme clustering**: Group similar requests into themes (e.g., "reporting & analytics", "collaboration", "mobile experience")
-- **Request count per theme**: How many unique requests map to each theme
-- **Strategic alignment**: Rate each theme against stated goals (High/Medium/Low/None)
-- **Segment analysis**: Which user segments are driving which themes
-- **Sentiment signals**: Are requests accompanied by frustration, churn threats, or delight?
+- **主题聚类**：将相似的需求归类为主题（例如，"报表与分析"、"协作"、"移动端体验"）
+- **每个主题的需求数量**：有多少个不同的需求映射到每个主题
+- **战略对齐度**：根据声明的目标对每个主题进行评级（高/中/低/无）
+- **细分群体分析**：哪些用户群体在推动哪些主题
+- **情感信号**：需求是否伴随挫败感、流失威胁或满意？
 
-### Step 4: Prioritize
+### 步骤 4：优先级排序
 
-Apply the **prioritize-features** skill:
+应用 **prioritize-features** 技能：
 
-For each theme (and the top individual requests within each theme):
+对于每个主题（以及每个主题中的顶级单个需求）：
 
-| Factor | Assessment |
+| 因素 | 评估 |
 |--------|-----------|
-| **Impact** | How many users affected? How severely? |
-| **Strategic alignment** | Does it serve current goals? |
-| **Effort estimate** | T-shirt size (S/M/L/XL) |
-| **Risk** | What happens if we don't do this? |
-| **Revenue signal** | Is this tied to deals, retention, or expansion? |
+| **影响** | 影响多少用户？影响程度如何？ |
+| **战略对齐度** | 是否服务于当前目标？ |
+| **工作量估算** | T-shirt 尺寸（S/M/L/XL） |
+| **风险** | 如果我们不这样做会发生什么？ |
+| **收入信号** | 是否与交易、留存或扩展相关？ |
 
-Rank themes and produce a prioritized list.
+对主题进行排序并生成优先级列表。
 
-### Step 5: Generate Triage Report
+### 步骤 5：生成优先级排序报告
 
 ```
-## Feature Request Triage Report
+## 功能需求优先级排序报告
 
-**Date**: [today]
-**Requests analyzed**: [count]
-**Themes identified**: [count]
+**日期**：[今天]
+**分析的需求数量**：[数量]
+**识别的主题数量**：[数量]
 
-### Theme Summary
-| # | Theme | Requests | Top Ask | Alignment | Impact | Effort | Priority |
+### 主题摘要
+| # | 主题 | 需求数 | 顶级诉求 | 对齐度 | 影响 | 工作量 | 优先级 |
 |---|-------|----------|---------|-----------|--------|--------|----------|
 
-### Priority 1: Act Now
-[Themes/requests to include in near-term planning]
-- **[Theme]**: [X] requests — [why it's urgent]
-  - Top requests: [list]
-  - Recommended action: [build / prototype / investigate]
+### 优先级 1：立即行动
+[包含在近期规划中的主题/需求]
+- **[主题]**：[X] 个需求 — [为何紧急]
+  - 顶级需求：[列表]
+  - 建议行动：[构建 / 原型 / 调研]
 
-### Priority 2: Plan Next
-[Themes worth planning but not urgent]
+### 优先级 2：下一步规划
+[值得规划但不紧急的主题]
 
-### Priority 3: Collect More Signal
-[Themes with potential but insufficient evidence]
+### 优先级 3：收集更多信号
+[有潜力但证据不足的主题]
 
-### Priority 4: Decline or Defer
-[Requests that don't align with strategy — with rationale]
+### 优先级 4：拒绝或推迟
+[不符合战略的需求——附上理由]
 
-### Notable Individual Requests
-[High-value one-off requests that didn't cluster into themes]
+### 值得关注的单个需求
+[高价值但未归入主题的单个需求]
 
-### Patterns and Insights
-- [Key insight about what users are telling you]
-- [Segment-specific patterns]
-- [Gaps between what users ask for and underlying needs]
+### 模式和洞察
+- [关于用户告诉你的内容的关键洞察]
+- [细分群体特定模式]
+- [用户要求的内容与潜在需求之间的差距]
 ```
 
-Save the report as a markdown file to the user's workspace.
+将报告作为 markdown 文件保存到用户的工作区。
 
-### Step 6: Offer Next Steps
+### 步骤 6：提供后续步骤
 
-- "Want me to **create user stories** for the top-priority items?"
-- "Should I **brainstorm solutions** for any of these themes?"
-- "Want me to **design experiments** to validate demand before building?"
-- "Should I **draft a stakeholder update** summarizing this analysis?"
+- "您是否需要我为最高优先级的项目**创建用户故事**？"
+- "我是否应该为这些主题中的任何一个**头脑风暴解决方案**？"
+- "您是否需要我**设计实验**以在构建之前验证需求？"
+- "我是否应该**起草利益相关者更新**来总结此分析？"
 
-## Notes
+## 注意事项
 
-- If the user provides a CSV with columns, preserve the data structure and enrich it
-- Look for the need behind the request — "add dark mode" might really mean "reduce eye strain during long sessions"
-- Flag requests that conflict with each other (e.g., "simplify the UI" vs. "add more configuration options")
-- If request volume is large (50+), summarize themes first and offer to drill into specific themes on request
-- Output the enriched data as a downloadable CSV if the input was structured data
+- 如果用户提供包含列的 CSV，请保留数据结构并对其进行丰富
+- 寻找需求背后的真正需求——"添加暗色模式"可能真正意味着"在长时间使用中减少眼疲劳"
+- 标记相互冲突的需求（例如，"简化界面"与"添加更多配置选项"）
+- 如果需求数量很大（50+），先总结主题，并根据请求提供深入特定主题的选项
+- 如果输入是结构化数据，将丰富的数据作为可下载的 CSV 输出

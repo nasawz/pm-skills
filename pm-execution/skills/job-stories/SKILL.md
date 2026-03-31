@@ -1,74 +1,74 @@
 ---
 name: job-stories
-description: "Create job stories using the 'When [situation], I want to [motivation], so I can [outcome]' format with detailed acceptance criteria. Use when writing job stories, creating JTBD-style backlog items, or expressing user situations and motivations."
+description: "使用'当[情境],我希望[动机],以便[结果]'的格式创建工作故事,并提供详细的验收标准。适用于编写工作故事、创建待办任务(JTBD)风格的待办事项,或表达用户情境和动机。"
 ---
-# Job Stories
+# 工作故事 (Job Stories)
 
-Create job stories using the 'When [situation], I want to [motivation], so I can [outcome]' format. Generates stories with detailed acceptance criteria focused on user situations and outcomes.
+使用"当[情境],我希望[动机],以便[结果]"的格式创建工作故事。生成具有详细验收标准的故事,重点关注用户情境和结果。
 
-**Use when:** Writing job stories, expressing user situations and motivations, creating JTBD-style backlog items, or focusing on user context rather than roles.
+**适用场景:** 编写工作故事、表达用户情境和动机、创建待办任务(JTBD)风格的待办事项,或关注用户情境而非角色。
 
-**Arguments:**
-- `$PRODUCT`: The product or system name
-- `$FEATURE`: The new feature to break into job stories
-- `$DESIGN`: Link to design files (Figma, Miro, etc.)
-- `$CONTEXT`: User situations or job scenarios
+**参数:**
+- `$PRODUCT`: 产品或系统名称
+- `$FEATURE`: 需要拆分为工作故事的新功能
+- `$DESIGN`: 设计文件链接(Figma、Miro等)
+- `$CONTEXT`: 用户情境或工作场景
 
-## Step-by-Step Process
+## 分步流程
 
-1. **Identify user situations** that trigger the need
-2. **Define motivations** underlying the user's behavior
-3. **Clarify outcomes** the user wants to achieve
-4. **Apply JTBD framework:** Focus on the job, not the role
-5. **Create acceptance criteria** that validate the outcome is achieved
-6. **Use observable, measurable language**
-7. **Link to design mockups** or prototypes
-8. **Output job stories** with detailed acceptance criteria
+1. **识别触发需求的用户情境**
+2. **定义用户行为背后的动机**
+3. **明确用户期望实现的结果**
+4. **应用待办任务(JTBD)框架:** 专注于任务,而非角色
+5. **创建验收标准**,验证结果是否达成
+6. **使用可观察、可衡量的语言**
+7. **链接到设计原型**或原型图
+8. **输出工作故事**,包含详细的验收标准
 
-## Story Template
+## 故事模板
 
-**Title:** [Job outcome or result]
+**标题:** [工作结果或产出]
 
-**Description:** When [situation], I want to [motivation], so I can [outcome].
+**描述:** 当[情境],我希望[动机],以便[结果]。
 
-**Design:** [Link to design files]
+**设计:** [设计文件链接]
 
-**Acceptance Criteria:**
-1. [Situation is properly recognized]
-2. [System enables the desired motivation]
-3. [Progress or feedback is visible]
-4. [Outcome is achieved efficiently]
-5. [Edge cases are handled gracefully]
-6. [Integration and notifications work]
+**验收标准:**
+1. [情境被正确识别]
+2. [系统支持期望的动机]
+3. [进度或反馈可见]
+4. [结果高效达成]
+5. [边界情况得到优雅处理]
+6. [集成和通知功能正常]
 
-## Example Job Story
+## 工作故事示例
 
-**Title:** Track Weekly Snack Spending
+**标题:** 追踪每周零食支出
 
-**Description:** When I'm preparing my weekly allowance for snacks (situation), I want to quickly see how much I've spent so far (motivation), so I can make sure I don't run out of money before the weekend (outcome).
+**描述:** 当我准备每周的零食预算时(情境),我希望快速查看我已经花费了多少(动机),以便确保我在周末之前不会把钱用光(结果)。
 
-**Design:** [Figma link]
+**设计:** [Figma链接]
 
-**Acceptance Criteria:**
-1. Display Spending Summary with 'Weekly Spending Overview' section
-2. Real-Time Update when expense logged
-3. Progress Indicator (progress bar showing 0-100% of weekly budget)
-4. Remaining Budget Highlight in prominent color
-5. Detailed Spending Log with breakdown by category
-6. Notifications at 80% budget threshold
-7. Weekend-Specific Reminder at 90% by Thursday evening
-8. Easy Access and Navigation to detailed breakdown
+**验收标准:**
+1. 显示支出摘要,包含"每周支出概览"部分
+2. 记录支出时实时更新
+3. 进度指示器(显示0-100%每周预算的进度条)
+4. 剩余预算以突出颜色高亮显示
+5. 详细支出日志,按类别细分
+6. 在预算达到80%阈值时发送通知
+7. 周末特定提醒:在周四晚上90%预算时发送
+8. 轻松访问和导航到详细细分
 
-## Output Deliverables
+## 输出交付物
 
-- Complete set of job stories for the feature
-- Each story follows the 'When...I want...so I can' format
-- 6-8 acceptance criteria focused on outcomes
-- Stories emphasize user situations and motivations
-- Clear links to design and prototypes
+- 功能的完整工作故事集
+- 每个故事遵循"当...我希望...以便..."的格式
+- 6-8项关注结果的验收标准
+- 故事强调用户情境和动机
+- 清晰的设计和原型链接
 
 ---
 
-### Further Reading
+### 延伸阅读
 
-- [Jobs-to-be-Done Masterclass with Tony Ulwick and Sabeen Sattar](https://www.productcompass.pm/p/jobs-to-be-done-masterclass-with) (video course)
+- [Jobs-to-be-Done Masterclass with Tony Ulwick and Sabeen Sattar](https://www.productcompass.pm/p/jobs-to-be-done-masterclass-with) (视频课程)

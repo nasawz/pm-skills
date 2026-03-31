@@ -1,19 +1,19 @@
 {
   "name": "pm-market-research",
   "version": "1.0.1",
-  "description": "Market research skills for PMs: user personas, market segmentation, sentiment analysis, and competitive analysis.",
+  "description": "产品经理市场研究技能：用户画像、市场细分、情感分析和竞争分析。",
   "author": {
     "name": "Paweł Huryn",
     "email": "pawel@productcompass.pm",
     "url": "https://www.productcompass.pm"
   },
   "keywords": [
-    "product-management",
-    "market-research",
-    "personas",
-    "segmentation",
-    "competitor-analysis",
-    "market-sizing",
+    "产品管理",
+    "市场研究",
+    "用户画像",
+    "市场细分",
+    "竞争分析",
+    "市场规模",
     "TAM",
     "SAM",
     "SOM"

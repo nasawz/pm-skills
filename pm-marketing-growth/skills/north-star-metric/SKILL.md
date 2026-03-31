@@ -1,74 +1,74 @@
 ---
 name: north-star-metric
-description: "Define a North Star Metric and 3-5 supporting input metrics that form a metrics constellation. Classify the business game (Attention, Transaction, Productivity) and validate against 7 criteria for an effective North Star. Use when choosing a North Star Metric, setting up a metrics framework, learning about the North Star Framework, or deciding what to measure."
+description: "定义一个北极星指标和3-5个支持性的输入指标，形成指标星座。分类业务游戏类型（注意力、交易、生产力），并根据有效北极星的7个标准进行验证。适用于选择北极星指标、搭建指标框架、学习北极星框架或决定衡量内容时使用。"
 ---
-# North Star Metric
+# 北极星指标
 
-Identify a North Star Metric and 3-5 Input Metrics that form a metrics constellation. Classifies the business game being played and validates against criteria for an effective North Star. Use when defining key metrics, setting up a metrics framework, or choosing what to measure.
+识别一个北极星指标和3-5个输入指标，形成指标星座。分类企业所从事的业务游戏类型，并对照有效北极星的标准进行验证。适用于定义关键指标、搭建指标框架或选择衡量内容时使用。
 
-## Domain Context
+## 领域背景
 
-NSM is **NOT**: multiple metrics, a revenue/LTV metric (must be customer-centric), an OKR (that's a goal-setting technique), or a strategy (but choosing the right NSM is a strategic choice).
+北极星指标（NSM）**不是**：多个指标、收入/LTV指标（必须以客户为中心）、OKR（那是一种目标设定技术）或战略（但选择正确的北极星指标是一个战略选择）。
 
-NSM **IS**: a single, customer-centric KPI that reflects the value customers get from the product and serves as a leading indicator of long-term business success. You can use Key Results (OKRs) to express expected change in NSM.
+北极星指标（NSM）**是**：一个单一的、以客户为中心的KPI，反映客户从产品中获得的价值，并作为长期业务成功的领先指标。您可以使用关键结果（OKRs）来表达对北极星指标的预期变化。
 
-Free resource: [The North Star Framework 101 (PDF)](https://learn.productcompass.pm/nsm101)
+免费资源：[北极星框架101（PDF）](https://learn.productcompass.pm/nsm101)
 
-## When to Use
+## 使用场景
 
-- Defining your company's key metric framework
-- Setting up a metrics tracking system
-- Choosing what to measure and optimize for
-- Evaluating potential North Star candidates
-- Triggers: North Star metric, north star, key metric, what to measure, metrics framework, OMTM
+- 定义公司的关键指标框架
+- 搭建指标追踪系统
+- 选择要衡量和优化的内容
+- 评估潜在北极星指标候选
+- 触发关键词：北极星指标、north star、关键指标、衡量什么、指标框架、OMTM
 
-## The Three Business Games
+## 三种业务游戏类型
 
-Before identifying your North Star, classify your business into one of these three games:
+在确定北极星指标之前，将您的业务分类为以下三种游戏之一：
 
-- **Attention Game**: How much time do customers spend using your product? (Examples: Facebook, Spotify, YouTube, TikTok)
-- **Transaction Game**: How many transactions occur between customers and your platform? (Examples: Amazon, Uber, Airbnb, PayPal)
-- **Productivity Game**: How efficiently can someone complete their work or achieve their goals? (Examples: Canva, Dropbox, Loom, Notion)
+- **注意力游戏**：客户在使用您的产品上花费多少时间？（示例：Facebook、Spotify、YouTube、TikTok）
+- **交易游戏**：客户与您的平台之间发生了多少笔交易？（示例：Amazon、Uber、Airbnb、PayPal）
+- **生产力游戏**：人们能够多高效地完成工作或实现目标？（示例：Canva、Dropbox、Loom、Notion）
 
-## Prompt
+## 提示词
 
-You are a metrics strategist specializing in North Star metrics and growth measurement frameworks.
+您是一位专注于北极星指标和增长衡量框架的指标战略专家。
 
-Given the following business context: $ARGUMENTS
+给定以下业务背景：$ARGUMENTS
 
-**Step 1: Classify the Business Game**
-Determine which game this company plays: Attention, Transaction, or Productivity.
+**第一步：分类业务游戏类型**
+确定这家公司从事的游戏类型：注意力、交易还是生产力。
 
-**Step 2: Identify the North Star Metric**
-Suggest a single metric that meets all seven criteria for an effective North Star:
+**第二步：确定北极星指标**
+建议一个符合有效北极星所有七条标准的单一指标：
 
-1. **Easy to Understand**: Clear definition that everyone in the organization comprehends
-2. **Customer-Centric**: Reflects value delivered to customers, not just revenue or activity
-3. **Sustainable Value**: Indicates habits and long-term customer engagement
-4. **Vision Alignment**: Represents meaningful progress toward the company's vision and mission
-5. **Quantitative**: Measurable with clear, numeric tracking
-6. **Actionable**: Teams can directly influence it through product, marketing, and operational changes
-7. **Leading Indicator**: Predicts future business success and revenue growth
+1. **易于理解**：定义清晰，组织内所有人都能理解
+2. **以客户为中心**：反映传递给客户的价值，而不仅仅是收入或活动
+3. **可持续价值**：表明客户习惯和长期参与度
+4. **与愿景对齐**：代表向公司愿景和使命迈进的实质性进展
+5. **可量化**：可以通过清晰的数值追踪来衡量
+6. **可操作**：团队可以通过产品、营销和运营变革直接影响它
+7. **领先指标**：预测未来的业务成功和收入增长
 
-**Step 3: Identify Input Metrics**
-Define 3-5 Input Metrics (also called leading indicators) that most directly influence and drive the North Star Metric. Each input metric should:
-- Be easier to move in the short term
-- Directly contribute to the North Star outcome
-- Help identify where optimization efforts should focus
+**第三步：确定输入指标**
+定义3-5个最直接影响和驱动北极星指标的输入指标（也称为领先指标）。每个输入指标应该：
+- 在短期内更容易推动
+- 直接贡献于北极星指标的结果
+- 帮助识别优化工作的重点方向
 
-## Tips for Best Results
+## 获得最佳效果的建议
 
-- Provide details about your business model and revenue model
-- Share your company's vision, mission, or long-term goals
-- Include current metrics you're tracking
-- Mention key customer segments and use cases
-- Describe the primary value you deliver to customers
+- 提供有关您的业务模式和收入模式的详细信息
+- 分享公司的愿景、使命或长期目标
+- 包含您当前正在追踪的指标
+- 提及关键客户细分和使用场景
+- 描述您向客户传递的核心价值
 
 ---
 
-### Further Reading
+### 延伸阅读
 
-- [The North Star Framework 101](https://www.productcompass.pm/p/the-north-star-framework-101)
-- [AARRR (Pirate) Metrics: The 5-Stage Framework for Growth](https://www.productcompass.pm/p/aarrr-pirate-metrics)
-- [The Google HEART Framework: Your Guide to Measuring User-Centric Success](https://www.productcompass.pm/p/the-google-heart-framework)
-- [The Ultimate List of Product Metrics](https://www.productcompass.pm/p/the-ultimate-list-of-product-metrics)
+- [北极星框架101](https://www.productcompass.pm/p/the-north-star-framework-101)
+- [AARRR（海盗）指标：增长的五阶段框架](https://www.productcompass.pm/p/aarrr-pirate-metrics)
+- [Google HEART框架：衡量以用户为中心的成功指南](https://www.productcompass.pm/p/the-google-heart-framework)
+- [产品指标终极清单](https://www.productcompass.pm/p/the-ultimate-list-of-product-metrics)

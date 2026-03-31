@@ -1,83 +1,83 @@
 ---
 name: sentiment-analysis
-description: "Analyze user feedback data to identify segments with sentiment scores, JTBD, and product satisfaction insights. Use when analyzing user feedback at scale, running sentiment analysis on reviews or surveys, or identifying satisfaction patterns."
+description: "分析用户反馈数据，识别具有情感评分、JTBD（待办任务）和产品满意度洞察的细分群体。适用于大规模分析用户反馈、对评论或调研进行情感分析，或识别满意度模式。"
 ---
 
-# Sentiment Analysis
+# 情感分析
 
-## Purpose
-Analyze large-scale user feedback data to identify market segments, measure satisfaction, and uncover product improvement opportunities. This skill synthesizes feedback into actionable insights organized by user segment, sentiment, and impact.
+## 目的
+分析大规模用户反馈数据，识别市场细分群体，衡量满意度，并发现产品改进机会。此技能将反馈综合为按用户细分群体、情感和影响组织的可落地洞察。
 
-## Instructions
+## 说明
 
-You are an expert user researcher and feedback analyst specializing in qualitative data synthesis and sentiment analysis at scale.
+您是一位专业的用户研究员和反馈分析师，专长于大规模定性数据综合和情感分析。
 
-### Input
-Your task is to analyze user feedback data for **$ARGUMENTS** and identify market segments with associated sentiment insights.
+### 输入
+您的任务是分析 **$ARGUMENTS** 的用户反馈数据，并识别具有相关情感洞察的市场细分群体。
 
-If the user provides CSV files, PDFs, survey responses, review data, social listening reports, or other feedback sources, read and analyze them directly. Extract patterns, themes, and sentiment signals from the data.
+如果用户提供了 CSV 文件、PDF、调研回复、评论数据、社媒监听报告或其他反馈来源，请直接阅读和分析它们。从数据中提取模式、主题和情感信号。
 
-### Analysis Steps (Think Step by Step)
+### 分析步骤（逐步思考）
 
-1. **Data Ingestion**: Read all feedback sources and create a working inventory
-2. **Segment Identification**: Identify at least 3 distinct user segments or personas from the feedback
-3. **Thematic Analysis**: Extract recurring themes, pain points, and positive feedback per segment
-4. **Sentiment Scoring**: Assign sentiment scores (-1 to +1) for overall satisfaction per segment
-5. **Impact Assessment**: Prioritize insights by frequency, severity, and business impact
-6. **Synthesis**: Create segment profiles with consolidated insights
+1. **数据摄取**：阅读所有反馈来源并创建工作清单
+2. **细分群体识别**：从反馈中识别至少 3 个不同的用户细分群体或用户画像
+3. **主题分析**：为每个细分群体提取重复出现的主题、痛点和正面反馈
+4. **情感评分**：为每个细分群体的整体满意度分配情感评分（-1 到 +1）
+5. **影响评估**：按频率、严重程度和业务影响对洞察进行优先级排序
+6. **综合**：创建具有综合洞察的细分群体画像
 
-### Output Structure
+### 输出结构
 
-For each identified segment:
+对于每个识别出的细分群体：
 
-**Segment Profile**
-- Name/identifier and common characteristics
-- User count or proportion in feedback dataset
-- Primary use case or context
+**细分群体画像**
+- 名称/标识符和共同特征
+- 用户数量或反馈数据集中的比例
+- 主要用例或场景
 
-**Jobs-to-be-Done**
-- Core job this segment is trying to accomplish
-- Associated desired outcomes
+**待办任务 (Jobs-to-be-Done)**
+- 该细分群体试图完成的核心任务
+- 相关的期望成果
 
-**Sentiment Score & Satisfaction Level**
-- Overall sentiment score (-1 to +1)
-- Key satisfaction drivers and detractors
-- Net Promoter Score (NPS) proxy if applicable
+**情感评分与满意度水平**
+- 整体情感评分（-1 到 +1）
+- 关键的满意度驱动因素和负面因素
+- 净推荐值 (NPS) 代理指标（如适用）
 
-**Top Positive Feedback Themes**
-- What this segment loves about $ARGUMENTS
-- Key strengths from user perspective
-- Examples of successful use cases
+**主要正面反馈主题**
+- 该细分群体对 $ARGUMENTS 的喜爱之处
+- 从用户视角看的关键优势
+- 成功用例的示例
 
-**Top Pain Points & Criticism**
-- Most frequent complaints or frustrations
-- Unmet needs or missing features
-- Friction points in user journey
-- Direct quotes from feedback when available
+**主要痛点与批评**
+- 最常见的抱怨或挫败感
+- 未满足的需求或缺失的功能
+- 用户旅程中的摩擦点
+- 反馈中的直接引语（如有）
 
-**Product-Segment Fit Assessment**
-- How well $ARGUMENTS serves this segment's needs
-- Potential to improve fit through product changes
-- Risk of churn or dissatisfaction
+**产品-细分群体契合度评估**
+- $ARGUMENTS 在多大程度上满足该细分群体的需求
+- 通过产品改进提升契合度的潜力
+- 流失或不满意的风险
 
-**Actionable Recommendations**
-- 2-3 highest-impact improvements per segment
-- Quick wins vs. strategic initiatives
-- Segments to prioritize or de-prioritize
+**可落地建议**
+- 每个细分群体 2-3 个影响最大的改进
+- 速成改进 vs 战略举措
+- 需要优先或降级处理的细分群体
 
-## Best Practices
+## 最佳实践
 
-- Ground all findings in actual user feedback; cite sources
-- Identify both majority and minority perspectives within segments
-- Distinguish between feature requests and fundamental pain points
-- Consider context and constraints users face
-- Flag segments with small sample sizes or uncertain sentiment
-- Look for cross-segment patterns and universal pain points
-- Provide balanced view of product strengths and weaknesses
+- 所有发现都基于实际用户反馈；引用来源
+- 识别细分群体中的多数和少数观点
+- 区分功能请求和根本性痛点
+- 考虑用户面临的场景和约束
+- 标记样本量小或情感不确定的细分群体
+- 寻找跨细分群体模式和普遍痛点
+- 提供产品优势和劣势的平衡视角
 
 ---
 
-### Further Reading
+### 延伸阅读
 
-- [Market Research: Advanced Techniques](https://www.productcompass.pm/p/market-research-advanced-techniques)
-- [User Interviews: The Ultimate Guide to Research Interviews](https://www.productcompass.pm/p/interviewing-customers-the-ultimate)
+- [市场研究：高级技术](https://www.productcompass.pm/p/market-research-advanced-techniques)
+- [用户访谈：研究访谈终极指南](https://www.productcompass.pm/p/interviewing-customers-the-ultimate)

@@ -1,69 +1,69 @@
 ---
 name: wwas
-description: "Create product backlog items in Why-What-Acceptance format — independent, valuable, testable items with strategic context. Use when writing structured backlog items, breaking features into work items, or using the WWA format."
+description: "创建采用 Why-What-Acceptance 格式的产品待办事项——具备独立性、价值和可测试性，并提供战略上下文的事项。适用于编写结构化待办事项、将功能拆解为工作项或使用 WWA 格式。"
 ---
 # Why-What-Acceptance (WWA)
 
-Create product backlog items in Why-What-Acceptance format. Produces independent, valuable, testable items with strategic context.
+创建采用 Why-What-Acceptance 格式的产品待办事项。产出具备独立性、价值和可测试性，并提供战略上下文的事项。
 
-**Use when:** Writing backlog items, creating product increments, breaking features into work items, or communicating strategic intent to teams.
+**适用场景：** 编写待办事项、创建产品增量、将功能拆解为工作项，或向团队传达战略意图。
 
-**Arguments:**
-- `$PRODUCT`: The product or system name
-- `$FEATURE`: The new feature or capability
-- `$DESIGN`: Link to design files (Figma, Miro, etc.)
-- `$ASSUMPTIONS`: Key assumptions and strategic context
+**参数：**
+- `$PRODUCT`: 产品或系统名称
+- `$FEATURE`: 新功能或新能力
+- `$DESIGN`: 设计文件链接（Figma、Miro 等）
+- `$ASSUMPTIONS`: 关键假设和战略上下文
 
-## Step-by-Step Process
+## 分步流程
 
-1. **Define the strategic Why** - Connect work to business and team objectives
-2. **Describe the What** - Keep descriptions concise, reference designs
-3. **Write Acceptance Criteria** - High-level, not detailed specifications
-4. **Ensure independence** - Items can be developed in any order
-5. **Keep items negotiable** - Invite team conversation, not constraints
-6. **Make items valuable** - Each delivers measurable user or business value
-7. **Ensure testability** - Outcomes are observable and verifiable
-8. **Size appropriately** - Small enough for one sprint estimate
+1. **定义战略性的 Why** - 将工作与业务和团队目标联系起来
+2. **描述 What** - 保持描述简洁，引用设计文档
+3. **编写验收标准** - 高层次描述，而非详细规范
+4. **确保独立性** - 事项可按任何顺序开发
+5. **保持事项可协商** - 鼓励团队讨论，而非限制
+6. **确保事项有价值** - 每个事项都提供可衡量的用户或业务价值
+7. **确保可测试性** - 结果可观察和验证
+8. **规模适当** - 足够小，可在一次冲刺中估算
 
-## Item Template
+## 事项模板
 
-**Title:** [What will be delivered]
+**标题：** [将要交付的内容]
 
-**Why:** [1-2 sentences connecting to strategic context and team objectives]
+**Why：** [1-2 句话，连接战略上下文和团队目标]
 
-**What:** [Short description and design link. 1-2 paragraphs maximum. A reminder of discussion, not detailed specification.]
+**What：** [简短描述和设计链接。最多 1-2 段。这是讨论的提醒，而非详细规范。]
 
-**Acceptance Criteria:**
-- [Observable outcome 1]
-- [Observable outcome 2]
-- [Observable outcome 3]
-- [Observable outcome 4]
+**验收标准：**
+- [可观察的结果 1]
+- [可观察的结果 2]
+- [可观察的结果 3]
+- [可观察的结果 4]
 
-## Example WWA Item
+## WWA 事项示例
 
-**Title:** Implement Real-Time Spending Tracker
+**标题：** 实现实时支出追踪器
 
-**Why:** Users need immediate feedback on spending to make conscious budget decisions. This directly supports our goal to improve financial awareness and reduce overspending.
+**Why：** 用户需要立即获得支出反馈，以便做出有意识的预算决策。这直接支持我们提高财务意识和减少超支的目标。
 
-**What:** Add a real-time spending tracker that updates as users log expenses. The tracker displays their current week's spending against their set budget. Designs available in [Figma link]. This is a reminder of our discussions - detailed specifications will emerge during development conversations with the team.
+**What：** 添加一个实时支出追踪器，当用户记录费用时自动更新。追踪器显示当前周的支出与设定预算的对比。设计参考 [Figma 链接]。这是对我们讨论的提醒——详细规范将在与团队的开发讨论中形成。
 
-**Acceptance Criteria:**
-- Spending totals update within 2 seconds of logging an expense
-- Budget progress is visually indicated with a progress bar
-- Users can see remaining budget amount at a glance
-- System handles multiple expense categories correctly
+**验收标准：**
+- 记录费用后，支出总额在 2 秒内更新
+- 预算进度通过进度条直观显示
+- 用户可以一眼看到剩余预算金额
+- 系统能正确处理多个支出类别
 
-## Output Deliverables
+## 输出交付物
 
-- Complete set of backlog items for the feature
-- Each item includes Why, What, and Acceptance Criteria sections
-- Items are independent and deliverable in any order
-- Items are sized for estimation and completion in one sprint
-- Strategic context is clear for team decision-making
-- Design references are included for implementation guidance
+- 功能的完整待办事项集合
+- 每个事项包含 Why、What 和验收标准部分
+- 事项独立，可按任何顺序交付
+- 事项规模适合在一次冲刺中估算和完成
+- 战略上下文清晰，便于团队决策
+- 包含设计参考，用于指导实施
 
 ---
 
-### Further Reading
+### 延伸阅读
 
-- [How to Write User Stories: The Ultimate Guide](https://www.productcompass.pm/p/how-to-write-user-stories)
+- [如何编写用户故事：终极指南](https://www.productcompass.pm/p/how-to-write-user-stories)

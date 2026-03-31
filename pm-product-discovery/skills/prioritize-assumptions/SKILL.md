@@ -1,48 +1,48 @@
 ---
 name: prioritize-assumptions
-description: "Prioritize assumptions using an Impact × Risk matrix and suggest experiments for each. Use when triaging a list of assumptions, deciding what to test first, or applying the assumption prioritization canvas."
+description: "使用影响×风险矩阵对假设进行优先级排序，并为每个假设建议实验。在筛选假设列表、决定首先测试什么或应用假设优先级画布时使用。"
 ---
 
-## Prioritize Assumptions
+## 假设优先级排序
 
-Triage assumptions using an Impact × Risk matrix and suggest targeted experiments.
+使用影响×风险矩阵筛选假设，并建议有针对性的实验。
 
-### Context
+### 背景
 
-You are helping prioritize assumptions for **$ARGUMENTS**.
+您正在帮助为 **$ARGUMENTS** 对假设进行优先级排序。
 
-If the user provides files with assumptions or research data, read them first.
+如果用户提供了包含假设或研究数据的文件，请先阅读这些文件。
 
-### Domain Context
+### 领域背景
 
-**ICE** works well for assumption prioritization: Impact (Opportunity Score × # Customers) × Confidence (1–10) × Ease (1–10). Opportunity Score = Importance × (1 − Satisfaction), normalized to 0–1 (Dan Olsen). **RICE** splits Impact into Reach × Impact separately: (R × I × C) / E. See the `prioritization-frameworks` skill for full formulas and templates.
+**ICE** 适用于假设优先级排序：影响力（机会分数×客户数量）× 置信度（1–10）× 难度（1–10）。机会分数 = 重要性 × (1 − 满意度)，归一化为 0–1（Dan Olsen）。**RICE** 将影响力拆分为触达×影响力：(R × I × C) / E。请参阅 `prioritization-frameworks` 技能以获取完整公式和模板。
 
-### Instructions
+### 指令
 
-The user will provide a list of assumptions to prioritize. Apply the following framework:
+用户将提供需要排序的假设列表。应用以下框架：
 
-1. **For each assumption**, evaluate two dimensions:
-   - **Impact**: The value created by validating this assumption AND the number of customers affected (in ICE: Impact = Opportunity Score × # Customers)
-   - **Risk**: Defined as (1 - Confidence) × Effort
+1. **对于每个假设**，评估两个维度：
+   - **影响力**：验证此假设所产生的价值以及受影响的客户数量（在 ICE 中：影响力 = 机会分数 × 客户数量）
+   - **风险**：定义为 (1 - 置信度) × 投入
 
-2. **Categorize each assumption** using the Impact × Risk matrix:
-   - **Low Impact, Low Risk** → Defer testing until higher-priority assumptions are addressed
-   - **High Impact, Low Risk** → Proceed to implementation (low risk, high reward)
-   - **Low Impact, High Risk** → Reject the idea (not worth the investment)
-   - **High Impact, High Risk** → Design an experiment to test it
+2. **使用影响×风险矩阵对每个假设进行分类**：
+   - **低影响力、低风险** → 延后测试，直到处理完更高优先级的假设
+   - **高影响力、低风险** → 直接实施（低风险、高回报）
+   - **低影响力、高风险** → 拒绝该想法（不值得投资）
+   - **高影响力、高风险** → 设计实验进行测试
 
-3. **For each assumption requiring testing**, suggest an experiment that:
-   - Maximizes validated learning with minimal effort
-   - Measures actual behavior, not opinions
-   - Has a clear success metric and threshold
+3. **对于每个需要测试的假设**，建议一个能够：
+   - 以最小投入最大化验证性学习的实验
+   - 测量实际行为，而非意见
+   - 具有明确的成功指标和阈值
 
-4. **Present results** as a prioritized matrix or table.
+4. **以优先级矩阵或表格的形式呈现结果**。
 
-Think step by step. Save as markdown if the output is substantial.
+逐步思考。如果输出内容较多，请保存为 markdown 格式。
 
 ---
 
-### Further Reading
+### 延伸阅读
 
-- [Assumption Prioritization Canvas: How to Identify And Test The Right Assumptions](https://www.productcompass.pm/p/assumption-prioritization-canvas)
-- [Continuous Product Discovery Masterclass (CPDM)](https://www.productcompass.pm/p/cpdm) (video course)
+- [假设优先级画布：如何识别并测试正确的假设](https://www.productcompass.pm/p/assumption-prioritization-canvas)
+- [持续产品发现大师课程 (CPDM)](https://www.productcompass.pm/p/cpdm)（视频课程）

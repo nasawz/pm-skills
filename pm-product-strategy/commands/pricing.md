@@ -1,128 +1,128 @@
 ---
-description: Design a pricing strategy — models, competitive analysis, willingness-to-pay estimation, and pricing experiments
-argument-hint: "<product or pricing question>"
+description: 设计定价策略 — 定价模式、竞品分析、支付意愿估算和定价实验
+argument-hint: "<产品或定价问题>"
 ---
 
-# /pricing -- Pricing Strategy Design
+# /pricing -- 定价策略设计
 
-Build a pricing strategy from first principles: analyze pricing models, estimate willingness to pay, benchmark against competitors, and design pricing experiments.
+从第一性原理构建定价策略：分析定价模式、估算支付意愿、对标竞争对手，并设计定价实验。
 
-## Invocation
-
-```
-/pricing SaaS project management tool moving from free to paid
-/pricing Should we switch from per-seat to usage-based pricing?
-/pricing [upload competitor pricing pages or current pricing data]
-```
-
-## Workflow
-
-### Step 1: Understand the Pricing Context
-
-Ask:
-- What is the product? What value does it deliver?
-- Current pricing (if any): model, price points, packaging
-- What's the trigger? (new product, pricing change, competitive pressure, growth stall)
-- Target customer profile and their budget context
-- Any constraints? (contractual obligations, market expectations, competitive positioning)
-
-### Step 2: Analyze Pricing Models
-
-Apply the **pricing-strategy** and **monetization-strategy** skills:
-
-Evaluate applicable models:
-- **Flat-rate**: Simple, predictable — best for commoditized products
-- **Per-seat/user**: Scales with adoption — best for collaboration tools
-- **Usage-based**: Aligns cost with value — best for infrastructure and API products
-- **Tiered**: Captures different willingness to pay — best for segmented markets
-- **Freemium**: Drives adoption — best for products with network effects
-- **Hybrid**: Combines models — best for complex products with multiple value levers
-
-For each relevant model: pros, cons, fit for your product, revenue projection approach.
-
-### Step 3: Competitive Pricing Analysis
-
-Using web research:
-- Benchmark pricing against 3-5 competitors
-- Identify pricing model patterns in the category
-- Note pricing trends (e.g., shift from per-seat to usage-based in B2B SaaS)
-- Find pricing page screenshots and data points
-
-### Step 4: Willingness to Pay Estimation
-
-If the user has survey data or customer feedback:
-- Apply Van Westendorp analysis (if data available)
-- Segment willingness to pay by user type
-
-If no data:
-- Estimate based on value delivered, competitive anchoring, and market norms
-- Design a willingness-to-pay survey the user can run
-
-### Step 5: Generate Pricing Recommendation
+## 调用方式
 
 ```
-## Pricing Strategy: [Product]
+/pricing SaaS 项目管理工具从免费转向付费
+/pricing 我们应该从按席位定价转向按用量定价吗？
+/pricing [上传竞品定价页面或当前定价数据]
+```
 
-**Date**: [today]
-**Current pricing**: [if applicable]
+## 工作流程
 
-### Recommended Model: [Model Name]
+### 步骤 1：理解定价背景
 
-**Why this model**: [rationale tied to product value delivery]
+询问：
+- 产品是什么？它提供什么价值？
+- 当前定价（如有）：定价模式、价格点、包装
+- 触发因素是什么？（新产品、定价变更、竞争压力、增长停滞）
+- 目标客户画像及其预算背景
+- 有任何限制吗？（合同义务、市场预期、竞争定位）
 
-### Pricing Structure
-| Tier | Price | Includes | Target Segment | Key Limit |
+### 步骤 2：分析定价模式
+
+应用 **pricing-strategy** 和 **monetization-strategy** 技能：
+
+评估适用的模式：
+- **统一费率（Flat-rate）**：简单、可预测 — 最适合标准化产品
+- **按席位/用户收费（Per-seat/user）**：随采用率扩展 — 最适合协作工具
+- **按用量收费（Usage-based）**：成本与价值对齐 — 最适合基础设施和 API 产品
+- **分级定价（Tiered）**：捕获不同的支付意愿 — 最适合细分市场
+- **免费增值（Freemium）**：推动采用 — 最适合具有网络效应的产品
+- **混合模式（Hybrid）**：组合多种模式 — 最适合具有多个价值杠杆的复杂产品
+
+对于每种相关模式：优点、缺点、与产品的适配度、收入预测方法。
+
+### 步骤 3：竞品定价分析
+
+通过网络研究：
+- 与 3-5 个竞争对手进行定价对标
+- 识别该品类的定价模式
+- 注意定价趋势（例如，B2B SaaS 从按席位定价转向按用量定价）
+- 查找定价页面截图和数据点
+
+### 步骤 4：支付意愿估算
+
+如果用户有调研数据或客户反馈：
+- 应用 Van Westendorp 分析（如果数据可用）
+- 按用户类型细分支付意愿
+
+如果没有数据：
+- 基于交付价值、竞争锚定和市场规范进行估算
+- 设计一个用户可以执行的支付意愿调研
+
+### 步骤 5：生成定价建议
+
+```
+## 定价策略：[产品名称]
+
+**日期**：[今天]
+**当前定价**：[如适用]
+
+### 推荐模式：[模式名称]
+
+**选择此模式的原因**：[与产品价值交付相关的理由]
+
+### 定价结构
+| 档位 | 价格 | 包含内容 | 目标细分市场 | 关键限制 |
 |------|-------|---------|---------------|-----------|
 
-### Free / Trial Strategy
-[What's free, what's gated, conversion triggers]
+### 免费版/试用版策略
+[免费内容、付费门槛、转化触发因素]
 
-### Competitive Benchmark
-| Competitor | Model | Price Range | Positioning |
+### 竞品对标
+| 竞争对手 | 定价模式 | 价格区间 | 定位 |
 |-----------|-------|-----------|------------|
 
-### Revenue Projections
-| Scenario | Assumptions | Year 1 ARR | Year 2 ARR |
+### 收入预测
+| 场景 | 假设条件 | 第一年 ARR | 第二年 ARR |
 |----------|-----------|-----------|-----------|
-| Conservative | [X] | [Y] | [Z] |
-| Expected | [X] | [Y] | [Z] |
-| Optimistic | [X] | [Y] | [Z] |
+| 保守 | [X] | [Y] | [Z] |
+| 预期 | [X] | [Y] | [Z] |
+| 乐观 | [X] | [Y] | [Z] |
 
-### Migration Plan
-[If changing pricing: how to transition existing customers]
-- Grandfathering approach
-- Communication plan
-- Timeline
+### 迁移计划
+[如果更改定价：如何过渡现有客户]
+- 老用户保护方案
+- 沟通计划
+- 时间表
 
-### Pricing Experiments
-| Experiment | What We're Testing | Method | Duration |
+### 定价实验
+| 实验 | 测试内容 | 方法 | 持续时间 |
 |-----------|-------------------|--------|----------|
 
-### Risks and Mitigations
-| Risk | Likelihood | Impact | Mitigation |
+### 风险与缓解措施
+| 风险 | 可能性 | 影响程度 | 缓解措施 |
 |------|-----------|--------|-----------|
 
-### Key Metrics to Track
-- Conversion rate by tier
-- Average revenue per user (ARPU)
-- Upgrade/downgrade rates
-- Churn by price sensitivity
-- Price elasticity signals
+### 关键跟踪指标
+- 各档位转化率
+- 每用户平均收入（ARPU）
+- 升级/降级率
+- 按价格敏感度的流失率
+- 价格弹性信号
 ```
 
-Save as markdown.
+保存为 markdown。
 
-### Step 6: Offer Next Steps
+### 步骤 6：提供后续步骤
 
-- "Want me to **create a monetization strategy** with alternative revenue models?"
-- "Should I **run a market scan** to validate pricing assumptions?"
-- "Want me to **draft customer communication** for the pricing change?"
-- "Should I **design the A/B test** for pricing experiments?"
+- "需要我**创建变现策略**，提供替代收入模式吗？"
+- "需要我**进行市场扫描**以验证定价假设吗？"
+- "需要我**起草客户沟通文案**用于定价变更吗？"
+- "需要我**设计 A/B 测试**用于定价实验吗？"
 
-## Notes
+## 注意事项
 
-- Pricing is the most powerful lever for revenue growth — a 1% improvement in pricing typically has 3-4x the impact of 1% improvement in customer acquisition
-- Value-based pricing always beats cost-plus — start from customer value, not your costs
-- The best pricing is simple to understand and predictable for the customer
-- Freemium only works if free users generate value (network effects, word of mouth, marketplace liquidity)
-- Always design a migration path for existing customers — pricing changes that alienate your base destroy trust
+- 定价是收入增长最强大的杠杆 — 定价提升 1% 通常比客户获取提升 1% 的影响大 3-4 倍
+- 基于价值的定价总是优于成本加成定价 — 从客户价值出发，而不是你的成本
+- 最好的定价对客户来说简单易懂且可预测
+- 免费增值模式只有在免费用户能创造价值（网络效应、口碑传播、市场流动性）时才有效
+- 始终为现有客户设计迁移路径 — 疏远你用户群的定价变更会破坏信任

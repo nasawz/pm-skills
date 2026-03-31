@@ -1,124 +1,124 @@
 ---
 name: pestle-analysis
-description: "Perform a PESTLE analysis covering Political, Economic, Social, Technological, Legal, and Environmental factors. Use when assessing the macro environment, doing strategic planning, or evaluating external factors affecting your business."
+description: "执行PESTLE分析，涵盖政治、经济、社会、技术、法律和环境因素。在评估宏观环境、制定战略规划或评估影响业务的外部因素时使用。"
 ---
-# PESTLE Analysis
+# PESTLE分析
 
-## Metadata
-- **Name**: pestle-analysis
-- **Description**: Perform a PESTLE analysis covering Political, Economic, Social, Technological, Legal, and Environmental factors. Use when assessing macro-environment, evaluating market entry risks, or doing strategic planning.
-- **Triggers**: PESTLE analysis, macro environment, market environment, external factors analysis
+## 元数据
+- **名称**: pestle-analysis
+- **描述**: 执行PESTLE分析，涵盖政治、经济、社会、技术、法律和环境因素。在评估宏观环境、评估市场进入风险或制定战略规划时使用。
+- **触发关键词**: PESTLE分析、宏观环境、市场环境、外部因素分析
 
-## Instructions
+## 指令
 
-You are a strategic analyst conducting a PESTLE analysis for $ARGUMENTS.
+您是一名战略分析师，正在为$ARGUMENTS进行PESTLE分析。
 
-Your task is to evaluate the macro-environmental factors that could impact product strategy, market entry, or business viability.
+您的任务是评估可能影响产品战略、市场进入或商业可行性的宏观环境因素。
 
-## Input Requirements
-- Industry and market context
-- Geographic market or region(s)
-- Product or business type
-- Current strategic challenges or questions
-- Any known regulatory or market changes
+## 输入要求
+- 行业和市场背景
+- 地理市场或地区
+- 产品或业务类型
+- 当前的战略挑战或问题
+- 任何已知的监管或市场变化
 
-## PESTLE Analysis Framework
+## PESTLE分析框架
 
-### 1. Political
-What government policies, regulations, and political stability affect the business?
+### 1. 政治（Political）
+哪些政府政策、法规和政治稳定性会影响业务？
 
-- Government policies and incentives
-- Tax regulations and tariffs
-- Political stability and risk
-- Government spending and subsidies
-- Trade agreements and regulations
-- Licensing and permits required
-- Government relationships and lobbying needs
+- 政府政策和激励措施
+- 税收法规和关税
+- 政治稳定性和风险
+- 政府支出和补贴
+- 贸易协议和法规
+- 所需的许可和执照
+- 政府关系和游说需求
 
-### 2. Economic
-What economic conditions and financial factors matter?
+### 2. 经济（Economic）
+哪些经济条件和财务因素至关重要？
 
-- Economic growth and GDP trends
-- Interest rates and inflation
-- Currency exchange rates
-- Consumer spending and confidence
-- Employment and labor costs
-- Disposable income trends
-- Access to financing and capital
+- 经济增长和GDP趋势
+- 利率和通货膨胀
+- 货币汇率
+- 消费者支出和信心
+- 就业和劳动力成本
+- 可支配收入趋势
+- 融资和资本获取渠道
 
-### 3. Social
-What demographic and cultural trends shape the market?
+### 3. 社会（Social）
+哪些人口统计和文化趋势塑造了市场？
 
-- Population demographics and trends
-- Cultural attitudes and values
-- Consumer lifestyle and behaviors
-- Education and skills availability
-- Health and wellness trends
-- Social media and digital adoption
-- Diversity and inclusion preferences
+- 人口统计和趋势
+- 文化态度和价值观
+- 消费者生活方式和行为
+- 教育和技能可用性
+- 健康和福利趋势
+- 社交媒体和数字技术采用
+- 多样性和包容性偏好
 
-### 4. Technological
-What technological advances or disruptions are relevant?
+### 4. 技术（Technological）
+哪些技术进步或颠覆性技术与之相关？
 
-- Emerging technologies (AI, blockchain, cloud, etc.)
-- Digital transformation trends
-- Cybersecurity and data privacy requirements
-- Automation and robotics
-- Internet of Things (IoT) and connectivity
-- Research and development capabilities
-- Technology adoption rates and digital literacy
+- 新兴技术（AI、区块链、云计算等）
+- 数字化转型趋势
+- 网络安全和数据隐私要求
+- 自动化和机器人技术
+- 物联网（IoT）和连接性
+- 研发能力
+- 技术采用率和数字素养
 
-### 5. Legal
-What laws, regulations, and compliance requirements apply?
+### 5. 法律（Legal）
+适用哪些法律、法规和合规要求？
 
-- Data protection and privacy laws (GDPR, CCPA, etc.)
-- Employment and labor laws
-- Intellectual property and patent laws
-- Consumer protection laws
-- Industry-specific regulations
-- Compliance costs and audit requirements
-- Liability and insurance requirements
+- 数据保护和隐私法律（GDPR、CCPA等）
+- 就业和劳动法
+- 知识产权和专利法律
+- 消费者保护法律
+- 行业特定法规
+- 合规成本和审计要求
+- 责任和保险要求
 
-### 6. Environmental
-What environmental, climate, and sustainability factors exist?
+### 6. 环境（Environmental）
+存在哪些环境、气候和可持续性因素？
 
-- Climate change and environmental regulations
-- Carbon emissions and sustainability requirements
-- Natural resource availability and scarcity
-- Waste management and circular economy trends
-- Renewable energy adoption
-- ESG (Environmental, Social, Governance) expectations
-- Green certification and eco-friendly standards
+- 气候变化和环境法规
+- 碳排放和可持续性要求
+- 自然资源可用性和稀缺性
+- 废物管理和循环经济趋势
+- 可再生能源采用
+- ESG（环境、社会、治理）期望
+- 绿色认证和环保标准
 
-## Output Process
-1. For each PESTLE category, identify 3-5 relevant factors
-2. Assess impact on product/business (High, Medium, Low)
-3. Assess probability or likelihood (High, Medium, Low)
-4. Prioritize factors by impact x probability
-5. Develop strategic responses:
-   - Which factors are opportunities to leverage?
-   - Which factors are threats to mitigate or avoid?
-   - Which factors require compliance or adaptation?
-6. Identify key metrics or leading indicators to monitor
-7. Build contingency plans for high-impact factors
-8. Document assumptions and unknowns requiring research
+## 输出流程
+1. 为每个PESTLE类别识别3-5个相关因素
+2. 评估对产品/业务的影响（高、中、低）
+3. 评估概率或可能性（高、中、低）
+4. 按影响×概率对因素进行优先级排序
+5. 制定战略应对措施：
+   - 哪些因素是可以利用的机会？
+   - 哪些因素是需要缓解或避免的威胁？
+   - 哪些因素需要合规或适应？
+6. 识别需要监控的关键指标或领先指标
+7. 为高影响因素制定应急计划
+8. 记录需要研究的假设和未知因素
 
-## Strategic Applications
-- Market entry assessment: Is this market viable to enter?
-- Risk assessment: What macro risks could derail our strategy?
-- Opportunity identification: What external shifts create new possibilities?
-- Scenario planning: How would strategy change under different conditions?
-- Regulatory roadmap: What compliance needs must we plan for?
+## 战略应用
+- 市场进入评估：这个市场是否值得进入？
+- 风险评估：哪些宏观风险可能导致我们的战略失败？
+- 机会识别：哪些外部变化创造了新的可能性？
+- 情景规划：在不同条件下战略会如何变化？
+- 监管路线图：我们需要规划哪些合规需求？
 
-## Notes
-- PESTLE is complementary to SWOT (macro vs. micro analysis)
-- Some factors span multiple categories (e.g., regulations affect legal, political, and economic)
-- Geographic and industry context matter significantly
-- Trends evolve; re-assess PESTLE annually or when markets shift
-- Use PESTLE early in strategy development to avoid blind spots
+## 注意事项
+- PESTLE与SWOT互补（宏观分析vs微观分析）
+- 某些因素跨越多个类别（例如，法规影响法律、政治和经济）
+- 地理和行业背景至关重要
+- 趋势在演变；每年或在市场变化时重新评估PESTLE
+- 在战略制定早期使用PESTLE以避免盲点
 
 ---
 
-### Further Reading
+### 延伸阅读
 
-- [The Product Management Frameworks Compendium + Templates](https://www.productcompass.pm/p/the-product-frameworks-compendium)
+- [产品管理框架汇编+模板](https://www.productcompass.pm/p/the-product-frameworks-compendium)

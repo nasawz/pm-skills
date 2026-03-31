@@ -1,86 +1,86 @@
 ---
 name: test-scenarios
-description: "Create comprehensive test scenarios from user stories with test objectives, starting conditions, user roles, step-by-step actions, and expected outcomes. Use when writing QA test cases, creating test plans, defining acceptance tests, or preparing for feature validation."
+description: "从用户故事中创建包含测试目标、起始条件、用户角色、逐步操作和预期结果的全面测试场景。在编写QA测试用例、创建测试计划、定义验收测试或准备功能验证时使用。"
 ---
-# Test Scenarios
+# 测试场景
 
-Create comprehensive test scenarios from user stories with test objectives, starting conditions, user roles, step-by-step test actions, and expected outcomes.
+基于用户故事创建全面的测试场景，包括测试目标、起始条件、用户角色、逐步测试操作和预期结果。
 
-**Use when:** Writing QA test cases, creating test plans, defining acceptance test scenarios, or validating user story implementations.
+**使用场景：** 编写QA测试用例、制定测试计划、定义验收测试场景，或验证用户故事实现时使用。
 
-**Arguments:**
-- `$PRODUCT`: The product or system name
-- `$USER_STORY`: The user story to test (title and acceptance criteria)
-- `$CONTEXT`: Additional testing context or constraints
+**参数：**
+- `$PRODUCT`: 产品或系统名称
+- `$USER_STORY`: 待测试的用户故事（标题和验收标准）
+- `$CONTEXT`: 其他测试上下文或约束条件
 
-## Step-by-Step Process
+## 逐步流程
 
-1. **Review the user story** and acceptance criteria
-2. **Define test objectives** - What specific behavior to validate
-3. **Establish starting conditions** - System state, data setup, configurations
-4. **Identify user roles** - Who performs the test actions
-5. **Create test steps** - Break down interactions step-by-step
-6. **Define expected outcomes** - Observable results after each step
-7. **Consider edge cases** - Invalid inputs, boundary conditions
-8. **Output detailed test scenarios** - Ready for QA execution
+1. **审查用户故事** 和验收标准
+2. **定义测试目标** - 需要验证的具体行为
+3. **建立起始条件** - 系统状态、数据准备、配置设置
+4. **确定用户角色** - 执行测试操作的人员
+5. **创建测试步骤** - 逐步分解交互过程
+6. **定义预期结果** - 每个步骤后的可观察结果
+7. **考虑边界案例** - 无效输入、边界条件
+8. **输出详细测试场景** - 准备供QA执行
 
-## Scenario Template
+## 场景模板
 
-**Test Scenario:** [Clear scenario name]
+**测试场景：** [清晰的场景名称]
 
-**Test Objective:** [What this test validates]
+**测试目标：** [本测试验证的内容]
 
-**Starting Conditions:**
-- [System state required]
-- [Data or configuration needed]
-- [User setup or permissions]
+**起始条件：**
+- [所需系统状态]
+- [所需数据或配置]
+- [用户设置或权限]
 
-**User Role:** [Who performs the test]
+**用户角色：** [执行测试的人员]
 
-**Test Steps:**
-1. [First action and its expected result]
-2. [Second action and observable outcome]
-3. [Third action and system behavior]
-4. [Completion action and final state]
+**测试步骤：**
+1. [第一个操作及其预期结果]
+2. [第二个操作及其可观察结果]
+3. [第三个操作及其系统行为]
+4. [完成操作和最终状态]
 
-**Expected Outcomes:**
-- [Observable result 1]
-- [Observable result 2]
-- [Observable result 3]
+**预期结果：**
+- [可观察结果1]
+- [可观察结果2]
+- [可观察结果3]
 
-## Example Test Scenario
+## 测试场景示例
 
-**Test Scenario:** View Recently Viewed Products on Product Page
+**测试场景：** 在产品页面上查看最近浏览的产品
 
-**Test Objective:** Verify that the 'Recently viewed' section displays correctly and excludes the current product.
+**测试目标：** 验证"最近浏览"部分显示正确，并排除当前产品。
 
-**Starting Conditions:**
-- User is logged in or has browser history enabled
-- User has viewed at least 2 products in the current session
-- User is now on a product page different from previously viewed items
+**起始条件：**
+- 用户已登录或已启用浏览器历史记录
+- 用户在当前会话中至少浏览了2个产品
+- 用户当前在一个不同于之前浏览项目的产品页面上
 
-**User Role:** Online Shopper
+**用户角色：** 在线购物者
 
-**Test Steps:**
-1. Navigate to any product page → Section should appear at bottom with previously viewed items
-2. Scroll to bottom of page → "Recently viewed" section is visible with product cards
-3. Verify product thumbnails → Images, titles, and prices are displayed correctly
-4. Check current product → Current product is NOT in the recently viewed list
-5. Click on a product card → User navigates to the corresponding product page
+**测试步骤：**
+1. 导航到任意产品页面 → 底部应显示包含之前浏览项目的部分
+2. 滚动到页面底部 → "最近浏览"部分可见，显示产品卡片
+3. 验证产品缩略图 → 图像、标题和价格正确显示
+4. 检查当前产品 → 当前产品不在最近浏览列表中
+5. 点击产品卡片 → 用户导航到相应的产品页面
 
-**Expected Outcomes:**
-- Recently viewed section appears only after viewing at least 1 prior product
-- Section displays 4-8 product cards with complete information
-- Current product is excluded from the list
-- Each card shows "Viewed X minutes/hours ago" timestamp
-- Clicking cards navigates to correct product pages
-- Performance: Section loads within 2 seconds
+**预期结果：**
+- 最近浏览部分仅在浏览至少1个之前的产品后出现
+- 部分显示4-8个包含完整信息的产品卡片
+- 当前产品从列表中排除
+- 每个卡片显示"X分钟/小时前浏览"的时间戳
+- 点击卡片导航到正确的产品页面
+- 性能：部分在2秒内加载完成
 
-## Output Deliverables
+## 交付成果
 
-- Comprehensive test scenarios for each acceptance criterion
-- Clear test objectives aligned with user story intent
-- Detailed step-by-step test actions
-- Observable expected outcomes after each step
-- Edge case and error scenario coverage
-- Ready for QA team execution and documentation
+- 每个验收标准的全面测试场景
+- 与用户故事意图一致的清晰测试目标
+- 详细的逐步测试操作
+- 每个步骤后的可观察预期结果
+- 边界案例和错误场景覆盖
+- 准备好供QA团队执行和文档化

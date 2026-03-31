@@ -1,169 +1,172 @@
 ---
-description: Prepare a customer interview script or summarize an interview transcript into structured insights
-argument-hint: "[prep|summarize] <topic or transcript>"
+description: 准备客户访谈脚本或将访谈记录总结为结构化洞察
+argument-hint: "[prep|summarize] <主题或访谈记录>"
 ---
 
-# /interview -- Customer Interview Prep & Summary
+# /interview -- 客户访谈准备与总结
 
-Two modes: **prep** creates a structured interview script before you talk to customers, **summarize** extracts insights after you've done the interview.
+两种模式：**prep** 在与客户交谈前创建结构化访谈脚本，**summarize** 在访谈完成后提取洞察。
 
-## Invocation
-
-```
-/interview prep Onboarding experience for enterprise users
-/interview summarize [paste transcript or upload file]
-/interview                    # asks which mode you need
-```
-
-## Modes
-
----
-
-### Prep Mode
-
-Create a structured interview script tailored to your research question.
-
-#### Workflow
-
-**Step 1: Understand the Research Goal**
-
-Ask the user:
-- What are you trying to learn? (specific research question)
-- Who are you interviewing? (segment, role, relationship to product)
-- How much time do you have? (15 min, 30 min, 60 min)
-- What decisions will this research inform?
-
-**Step 2: Generate Interview Script**
-
-Apply the **interview-script** skill:
-
-- Follow "The Mom Test" principles — ask about their life, not your idea
-- No leading questions, no pitching, focus on past behavior and real situations
-- Structure the script in sections:
+## 调用方式
 
 ```
-## Interview Script: [Research Topic]
-
-**Research Question**: [what we're trying to learn]
-**Target Participant**: [who]
-**Duration**: [X] minutes
-
-### Warm-up (3-5 min)
-[Rapport-building questions, role/context understanding]
-
-### Core Exploration (15-40 min)
-[JTBD probing, past behavior, current workflow, pain points]
-- For each question: the question + why you're asking it + follow-up prompts
-
-### Specific Topics (5-10 min)
-[Targeted questions about specific features or concepts — if needed]
-
-### Wrap-up (3-5 min)
-[Open-ended closing, referral ask, next steps]
-
-### Note-Taking Template
-[Pre-formatted template to capture insights during the interview]
-
-### Red Flags to Watch For
-[Signs the conversation is going off-track or the participant is being polite rather than honest]
+/interview prep 企业用户的入职体验
+/interview summarize [粘贴访谈记录或上传文件]
+/interview                    # 询问你需要哪种模式
 ```
 
-**Step 3: Customize and Review**
-
-- Adjust question count to fit the time slot
-- Add probing questions for specific hypotheses the user wants to test
-- Flag questions that might lead the witness
-- Offer a printable version (markdown file saved to workspace)
+## 模式
 
 ---
 
-### Summarize Mode
+### 准备模式（Prep Mode）
 
-Transform an interview transcript into structured, actionable insights.
+创建一个针对你的研究问题的结构化访谈脚本。
 
-#### Workflow
+#### 工作流程
 
-**Step 1: Accept the Transcript**
+**第一步：理解研究目标**
 
-Accept in any format:
-- **Pasted text**: Raw transcript or notes
-- **Uploaded file**: Document, text file, or meeting notes export
-- **Audio summary**: If the user describes what was said (not a full transcript)
+询问用户：
+- 你想了解什么？（具体的研究问题）
+- 你要访谈谁？（细分群体、角色、与产品的关系）
+- 你有多少时间？（15分钟、30分钟、60分钟）
+- 这项研究将支持哪些决策？
 
-If the input is rough notes rather than a full transcript, work with what's available and note the limitations.
+**第二步：生成访谈脚本**
 
-**Step 2: Extract and Structure**
+应用 **interview-script** 技能：
 
-Apply the **summarize-interview** skill:
-
-Parse the transcript to identify:
-- **Participant profile**: Role, experience level, segment, context
-- **Jobs to Be Done**: What the participant is trying to accomplish
-- **Current workflow**: How they solve the problem today
-- **Pain points**: Frustrations, workarounds, time sinks
-- **Satisfaction signals**: What works well, moments of delight
-- **Quotes**: Verbatim quotes that capture key insights (with timestamps if available)
-- **Surprises**: Anything unexpected or that contradicts assumptions
-- **Feature reactions**: If specific features/concepts were discussed, capture reactions
-
-**Step 3: Generate Interview Summary**
+- 遵循 "The Mom Test" 原则 — 询问他们的生活，而不是你的想法
+- 不要使用诱导性问题，不要推销，专注于过去的行为和真实情况
+- 将脚本按章节结构化：
 
 ```
-## Interview Summary
+## 访谈脚本：[研究主题]
 
-**Participant**: [anonymized profile — role, segment, experience]
-**Date**: [if known]
-**Duration**: [if known]
-**Interviewer**: [if known]
+**研究问题**：[我们想要了解什么]
+**目标参与者**：[谁]
+**时长**：[X] 分钟
 
-### Key Insights
-1. **[Insight]** — [supporting evidence/quote]
-2. **[Insight]** — [supporting evidence/quote]
+### 热身（3-5分钟）
+[建立关系的问题、角色/背景了解]
+
+### 核心探索（15-40分钟）
+[JTBD 深度挖掘、过去的行为、当前工作流程、痛点]
+- 对于每个问题：问题 + 为什么要问这个问题 + 追问提示
+
+### 特定主题（5-10分钟）
+[针对特定功能或概念的有针对性的问题 — 如需要]
+
+### 收尾（3-5分钟）
+[开放式结束、请求推荐、后续步骤]
+
+### 记录模板
+[预格式化的模板，用于在访谈期间记录洞察]
+
+### 需要注意的危险信号
+[对话偏离轨道或参与者只是出于礼貌而不是诚实的迹象]
+```
+
+**第三步：定制和审查**
+
+- 调整问题数量以适应时间安排
+- 为用户想要测试的特定假设添加深入挖掘的问题
+- 标记可能引导证人的问题
+- 提供可打印版本（保存为 markdown 文件到工作区）
+
+---
+
+### 总结模式（Summarize Mode）
+
+将访谈记录转换为结构化的、可操作的洞察。
+
+#### 工作流程
+
+**第一步：接受访谈记录**
+
+接受任何格式：
+- **粘贴的文本**：原始记录或笔记
+- **上传的文件**：文档、文本文件或会议笔记导出
+- **音频摘要**：如果用户描述了所说的内容（而非完整记录）
+
+如果输入是粗略的笔记而非完整记录，则根据可用内容处理，并注明局限性。
+
+**第二步：提取和结构化**
+
+应用 **summarize-interview** 技能：
+
+解析记录以识别：
+- **参与者画像**：角色、经验水平、细分群体、背景
+- **待完成的任务（Jobs to Be Done）**：参与者试图完成什么
+- **当前工作流程**：他们今天如何解决问题
+- **痛点**：挫折、变通方法、时间消耗
+- **满意度信号**：什么有效、令人愉悦的时刻
+- **引用语**：捕捉关键洞察的逐字引用（如果可能，包含时间戳）
+- **意外发现**：任何意想不到的或与假设相矛盾的内容
+- **功能反应**：如果讨论了特定的功能/概念，记录反应
+
+**第三步：生成访谈总结**
+
+```
+## 访谈总结
+
+**参与者**：[匿名化画像 — 角色、细分群体、经验]
+**日期**：[如果已知]
+**时长**：[如果已知]
+**访谈者**：[如果已知]
+
+### 关键洞察
+1. **[洞察]** — [支持证据/引用]
+2. **[洞察]** — [支持证据/引用]
 3. ...
 
-### Jobs to Be Done
-- **Primary JTBD**: [When I..., I want to..., so I can...]
-- **Related JTBDs**: [additional jobs]
+### 待完成的任务（Jobs to Be Done）
+- **主要 JTBD**：[当我...时，我想要...，以便我能够...]
+- **相关 JTBDs**：[其他任务]
 
-### Current Workflow
-[How the participant currently solves the problem, step by step]
+### 当前工作流程
+[参与者当前如何解决问题，逐步说明]
 
-### Pain Points
-| Pain Point | Severity | Quote |
+### 痛点
+| 痛点 | 严重程度 | 引用语 |
 |-----------|----------|-------|
+|  |  |  |
 
-### Satisfaction Signals
-| What Works | Why | Quote |
+### 满意度信号
+| 有效的部分 | 原因 | 引用语 |
 |-----------|-----|-------|
+|  |  |  |
 
-### Notable Quotes
-> "[quote]" — on [topic]
+### 值得注意的引用语
+> "[引用语]" — 关于 [主题]
 
-### Assumptions Validated / Invalidated
-| Assumption | Status | Evidence |
+### 假设验证 / 驳斥
+| 假设 | 状态 | 证据 |
 |-----------|--------|----------|
+|  |  |  |
 
-### Action Items
-- [ ] [Follow-up action from this interview]
-- [ ] [Research question to explore further]
+### 行动项
+- [ ] [本次访谈的后续行动]
+- [ ] [需要进一步探索的研究问题]
 
-### Raw Notes
-[If helpful, include annotated key sections]
+### 原始笔记
+[如果有帮助，包含注释的关键部分]
 ```
 
-Save the summary as a markdown file.
+将总结保存为 markdown 文件。
 
-**Step 4: Connect to Broader Research**
+**第四步：连接到更广泛的研究**
 
-Offer:
-- "Want me to **compare this with other interview summaries** you've done?"
-- "Should I **update assumptions** based on what this participant said?"
-- "Want me to **extract personas** from multiple interviews?"
+提供：
+- "需要我将此与你完成的其他访谈总结**进行比较**吗？"
+- "我应该根据这位参与者所说内容**更新假设**吗？"
+- "需要我从多次访谈中**提取人物画像**吗？"
 
-## Notes
+## 注意事项
 
-- In prep mode, always include "why you're asking" annotations — they help the interviewer stay on track
-- In summarize mode, distinguish between what the participant *said* vs. what they *did* (behavioral > stated)
-- Flag contradictions within the same interview (says one thing, describes doing another)
-- If the transcript mentions competitor products, capture competitive intelligence
-- For summarize mode, if multiple transcripts are provided, synthesize across them with cross-participant patterns
+- 在准备模式下，始终包含"为什么要问这个问题的"注释 — 它们帮助访谈者保持正轨
+- 在总结模式下，区分参与者*说*的内容与他们*做*的内容（行为 > 表述）
+- 标记同一次访谈中的矛盾（说一套，描述做的另一套）
+- 如果记录中提到了竞争对手产品，收集竞争情报
+- 对于总结模式，如果提供了多个记录，综合跨参与者的模式

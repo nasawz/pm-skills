@@ -1,19 +1,19 @@
 # pm-marketing-growth
 
-Product marketing and growth skills: marketing ideas, value proposition statements, North Star metrics, product naming, and positioning.
+产品营销和增长技能：营销创意、价值主张陈述、北极星指标、产品命名和定位。
 
 ## Skills (5)
 
-- **marketing-ideas** — Generate 5 creative, cost-effective marketing ideas with channels, messaging, and engagement rationale.
-- **north-star-metric** — Identify a North Star Metric and 3-5 Input Metrics.
-- **positioning-ideas** — Brainstorm product positioning ideas differentiated from competitors.
-- **product-name** — Brainstorm 5 unique, memorable product names with rationale aligned to brand values and target audience.
-- **value-prop-statements** — Generate value proposition statements for marketing, sales, and onboarding from existing value propositions.
+- **marketing-ideas** — 生成5个富有创意、高性价比的营销创意，包含渠道、信息和参与理由。
+- **north-star-metric** — 识别一个北极星指标和3-5个输入指标。
+- **positioning-ideas** — 构思与竞争对手差异化的产品定位创意。
+- **product-name** — 构思5个独特、易记的产品名称，并提供与品牌价值观和目标受众对齐的理由。
+- **value-prop-statements** — 基于现有价值主张，为营销、销售和用户引导生成价值主张陈述。
 
 ## Commands (2)
 
-- `/pm-marketing-growth:market-product` — Brainstorm marketing ideas, positioning, value prop statements, and product names — creative marketing toolkit.
-- `/pm-marketing-growth:north-star` — Define your North Star Metric and supporting input metrics — classify the business game and validate against best practices.
+- `/pm-marketing-growth:market-product` — 构思营销创意、定位、价值主张陈述和产品名称 — 创意营销工具包。
+- `/pm-marketing-growth:north-star` — 定义您的北极星指标和支持性输入指标 — 对业务类型进行分类，并根据最佳实践进行验证。
 
 ## Author
 

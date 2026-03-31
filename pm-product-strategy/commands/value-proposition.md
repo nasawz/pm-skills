@@ -1,72 +1,72 @@
 ---
-description: Design a value proposition using the 6-part JTBD template — Who, Why, What before, How, What after, Alternatives
-argument-hint: "<product or feature>"
+description: 使用6部分JTBD模板设计价值主张——谁、为什么、之前的状态、如何、之后的状态、替代方案
+argument-hint: "<产品或功能>"
 ---
 
-# /value-proposition -- Value Proposition Design
+# /value-proposition -- 价值主张设计
 
-Design a clear, compelling value proposition for a product or feature using the 6-part JTBD template. An alternative to Strategyzer's Value Proposition Canvas that starts with the customer and focuses on practical outcomes.
+使用6部分JTBD（待办任务）模板为产品或功能设计清晰、引人注目的价值主张。这是Strategyzer价值主张画布的替代方案，从客户出发并专注于实际成果。
 
-## Invocation
-
-```
-/value-proposition AI writing tool for non-native English speakers
-/value-proposition [upload pitch deck, PRD, or competitive analysis]
-/value-proposition                    # asks about your product
-```
-
-## Workflow
-
-### Step 1: Understand the Product and Market
-
-Accept context from:
-- Product description (verbal or written)
-- Uploaded documents (pitch decks, PRDs, competitive analyses)
-- Existing value propositions to refine
-
-Ask key questions:
-- What does the product do? Who is it for?
-- What alternatives or workarounds exist today?
-- What customer insights or research do you have?
-
-### Step 2: Build the Value Proposition
-
-Apply the **value-proposition** skill to produce the 6-part template:
+## 调用方式
 
 ```
-## Value Proposition: [Product]
-
-### For [Segment]:
-
-1. **Who**: [target user profile and characteristics]
-2. **Why**: [the job they're trying to do, desired outcomes]
-3. **What Before**: [their current painful reality — existing tools, friction, workarounds]
-4. **How**: [your solution — specific features and capabilities that deliver value]
-5. **What After**: [the improved outcome — what becomes possible]
-6. **Alternatives**: [what they'd use without you, and why you're better]
-
-### Value Proposition Statement
-[One sentence: For [who] who [need], [product] is a [category] that [benefit]. Unlike [alternative], we [differentiator].]
-
-### Value Proposition Statements (Reusable)
-- Marketing: [...]
-- Sales: [...]
-- Onboarding: [...]
+/value-proposition 面向非英语母语者的AI写作工具
+/value-proposition [上传路演文档、PRD或竞品分析]
+/value-proposition                    # 询问你的产品
 ```
 
-If the user has multiple segments, create a separate value proposition for each.
+## 工作流程
 
-### Step 3: Save and Offer Next Steps
+### 第一步：理解产品和市场
 
-Save as markdown. Offer:
-- "Want me to **compare this against competitors** with a Value Curve?"
-- "Should I **build a full strategy** around this value proposition?"
-- "Want me to **create a Lean Canvas** or **Startup Canvas** using this?"
-- "Should I **generate marketing messaging** from these value prop statements?"
+接受来自以下来源的上下文：
+- 产品描述（口头或书面）
+- 上传的文档（路演文档、PRD、竞品分析）
+- 需要优化的现有价值主张
 
-## Notes
+询问关键问题：
+- 这个产品做什么？面向谁？
+- 今天存在哪些替代方案或变通方法？
+- 你有哪些客户洞察或研究成果？
 
-- This template starts with the customer (Who/Why) and works toward the solution — unlike Strategyzer's canvas which places the product on the left
-- Each value proposition is segment-specific — different segments get different value props
-- Use a Value Curve (Blue Ocean Strategy) to visually compare your offering against competitors across key factors
-- Value Proposition is one element of product strategy — use `/strategy` for the full picture
+### 第二步：构建价值主张
+
+应用**value-proposition**技能生成6部分模板：
+
+```
+## 价值主张：[产品]
+
+### 针对[细分市场]：
+
+1. **谁**：[目标用户画像和特征]
+2. **为什么**：[他们试图完成的任务、期望成果]
+3. **之前的状态**：[他们当前的痛苦现实——现有工具、摩擦、变通方法]
+4. **如何**：[你的解决方案——传递价值的特定功能和能力]
+5. **之后的状态**：[改善后的成果——成为可能的事情]
+6. **替代方案**：[没有你会使用什么，以及为什么你更好]
+
+### 价值主张陈述
+[一句话：对于[谁]需要[什么]，[产品]是一个[类别]，能够[利益]。不同于[替代方案]，我们[差异化优势]。]
+
+### 可复用的价值主张陈述
+- 营销：[...]
+- 销售：[...]
+- 入职引导：[...]
+```
+
+如果用户有多个细分市场，为每个细分市场创建单独的价值主张。
+
+### 第三步：保存并提供下一步
+
+保存为markdown文件。提供：
+- "需要我**使用价值曲线**与竞争对手进行对比吗？"
+- "我应该**围绕这个价值主张构建完整策略**吗？"
+- "需要我**使用这个创建精益画布**或**创业画布**吗？"
+- "我应该**从这些价值主张陈述生成营销信息**吗？"
+
+## 注意事项
+
+- 这个模板从客户（谁/为什么）开始，逐步构建到解决方案——这与Strategyzer将产品放在左侧的画布不同
+- 每个价值主张都是针对特定细分市场的——不同的细分市场获得不同的价值主张
+- 使用价值曲线（蓝海战略）在关键因素上可视化地比较你的产品与竞争对手
+- 价值主张是产品战略的一个要素——使用`/strategy`查看完整图景
