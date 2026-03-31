@@ -1,98 +1,98 @@
 ---
-description: Brainstorm team-level OKRs aligned with company objectives — qualitative objectives with measurable key results
-argument-hint: "<team, product area, or company objective>"
+description: 头脑风暴团队级 OKR，与公司目标保持一致 — 定性目标配合可衡量的关键结果
+argument-hint: "<团队、产品领域或公司目标>"
 ---
 
-# /plan-okrs -- Team OKR Planning
+# /plan-okrs -- 团队 OKR 规划
 
-Generate well-structured OKRs that connect team work to company strategy. Produces 3 OKR sets with qualitative objectives and quantitative key results.
+生成结构良好的 OKR，将团队工作与公司战略连接起来。产出 3 组 OKR，包含定性目标和定量关键结果。
 
-## Invocation
-
-```
-/plan-okrs Growth team Q2 — company goal is 50% ARR increase
-/plan-okrs Onboarding squad aligned to "improve activation rate"
-/plan-okrs [upload company OKRs or strategy doc]
-```
-
-## Workflow
-
-### Step 1: Gather Context
-
-Ask the user:
-- What team or product area are these OKRs for?
-- What time period? (quarterly is standard, but could be annual or custom)
-- What are the company-level objectives these should ladder up to?
-- What happened last quarter? (hits, misses, learnings)
-- Any constraints or known priorities?
-
-Accept company OKRs or strategy documents as uploads.
-
-### Step 2: Generate OKRs
-
-Apply the **brainstorm-okrs** skill:
-
-- Create 3 OKR sets (Objective + 3-5 Key Results each)
-- **Objectives**: Qualitative, inspiring, ambitious but achievable, action-oriented
-- **Key Results**: Quantitative, measurable, time-bound, have clear owners
-- Ensure OKRs ladder to company objectives with visible connection
-- Balance leading indicators (activity) with lagging indicators (outcomes)
-
-### Step 3: Validate Quality
-
-Check each OKR against best practices:
-- Is the Objective inspiring? (Would you rally a team around it?)
-- Are Key Results measurable? (Can you check completion with data, not judgment?)
-- Are targets ambitious but not demoralizing? (70% achievement = well-calibrated)
-- Are there 3-5 KRs per Objective? (More = unfocused)
-- Do KRs avoid gaming? (e.g., "ship 5 features" incentivizes shipping junk)
-
-Flag any issues and suggest improvements.
-
-### Step 4: Present and Iterate
+## 调用示例
 
 ```
-## Team OKRs: [Team Name] — [Period]
+/plan-okrs 增长团队 Q2 — 公司目标是 50% ARR 增长
+/plan-okrs 入职引导小组，对齐"提升激活率"目标
+/plan-okrs [上传公司 OKR 或战略文档]
+```
 
-**Aligned to**: [Company Objective(s)]
+## 工作流程
 
-### Objective 1: [Inspiring qualitative statement]
-| # | Key Result | Baseline | Target | Owner |
+### 第一步：收集背景信息
+
+询问用户：
+- 这些 OKR 针对哪个团队或产品领域？
+- 时间周期是什么？（通常为季度，也可能是年度或自定义周期）
+- 应该承接哪些公司级目标？
+- 上季度发生了什么？（达成情况、未达成、经验教训）
+- 有什么约束条件或已知优先级？
+
+接受用户上传公司 OKR 或战略文档。
+
+### 第二步：生成 OKR
+
+应用 **brainstorm-okrs** 技能：
+
+- 创建 3 组 OKR（每组包含 1 个目标 + 3-5 个关键结果）
+- **目标（Objectives）**：定性、鼓舞人心、雄心但可实现、以行动为导向
+- **关键结果（Key Results）**：定量、可衡量、有时限、有明确的负责人
+- 确保 OKR 与公司目标有清晰的承接关系
+- 平衡领先指标（活动）与滞后指标（成果）
+
+### 第三步：验证质量
+
+对照最佳实践检查每个 OKR：
+- 目标是否鼓舞人心？（能否以此凝聚团队？）
+- 关键结果是否可衡量？（能否用数据而非主观判断来评估完成情况？）
+- 目标是否雄心但不会令人沮丧？（70% 达成率 = 校准良好）
+- 每个目标是否有 3-5 个关键结果？（更多 = 不够聚焦）
+- 关键结果是否避免了博弈？（例如"发布 5 个功能"会激励发布劣质功能）
+
+标记任何问题并建议改进措施。
+
+### 第四步：展示与迭代
+
+```
+## 团队 OKR：[团队名称] — [周期]
+
+**对齐目标**：[公司目标]
+
+### 目标 1：[鼓舞人心的定性陈述]
+| # | 关键结果 | 基线值 | 目标值 | 负责人 |
 |---|-----------|----------|--------|-------|
-| KR1 | [measurable result] | [current] | [target] | [team/person] |
+| KR1 | [可衡量的结果] | [当前值] | [目标值] | [团队/个人] |
 | KR2 | ... | ... | ... | ... |
 | KR3 | ... | ... | ... | ... |
 
-### Objective 2: [Inspiring qualitative statement]
-[same format]
+### 目标 2：[鼓舞人心的定性陈述]
+[相同格式]
 
-### Objective 3: [Inspiring qualitative statement]
-[same format]
+### 目标 3：[鼓舞人心的定性陈述]
+[相同格式]
 
-### Alignment Map
-Company Objective → Team Objective → Key Results → Expected Impact
+### 对齐映射图
+公司目标 → 团队目标 → 关键结果 → 预期影响
 
-### Scoring Guide
-- 0.0-0.3: Significant miss — investigate and learn
-- 0.4-0.6: Progress made but fell short
-- 0.7-0.9: Well-calibrated stretch goal — this is the target zone
-- 1.0: Either nailed it or target wasn't ambitious enough
+### 评分指南
+- 0.0-0.3：严重未达成 — 需要调查和学习
+- 0.4-0.6：取得进展但未达预期
+- 0.7-0.9：校准良好的拉伸目标 — 这是目标区间
+- 1.0：要么完美达成，要么目标不够雄心
 
-### Check-in Cadence
-- **Weekly**: Quick traffic-light update on each KR
-- **Mid-quarter**: Deep review, adjust targets if context changed
-- **End of quarter**: Score, reflect, feed into next quarter
+### 检视节奏
+- **每周**：对每个关键结果进行快速红绿灯更新
+- **季中**：深度复盘，如果环境变化则调整目标
+- **季度末**：评分、反思、为下季度输入
 ```
 
-Offer:
-- "Want me to **adjust ambition levels** — make them more/less aggressive?"
-- "Should I **create a metrics dashboard** for tracking these?"
-- "Want me to **draft a stakeholder update** introducing these OKRs?"
+提供选项：
+- "您需要我**调整雄心水平**吗 — 让它们更/更有挑战性？"
+- "是否需要我**创建指标看板**来跟踪这些 OKR？"
+- "是否需要我**起草干系人更新**来介绍这些 OKR？"
 
-## Notes
+## 注意事项
 
-- OKRs should describe outcomes, not outputs ("Increase activation by 20%" not "Ship onboarding redesign")
-- If the user doesn't have company OKRs, help them derive team objectives from product strategy or business goals
-- Maximum 3 objectives per team per quarter — more means less focus
-- Key Results should be stretch goals — if you're certain you'll hit them, they're not ambitious enough
-- Flag any KR that could be gamed and suggest a counter-metric
+- OKR 应该描述成果而非产出（"提升激活率 20%" 而非"发布入职引导重设计"）
+- 如果用户没有公司 OKR，帮助他们从产品战略或业务目标推导团队目标
+- 每个团队每季度最多 3 个目标 — 更多意味着更少聚焦
+- 关键结果应该是拉伸目标 — 如果你确定能达成，说明雄心不够
+- 标记任何可能被博弈的关键结果，并建议反向指标
