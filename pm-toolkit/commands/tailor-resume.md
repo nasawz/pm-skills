@@ -1,81 +1,81 @@
 ---
-description: Tailor a PM resume to a specific job description — keyword alignment, experience reframing, and strategic optimization
-argument-hint: "<resume> + <job description>"
+description: 将 PM 简历针对特定职位描述进行定制——关键词对齐、经验重构和战略优化
+argument-hint: "<简历> + <职位描述>"
 ---
 
-# /tailor-resume -- Resume-to-JD Optimization
+# /tailor-resume -- 简历与 JD 优化
 
-Take your resume and a target job description, then strategically align your experience to maximize interview chances. Keyword optimization, bullet point rewriting, and gap analysis.
+获取您的简历和目标职位描述，然后战略性对齐您的工作经验，以最大化面试机会。包括关键词优化、要点重写和差距分析。
 
-## Invocation
-
-```
-/tailor-resume [upload resume] Here's the JD: [paste job description]
-/tailor-resume [upload both resume and JD as files]
-```
-
-## Workflow
-
-### Step 1: Accept Both Documents
-
-Need two inputs:
-- The resume (text, PDF, or DOCX)
-- The target job description (text, URL, or file)
-
-If only one is provided, ask for the other.
-
-### Step 2: Analyze the Job Description
-
-Extract:
-- Required qualifications and skills
-- Preferred qualifications
-- Key responsibilities
-- Industry and domain signals
-- Seniority level indicators
-- Cultural and team signals
-
-### Step 3: Tailor the Resume
-
-Apply the **review-resume** skill:
-
-- **Keyword alignment**: Map JD keywords to resume content, add missing keywords naturally
-- **Bullet point rewriting**: Reframe experience to emphasize JD-relevant accomplishments using XYZ+S formula
-- **Section reordering**: Prioritize the most relevant experience
-- **Summary/objective**: Rewrite to directly address the role
-- **Skills section**: Align with JD requirements
-
-### Step 4: Generate Tailored Resume + Analysis
+## 调用方式
 
 ```
-## Resume Tailoring: [Job Title] at [Company]
+/tailor-resume [上传简历] 以下是 JD：[粘贴职位描述]
+/tailor-resume [同时上传简历和 JD 作为文件]
+```
 
-### Alignment Score: [X/10]
+## 工作流程
 
-### Keyword Gap Analysis
-| JD Keyword | In Resume? | Recommendation |
-|-----------|-----------|---------------|
+### 步骤 1：接收两份文档
 
-### Changes Made
-1. **[Section]**: [what changed and why]
+需要两个输入：
+- 简历（文本、PDF 或 DOCX）
+- 目标职位描述（文本、URL 或文件）
+
+如果只提供了其中一个，请要求提供另一个。
+
+### 步骤 2：分析职位描述
+
+提取：
+- 必备资质和技能
+- 优先资质
+- 核心职责
+- 行业和领域信号
+- 资深级别指标
+- 企业文化和团队信号
+
+### 步骤 3：定制简历
+
+应用 **review-resume** 技能：
+
+- **关键词对齐**：将 JD 关键词映射到简历内容，自然地添加缺失的关键词
+- **要点重写**：使用 XYZ+S 公式重新表述经验，突出与 JD 相关的成就
+- **章节重新排序**：优先展示最相关的经验
+- **个人总结/求职目标**：重写以直接针对该职位
+- **技能章节**：与 JD 要求对齐
+
+### 步骤 4：生成定制简历 + 分析
+
+```
+## 简历定制：[公司] [职位名称]
+
+### 对齐评分：[X/10]
+
+### 关键词差距分析
+| JD 关键词 | 简历中是否包含 | 建议 |
+|-----------|---------------|------|
+
+### 所做的修改
+1. **[章节]**：[修改内容及原因]
 2. ...
 
-### Tailored Resume
-[Full rewritten resume text]
+### 定制简历
+[完整的重写简历文本]
 
-### Gap Analysis
-**Strong matches**: [where your experience directly aligns]
-**Reframed matches**: [where experience was repositioned to fit]
-**Gaps**: [JD requirements you don't clearly address — with suggestions]
+### 差距分析
+**强匹配项**：[您的经验直接对齐的部分]
+**重构匹配项**：[经验被重新定位以匹配的部分]
+**差距项**：[您未明确阐述的 JD 要求——附带建议]
 
-### Cover Letter Talking Points
-[3-4 points to emphasize in a cover letter that bridge remaining gaps]
+### 求职信要点
+[3-4 点在求职信中强调的要点，以弥补剩余差距]
 ```
 
-Save tailored resume as markdown.
+将定制简历保存为 markdown 格式。
 
-## Notes
+## 注意事项
 
-- Never fabricate experience — reframe truthfully, don't invent
-- The summary/objective is the highest-ROI section to customize per application
-- Match the JD's language exactly where possible (if they say "cross-functional," use "cross-functional")
-- For senior roles, emphasize scale and strategic impact; for IC roles, emphasize hands-on execution
+- 绝不编造经验——如实重构，不要虚构
+- 个人总结/求职目标是每个申请中定制投资回报率最高的章节
+- 尽可能完全匹配 JD 的语言（如果他们说 "cross-functional"，就使用 "cross-functional"）
+- 对于高级职位，强调规模和战略影响；对于个人贡献者职位，强调亲手执行

@@ -1,160 +1,160 @@
 ---
 name: draft-nda
-description: "Draft a detailed Non-Disclosure Agreement between two parties covering information types, jurisdiction, and clauses needing legal review. Use when creating confidentiality agreements or preparing an NDA for a partnership."
+description: "在双方之间起草详细的保密协议，涵盖信息类型、管辖权以及需要法律审查的条款。在创建保密协议或为合作关系准备NDA时使用。"
 ---
-# NDA (Non-Disclosure Agreement) Drafting
+# 保密协议（NDA）起草
 
-You are an experienced legal document specialist with expertise in confidentiality agreements. Your role is to help draft detailed, clear, and professional Non-Disclosure Agreements between parties.
+您是一位经验丰富的法律文档专家，擅长保密协议。您的角色是帮助当事方之间起草详细、清晰且专业的保密协议。
 
-## Purpose
-Draft a comprehensive Non-Disclosure Agreement (NDA) between two parties. The NDA covers information types, jurisdiction, and clearly marks clauses that require legal review. Provide plain-language explanations to make the document accessible.
+## 目的
+在双方之间起草一份全面的保密协议（NDA）。该协议涵盖信息类型、管辖权，并明确标记需要法律审查的条款。提供通俗易懂的解释，使文档易于理解。
 
-## Important Disclaimer
-**This is for informational purposes only and does not constitute legal advice. Always have a licensed attorney review the final document before execution. NDAs are legally binding contracts; professional legal review is essential.**
+## 重要免责声明
+**本文档仅供信息参考，不构成法律建议。在签署最终文件之前，务必请持证律师进行审查。保密协议是具有法律约束力的合同；专业的法律审查至关重要。**
 
-## Input Arguments
-- `$COMPANY_ONE_NAME`: Name of the first party/company
-- `$COMPANY_ONE_ADDRESS`: Address of the first party/company
-- `$COMPANY_ONE_REPS`: Names and titles of representatives (e.g., "John Smith, CEO; Jane Doe, General Counsel")
-- `$COMPANY_TWO_NAME`: Name of the second party/company
-- `$COMPANY_TWO_ADDRESS`: Address of the second party/company
-- `$COMPANY_TWO_REPS`: Names and titles of representatives
-- `$INFORMATION_TYPES`: Types of information to be shared (e.g., "business plans, customer lists, technical specifications, pricing data, source code")
-- `$JURISDICTION`: Governing jurisdiction (e.g., "State of California, United States" or "England and Wales")
+## 输入参数
+- `$COMPANY_ONE_NAME`：第一方/公司的名称
+- `$COMPANY_ONE_ADDRESS`：第一方/公司的地址
+- `$COMPANY_ONE_REPS`：代表人的姓名和职务（例如："张三，首席执行官；李四，总法律顾问"）
+- `$COMPANY_TWO_NAME`：第二方/公司的名称
+- `$COMPANY_TWO_ADDRESS`：第二方/公司的地址
+- `$COMPANY_TWO_REPS`：代表人的姓名和职务
+- `$INFORMATION_TYPES`：将要共享的信息类型（例如："商业计划、客户名单、技术规格、定价数据、源代码"）
+- `$JURISDICTION`：管辖司法管辖区（例如："美国加利福尼亚州"或"英格兰和威尔士"）
 
-## Process
+## 流程
 
-### Step 1: Clarify Requirements
-Before drafting, note down:
-- Are both parties companies or is one an individual?
-- What specific types of information will be shared?
-- Is this one-way (only one party shares) or mutual (both parties share)?
-- What is the geographic jurisdiction?
-- What is the intended duration of the NDA?
+### 第一步：明确需求
+在起草之前，请记录：
+- 双方都是公司还是一方是个人？
+- 将共享哪些具体类型的信息？
+- 这是单向（仅一方共享）还是双向（双方共享）？
+- 地理管辖区域是什么？
+- 保密协议的预期期限是多久？
 
-### Step 2: Structure the NDA
-Organize the NDA in standard sections:
+### 第二步：构建NDA结构
+按照标准章节组织保密协议：
 
-1. **Preamble** (Parties, definitions, effective date)
-2. **Definitions** (What is "Confidential Information"?)
-3. **Obligation to Maintain Confidentiality** (Core obligation)
-4. **Permitted Disclosures** (Exceptions to confidentiality)
-5. **Term and Duration** (How long does the NDA last?)
-6. **Return or Destruction of Information** (What happens after?)
-7. **Remedies** (Consequences for breach)
-8. **General Provisions** (Governing law, jurisdiction, severability)
+1. **前言**（当事方、定义、生效日期）
+2. **定义**（什么是"保密信息"？）
+3. **保密义务**（核心义务）
+4. **允许披露的情形**（保密的例外情况）
+5. **期限和持续时间**（保密协议持续多久？）
+6. **信息的归还或销毁**（之后会怎样？）
+7. **救济措施**（违约的后果）
+8. **一般条款**（适用法律、管辖权、可分割性）
 
-### Step 3: Use Plain Language
-Write each section in clear, accessible language. Avoid legal jargon where possible. Define terms the first time they're used.
+### 第三步：使用通俗易懂的语言
+用清晰、易懂的语言编写每个章节。尽可能避免法律术语。在术语首次使用时进行定义。
 
-### Step 4: Highlight Clauses Needing Legal Review
-Mark sections with [⚠️ LEGAL REVIEW REQUIRED] where customization or specific legal expertise is needed. Include explanations of what should be reviewed.
+### 第四步：突出需要法律审查的条款
+在需要定制或特定法律专业知识的地方，用 [⚠️ 需要法律审查] 标记章节。包括需要审查内容的说明。
 
-### Step 5: Provide Context
-Include brief notes explaining:
-- Why each section is important
-- What decisions need to be made by the parties
-- Common pitfalls or considerations
+### 第五步：提供背景信息
+包括简短注释，解释：
+- 为什么每个章节很重要
+- 当事方需要做出哪些决定
+- 常见陷阱或考虑事项
 
-## NDA Template Structure
+## NDA模板结构
 
-Present the draft NDA in this order:
+按以下顺序展示保密协议草案：
 
-**[COVER NOTE]**
-A brief note explaining the NDA's purpose, the parties involved, and key provisions.
+**[封面说明]**
+简要说明保密协议的目的、涉及的当事方以及关键条款。
 
-**[FULL NDA DOCUMENT]**
-The complete agreement ready for customization.
+**[完整NDA文档]**
+准备定制化的完整协议。
 
-**[NOTES ON KEY CLAUSES]**
-Explanations of important sections and what may need legal customization.
-
----
-
-## Key Sections to Include
-
-### Preamble
-- Introduce both parties clearly with full legal names and addresses
-- State the purpose: exploring a potential business relationship, partnership, merger, etc.
-- Define the "Effective Date"
-
-### Definitions
-- **Confidential Information**: Specify what is considered confidential (business plans, financial data, technical specs, customer lists, etc.). Include scope.
-- **Excluded Information**: Clarify what is NOT confidential (publicly available information, information independently developed, information received from third parties without confidentiality obligations)
-
-### Obligations
-- Describe the receiving party's duty to keep information confidential
-- Specify approved uses of the information
-- Outline permitted disclosures (to employees, advisors, on a need-to-know basis)
-- [⚠️ LEGAL REVIEW REQUIRED] Standard of care (e.g., "same care as own confidential information, but no less than reasonable care")
-
-### Permitted Disclosures
-- Specify who can be told (employees, advisors, consultants on a need-to-know basis)
-- Include a requirement that recipients also agree to confidentiality
-- Add exception for legally required disclosures (with notice requirement, if possible)
-
-### Term and Duration
-- Define the period during which information is being shared
-- Define how long confidentiality obligations survive after the relationship ends
-- [⚠️ LEGAL REVIEW REQUIRED] Consider different durations for different information types (trade secrets may require longer protection)
-
-### Return or Destruction
-- Specify that the receiving party must return or securely destroy confidential information upon request or upon termination
-- Option to certify in writing that destruction is complete
-- Consider: does the receiving party keep one copy for legal compliance?
-
-### Remedies
-- [⚠️ LEGAL REVIEW REQUIRED] State that breach may cause irreparable harm and that injunctive relief is available
-- Clarify that remedies are in addition to other legal remedies available
-
-### General Provisions
-- **Governing Law and Jurisdiction**: Specify which state or country's laws govern (e.g., California or England)
-- [⚠️ LEGAL REVIEW REQUIRED] Dispute resolution process (litigation, arbitration, mediation)
-- **Severability**: If one provision is invalid, others remain in force
-- **Entire Agreement**: This NDA supersedes prior discussions
-- **Amendments**: Specify that NDA can only be modified in writing, signed by both parties
-- **Counterparts**: Parties can sign separate copies
+**[关键条款说明]**
+解释重要章节以及可能需要法律定制的部分。
 
 ---
 
-## Content Guidelines
+## 需要包含的关键章节
 
-- **Plain Language**: Write for a primary-school-educated reader. Avoid Latin phrases, unnecessary legal terms.
-- **Clarity over Precision**: Choose clear language first. Legal precision can be refined by attorneys.
-- **Examples**: Where helpful, include examples of what is/isn't confidential information.
-- **Specific Information Types**: Use the $INFORMATION_TYPES provided to make the agreement specific, not generic.
-- **Mutual or One-Way**: If $INFORMATION_TYPES suggests only one party is sharing, note this as a one-way NDA. If both, use mutual language.
+### 前言
+- 清晰介绍双方，包括完整的法定名称和地址
+- 说明目的：探索潜在的业务关系、合作伙伴关系、合并等
+- 定义"生效日期"
+
+### 定义
+- **保密信息**：明确哪些信息被视为保密（商业计划、财务数据、技术规格、客户名单等）。包括范围。
+- **排除信息**：明确哪些信息不属于保密（公开可获取的信息、独立开发的信息、在没有保密义务的情况下从第三方获得的信息）
+
+### 义务
+- 描述接收方保持信息机密的义务
+- 指定信息的使用方式
+- 列出允许披露的情形（向员工、顾问，基于需知原则）
+- [⚠️ 需要法律审查] 注意义务标准（例如："对待保密信息如同对待自己的保密信息，但不得低于合理注意标准"）
+
+### 允许披露的情形
+- 指定可以告知的对象（员工、顾问、顾问，基于需知原则）
+- 包括接收方也必须同意保密的要求
+- 添加法律要求披露的例外（如果可能，需要通知）
+
+### 期限和持续时间
+- 定义信息共享的期间
+- 定义关系结束后保密义务持续的期限
+- [⚠️ 需要法律审查] 考虑不同信息类型的不同期限（商业秘密可能需要更长期限的保护）
+
+### 归还或销毁
+- 指定接收方必须在请求时或终止时归还或安全销毁保密信息
+- 可选择书面确认销毁已完成
+- 考虑：接收方是否保留一份副本以用于法律合规？
+
+### 救济措施
+- [⚠️ 需要法律审查] 声明违约可能导致不可挽回的损害，并可获得禁令救济
+- 明确救济措施是对其他可用法律救济的补充
+
+### 一般条款
+- **适用法律和管辖权**：指定哪个国家或地区的法律适用（例如：加利福尼亚州或英格兰）
+- [⚠️ 需要法律审查] 争议解决程序（诉讼、仲裁、调解）
+- **可分割性**：如果某一条款无效，其他条款仍然有效
+- **完整协议**：本保密协议取代之前的讨论
+- **修改**：指定保密协议只能通过双方签署的书面文件进行修改
+- **副本**：当事方可以签署单独的副本
 
 ---
 
-## Output Format
+## 内容指南
 
-Present the NDA in three parts:
-
-### Part 1: Summary
-Bullet-point overview of:
-- Parties involved
-- Information types covered
-- Key duration and terms
-- Jurisdiction
-
-### Part 2: Full NDA Document
-A complete, ready-to-customize NDA document.
-
-### Part 3: Customization Notes
-Guidance on:
-- Sections marked for legal review
-- Decisions parties need to make
-- Common modifications based on situation
-- Next steps (legal review, signing process)
+- **通俗易懂的语言**：为受过小学教育的读者撰写。避免拉丁语短语和不必要的法律术语。
+- **清晰优先于精确**：首先选择清晰的语言。法律精确性可以由律师完善。
+- **示例**：在有帮助的地方，包括什么是/不是保密信息的示例。
+- **具体信息类型**：使用提供的 $INFORMATION_TYPES 使协议具体化，而不是通用化。
+- **双向或单向**：如果 $INFORMATION_TYPES 表明只有一方共享，则将其标记为单向NDA。如果双方都共享，则使用双向语言。
 
 ---
 
-## Important Reminders
+## 输出格式
 
-- This is a starting point, not final legal advice
-- Jurisdictions vary widely; have a lawyer in the relevant jurisdiction review
-- Some industries (tech, pharma, finance) have specific NDA conventions
-- Consider mutual vs. one-way requirements
-- Think about duration: How long should the information be protected?
-- Always have an attorney review before any party signs
+保密协议分三部分呈现：
+
+### 第一部分：摘要
+要点概述：
+- 涉及的当事方
+- 涵盖的信息类型
+- 关键期限和条款
+- 管辖权
+
+### 第二部分：完整NDA文档
+一份完整的、准备定制化的保密协议文档。
+
+### 第三部分：定制说明
+指导：
+- 标记需要法律审查的章节
+- 当事方需要做出的决定
+- 根据情况的常见修改
+- 下一步（法律审查、签署流程）
+
+---
+
+## 重要提醒
+
+- 这只是一个起点，不是最终法律建议
+- 不同司法管辖区的法律差异很大；请相关司法管辖区的律师进行审查
+- 某些行业（科技、制药、金融）有特定的保密协议惯例
+- 考虑双向与单向的要求
+- 思考期限：信息应该被保护多长时间？
+- 在任何一方签署之前，务必请律师进行审查

@@ -1,67 +1,67 @@
 ---
-description: Check grammar, logic, and flow in any text — targeted fixes without rewriting
-argument-hint: "<text to check>"
+description: 检查任何文本的语法、逻辑和行文流畅度——提供针对性修改，不做全面重写
+argument-hint: "<待检查的文本>"
 ---
 
-# /proofread -- Grammar & Flow Check
+# /proofread -- 语法与流畅度检查
 
-Identify grammar, logical, and flow errors in text. Provides specific, targeted fixes without rewriting the entire document.
+识别文本中的语法、逻辑和流畅度问题。提供具体、针对性的修改建议，而不重写整份文档。
 
-## Invocation
-
-```
-/proofread [paste text]
-/proofread [upload a document]
-```
-
-## Workflow
-
-### Step 1: Accept Text
-
-Accept text in any form: pasted, uploaded document (DOCX, PDF, markdown), or email draft.
-
-### Step 2: Analyze
-
-Apply the **grammar-check** skill:
-
-Scan for three categories of issues:
-
-**Grammar**: Spelling, punctuation, subject-verb agreement, tense consistency, article usage
-**Logic**: Contradictions, unsupported claims, circular reasoning, unclear references
-**Flow**: Awkward transitions, sentence rhythm, paragraph structure, redundancy, readability
-
-### Step 3: Report Issues
+## 调用方式
 
 ```
-## Proofread Report
-
-**Text length**: [word count]
-**Issues found**: [count by category]
-
-### Issues
-
-#### 1. [Category: Grammar/Logic/Flow]
-- **Location**: "[quoted text with issue]"
-- **Issue**: [what's wrong]
-- **Fix**: "[corrected text]"
-
-[Repeat for each issue]
-
-### Summary
-- Grammar: [X] issues
-- Logic: [X] issues
-- Flow: [X] issues
-- Overall quality: [assessment]
+/proofread [粘贴文本]
+/proofread [上传文档]
 ```
 
-### Step 4: Offer
+## 工作流程
 
-- "Want me to **apply all fixes** and return the cleaned text?"
-- "Should I **focus on a specific section** in more detail?"
+### 步骤 1：接收文本
 
-## Notes
+接收任何形式的文本：粘贴内容、上传文档（DOCX、PDF、Markdown）或邮件草稿。
 
-- Fix suggestions should be minimal — change only what's needed, preserve the author's voice
-- For non-native English speakers, be especially clear about *why* a change is suggested
-- Don't over-correct style preferences — there's a difference between wrong and different
-- For professional documents, also check for tone consistency and audience appropriateness
+### 步骤 2：分析
+
+应用 **grammar-check**（语法检查）技能：
+
+扫描三个类别的问题：
+
+**语法**：拼写、标点、主谓一致、时态一致性、冠词使用
+**逻辑**：矛盾、 unsupported 声明（缺乏支持的陈述）、循环论证、指代不明
+**流畅度**：生硬的过渡、句子节奏、段落结构、冗余、可读性
+
+### 步骤 3：报告问题
+
+```
+## 校对报告
+
+**文本长度**：[字数]
+**发现的问题**：[按类别计数]
+
+### 问题
+
+#### 1. [类别：语法/逻辑/流畅度]
+- **位置**："[包含问题的引用文本]"
+- **问题**：[问题说明]
+- **修改建议**："[修正后的文本]"
+
+[重复每个问题]
+
+### 总结
+- 语法：[X] 个问题
+- 逻辑：[X] 个问题
+- 流畅度：[X] 个问题
+- 整体质量：[评估]
+```
+
+### 步骤 4：提供选项
+
+- "需要我**应用所有修改建议**并返回清理后的文本吗？"
+- "是否需要我**重点关注某个特定部分**进行详细分析？"
+
+## 注意事项
+
+- 修改建议应尽量最小化——只修改必要的内容，保留作者的语调风格
+- 对于非英语母语者，要特别清晰地说明*为什么*建议做此修改
+- 不要过度纠正风格偏好——错误与不同是有区别的
+- 对于专业文档，还要检查语调一致性和受众适应性

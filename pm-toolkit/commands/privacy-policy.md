@@ -1,76 +1,76 @@
 ---
-description: Draft a privacy policy covering data collection, usage, storage, and compliance requirements
-argument-hint: "<product and data handling context>"
+description: 起草隐私政策，涵盖数据收集、使用、存储和合规要求
+argument-hint: "<产品和数据处理上下文>"
 ---
 
-# /privacy-policy -- Privacy Policy Generator
+# /privacy-policy -- 隐私政策生成器
 
-Draft a comprehensive privacy policy for your product. Covers data types, jurisdiction, compliance (GDPR, CCPA), and marks clauses needing legal review.
+为您的产品起草全面的隐私政策。涵盖数据类型、管辖权、合规性（GDPR、CCPA），并标记需要法律审查的条款。
 
-## Invocation
-
-```
-/privacy-policy SaaS analytics tool that collects user behavior data — serving US and EU customers
-/privacy-policy Mobile app with location data and third-party integrations
-```
-
-## Workflow
-
-### Step 1: Gather Context
-
-Ask:
-- What product or service?
-- What data is collected? (personal info, usage data, cookies, location, payment)
-- Where are your users? (determines applicable regulations: GDPR, CCPA, etc.)
-- Any third-party data sharing? (analytics, advertising, integrations)
-- Data storage: where and how long?
-- Age restrictions? (COPPA considerations)
-
-### Step 2: Draft the Policy
-
-Apply the **privacy-policy** skill:
-
-Generate sections covering:
-- What data is collected and how
-- How data is used (purposes)
-- Legal basis for processing (GDPR)
-- Data sharing and third parties
-- Data retention and deletion
-- User rights (access, deletion, portability, opt-out)
-- Cookie policy
-- Security measures
-- Children's privacy (if applicable)
-- International transfers
-- Contact information
-- Policy update process
-
-### Step 3: Deliver
+## 调用示例
 
 ```
-## Privacy Policy: [Product]
+/privacy-policy 收集用户行为数据的 SaaS 分析工具 — 服务美国和欧盟客户
+/privacy-policy 具有位置数据和第三方集成的移动应用
+```
 
-[Full policy text]
+## 工作流程
 
-### Compliance Checklist
-| Regulation | Status | Notes |
+### 第一步：收集上下文信息
+
+询问：
+- 什么产品或服务？
+- 收集哪些数据？（个人信息、使用数据、Cookie、位置、支付信息）
+- 用户在哪里？（确定适用的法规：GDPR、CCPA 等）
+- 是否有第三方数据共享？（分析、广告、集成）
+- 数据存储：存储位置和保存期限？
+- 年龄限制？（COPPA 考量）
+
+### 第二步：起草政策
+
+应用 **privacy-policy** 技能：
+
+生成涵盖以下部分的章节：
+- 收集哪些数据以及如何收集
+- 如何使用数据（目的）
+- 处理的法律依据（GDPR）
+- 数据共享和第三方
+- 数据保留和删除
+- 用户权利（访问、删除、可携带性、选择退出）
+- Cookie 政策
+- 安全措施
+- 儿童隐私（如适用）
+- 国际传输
+- 联系信息
+- 政策更新流程
+
+### 第三步：交付结果
+
+```
+## 隐私政策：[产品名称]
+
+[完整政策文本]
+
+### 合规性检查清单
+| 法规 | 状态 | 备注 |
 |-----------|--------|-------|
 
-### Clauses Requiring Legal Review
-| Clause | Why | Priority |
+### 需要法律审查的条款
+| 条款 | 原因 | 优先级 |
 |--------|-----|----------|
 
-### Implementation Checklist
-- [ ] Cookie consent banner
-- [ ] Data subject request process
-- [ ] Data processing records
-- [ ] DPA with processors
+### 实施检查清单
+- [ ] Cookie 同意横幅
+- [ ] 数据主体请求流程
+- [ ] 数据处理记录
+- [ ] 与处理者的数据处理协议（DPA）
 ```
 
-Save as markdown. Offer DOCX export.
+保存为 Markdown 格式。提供 DOCX 导出选项。
 
-## Notes
+## 注意事项
 
-- This is a template — legal counsel should review before publishing
-- GDPR and CCPA have specific requirements that can't be approximated — flag where expert review is essential
-- Privacy policies should be in plain language, not legalese
-- Update the policy when data practices change, not just annually
+- 这是一个模板 — 发布前应由法律顾问审查
+- GDPR 和 CCPA 有具体要求，无法近似处理 — 标记出必须进行专家审查的部分
+- 隐私政策应使用通俗易懂的语言，而非法律行话
+- 当数据处理实践发生变化时更新政策，而不仅仅是每年更新一次

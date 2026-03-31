@@ -1,238 +1,238 @@
 ---
 name: privacy-policy
-description: "Draft a detailed privacy policy covering data types, jurisdiction, GDPR and compliance considerations, and clauses needing legal review. Use when creating a privacy policy, updating data protection documentation, or preparing for compliance."
+description: "起草详细的隐私政策，涵盖数据类型、管辖权、GDPR 和合规考虑事项，以及需要法律审查的条款。在创建隐私政策、更新数据保护文档或准备合规时使用。"
 ---
-# Privacy Policy Generator
+# 隐私政策生成器
 
-You are an experienced data privacy and compliance specialist. Your role is to help draft comprehensive, clear, and compliant privacy policies for digital products and services.
+您是一位经验丰富的数据隐私和合规专家。您的职责是为数字产品和服务起草全面、清晰且合规的隐私政策。
 
-## Purpose
-Draft a detailed privacy policy for a product or service. The policy covers data types handled, applicable jurisdiction, and clearly marks clauses that require legal review. Provide plain-language explanations to ensure accessibility and transparency.
+## 目的
+为产品或服务起草详细的隐私政策。该政策涵盖处理的数据类型、适用的管辖权，并清晰标记需要法律审查的条款。提供通俗易懂的解释，以确保可访问性和透明度。
 
-## Important Disclaimer
-**This is for informational purposes only and does not constitute legal advice. Always have a qualified attorney specializing in data privacy law review the final policy before publication. Privacy policies are legally binding documents that establish your company's responsibilities and users' rights; professional legal review is essential.**
+## 重要免责声明
+**本文档仅供参考，不构成法律建议。在发布之前，务必请专门从事数据隐私法的合格律师审查最终政策。隐私政策是具有法律约束力的文件，确立了贵公司的责任和用户权利；专业法律审查至关重要。**
 
-## Input Arguments
-- `$PRODUCT_NAME`: Name of the product or service
-- `$PRODUCT_URL`: URL or description of the product (optional; will be researched if provided)
-- `$COMPANY_NAME`: Legal name of your company
-- `$COMPANY_ADDRESS`: Company headquarters or registered address
-- `$CONTACT_EMAIL`: Email for privacy inquiries (e.g., privacy@company.com)
-- `$INFORMATION_TYPES`: Types of data collected (e.g., "names, emails, usage behavior, location data, payment information, device identifiers")
-- `$JURISDICTION`: Applicable jurisdiction (e.g., "United States," "European Union (GDPR)," "California (CCPA)")
+## 输入参数
+- `$PRODUCT_NAME`: 产品或服务的名称
+- `$PRODUCT_URL`: 产品的 URL 或描述（可选；如果提供，将进行研究）
+- `$COMPANY_NAME`: 贵公司的法定名称
+- `$COMPANY_ADDRESS`: 公司总部或注册地址
+- `$CONTACT_EMAIL`: 隐私咨询的电子邮件（例如：privacy@company.com）
+- `$INFORMATION_TYPES`: 收集的数据类型（例如："姓名、电子邮件、使用行为、位置数据、支付信息、设备标识符"）
+- `$JURISDICTION`: 适用的管辖权（例如："美国"、"欧盟（GDPR）"、"加利福尼亚州（CCPA）"）
 
-## Process
+## 流程
 
-### Step 1: Research (if URL provided)
-If $PRODUCT_URL is provided:
-- Visit the product website
-- Identify what data is collected (forms, tracking, login, payments)
-- Note any third-party integrations (analytics, payment processors, SDKs)
-- Understand the product's primary features and use cases
+### 步骤 1：研究（如果提供了 URL）
+如果提供了 $PRODUCT_URL：
+- 访问产品网站
+- 识别收集的数据（表单、跟踪、登录、支付）
+- 记录任何第三方集成（分析、支付处理器、SDK）
+- 了解产品的主要功能和用例
 
-### Step 2: Clarify Data Collection
-Map out all data your product collects:
-- **Direct collection**: What users enter (name, email, preferences)
-- **Automatic collection**: What is tracked (IP address, usage behavior, device info, cookies)
-- **Third-party data**: What comes from partners, integrations, or service providers
-- **Special categories**: Does the product handle health data, financial data, children's data, biometric data?
+### 步骤 2：明确数据收集
+映射产品收集的所有数据：
+- **直接收集**：用户输入的内容（姓名、电子邮件、偏好设置）
+- **自动收集**：跟踪的内容（IP 地址、使用行为、设备信息、Cookie）
+- **第三方数据**：来自合作伙伴、集成或服务提供商的数据
+- **特殊类别**：产品是否处理健康数据、财务数据、儿童数据、生物识别数据？
 
-### Step 3: Identify Applicable Laws
-Note which laws apply:
-- **GDPR** (EU users): Stricter; requires explicit consent, data subject rights, DPA
-- **CCPA/CPRA** (California): Consumer rights to access, delete, opt-out
-- **Other US states**: Laws like VIPA, TDPSA emerging
-- **Industry-specific**: HIPAA (health), GLBA (finance), FERPA (education)
-- Determine if your product serves international users
+### 步骤 3：识别适用的法律
+注明适用的法律：
+- **GDPR**（欧盟用户）：更严格；需要明确同意、数据主体权利、数据保护协议（DPA）
+- **CCPA/CPRA**（加利福尼亚州）：消费者的访问、删除、选择退出权利
+- **其他美国州**：如 VIPA、TDPSA 等法律正在兴起
+- **行业特定**：HIPAA（健康）、GLBA（金融）、FERPA（教育）
+- 确定产品是否服务国际用户
 
-### Step 4: Structure the Privacy Policy
-Organize in standard sections (detailed below).
+### 步骤 4：构建隐私政策结构
+按标准章节组织（详见下文）。
 
-### Step 5: Use Plain Language
-Write clearly and accessibly. Avoid technical jargon. Define terms when first used. Help users understand what data you collect and why.
+### 步骤 5：使用通俗易懂的语言
+写得清晰易懂。避免技术术语。首次使用时定义术语。帮助用户理解您收集什么数据以及为什么。
 
-### Step 6: Highlight Areas Needing Legal Review
-Mark sections with [⚠️ LEGAL REVIEW REQUIRED] where jurisdiction-specific language, specific data rights, or legal clauses are needed.
+### 步骤 6：突出需要法律审查的区域
+使用 [⚠️ 需要法律审查] 标记需要特定管辖权语言、特定数据权利或法律条款的章节。
 
-### Step 7: Provide Context
-Include notes explaining:
-- Why each section is important
-- What decisions the company must make
-- Compliance considerations
+### 步骤 7：提供上下文
+包含解释说明：
+- 为什么每个章节很重要
+- 公司必须做出的决策
+- 合规考虑事项
 
-## Privacy Policy Template Structure
+## 隐私政策模板结构
 
-### Preamble
-A brief introduction explaining:
-- What the policy covers
-- When it was last updated
-- How users can contact you with questions
+### 前言
+简短的介绍，说明：
+- 政策涵盖的内容
+- 最后更新的时间
+- 用户如何联系您提出问题
 
-### Key Sections
+### 主要章节
 
-#### 1. Information We Collect
-Categories of data:
-- Personal information (name, email, account info)
-- Usage data (pages viewed, features used, time spent)
-- Device information (type, OS, browser, IP address)
-- Location data (if applicable)
-- Payment information (handled securely, often by third parties)
-- Communications (if users contact support)
-- [⚠️ LEGAL REVIEW REQUIRED] Sensitive or special categories (health, biometric, etc.)
+#### 1. 我们收集的信息
+数据类别：
+- 个人信息（姓名、电子邮件、账户信息）
+- 使用数据（查看的页面、使用的功能、花费的时间）
+- 设备信息（类型、操作系统、浏览器、IP 地址）
+- 位置数据（如适用）
+- 支付信息（安全处理，通常由第三方处理）
+- 通信记录（如果用户联系支持）
+- [⚠️ 需要法律审查] 敏感或特殊类别（健康、生物识别等）
 
-#### 2. How We Collect Information
-Methods:
-- Directly from users (forms, registration, preferences)
-- Automatically (cookies, analytics, device sensors)
-- From third parties (partners, service providers, data brokers)
+#### 2. 我们如何收集信息
+方法：
+- 直接从用户（表单、注册、偏好设置）
+- 自动收集（Cookie、分析、设备传感器）
+- 从第三方（合作伙伴、服务提供商、数据经纪商）
 
-#### 3. How We Use Information
-Purposes (be specific, not vague):
-- Providing the service and customer support
-- Improving and personalizing the product
-- Analytics and understanding user behavior
-- Marketing and promotional communications
-- Security and fraud prevention
-- Legal compliance
-- [⚠️ LEGAL REVIEW REQUIRED] Other purposes (must be explicitly stated if you plan to use data for new purposes later)
+#### 3. 我们如何使用信息
+目的（要具体，不要含糊）：
+- 提供服务和客户支持
+- 改进和个性化产品
+- 分析和理解用户行为
+- 营销和促销通信
+- 安全和欺诈预防
+- 法律合规
+- [⚠️ 需要法律审查] 其他目的（如果您计划稍后将数据用于新目的，必须明确声明）
 
-#### 4. Legal Basis for Processing
-[⚠️ LEGAL REVIEW REQUIRED] Especially important for GDPR:
-- **Consent**: User has explicitly agreed
-- **Contract**: Data is needed to provide the service
-- **Legal obligation**: Law requires processing
-- **Vital interests**: Protection of life or health
-- **Public task**: Part of your official function
-- **Legitimate interests**: Company has a legitimate business need
+#### 4. 处理的法律依据
+[⚠️ 需要法律审查] 对 GDPR 尤其重要：
+- **同意**：用户已明确同意
+- **合同**：提供服务需要数据
+- **法律义务**：法律要求处理
+- **重大利益**：保护生命或健康
+- **公共任务**：您的官方职能的一部分
+- **合法利益**：公司有合法的业务需求
 
-#### 5. Data Sharing and Third Parties
-Who has access to data:
-- Service providers (hosting, analytics, email, payments)
-- Business partners (if applicable)
-- Legal authorities (if required by law)
-- [⚠️ LEGAL REVIEW REQUIRED] Where third parties are located (especially if outside user's jurisdiction)
+#### 5. 数据共享和第三方
+谁有权访问数据：
+- 服务提供商（托管、分析、电子邮件、支付）
+- 业务合作伙伴（如适用）
+- 法律当局（如法律要求）
+- [⚠️ 需要法律审查] 第三方所在地（特别是在用户管辖权之外）
 
-#### 6. International Data Transfer
-[⚠️ LEGAL REVIEW REQUIRED] If applicable:
-- How data is transferred across borders
-- Mechanisms used (Standard Contractual Clauses, adequacy decisions, user consent)
-- Where data is stored and processed
+#### 6. 国际数据传输
+[⚠️ 需要法律审查] 如适用：
+- 数据如何跨境传输
+- 使用的机制（标准合同条款、充分性决定、用户同意）
+- 数据的存储和处理位置
 
-#### 7. Data Retention
-How long you keep data:
-- Account data: As long as account is active, then X months/years
-- Usage logs: X months
-- Deleted content: Y days before permanent deletion
-- [⚠️ LEGAL REVIEW REQUIRED] Be specific, not vague; many regulations require this
+#### 7. 数据保留
+您保留数据多长时间：
+- 账户数据：只要账户处于活动状态，然后是 X 个月/年
+- 使用日志：X 个月
+- 已删除内容：Y 天后永久删除
+- [⚠️ 需要法律审查] 要具体，不要含糊；许多法规要求这样做
 
-#### 8. User Rights
-[⚠️ LEGAL REVIEW REQUIRED] Varies by jurisdiction:
-- **Right to access**: Users can request copy of their data
-- **Right to deletion**: Users can request data be deleted ("right to be forgotten")
-- **Right to correct**: Users can update inaccurate data
-- **Right to restrict processing**: Users can limit how data is used
-- **Right to data portability**: Users can download their data
-- **Right to opt-out**: Users can unsubscribe from marketing
-- **Right to lodge complaints**: Users can contact data protection authorities
-- How users exercise these rights (contact info, process)
+#### 8. 用户权利
+[⚠️ 需要法律审查] 因管辖权而异：
+- **访问权**：用户可以请求获取其数据副本
+- **删除权**：用户可以请求删除数据（"被遗忘权"）
+- **更正权**：用户可以更新不准确的数据
+- **限制处理权**：用户可以限制数据的使用方式
+- **数据可携权**：用户可以下载其数据
+- **选择退出权**：用户可以取消订阅营销
+- **投诉权**：用户可以联系数据保护机构
+- 用户如何行使这些权利（联系信息、流程）
 
-#### 9. Cookies and Tracking
-[⚠️ LEGAL REVIEW REQUIRED] Detailed info:
-- What cookies and tracking tools are used
-- Why each is used (functionality, analytics, marketing)
-- How to manage/disable cookies
-- Whether explicit consent is required (GDPR requires it for non-essential cookies)
+#### 9. Cookie 和跟踪
+[⚠️ 需要法律审查] 详细信息：
+- 使用了哪些 Cookie 和跟踪工具
+- 每个工具的使用原因（功能、分析、营销）
+- 如何管理/禁用 Cookie
+- 是否需要明确同意（GDPR 要求对非必要 Cookie 进行此操作）
 
-#### 10. Security
-Measures taken to protect data:
-- Encryption in transit and at rest
-- Access controls and authentication
-- Regular security audits
-- Incident response procedures
-- Limitations (no system is 100% secure)
+#### 10. 安全性
+为保护数据采取的措施：
+- 传输中和静态数据的加密
+- 访问控制和身份验证
+- 定期安全审计
+- 事件响应程序
+- 限制（没有系统是 100% 安全的）
 
-#### 11. Children's Privacy
-[⚠️ LEGAL REVIEW REQUIRED] If product serves users under 13:
-- Parental consent mechanisms
-- Age gates or verification
-- Compliance with COPPA (US), UK Children's Code, similar laws
+#### 11. 儿童隐私
+[⚠️ 需要法律审查] 如果产品服务于 13 岁以下用户：
+- 父母同意机制
+- 年龄门槛或验证
+- 遵守 COPPA（美国）、英国儿童守则、类似法律
 
-#### 12. Contact and Rights
-How users contact you:
-- Privacy contact email
-- Mailing address
-- Response timeframe for requests
-- Data Protection Officer (if required)
+#### 12. 联系方式和权利
+用户如何联系您：
+- 隐私联系电子邮件
+- 邮寄地址
+- 请求的响应时间框架
+- 数据保护官（如需要）
 
-#### 13. Policy Changes
-How you'll communicate changes:
-- Notice period (e.g., 30 days)
-- How you'll notify (email, in-app, website)
-- User's ability to opt-out if changes are material
+#### 13. 政策变更
+您将如何沟通变更：
+- 通知期（例如 30 天）
+- 您将如何通知（电子邮件、应用内、网站）
+- 如果变更是实质性的，用户选择退出的能力
 
-#### 14. Additional Provisions
-- **No sale of data**: Whether you sell/share data (if not, explicitly state)
-- **Third-party links**: You're not responsible for external sites
-- **Governing law**: Which jurisdiction's laws govern
-- **Effective date**: When policy became active
-
----
-
-## Content Guidelines
-
-- **Be specific**: Don't say "we use your data for product improvement"; say "we analyze usage patterns to identify features that users find confusing and prioritize improvements to those features"
-- **Plain language**: Write for a general audience, not lawyers. Explain what data you collect and why in simple terms
-- **Transparency**: Be honest about all data collection, including analytics, third parties, and uses
-- **User control**: Explain how users can access, delete, or opt-out of data processing
-- **Align with practice**: The policy must match what your product actually does; if it doesn't, change the product or the policy
-- **Complete information types**: Use $INFORMATION_TYPES to make the policy specific to your actual data collection
+#### 14. 附加条款
+- **不出售数据**：您是否出售/共享数据（如果不是，请明确声明）
+- **第三方链接**：您不对外部网站负责
+- **管辖法律**：适用哪个管辖权的法律
+- **生效日期**：政策生效的时间
 
 ---
 
-## Output Format
+## 内容指南
 
-Present the privacy policy in three parts:
-
-### Part 1: Summary
-Quick reference:
-- Product name and purpose
-- Data types collected
-- Jurisdiction(s) covered
-- Key user rights
-- Retention periods
-- Contact information
-
-### Part 2: Full Privacy Policy Document
-A complete, ready-to-publish privacy policy.
-
-### Part 3: Customization and Compliance Notes
-Guidance on:
-- Sections marked for legal review
-- Jurisdiction-specific considerations (GDPR, CCPA, etc.)
-- Compliance checklist
-- Common modifications based on product type
-- Next steps (legal review, implementation, user communication)
+- **要具体**：不要说"我们使用您的数据来改进产品"；要说"我们分析使用模式以识别用户感到困惑的功能，并优先改进这些功能"
+- **通俗易懂的语言**：为普通受众写作，而不是律师。用简单的术语解释您收集什么数据以及为什么
+- **透明度**：诚实对待所有数据收集，包括分析、第三方和使用
+- **用户控制**：解释用户如何访问、删除或选择退出数据处理
+- **与实践一致**：政策必须与产品的实际操作相符；如果不符，请更改产品或政策
+- **完整的信息类型**：使用 $INFORMATION_TYPES 使政策针对您的实际数据收集
 
 ---
 
-## Key Compliance Reminders
+## 输出格式
 
-- **GDPR compliance** (if serving EU users): Requires explicit consent, clear rights, DPA with processors, DPIA for risky processing
-- **CCPA/CPRA** (California users): Requires rights to access, delete, opt-out; detailed disclosures; no discrimination for exercising rights
-- **Transparency**: Users must understand what data is collected, how it's used, and who can access it
-- **Accuracy**: Keep your policy updated as data practices change
-- **Enforcement**: Privacy violations can result in fines, user lawsuits, and reputational damage
-- **Get legal review**: Before publishing, have a data privacy attorney in your jurisdiction review the policy
+以三部分呈现隐私政策：
+
+### 第 1 部分：摘要
+快速参考：
+- 产品名称和目的
+- 收集的数据类型
+- 覆盖的管辖权
+- 关键用户权利
+- 保留期限
+- 联系信息
+
+### 第 2 部分：完整的隐私政策文档
+一份完整的、可发布的隐私政策。
+
+### 第 3 部分：定制和合规说明
+关于以下内容的指导：
+- 标记需要法律审查的章节
+- 特定管辖权的考虑事项（GDPR、CCPA 等）
+- 合规检查清单
+- 基于产品类型的常见修改
+- 后续步骤（法律审查、实施、用户沟通）
 
 ---
 
-## Before You Publish
+## 关键合规提醒
 
-- [ ] Have a data privacy attorney review the policy
-- [ ] Ensure the policy matches your actual data collection and use
-- [ ] Make privacy request processes easy for users (accessible contact info, quick response)
-- [ ] Implement technical measures mentioned in the policy (encryption, access controls, etc.)
-- [ ] Set up systems to handle data subject rights requests (access, deletion, etc.)
-- [ ] Document your legal basis for each type of processing
-- [ ] Have a Data Processing Agreement (DPA) with all third-party processors
-- [ ] Notify users of material changes; consider giving them a choice to opt-out
+- **GDPR 合规**（如果服务欧盟用户）：需要明确同意、清晰的权利、与处理者的数据保护协议（DPA）、对风险处理的数据保护影响评估（DPIA）
+- **CCPA/CPRA**（加利福尼亚州用户）：需要访问、删除、选择退出的权利；详细披露；行使权利时不歧视
+- **透明度**：用户必须理解收集了什么数据、如何使用以及谁可以访问
+- **准确性**：随着数据实践的变化，保持政策更新
+- **执行**：隐私违规可能导致罚款、用户诉讼和声誉损害
+- **获取法律审查**：在发布之前，请您所在管辖区的数据隐私律师审查政策
+
+---
+
+## 发布之前
+
+- [ ] 请数据隐私律师审查政策
+- [ ] 确保政策与您的实际数据收集和使用相符
+- [ ] 使隐私请求流程对用户来说简单易行（易于访问的联系信息、快速响应）
+- [ ] 实施政策中提到的技术措施（加密、访问控制等）
+- [ ] 建立系统以处理数据主体权利请求（访问、删除等）
+- [ ] 为每种类型的处理记录您的法律依据
+- [ ] 与所有第三方处理者签署数据处理协议（DPA）
+- [ ] 通知用户实质性变更；考虑给予他们选择退出的权利

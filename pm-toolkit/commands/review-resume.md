@@ -1,88 +1,88 @@
 ---
-description: Comprehensive PM resume review against 10 best practices — structure, impact metrics, keywords, and actionable feedback
-argument-hint: "<resume as text or file>"
+description: 基于十大最佳实践的产品经理简历全面审查——结构、影响指标、关键词和可执行反馈
+argument-hint: "<简历文本或文件>"
 ---
 
-# /review-resume -- PM Resume Review
+# /review-resume -- 产品经理简历审查
 
-Get a thorough resume review against product management best practices. Evaluates structure, impact metrics, keyword optimization, and provides specific improvement suggestions with examples.
+基于产品管理最佳实践进行全面的简历审查。评估结构、影响指标、关键词优化，并提供具体的改进建议和示例。
 
-## Invocation
-
-```
-/review-resume [paste resume text]
-/review-resume [upload resume PDF or DOCX]
-```
-
-## Workflow
-
-### Step 1: Accept the Resume
-
-Accept as pasted text, uploaded PDF, or DOCX file. Parse the full content.
-
-### Step 2: Evaluate Against 10 Best Practices
-
-Apply the **review-resume** skill:
-
-1. **Impact Metrics**: Are accomplishments quantified? (revenue, users, conversion rates)
-2. **XYZ+S Formula**: "Accomplished [X] as measured by [Y], by doing [Z] using [S skill/tool]"
-3. **PM-Specific Language**: Uses product terminology (shipped, led discovery, defined strategy)
-4. **Structure & Readability**: Clear sections, consistent formatting, scannable
-5. **Keyword Optimization**: Matches common PM job description keywords
-6. **Story Arc**: Shows career progression and increasing scope
-7. **Brevity**: One page (junior), two pages max (senior). No fluff.
-8. **Relevance**: Experience tailored to PM roles, not generic
-9. **Technical Credibility**: Demonstrates working with engineering, data, design
-10. **Leadership Signals**: Cross-functional influence, stakeholder management, mentoring
-
-### Step 3: Generate Review
+## 调用方式
 
 ```
-## Resume Review
+/review-resume [粘贴简历文本]
+/review-resume [上传简历PDF或DOCX文件]
+```
 
-**Overall Score**: [X/10]
-**Strongest area**: [which best practice]
-**Biggest opportunity**: [which best practice]
+## 工作流程
 
-### Scorecard
-| # | Best Practice | Score | Assessment |
+### 步骤1：接收简历
+
+接收粘贴的文本、上传的PDF或DOCX文件。解析完整内容。
+
+### 步骤2：基于十大最佳实践进行评估
+
+应用**review-resume**技能：
+
+1. **影响指标**：成就是否量化？（收入、用户、转化率）
+2. **XYZ+S公式**："通过使用[S技能/工具]做[Z]，实现了[X]，用[Y]来衡量"
+3. **产品经理专用语言**：使用产品管理术语（交付产品、主导探索、定义策略）
+4. **结构与可读性**：章节清晰、格式一致、易于浏览
+5. **关键词优化**：匹配常见产品经理职位描述的关键词
+6. **职业发展脉络**：展示职业晋升和职责范围的扩大
+7. **简洁性**：一页（初级），最多两页（高级）。无冗余内容。
+8. **相关性**：经验针对产品经理岗位定制，非通用内容
+9. **技术可信度**：展示与工程、数据、设计团队协作的能力
+10. **领导力信号**：跨职能影响力、利益相关者管理、指导经验
+
+### 步骤3：生成审查报告
+
+```
+## 简历审查
+
+**总体得分**：[X/10]
+**最强项**：[哪个最佳实践]
+**最大提升空间**：[哪个最佳实践]
+
+### 评分表
+| # | 最佳实践 | 得分 | 评估 |
 |---|-------------|-------|-----------|
-| 1 | Impact Metrics | [/10] | [brief assessment] |
-| 2 | XYZ+S Formula | [/10] | [brief assessment] |
+| 1 | 影响指标 | [/10] | [简要评估] |
+| 2 | XYZ+S公式 | [/10] | [简要评估] |
 | ... | ... | ... | ... |
 
-### Top 3 Improvements
+### 前三项改进建议
 
-**1. [Most impactful change]**
-- Current: "[exact text from resume]"
-- Suggested: "[improved version]"
-- Why: [reasoning]
+**1. [最具影响力的改进]**
+- 当前内容："[简历中的原文]"
+- 建议修改为："[改进版本]"
+- 原因：[理由说明]
 
-**2. [Second improvement]**
-[same format]
+**2. [第二项改进]**
+[相同格式]
 
-**3. [Third improvement]**
-[same format]
+**3. [第三项改进]**
+[相同格式]
 
-### Section-by-Section Feedback
-[Specific notes for each resume section: summary, experience, education, skills]
+### 分章节反馈
+[针对简历各章节的具体说明：摘要、工作经历、教育背景、技能]
 
-### Missing Elements
-[What's absent that should be present for a PM resume]
+### 缺失要素
+[产品经理简历应包含但目前缺失的内容]
 
-### Keywords to Add
-[PM-relevant keywords missing from the resume that appear in typical job descriptions]
+### 需添加的关键词
+[简历中缺失但在典型职位描述中出现的与产品经理相关的关键词]
 ```
 
-### Step 4: Offer Next Steps
+### 步骤4：提供后续步骤
 
-- "Want me to **tailor this resume** to a specific job description?"
-- "Should I **rewrite specific bullet points** using the XYZ+S formula?"
-- "Want me to **generate a cover letter** based on this resume?"
+- "需要我**针对特定职位描述调整这份简历**吗？"
+- "需要我**使用XYZ+S公式重写特定要点**吗？"
+- "需要我**基于这份简历生成求职信**吗？"
 
-## Notes
+## 说明
 
-- Be specific and constructive — "add metrics" is unhelpful, "change 'improved onboarding' to 'reduced onboarding drop-off by 23% (450 → 347 users/month)'" is actionable
-- PM resumes should emphasize outcomes over outputs, influence over authority
-- ATS (Applicant Tracking System) optimization matters — mention relevant keywords naturally
-- Different PM levels have different expectations: APM = potential, Senior PM = impact, Director+ = scale
+- 要具体且具有建设性——"添加指标"无助于改进，而"将'改进了入职流程'改为'将入职流失率降低23%（从每月450人降至347人）'"才是可执行的
+- 产品经理简历应强调成果而非产出，强调影响力而非职权
+- ATS（申请人跟踪系统）优化很重要——自然地提及相关关键词
+- 不同产品经理级别有不同期望：助理产品经理（APM）= 潜力，高级产品经理 = 影响力，总监及以上 = 规模化能力
