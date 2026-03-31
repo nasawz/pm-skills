@@ -1,94 +1,94 @@
 ---
 name: gtm-strategy
-description: "Create a go-to-market strategy covering marketing channels, messaging, success metrics, and launch timeline. Use when planning a product launch, creating a GTM plan from scratch, or defining a launch strategy for a new market."
+description: "创建市场推广策略，涵盖营销渠道、信息传达、成功指标和上线时间表。适用于规划产品上线、从零开始制定 GTM 计划或为新市场定义上线策略。"
 ---
-# GTM Strategy
+# GTM 策略
 
-## Overview
-Create a comprehensive go-to-market strategy for a product launch. This skill covers marketing channels, messaging development, success metrics definition, and launch planning.
+## 概述
+为产品上线创建全面的市场推广策略。本技能涵盖营销渠道、信息传达开发、成功指标定义和上线规划。
 
-## When to Use
-- Planning a product launch
-- Creating a GTM plan from scratch
-- Defining a launch strategy for a new market
-- Developing product-to-market fit strategy
-- Preparing a product go-live roadmap
+## 使用场景
+- 规划产品上线
+- 从零开始制定 GTM 计划
+- 为新市场定义上线策略
+- 开发产品市场契合度策略
+- 准备产品上线路线图
 
-## How It Works
+## 工作原理
 
-### Step 1: Gather Research Data
-The system will help you load and analyze early research about your product and target market. Provide:
-- Product description and key features
-- Target market segment details
-- Market research or validation data
-- Competitive landscape information
-- Any available customer interviews or survey data
+### 第一步：收集研究数据
+系统将帮助您加载和分析关于您的产品及目标市场的早期研究数据。请提供：
+- 产品描述和核心功能
+- 目标市场细分详情
+- 市场研究或验证数据
+- 竞争格局信息
+- 任何可用的客户访谈或调研数据
 
-### Step 2: Define Marketing Channels
-Evaluate which channels best reach your target audience:
-- Digital marketing channels (paid search, social media, display)
-- Content and inbound channels (blog, SEO, thought leadership)
-- Sales and outbound channels (direct outreach, partnerships)
-- Community and grassroots channels
-- Product-led and viral channels
+### 第二步：定义营销渠道
+评估哪些渠道最能触达您的目标受众：
+- 数字营销渠道（付费搜索、社交媒体、展示广告）
+- 内容和获客渠道（博客、SEO、思想领导力）
+- 销售和外展渠道（直接接触、合作伙伴关系）
+- 社区和草根渠道
+- 产品驱动和病毒式传播渠道
 
-### Step 3: Develop Messaging
-Create audience-specific messaging that resonates:
-- Core value proposition for target segment
-- Key differentiators and competitive advantages
-- Pain point validation and solution mapping
-- Proof points and social proof strategies
-- Channel-specific messaging variations
+### 第三步：开发信息传达
+创建与受众产生共鸣的针对性信息：
+- 针对目标细分市场的核心价值主张
+- 关键差异化因素和竞争优势
+- 痛点验证和解决方案映射
+- 证明点和社会证明策略
+- 针对不同渠道的信息传达变体
 
-### Step 4: Define Success Metrics
-Establish measurable KPIs to track launch success:
-- Awareness metrics (impressions, reach, brand recall)
-- Engagement metrics (CTR, cost per engagement, time on site)
-- Conversion metrics (signups, demos requested, trials started)
-- Revenue metrics (MRR, customer acquisition cost, lifetime value)
-- Market metrics (market share, segment penetration)
+### 第四步：定义成功指标
+建立可测量的 KPI 以跟踪上线成功：
+- 认知度指标（曝光量、触达范围、品牌回忆）
+- 参与度指标（点击率 CTR、单次参与成本、网站停留时间）
+- 转化指标（注册量、演示请求、试用启动）
+- 收入指标（月度经常性收入 MRR、客户获取成本 CAC、客户终身价值 LTV）
+- 市场指标（市场份额、细分市场渗透率）
 
-### Step 5: Create Launch Plan
-Build a phased launch timeline:
-- Pre-launch preparation (messaging, channels, timeline)
-- Launch day activities and announcements
-- Post-launch momentum (content, partnerships, communities)
-- Measurement and optimization cadence
-- Success criteria and go/no-go decision points
+### 第五步：创建上线计划
+制定分阶段的上线时间表：
+- 上线前准备（信息传达、渠道、时间表）
+- 上线日活动和公告
+- 上线后持续推动（内容、合作伙伴关系、社区）
+- 测量和优化节奏
+- 成功标准和上/下线决策点
 
-## Input Format
-Use $ARGUMENTS to pass:
-- Product name and description
-- Target market segment
-- Research data or file path
-- Launch timeline and constraints
-- Budget or resource limitations
+## 输入格式
+使用 $ARGUMENTS 传递：
+- 产品名称和描述
+- 目标市场细分
+- 研究数据或文件路径
+- 上线时间表和约束条件
+- 预算或资源限制
 
-## Output
-A structured GTM strategy document including:
-- Recommended marketing channels with justification
-- Channel-specific messaging and positioning
-- Launch timeline with key milestones
-- KPI targets and measurement framework
-- Risk mitigation strategies
-- 90-day execution roadmap
+## 输出
+结构化的 GTM 策略文档，包括：
+- 推荐的营销渠道及其理由
+- 针对不同渠道的信息传达和定位
+- 包含关键里程碑的上线时间表
+- KPI 目标和测量框架
+- 风险缓解策略
+- 90 天执行路线图
 
-## Framework
-This skill applies Product Compass GTM strategy methodology, focusing on market selection, channel fit, and message-market fit for sustainable product growth.
+## 框架
+本技能应用 Product Compass GTM 策略方法论，专注于市场选择、渠道匹配和信息-市场匹配，以实现可持续的产品增长。
 
-## Tips
-- Start with your most confident customer segment
-- Validate assumptions through customer interviews before full launch
-- Focus on a few channels excellently rather than many channels poorly
-- Establish baseline metrics before launch to measure impact
-- Plan for feedback loops and optimization
+## 提示
+- 从您最有把握的客户细分市场开始
+- 在全面上线前通过客户访谈验证假设
+- 专注于几个渠道的卓越表现，而非多个渠道的平庸表现
+- 在上线前建立基准指标以衡量影响
+- 规划反馈循环和优化机制
 
 ---
 
-### Further Reading
+### 延伸阅读
 
-- [5 GTM Principles You Should Know as a PM](https://www.productcompass.pm/p/5-gtm-principles-with-frameworks-templates)
-- [OpenAI’s Product Leader Shares 3-Layer Distribution Framework To Win Mind & Market Share in the AI World](https://www.productcompass.pm/p/distribution-framework-ai-products)
-- [Product-Led Growth 101, Part 1/2](https://www.productcompass.pm/p/product-led-growth-101-12)
-- [How to Design a Value Proposition Customers Can't Resist?](https://www.productcompass.pm/p/how-to-design-value-proposition-template)
-- [How to Achieve Product-Market Fit? Part I: Market and Value Proposition](https://www.productcompass.pm/p/how-to-achieve-the-product-market)
+- [产品经理应了解的 5 个 GTM 原则](https://www.productcompass.pm/p/5-gtm-principles-with-frameworks-templates)
+- [OpenAI 产品负责人分享在 AI 领域赢得心智和市场份额的三层分销框架](https://www.productcompass.pm/p/distribution-framework-ai-products)
+- [产品驱动增长入门，第 1/2 部分](https://www.productcompass.pm/p/product-led-growth-101-12)
+- [如何设计让客户无法抗拒的价值主张？](https://www.productcompass.pm/p/how-to-design-value-proposition-template)
+- [如何实现产品市场契合度？第一部分：市场和价值主张](https://www.productcompass.pm/p/how-to-achieve-the-product-market)
